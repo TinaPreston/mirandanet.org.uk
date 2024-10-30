@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MirandaNet Fellowship - Casestudies Listing</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The MirandaNet Fellowship Web Site" />
+<meta name="keywords" content="ICT communities education learning support" />
+<link rel="stylesheet" type="text/css" href="../mirandanet.css" />
+<link rel="stylesheet" type="text/css" href="../fellowship/fellowship.css" />
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/fix_ie.css" /></style><![endif]-->
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+<script type="text/javascript" src="../mirandanet.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<body onload="return show('casestudies')">
+<div id="header" class="group">
+<a id="top"></a>
+<a href ="../index.html"><img src="../images/logos/mirandanet_nl.gif" alt="The MirandaNet Organisation Logo" width="167" height="61" title="The MirandaNet Organisation: return to home page" /></a> 
+	<h1 class="name"><a href ="../index.html">MirandaNet</a></h1>
+	<!-- <h2 class="strapline">Sharing experience and expertise</h2> -->
+	<div class="topnav_wrapper">
+	  <h5>Site navigation:</h5>
+		<ul class="topnav">
+			<li><a href ="../index.html">Home</a></li>
+			<li><a href ="../fellowship/index.html" id="current">Fellowship</a></li>
+			<li><a href ="../researchexchange/index.html">Research Exchange</a></li>
+			<li><a href ="../consultancy/index.html">Consultancy</a></li>
+			<li><a href ="https://wec.mirandanet.org.uk/">World Ecitizens</a></li>
+		</ul>
+	</div>
+</div>
+
+<div id="content" class="group">
+<div id="leftColumn">
+	<!-- Place all the items for the left hand section here -->
+	<div class="group box">
+	  <!--#include virtual="/fellowship/fellowship_menu.htm"-->
+	  <div id="nav"> 
+  <ul>
+    <li><a href="../fellowship/index.php.html" id="home" class="normal">Fellowship</a></li>
+    <li><a href="../bett/index.html" id="bett" class="normal">BETT</a> 
+      <ul id="sub_bett">
+        <li><a href="../bett/programme.htm" id="programme" class="normal">BETT Programme</a></li>
+      </ul>
+    </li>
+    <li><a href="../fellowship/about.htm" id="about" class="normal">About Us</a> 
+      <ul id="sub_about">
+        <li><a href="../fellowship/founder.htm" id="founder" class="normal">Founder</a></li>
+        <li><a href="../fellowship/researchexchange.htm" id="research" class="normal">Research 
+          Exchange</a></li>
+        <li><a href="../fellowship/consultancy.htm" id="consultancy" class="normal">Consultancy</a></li>
+        <li><a href="../fellowship/worldecitizens.htm" id="worldecitizens" class="normal">World 
+          Ecitizens</a></li>
+      </ul>
+    </li>
+    <li><a href="../profiles/index.html" id="membership" class="normal">The Membership</a></li>
+    <li><a href="../associates/index.html" id="associates" class="normal">Associates</a></li>
+    <li><a href="../news/news.php.html" id="newsarea" class="normal">News &amp; Diary</a> 
+      <ul id="sub_newsarea">
+        <li><a href="../news/diary.php.html" id="diary" class="normal">Diary</a></li>
+        <li><a href="../news/letter.php.html" id="newsletter" class="normal">Newsletter</a></li>
+        <li><a href="../news/mirandanews.htm" id="letterarchive" class="normal">Newsletter 
+          Archive</a></li>
+      </ul>
+    </li>
+    <li><a href="../contact.php.html" id="contact" class="normal">Contact Us</a></li>
+    <li><a href="../mirandamods/index.html" id="mirandamods" class="normal">MirandaMods</a></li>
+    <li><a href="index.html" id="casestudies" class="normal">Case Studies</a></li>
+    <li><a href="../articles/index.html" id="articles" class="normal">Articles</a></li>
+    <li><a href="https://www.mirandanet.org.uk/phorum/default.php" id="forum" class="normal">Forum</a></li>
+    <li><a href="../index_old.htm" id="archive" class="normal">Archive Site</a></li>
+    <li><a href="../fellowship/join.htm" id="join" class="normal">Join MirandaNet</a></li>
+    <li><a href="../membership/index.php.html" title="Members Log on/off" id="logon" class="normal">Members 
+      Log on/off</a></li>
+  </ul>
+</div>
+	</div>
+		<!-- Search Case Studies Module -->
+	<div class="group box" style="margin-bottom:0">
+	<h1>Search the Case Studies</h1> 
+ 	<form method="post" action="../fellowship/casestudies_search.php.html" class="join">
+    <fieldset>
+    <legend>Search Form</legend>
+          <p>Search for:<br />
+            <select name="field" title="Choose search area">
+			 <option value="Title">Title</option>
+			 <option value="Abstract">Abstract</option>
+			 <option value="keywords">Keywords</option>
+			 <option value="article">Professional Study</option>
+			 <option value="Name">Author Name</option>
+            </select>
+            <br />
+            <input class="txtinput" type="text" id="find1" name="find" placeholder="Enter search term" title="Enter search term" />
+            <br />
+            <input type="hidden" name="searching" value="yes" />
+            <input type="submit" name="search" value="Search" />
+          </p>
+ 	</fieldset>
+	</form>
+	</div>
+		<!-- Search Case Studies Module -->
+	<div class="group box" style="margin-bottom:0">
+	
+  <h1>Search the Articles</h1> 
+ 	<form method="post" action="../fellowship/articles_search.php.html" class="join">
+    <fieldset>
+    <legend>Search Form</legend>
+          <p>Search for:<br />
+            <select name="field" title="Choose search area">
+			 <option value="Title">Title</option>
+			 <option value="keywords">Keywords</option>
+			 <option value="article">Article</option>
+			 <option value="Name">Author Name</option>
+            </select>
+            <br />
+            <input class="txtinput" type="text" id="find2" name="find" placeholder="Enter search term" title="Enter search term" />
+            <br />
+            <input type="hidden" name="searching" value="yes" />
+            <input type="submit" name="search" value="Search" />
+          </p>
+ 	</fieldset>
+	</form>
+	</div>
+		<!-- Search Membership Module -->
+	<div class="group box" style="margin-bottom:0">
+	<h1>Search the Membership</h1> 
+	<form method="post" action="../fellowship/listing_search.php.html" class="join">
+     <fieldset>
+    <legend>Search Form</legend>
+          <p>Search for:<br />
+            <select name="field" title="Choose search area">
+              <option value="Anything">Anything</option>
+			  <option value="Surname">Last Name</option>
+              <option value="Forename">First Name</option>
+              <option value="Profile">Profile</option>
+            </select>
+            <br />
+            <input class="txtinput" type="text" id="find" name="find" placeholder="Enter search term" title="Enter search term" />
+            <br />
+            <input type="hidden" name="searching" value="yes" />
+            <input type="submit" name="search" value="Search" />
+          </p>
+	</fieldset>
+	</form>
+	</div>	<!-- Search MirandaNet Module -->
+<div class="group box" style="margin-bottom:0">
+	
+  <h1>Search MirandaNet</h1> 
+ 	<form method="get" action="https://www.google.com/search">
+    <fieldset>
+    <legend>Search Form</legend>
+          <p>Search in:<br />
+            <select name="sitesearch" title="Choose search area">
+			 <option value="mirandanet.org.uk">MirandaNet</option>
+			 <option value="worldecitizens.net">World Ecitizens</option>
+			 <option value="">The Web</option>
+            </select>
+            <br />
+            <input class="txtinput" type="text" name="q" maxlength="255" placeholder="Enter search term" title="Enter search term"/>
+            <br />
+            <input type="hidden" name="searching" value="yes" />
+            <input type="submit" name="search" value="Google Search" />
+          </p>
+ 	</fieldset>
+	</form>
+	</div>
+
+</div>
+  <div id="mainBody" class="group"> 
+    <h1>MirandaNet Fellowship Casestudies</h1>
+    <p><a href="../fellowship/listing.php.html">Membership List</a> | <a href="../publications/index.html">Publications</a> 
+      | <a href="../publications/research.htm">Research</a> | <a href="../publications/personal.php.html">Specialist 
+      Area List</a> | <a href="../ejournal/index.html">Braided Learning Ejournal</a></p>
+    <hr />
+	<p>Display Order: <a href="index%EF%B9%96sortOrd=surname.html">Surname</a> | <a href="index%EF%B9%96sortOrd=title.html">Title</a> 
+      | <a href="index%EF%B9%96sortOrd=year.html">Year</a> </p>
+	<ul>
+<li>Rietberg, K. (2008) <a href="234.html">2simple reviews</a></li>
+<li>Townsend, D. (2009) <a href="251.html">A Digital Day in the Life of a Rural Essex School - 24 Hours of teaching in the classroom.</a></li>
+<li>Smith, M. (2007) <a href="222.html">A MirandaNet Fellow's Approach - An Inspirational Diary</a></li>
+<li>Al Koofi, A. (2008) <a href="239.html">A Study of How an Education Management Information System (EMIS) can be Effectively Implemented - in the Ministry of Education in Bahrain</a></li>
+<li>Antonius, E. (2007) <a href="220.html">A Survey of Teacher Inclusion of Graphic Organizers in Classroom Instruction</a></li>
+<li>Cattini-Muller, S. (2005) <a href="80.html">A visual study of a remote 'traditional' mountain community - teaching resource/presentation using ICT</a></li>
+<li>Cattini-Muller, S. (2005) <a href="135.html">A visual study of a remote mountain community: an e-learning resource</a></li>
+<li>Wang, W. (2005) <a href="107.html">Action Plan on Teacher Training for IWB in Beijing China - Beijing Academy of Educational Sciences</a></li>
+<li>Gomez, J. (2005) <a href="148.html">ACTIVcitizenship</a></li>
+<li>Cuthell, J. (2007) <a href="216.html">Ambassadors for ACTIVlearning</a></li>
+<li>Burden, K. (2013) <a href="292.html">An evaluation of iPad tablet devices in school across Scotland. - iPad Scotland Evaluation Study</a></li>
+<li>Cuthell, J. (2007) <a href="217.html">An interactivist e-community of practice using Web 2:00 tools - A paper presented at SITE 07 by Christina Preston and John Cuthell</a></li>
+<li>Smith, M. (2005) <a href="140.html">An investigation into what consitutes e-pedagogy and e-learning</a></li>
+<li>Riley, N. (2004) <a href="13.html">An investigation using online environments and collaborative e-learning with primary pupils. -    Using online environments to learn effectively.</a></li>
+<li>Beeston, M. (2005) <a href="138.html">Applying CAD/CAM in Primary schools to aid transition.</a></li>
+<li>Barnard, G. (2005) <a href="113.html">APPS Grade 6 - Conservation Data Handling Research Project</a></li>
+<li>Rossini, G. (2005) <a href="114.html">APPS Research Proposal – Junior Primary Phase</a></li>
+<li>Thomas, D. (2005) <a href="150.html">Audio Blogs and global citizenship</a></li>
+<li>Pleshakova, A. (2005) <a href="136.html">Behaviour Management In Supply Teaching</a></li>
+<li>Cuthell, J. (2007) <a href="230.html">Beyond collaborative learning - Communal construction of knowledge in an online environment</a></li>
+<li>Ellis, M. (2009) <a href="246.html">Blogging for a Sense of Audience in English National Curriculum</a></li>
+<li>Preston, C. (2009) <a href="263.html">Braided Learning – a theoretical background</a></li>
+<li>Cuthell, J. (2008) <a href="233.html">BRAIDED LEARNING: DEVELOPMENTS IN AN ONLINE COMMUNITY OF PRACTICE</a></li>
+<li>Preston, C. (2013) <a href="297.html">Can Tablets Help to Remove Barriers to Reading for Learners with Special Educational Needs and Disabilities? - Submitted by Abi James</a></li>
+<li>Fanning, J. (2004) <a href="65.html">Can the use of think.com transform classroom teaching? - Computer Mediated Communication in the Classroom</a></li>
+<li>Baugh, D. (2001) <a href="126.html">Case Study: iMovie</a></li>
+<li>Garrett, F. (2003) <a href="43.html">Changing Attitudes - Under-achievers and Think.com</a></li>
+<li>Worthington, M. (2004) <a href="29.html">Collaboration and co-construction through on-line socialization</a></li>
+<li>Ralston, J. (2006) <a href="191.html">Collaboration, ICT and Mind mapping - Ralston, J.L. and Cook, D (2006)</a></li>
+<li>Garrett, F. (2003) <a href="44.html">Community Learning</a></li>
+<li>Svensson, I. (2009) <a href="243.html">Connecting the online study circle and the online learning community - Connecting the online study circle and the online learning community in supporting continuous teacher development</a></li>
+<li>Whitehead, J. (2006) <a href="185.html">Constructing Living Educational Theories From Action Research With Others - In Enquiries Of The Kind, ‘How do I improve what I am doing?’</a></li>
+<li>Thomas, D. (2003) <a href="23.html">Continued professional development (CPD) through dialogue online</a></li>
+<li>Witherington, A. (2004) <a href="16.html">Creating an online community in a large secondary school - Can an online forum improve communication and help develop a shared vision?</a></li>
+<li>Ralston, J. (2007) <a href="226.html">Creating Collaborative Solutions</a></li>
+<li>Preston, C. (2013) <a href="295.html">Crossing professional boundaries - by Christina Preston, John Cuthell and Andrea Raiker</a></li>
+<li>Yunusa, A. (2013) <a href="294.html">Developing and Evaluating Instructional Resources for Enhancing Object Recognition among Primary School Pupils - Lemu L.G.E.A Primary School Samaru, Zaria, Kaduna State, Nigeria</a></li>
+<li>Toneva, K. (2008) <a href="241.html">Developing High Quality Interaction and Reflection through On-Line Forums</a></li>
+<li>Cuthell, J. (2009) <a href="250.html">Developing International Partnerships - A concept map and notes</a></li>
+<li>Toneva, K. (2005) <a href="81.html">Developing of E-Teaching/Learning Resources - Using Power Point presentations to facilitate teaching/learning</a></li>
+<li>Preston, C. (2003) <a href="45.html">Digital Opportunities</a></li>
+<li>Cuthell, J. (2007) <a href="231.html">Digital Tools for Visual Learning - Establishing evidence of the impact of interactive whiteboard use in teaching and learning</a></li>
+<li>McKeown, D. (2003) <a href="14.html">Does the software interface affect  e-learning?</a></li>
+<li>Knowles, L. (2005) <a href="149.html">Dylan Thomas flip chart</a></li>
+<li>Toneva, K. (2005) <a href="93.html">e-facilitating in e-communities</a></li>
+<li>Reid, E. (2005) <a href="92.html">E-facilitation in E-community</a></li>
+<li>Kerry, T. (2011) <a href="268.html">E-learning in a UK-based M-level Education Leadership course accessed by Maltese students</a></li>
+<li>Bennison, M. (2003) <a href="56.html">e-Learning: Pupils' Perspectives - What are their views on how eLearning might impact on motivation, learning, roles of teachers, achievement and attainment?</a></li>
+<li>Weinreb, S. (2005) <a href="77.html">E-moderators Online - A study of the role of the e-moderator in a range of online communities</a></li>
+<li>Semwayo, B. (2010) <a href="257.html">Educational Technology in Southern Africa</a></li>
+<li>Garrett, F. (2003) <a href="30.html">Efacilitation and Online Communities - An investigation into whether access to, and use of an online community can alter or affect learning outcomes.</a></li>
+<li>Bjelica, A. (2008) <a href="236.html">Effects of ICT on Personalised Learning - TIPD Report - Westminster Academy School</a></li>
+<li>Baramidze, M. (2008) <a href="237.html">Effects of ICT on Personalised Learning - TIPD Report - Westminster Academy School</a></li>
+<li>Reid, E. (2005) <a href="79.html">Elearning a cultural Perspective - The importance of illustrations in learning</a></li>
+<li>Coombs, S. (2006) <a href="192.html">Engaging Learners through Critical Thinking Scaffolds - Article abstract for review</a></li>
+<li>Gikandi, J. (2010) <a href="255.html">Engaging with formative assessment for meaningful online learning</a></li>
+<li>Cheema, R. (2014) <a href="305.html">Engaging young learners through Digital Game Based learning. </a></li>
+<li>Riley, N. (2005) <a href="154.html">Evaluating e-learning experiences of primary age students using online discussion forum.</a></li>
+<li>Scott-Baker, G. (2006) <a href="170.html">Experiences of working with China via the Internet</a></li>
+<li>Shaw, S. (2011) <a href="266.html">Exploiting ICT to improve Parental Engagement - Value driven improvement and efficiency</a></li>
+<li>Jobring, O. (2009) <a href="244.html">Formal support for informal learning in communities</a></li>
+<li>Bevan, R. (2006) <a href="193.html">From black boxes to glass boxes - the application of computerised concept mapping in schools</a></li>
+<li>Pride, J. (2006) <a href="184.html">From Girls to Boys - “Tell me and I’ll forget. Show me and I may remember. Involve me and I’ll understand.”</a></li>
+<li>Araiza, F. (2005) <a href="116.html">Global Citizenship</a></li>
+<li>Araiza, F. (2005) <a href="147.html">Global Citizenship Action Research Impact Project - Report from Elementary School Ing. Leopoldo Naranjo, Nuevo Leon, Mexico</a></li>
+<li>Garza, Y. (2005) <a href="118.html">Global Citizenship Education</a></li>
+<li>Gomez, J. (2005) <a href="117.html">Global Citizenship Impact</a></li>
+<li>Gonsalves, S. (2005) <a href="78.html">God-Online - Online Resources</a></li>
+<li>Pallister, J. (2009) <a href="248.html">Harnessing Tools Desingned To Support Teaching, To Support Learning - Pallister J B   UKAN-SKILLS project, Mayes P Teesside University </a></li>
+<li>Chrystie, M. (2003) <a href="47.html">Homeless Community Project</a></li>
+<li>Rodenhuis, P. (2010) <a href="259.html">How children learn: 12 principles of learning - A checklist</a></li>
+<li>Howlett, F. (2004) <a href="8.html">How to make use of the Members Casestudies site - Exploring the Possibilities</a></li>
+<li>Taylor, I. (2004) <a href="54.html">How well does using the internet motivate students?</a></li>
+<li>Hart, G. (2011) <a href="264.html">ICT - an international perspective</a></li>
+<li>Bradshaw, P. (2011) <a href="267.html">ICT and its Assessment - An Enquiry into the Perceptions of Year 11 Students</a></li>
+<li>Wang, W. (2005) <a href="105.html">Ict is impacting our life and work</a></li>
+<li>Olasunkanmi, R. (2005) <a href="83.html">Impact of Computers on Education - Contribution of Technology to Education</a></li>
+<li>Van der Loo, L. (2005) <a href="120.html">Implementing ACTIVboard technology in South African schools</a></li>
+<li>Lightfoot, M. (2006) <a href="179.html">Information Literacy and Study  Skills Pedagogy - Report on Project for LT Scotland</a></li>
+<li>Finch, J. (2006) <a href="195.html">Inspiration(al) use of concept mapping on PDAs - A study of the impact of the introduction of PDAs, Inspiration 8 to a primary classroom</a></li>
+<li>Thomas, D. (2005) <a href="137.html">Interactive White boards: Perspectives on their implementation and classroom use</a></li>
+<li>Smith, A. (2000) <a href="124.html">Interactive Whiteboard Evaluation</a></li>
+<li>Riley, N. (2007) <a href="214.html">Introducing ICT-based Multimodal mapping - Eight functions of multimodal mapping</a></li>
+<li>Riley, N. (2006) <a href="196.html">Investigating the impact of ICT-based multimodal mapping in developing effective learning dialogues - Summary</a></li>
+<li>Cuthell, J. (2005) <a href="102.html">It's a vision thing: Interactive Whiteboards and visual learning - ACTIVboard Case Studies</a></li>
+<li>Burton-Wilcock, D. (2011) <a href="274.html">Kar2ouche and Special Needs - Pilot Project ‘Macbeth'</a></li>
+<li>Al Koofi, A. (2008) <a href="238.html">King Hamad’s School’s of Future</a></li>
+<li>Kaur, S. (2011) <a href="271.html">Leading Schools in Policy and Practice - The programme for continuing professional development with Podar principals</a></li>
+<li>Cuthell, J. (2013) <a href="290.html">Learning in Liminality</a></li>
+<li>Semwayo, B. (2010) <a href="258.html">Learning Parents</a></li>
+<li>Cuthell, J. (2005) <a href="104.html">Learning Theory and e-pedagogy</a></li>
+<li>Cattini-Muller, S. (2005) <a href="91.html">Mapping the route: steps to e-facilitation - E-facilitation in e-communities: coursework</a></li>
+<li>Clark, W. (2007) <a href="229.html">Mapping the syllabus - Multimodal digital mapping tools</a></li>
+<li>Preston, C. (2007) <a href="225.html">Mapping: What’s it all about?</a></li>
+<li>Cuthell, J. (2007) <a href="232.html">MAPS Evaluation</a></li>
+<li>Mursell, I. (2007) <a href="219.html">Mexicolore</a></li>
+<li>Cuthell, J. (2007) <a href="221.html">MirandaNet working group projects - A summary of other project proposals</a></li>
+<li>Preston, C. (2009) <a href="262.html">Mobile Learning Conference March 2009 - New professional cultures : braided gatherings in The Third Space</a></li>
+<li>Allen, A. (2011) <a href="270.html">Models and theories in relation to working with people and ICT: Evaluation of Courses - Evaluation of Courses</a></li>
+<li>Hanrahan, K. (2004) <a href="27.html">Modern Foreign Languages Elearning Project: - How can ICT be used to set meaningful and motivating homework in MFL? Investigating pupils' response to an online language forum</a></li>
+<li>Preston, C. (2007) <a href="228.html">Multimodal Assessment</a></li>
+<li>Cuthell, J. (2005) <a href="103.html">Next steps for in-service education</a></li>
+<li>Turvey, K. (2003) <a href="17.html">Online communities within the Primary School Context - What affordances emerge from the use of online communities within the primary school context</a></li>
+<li>Cuthell, J. (2006) <a href="180.html">Online forums as learning resources. - Some case studies from MirandaNet.</a></li>
+<li>Jobring, O. (2009) <a href="245.html">Online learning communities - Communities of Practice and their relation to  Emerging net cultures</a></li>
+<li>Rojas-Drummond, S. (2006) <a href="198.html">Oracy, Literacy, Conceptual Maps and ICT as Mediators of the Social Construction of Knowledge Among Peers - Sylvia Rojas-Drummond and Aldo Anzures Tapia</a></li>
+<li>Liuyan, L. (2005) <a href="108.html">Outline Proposal by Liu Yan</a></li>
+<li>De Craene, M. (2006) <a href="188.html">Pedagogical Blogs - A Pilot Study Exploring Blogs with Middle School Students with Special Needs</a></li>
+<li>De Craene, M. (2006) <a href="173.html">Pedagogical Blogs - A Pilot Study Exploring Blogs as a Learning Tool for Middle School Students with Special Needs</a></li>
+<li>Greenwell, L. (2002) <a href="129.html">Physical Education: an Interactive Approach -  ‘You can’t use technology – you teach PE.’</a></li>
+<li>Cuthell, J. (2006) <a href="208.html">Pictures of personalisation</a></li>
+<li>Le Couteur, R. (2006) <a href="212.html">Plagiarism and its Prevention - Tackling Plagiarism in the Early Secondary Years</a></li>
+<li>Fuller, D. (2014) <a href="313.html">Pop Up Classroom - Meeting things simple with tablets</a></li>
+<li>Rossini, G. (2005) <a href="121.html">Project developments: Aukland Park Preparatory School</a></li>
+<li>Yi, S. (2005) <a href="110.html">Project proposal by SUYI, Liu Yan and Dave Jordan for students at Shandong Agricultural University</a></li>
+<li>Smith, M. (2006) <a href="178.html">Proposal: An Inspirational Diary - Tracking the introduction of concept mapping and non-linear presentation for learners at GCSE</a></li>
+<li>Fletcher, S. (2006) <a href="194.html">Proposal: Assisting and evaluating representations of teacher researchers' knowledge - using non-linear multi-modal forms of representation</a></li>
+<li>Berry, M. (2006) <a href="199.html">Proposal: Concept Mapping the Literature Landscape</a></li>
+<li>Clark, W. (2006) <a href="171.html">Proposal: Mobility of Mind and the Migrating Text - Concept Mapping and Multimediality</a></li>
+<li>Suh, W. (2006) <a href="197.html">Proposal: Personal Meaning Mapping (PMM): - An Assessment Method for Constructivist Learning</a></li>
+<li>Preston, C. (2005) <a href="155.html">Proposal: Teachers changing their minds - assessing the quality of learning in ICT courses</a></li>
+<li>Thomas, D. (2005) <a href="163.html">Proposal: Teaching and Learning 2.0</a></li>
+<li>Piggott, J. (2006) <a href="174.html">Proposal: Using concept maps to support mathematical problem solving</a></li>
+<li>Ketley, J. (2005) <a href="159.html">Pupil perceptions of ACTIVboard use - ACTIVboards, perceptions, teacher use</a></li>
+<li>Fuller, D. (2004) <a href="11.html">Radio as an effective e-learning tool - to evaluate the use of Radio as an effective e-learning tool and what learning takes place amongst the participants?</a></li>
+<li>Vale, P. (2004) <a href="25.html">Raising Standards in Literacy with Year 5 children using ICT - Looking at a variety of strategies in ICT that can impact positively on Literacy</a></li>
+<li>Pallister, J. (2009) <a href="249.html">Ready or not, the Personal Learning Environment is coming with the ePortfolio Process as the Keystone</a></li>
+<li>Preston, C. (2007) <a href="224.html">Reflecting Education Academic Papers - Links to papers published outside the Ejournal</a></li>
+<li>Weinreb, S. (2005) <a href="94.html">Reflections on E-facilitation</a></li>
+<li>Pleshakova, A. (2005) <a href="90.html">Reflections on e-moderating and e-learning - The code of conduct. The skills for participating in the forums. Educational forums. The model of G. Salmon.</a></li>
+<li>Wang, W. (2006) <a href="176.html">Report on the IWB project in Beijing - Beijing Academy of Educational Sciences</a></li>
+<li>Rietberg, K. (2007) <a href="213.html">Software reviews of 2simple software for education</a></li>
+<li>Wells, A. (2006) <a href="207.html">Some uses of Think.com at Netherhall School</a></li>
+<li>Ketley, J. (2005) <a href="112.html">St Mary’s - Creating excitement about learning</a></li>
+<li>Ketley, J. (2005) <a href="122.html">St. Mary's School, Waverley - progress so far ...</a></li>
+<li>Preston, C. (2013) <a href="291.html">Strategies for increasing independent learning - The power of personal devices</a></li>
+<li>Liuyan, L. (2006) <a href="168.html">Students' reflections on the use of ACTIVboard in Writing Class - Shandong Agricultural University Foreign Language Class</a></li>
+<li>Pleshakova, A. (2005) <a href="84.html">Supply teachers and e-learning process - Why are supply teachers not involved in e-learning?</a></li>
+<li>Semwayo, B. (2005) <a href="82.html">Supply Teachers And Information Technology - To investigate to what extent supply teachers use Information Technology and participate in online discussion forums</a></li>
+<li>Cattini-Muller, S. (2005) <a href="134.html">Supply teachers, special education and professional needs</a></li>
+<li>Lee, M. (2014) <a href="304.html">Supporting peer-to-peer e-mentoring of novice teachers using social software</a></li>
+<li>Yi, S. (2005) <a href="111.html">SuYi Plans for Stage 1 Term 1  -   March to June 2005 - How I plan to use the IWB to teach one focus class</a></li>
+<li>Vanlanduyt, L. (2013) <a href="298.html">Swapping to BYOD? - Swapping infrastructure and swapping teachers…</a></li>
+<li>Rodenhuis, P. (2010) <a href="260.html">Taking a Frog Home - A brief paper about young children's emerging literacy and their use of ICT...</a></li>
+<li>Riley, N. (2007) <a href="227.html">Talking and thinking together - Concept Mapping techniques</a></li>
+<li>Fletcher, S. (2005) <a href="144.html">Teacher mentoring</a></li>
+<li>Preston, C. (2013) <a href="296.html">Teacher professional development and learning transformation in a technologised world</a></li>
+<li>Jardine, P. (2004) <a href="31.html">Teachers talking to Teachers - Castle View School,  Sunderland</a></li>
+<li>Wallbanks, D. (2004) <a href="55.html">Teachers' Use of Forums E-learning</a></li>
+<li>McDonald, N. (2004) <a href="58.html">Teachers' Use of Forums for E-Learning - Examination of SchoolHistory Forum</a></li>
+<li>Heggart, K. (2010) <a href="252.html">The Avatar Project - Creating Active Citizens in a Digital Age</a></li>
+<li>Garza, Y. (2005) <a href="145.html">The Development Of A Global Citizenship Education Using Ict In Classrooms</a></li>
+<li>Garza, Y. (2005) <a href="146.html">The Development Of A Global Citizenship Education Using Ict In Classrooms - Action Research Project In Nuevo Leon, Mexico</a></li>
+<li>Hussain, A. (2013) <a href="293.html">The Essential Qualities for Effective Leadership in Schools - ICT & Curriculum Specialist at an International school in Cairo Egypt.</a></li>
+<li>Preston, C. (2006) <a href="203.html">The Future - Predicting pedagogical models for ICT CPD that will work</a></li>
+<li>Holman, T. (2009) <a href="247.html">The impact of an Internet-based learning resource on pupil attainment in Vocational Business Studies</a></li>
+<li>Shear, D. (2005) <a href="139.html">THE IMPACT OF CAD/CAM TECHNOLOGY IN KS 3 AND ITS EFFECT ON LEARNING, MOTIVATION AND ATTITUDE</a></li>
+<li>Rossini, G. (2005) <a href="158.html">The Impact Of IWB’S In Teaching And Learning - A report from Auckland Park Preparatory School</a></li>
+<li>Robinson, R. (2003) <a href="51.html">The impact of Think.com on the learning of gifted students in English</a></li>
+<li>Heggart, K. (2010) <a href="261.html">The iPod Trial Program at McCarthy Catholic College</a></li>
+<li>Fernandez, M. (2006) <a href="169.html">The Mediation Of Interactive White Boards In Education: - The Perspective Of Different Agents In Mexico</a></li>
+<li>Preston, C. (2006) <a href="177.html">The Miranda Net Fellowship in 2006 - O brave new world: the birth of an e-community of practice</a></li>
+<li>Yapp, C. (2011) <a href="272.html">The Nature of Curriculum</a></li>
+<li>Preston, C. (2006) <a href="201.html">The Past:  O brave new world - The birth of an e-community : 1955-1991</a></li>
+<li>Preston, C. (2006) <a href="202.html">The Present: An interactivist e-Fellowship: - An interactivist e-Fellowship: 1992-2006</a></li>
+<li>Zhenyu, W. (2005) <a href="106.html">The Project of Interactive Whiteboard - Experiment Conducted by Beijing No.50 Secondary School</a></li>
+<li>Clayton, J. (2010) <a href="256.html">The provision of professional development in ICT:  - Exploring deficit and empowerment models</a></li>
+<li>Calder, P. (2004) <a href="32.html">The quality of e-learning</a></li>
+<li>Cuthell, J. (2007) <a href="218.html">The role of a web-based community in teacher professional development - MirandaNet and CPD</a></li>
+<li>Elliot, J. (2002) <a href="127.html">The Ruffwood@Home Project</a></li>
+<li>Gilleran, A. (2002) <a href="125.html">The School Managers Centre at The European Schoolnet</a></li>
+<li>Semwayo, B. (2005) <a href="99.html">The Select Education Discussion Forum</a></li>
+<li>Williams, L. (2003) <a href="64.html">The STAR Project - A Cross-curricular, science-based ICT project</a></li>
+<li>Parmar, A. (2014) <a href="306.html">The use of data management systems for e-leadership and school improvement</a></li>
+<li>Gibbs, R. (2003) <a href="28.html">The use of ICT to help quieter pupils speak out.</a></li>
+<li>Bostock, M. (2003) <a href="130.html">The Use of Laptops: a US Approach</a></li>
+<li>Cuthell, J. (2008) <a href="242.html">The Use of Visualisers in Schools - An evaluation for Interactive Education Ltd.</a></li>
+<li>Copley, S. (1999) <a href="131.html">The Well Connected School</a></li>
+<li>Thomas, D. (2005) <a href="162.html">Thoughts ideas about non linear collaboration</a></li>
+<li>Ray, M. (2004) <a href="59.html">To investigate the use of a web based learning and communication environment - Used  by children from 7-15 to share learning</a></li>
+<li>Smith, M. (2004) <a href="15.html">To observe and describe the process of using an online pupils' community</a></li>
+<li>Cuthell, J. (2003) <a href="9.html">Tools for empowering teachers’ learning: - the staff trainer’s responsibility</a></li>
+<li>Cuthell, J. (2007) <a href="215.html">Tools for Transformation: The Impact of Interactive Whiteboards in a range of contexts</a></li>
+<li>Broadie, R. (2011) <a href="265.html">Towards a theory of the impact of ICT in education</a></li>
+<li>Cuthell, J. (2003) <a href="50.html">Transforming Teaching and Learning</a></li>
+<li>Gray, M. (2004) <a href="63.html">Trying elearning with a subject association - TALK at ACITT being used for CPD</a></li>
+<li>Guest, I. (2014) <a href="314.html">Twitter as Professional Development? - Can 140 character snippets actually provide meaningful CPD?</a></li>
+<li>Preston, C. (2010) <a href="254.html">Unconferences - From practice to praxis in informal professional learning contexts</a></li>
+<li>Norrish, D. (2014) <a href="303.html">UnitedClassroom.org - Small Private Online Course</a></li>
+<li>Liuyan, L. (2005) <a href="109.html">Updated Outline Proposal by Liu Yan</a></li>
+<li>Wasteney, J. (2008) <a href="240.html">Use of contemporary digital resources in the classroom - Synopsis and conclusions from case studies produced by 14 teacher researchers</a></li>
+<li>Feery, B. (2004) <a href="66.html">Using Accelerated Reader to raise standards in Literacy - Accelerated Reader</a></li>
+<li>Wang, W. (2005) <a href="157.html">Using ACTIVboards in Beijing schools - A progress report.   Wang Wei, Beijing Academy of Educational Sciences</a></li>
+<li>Cuthell, J. (2003) <a href="49.html">Using Interactive Whiteboards to Transform Learning</a></li>
+<li>Scott-Baker, G. (2003) <a href="52.html">Using Multimedia in International Exchanges</a></li>
+<li>Sharp, G. (2010) <a href="253.html">Using Technology to Narrow the Gap for Low and Under Achieving Learners</a></li>
+<li>Cuthell, J. (2005) <a href="101.html">Virtual Learning - The impact of ICT on the way that young people work and learn</a></li>
+<li>Fessey, S. (2011) <a href="269.html">Virtually Safe: - Preparing School Staff for the Implementation of a School-Wide Online Safety Initiative</a></li>
+<li>Finch, J. (2005) <a href="161.html">Vision Mapping in Practice - Using Inspiration to support learners and teachers</a></li>
+<li>Cuthell, J. (2007) <a href="223.html">Visual Learning - A joint project with the Naace Community</a></li>
+<li>Smith, C. (2014) <a href="299.html">What do 17,000 children in London tell us about online safety? - The LGfL eSafety Results</a></li>
+<li>Martin, J. (2011) <a href="273.html">What is the future for publishing? - The advantages for schools of online publishing</a></li>
+<li>Stitt, B. (2002) <a href="141.html">Wireless Connectivity - Connecting Notebooks and Laptops without the need for cables</a></li>
+<li>Kolecki, J. (2003) <a href="128.html">Working with Scientists</a></li>
+<li>Preston, C. (2003) <a href="46.html">World eCitizens - Active Citizenship</a></li>
+<li>Scott-Baker, M. (2003) <a href="53.html">Writing for an audience at Key Stage 1</a></li>
+</ul>
+    <hr />
+  <p>[<a href="#top">Back to the top</a>]</p>
+  <p>[<a href="javascript:history.back()">Back</a>]</p>
+</div>
+</div>
+<div id="footer" class="group"> 
+  <!--#include virtual="/footer.htm"-->
+  <!-- Footer Starts -->
+<div id="footer_left"> 
+  <ul class="accessBar">
+    <li class="accessBar"><a href="../associates/bedfordshire.htm"><img src="../images/associates_logos/Uni_Bed_logo_small.jpg" alt="University of Bedfordshire" title="University of Bedfordshire" width="72" height="28" style="vertical-align: -40%;"></a> 
+    </li>
+    <li class="accessBar"><a href="../associates/index.html">Associates</a></li>
+    <li class="accessBar"><a href="../about.php.html">About&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../contact.php.html">Contact&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../fellowship/join.htm">Join&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../membership/index.php.html" title="Members Log on/off" id="members_logon" class="normal">Members&nbsp;Log&nbsp;on/off</a></li>
+  </ul>
+</div>
+<div id="footer_right">
+  <ul class="accessBar">
+    <li class="accessBar"><a href="http://www.linkedin.com/groups/MirandaMod-3726470?trk=myg_ugrp_ovr"><img src="../images/site/linkedin_logo.png" alt="Linked In MirandaNet" width="99" height="28" title="Linked In MirandaNet"></a></li>
+	<li class="accessBar"><a href="http://www.facebook.com/pages/MirandaMod/180379201990546"><img src="../images/site/f_logo.png" alt="MirandaNet on Facebook" width="28" height="28" title="MirandaNet on Facebook"></a></li>
+	<li class="accessBar"><img src="../images/site/twitter.jpg" alt="MirandaNet on Twitter - forthcoming feature" width="28" height="28" title="MirandaNet on Twitter - forthcoming feature"></li>
+	<li class="accessBar"><a href="https://plus.google.com/u/0/communities/116934752242714806891"><img src="../images/site/gplus-32.png" alt="Google + MirandaNet" width="28" height="28" title="Google + MirandaNet"></a></li>
+	<li class="accessBar"><a href="../feed.xml.rss"><img src="../images/site/rss.jpg" alt="RSS feed for MirandaNet" width="28" height="28" title="RSS feed for MirandaNet"></a></li> 
+  </ul>
+</div>
+<!-- Footer Ends --></div>
+</body>
+</html>

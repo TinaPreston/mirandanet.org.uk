@@ -1,0 +1,1252 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<title>MirandaNet ICT CPD - Ultraportables Questionnaire - Teachers</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The MirandaNet Fellowship Web Site">
+<meta name="keywords" content="ICT communities education learning support">
+<meta name="language" content="en">
+<link href="../common.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../common.js"></script>
+<style type="text/css">.buttonSubmit {
+	color: green;
+	text-transform: uppercase;
+	border: 1px solid green;
+	margin-top: 1em;
+	font-size: 1em;
+}
+
+.buttonReset {
+	color: red;
+	text-transform: uppercase;
+	border: 1px solid red;
+	margin-top: 1em;
+	font-size: 1em;
+}
+
+.buttonSubmitHide {
+	display: none;
+}
+
+</style>
+<script type="text/JavaScript">
+
+function checkscript() {
+	for (i=0;i<4;i++) {
+		box = document.example.elements[i];
+		if (!box.value) {
+			alert('You haven\'t filled in ' + box.name + '!');
+			box.focus()
+			return false;
+		}
+	}
+	return true;
+}
+function checkNever() { 
+	var submit = document.questionnaire.submit;
+//	var never = document.questionnaire.last_receive[5];
+//	if (never.checked == true) { 
+//		alert('You have clicked Never');
+		classChange('buttonSubmitHide',submit)
+//		} else {
+//		alert('You did not click Never');
+//		}
+}
+
+function classChange(styleChange,item) {
+    item.className = styleChange;
+}
+function ValidateQuestionnaire() {
+//    var institution = document.questionnaire.institution;
+    var job_title = document.questionnaire.job_title;
+    var post_code_region = document.questionnaire.post_code_region;
+
+/*    if (institution.value == "")
+    {
+        window.alert("Please tell us your Institution.");
+        institution.focus();
+        return false;
+    }
+*/
+       if (job_title.value == "")
+    {
+        window.alert("Please tell us your Job Title.");
+        job_title.focus();
+        return false;
+    }
+
+       if (post_code_region.value == "")
+    {
+        window.alert("Please tell us the first part of your Post Code or tell us which Region you are in.");
+        post_code_region.focus();
+        return false;
+    }
+
+  if (document.questionnaire.consent.checked == false) {
+    alert('Please check the Consent Box to continue.');
+	document.questionnaire.consent.focus()
+    return false;
+  } else
+    return true;
+}
+</script>
+
+</head>
+<body onLoad="return show('Teachers')">
+<div id="page">
+<div id="header"><a name="top"></a>
+    <div id="home"><a tabindex="0" href="../index.html"><img src="../images/logo.gif" alt="MirandaNet Index Page" width="200" height="100" title="MirandaNet Index Page"></a> 
+      <img src="../images/bar-start.gif" width="201" height="30" alt=""> </div>
+  <img src="../images/bar-profdevel.gif" width="100%" height="30" alt="MirandaNet" title="MirandaNet"> 
+  <h1>MirandaNet Questionnaires</h1>
+</div>
+
+	
+  <div id="leftColumn"> <img src="ultraport/Dell_ultra_portable.jpg" width="200" height="133" alt="Dell Inspiron Mini 9 Ultra portable Laptop" title="Dell Inspiron Mini 9 Ultra portable Laptop">	
+    
+<!--ignore_perlfect_search-->
+<div id="navsite">
+  <p>Site navigation</p>
+  <ul>
+    <li><a tabindex="1" href="ultraport.htm" title="Home" id="Home" class="normal"> 
+      Ultraportables Home</a></li>
+    <li><a tabindex="2" href="ultraport_pupils.htm" title="Pupils" id="Pupils" class="normal"> 
+      Ultraportables Pupils</a></li>
+    <li><a tabindex="3" href="ultraport_teachers.htm" title="Teachers" id="Teachers" class="normal"> 
+      Ultraportables Teachers</a></li>
+    <li><a tabindex="4" href="ultraport_leaders.htm" title="Leaders" id="Leaders" class="normal"> 
+      Ultraportables Leaders</a></li>
+  </ul>
+</div>
+
+  </div>
+
+  <div id="mainBody"> 
+    <h2>Ultraportables: School Teachers' Survey</h2>
+    <p>As part of the evaluation of the Ultraportable - Netbook - Project it would be most helpful if you could answer the following questions. Please feel free to add any comments that you feel would expand your answers.</p>
+    <p>All data will be confidential and responses in the report will be anonymised.
+    However, if you are willing to discuss the project further, please use the
+      contact links at the end of the questionnaire so that we can arrange a
+      discussion.</p>
+	<form class="join" action="https://www.mirandanet.org.uk/cgi-bin/csv/csvwrite_ultraport_teachers.pl" method="post" name="questionnaire" id="questionnaire"
+    onSubmit="return true">
+    <fieldset>
+      <legend>General questions about you and your professional role</legend>
+      <p><label for="school">What is the name of your school?</label>
+        <input name="school" type="text" id="school" size="40" maxlength="400" class="txt">
+</p>
+      <p>&nbsp; </p>
+      <p> 
+        <label for="job_title">What is your job title?</label>
+        <input name="job_title" type="text" id="job_title" size="40" maxlength="400" class="txt">
+</p>
+      <p>&nbsp; </p>
+      <p> 
+        <label for="role">What is your classroom role?</label>
+        <input name="role" type="text" id="role" size="40" maxlength="400" class="txt">
+</p>
+      <p>&nbsp; </p>
+      <p>
+      <label for="subject_area">What is your subject area?</label>
+        <input name="subject_area" type="text" id="subject_area" size="40" maxlength="400" class="txt">
+      </p>
+    <p>&nbsp;</p>
+	  <p> 
+        <label for="management_role">What is your management role in school?</label>
+        <input name="management_role" type="text" id="management_role" size="40" maxlength="400" class="txt">
+      </p>
+      <p>&nbsp;</p>
+      <p> 
+        <label for="take_part">Who/what made you decide to take part
+        in the Netbook project?</label>
+        <input name="take_part" type="text" id="take_part" size="40" maxlength="400" class="txt">
+      </p>
+      <p>&nbsp;</p>
+    </fieldset>  
+    <fieldset>
+      <legend>Questions about the use of technology in your school</legend>
+      <p><strong>What technology do you have in you classroom?</strong><br>
+Only evaluate those items which apply to you.</p>
+      <p>&nbsp;</p>
+      <table width="90%"  border="1" cellspacing="0" cellpadding="5">
+        <tr>
+          <td rowspan="2">&nbsp;</td>
+          <td colspan="6"><strong>How often do you use it?</strong></td>
+        </tr>
+        <tr>
+          <td>Sometimes</td>
+          <td>When appropriate</td>
+          <td>Most of the time</td>
+          <td>Always</td>
+          <td>For: (subject)</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td><label for ="tech_have_lap">A laptop</label>
+          </td>
+          <td><input type="radio" name="tech_have_lap" id="tech_have_lap" value="tech_have_lap_sometimes">
+          </td>
+          <td><input type="radio" name="tech_have_lap" value="tech_have_lap_whenapprop">
+          </td>
+          <td><input type="radio" name="tech_have_lap" value="tech_have_lap_most">
+          </td>
+          <td><input type="radio" name="tech_have_lap" value="tech_have_lap_always">
+          </td>
+          <td><input name="tech_have_lap_subject" type="text" id="tech_have_lap_subject" size="20" maxlength="400" class="txt">
+          </td>
+          <td><input name="tech_have_lap" type="radio" value="tech_have_lap_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td><label for ="tech_have_intaccess">Internet Access</label>
+          </td>
+          <td><input type="radio" name="tech_have_intaccess" id="tech_have_intaccess" value="tech_have_intaccess_sometimes">
+          </td>
+          <td><input type="radio" name="tech_have_intaccess" value="tech_have_intaccess_whenapprop">
+          </td>
+          <td><input type="radio" name="tech_have_intaccess" value="tech_have_intaccess_most">
+          </td>
+          <td><input type="radio" name="tech_have_intaccess" value="tech_have_intaccess_always">
+          </td>
+          <td><input name="tech_have_intaccess_subject" type="text" id="tech_have_intaccess_subject" size="20" maxlength="400" class="txt">
+          </td>
+          <td><input type="radio" name="tech_have_intaccess" value="tech_have_intaccess_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td><label for ="tech_have_iwb">An IWB &amp; projector</label>
+          </td>
+          <td><input type="radio" name="tech_have_iwb" id="tech_have_iwb" value="tech_have_iwb_sometimes">
+          </td>
+          <td><input type="radio" name="tech_have_iwb" value="tech_have_iwb_whenapprop">
+          </td>
+          <td><input type="radio" name="tech_have_iwb" value="tech_have_iwb_most">
+          </td>
+          <td><input type="radio" name="tech_have_iwb" value="tech_have_iwb_always">
+          </td>
+          <td><input name="tech_have_iwb_subject" type="text" id="tech_have_iwb_subject" size="20" maxlength="400" class="txt">
+          </td>
+          <td><input type="radio" name="tech_have_iwb" value="tech_have_iwb_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td><label for ="tech_have_proj">A projector</label>
+          </td>
+          <td><input type="radio" name="tech_have_proj" id="tech_have_proj" value="tech_have_proj_sometimes">
+          </td>
+          <td><input type="radio" name="tech_have_proj" value="tech_have_proj_whenapprop">
+          </td>
+          <td><input type="radio" name="tech_have_proj" value="tech_have_proj_most">
+          </td>
+          <td><input type="radio" name="tech_have_proj" value="tech_have_proj_always">
+          </td>
+          <td><input name="tech_have_proj_subject" type="text" id="tech_have_proj_subject" size="20" maxlength="400" class="txt">
+          </td>
+          <td><input type="radio" name="tech_have_proj" value="tech_have_proj_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td><label for ="tech_have_hhd">A hand-held device</label>
+          </td>
+          <td><input type="radio" name="tech_have_hhd" id="tech_have_hhd" value="tech_have_hhd_sometimes">
+          </td>
+          <td><input type="radio" name="tech_have_hhd" value="tech_have_hhd_whenapprop">
+          </td>
+          <td><input type="radio" name="tech_have_hhd" value="tech_have_hhd_most">
+          </td>
+          <td><input type="radio" name="tech_have_hhd" value="tech_have_hhd_always">
+          </td>
+          <td><input name="tech_have_hhd_subject" type="text" id="tech_have_hhd_subject" size="20" maxlength="400" class="txt">
+          </td>
+          <td><input type="radio" name="tech_have_hhd" value="tech_have_hhd_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td><label for ="tech_have_lp">A Learning Platform</label>
+          </td>
+          <td><input type="radio" name="tech_have_lp" id="tech_have_lp" value="tech_have_lp_sometimes">
+          </td>
+          <td><input type="radio" name="tech_have_lp" value="tech_have_lp_whenapprop">
+          </td>
+          <td><input type="radio" name="tech_have_lp" value="tech_have_lp_most">
+          </td>
+          <td><input type="radio" name="tech_have_lp" value="tech_have_lp_always">
+          </td>
+          <td><input name="tech_have_lp_subject" type="text" id="tech_have_lp_subject" size="20" maxlength="400" class="txt">
+          </td>
+          <td><input type="radio" name="tech_have_lp" value="tech_have_lp_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td><label for ="tech_have_other">Other</label>
+          </td>
+          <td><input type="radio" name="tech_have_other" id="tech_have_other" value="tech_have_other_sometimes">
+          </td>
+          <td><input type="radio" name="tech_have_other" value="tech_have_other_whenapprop">
+          </td>
+          <td><input type="radio" name="tech_have_other" value="tech_have_other_most">
+          </td>
+          <td><input type="radio" name="tech_have_other" value="tech_have_other_always">
+          </td>
+          <td><input name="tech_have_other_subject" type="text" id="tech_have_other_subject" size="20" maxlength="400" class="txt">
+          </td>
+          <td><input type="radio" name="tech_have_other" value="tech_have_other_na" checked>
+          </td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+      <table width="90%"  border="1" cellspacing="0" cellpadding="5">
+        <tr>
+          <td rowspan="2">&nbsp;</td>
+          <td colspan="6"><strong>How much impact has this had?</strong></td>
+        </tr>
+        <tr>
+          <td>None at all</td>
+          <td>A slight impact</td>
+          <td>Some impact</td>
+          <td>Quite a lot</td>
+          <td>A lot</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td><label for ="tech_impact_lap">A laptop</label>
+          </td>
+          <td><input type="radio" name="tech_impact_lap" id="tech_impact_lap" value="tech_impact_lap_none">
+          </td>
+          <td><input type="radio" name="tech_impact_lap" value="tech_impact_lap_slight">
+          </td>
+          <td><input type="radio" name="tech_impact_lap" value="tech_impact_lap_some">
+          </td>
+          <td><input type="radio" name="tech_impact_lap" value="tech_impact_lap_quite">
+          </td>
+          <td><input type="radio" name="tech_impact_lap" value="tech_impact_lap_alot">
+          </td>
+          <td><input type="radio" name="tech_impact_lap" value="tech_impact_lap_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td><label for ="tech_impact_intaccess">Internet Access</label>
+          </td>
+          <td><input type="radio" name="tech_impact_intaccess" id="tech_impact_intaccess" value="tech_impact_intaccess_none">
+          </td>
+          <td><input type="radio" name="tech_impact_intaccess" value="tech_impact_intaccess_slight">
+          </td>
+          <td><input type="radio" name="tech_impact_intaccess" value="tech_impact_intaccess_some">
+          </td>
+          <td><input type="radio" name="tech_impact_intaccess" value="tech_impact_intaccess_quite">
+          </td>
+          <td><input type="radio" name="tech_impact_intaccess" value="tech_impact_intaccess_alot">
+          </td>
+          <td><input type="radio" name="tech_impact_intaccess" value="tech_impact_intaccess_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td><label for ="tech_impact_iwb">An IWB &amp; projector</label>
+          </td>
+          <td><input type="radio" name="tech_impact_iwb" id="tech_impact_iwb" value="tech_impact_iwb_none">
+          </td>
+          <td><input type="radio" name="tech_impact_iwb" value="tech_impact_iwb_slight">
+          </td>
+          <td><input type="radio" name="tech_impact_iwb" value="tech_impact_iwb_some">
+          </td>
+          <td><input type="radio" name="tech_impact_iwb" value="tech_impact_iwb_quite">
+          </td>
+          <td><input type="radio" name="tech_impact_iwb" value="tech_impact_iwb_alot">
+          </td>
+          <td><input type="radio" name="tech_impact_iwb" value="tech_impact_iwb_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td><label for ="tech_impact_proj">A projector</label>
+          </td>
+          <td><input type="radio" name="tech_impact_proj" id="tech_impact_proj" value="tech_impact_proj_none">
+          </td>
+          <td><input type="radio" name="tech_impact_proj" value="tech_impact_proj_slight">
+          </td>
+          <td><input type="radio" name="tech_impact_proj" value="tech_impact_proj_some">
+          </td>
+          <td><input type="radio" name="tech_impact_proj" value="tech_impact_proj_quite">
+          </td>
+          <td><input type="radio" name="tech_impact_proj" value="tech_impact_proj_alot">
+          </td>
+          <td><input type="radio" name="tech_impact_proj" value="tech_impact_proj_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td><label for ="tech_impact_hhd">A hand-held device</label>
+          </td>
+          <td><input type="radio" name="tech_impact_hhd" id="tech_impact_hhd" value="tech_impact_hhd_none">
+          </td>
+          <td><input type="radio" name="tech_impact_hhd" value="tech_impact_hhd_slight">
+          </td>
+          <td><input type="radio" name="tech_impact_hhd" value="tech_impact_hhd_some">
+          </td>
+          <td><input type="radio" name="tech_impact_hhd" value="tech_impact_hhd_quite">
+          </td>
+          <td><input type="radio" name="tech_impact_hhd" value="tech_impact_hhd_alot">
+          </td>
+          <td><input type="radio" name="tech_impact_hhd" value="tech_impact_hhd_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td><label for ="tech_impact_lp">A Learning Platform</label>
+          </td>
+          <td><input type="radio" name="tech_impact_lp" id="tech_impact_lp" value="tech_impact_lp_none">
+          </td>
+          <td><input type="radio" name="tech_impact_lp" value="tech_impact_lp_slight">
+          </td>
+          <td><input type="radio" name="tech_impact_lp" value="tech_impact_lp_some">
+          </td>
+          <td><input type="radio" name="tech_impact_lp" value="tech_impact_lp_quite">
+          </td>
+          <td><input type="radio" name="tech_impact_lp" value="tech_impact_lp_alot">
+          </td>
+          <td><input type="radio" name="tech_impact_lp" value="tech_impact_lp_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td><label for ="tech_impact_other">Other</label>
+          </td>
+          <td><input type="radio" name="tech_impact_other" id="tech_impact_other" value="tech_impact_other_none">
+          </td>
+          <td><input type="radio" name="tech_impact_other" value="tech_impact_other_slight">
+          </td>
+          <td><input type="radio" name="tech_impact_other" value="tech_impact_other_some">
+          </td>
+          <td><input type="radio" name="tech_impact_other" value="tech_impact_other_quite">
+          </td>
+          <td><input type="radio" name="tech_impact_other" value="tech_impact_other_alot">
+          </td>
+          <td><input type="radio" name="tech_impact_other" value="tech_impact_other_na" checked>
+          </td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+      <p><strong>What technologies do your pupils use?</strong><br>
+  Only evaluate those items which apply to you.</p>
+      <p>&nbsp;</p>
+      <table width="90%"  border="1" cellspacing="0" cellpadding="5">
+        <tr>
+          <td rowspan="2">&nbsp;</td>
+          <td colspan="6"><strong>How often do they use it?</strong></td>
+        </tr>
+        <tr>
+          <td>Sometimes</td>
+          <td>When appropriate</td>
+          <td>Most of the time</td>
+          <td>Always</td>
+          <td>For: (subject)</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td><label for ="pupils_use_lap">A laptop</label>
+          </td>
+          <td><input type="radio" name="pupils_use_lap" id="pupils_use_lap" value="pupils_use_lap_sometimes">
+          </td>
+          <td><input type="radio" name="pupils_use_lap" value="pupils_use_lap_whenapp">
+          </td>
+          <td><input type="radio" name="pupils_use_lap" value="pupils_use_lap_most">
+          </td>
+          <td><input type="radio" name="pupils_use_lap" value="pupils_use_lap_always">
+          </td>
+          <td><input name="pupils_use_lap_subject" type="text" id="pupils_use_lap_subject" size="20" maxlength="400" class="txt">
+          </td>
+          <td><input type="radio" name="pupils_use_lap" value="pupils_use_lap_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td><label for ="pupils_use_intaccess">Internet Access</label>
+          </td>
+          <td><input type="radio" name="pupils_use_intaccess" id="pupils_use_intaccess" value="pupils_use_intaccess_sometimes">
+          </td>
+          <td><input type="radio" name="pupils_use_intaccess" value="pupils_use_intaccess_whenapp">
+          </td>
+          <td><input type="radio" name="pupils_use_intaccess" value="pupils_use_intaccess_most">
+          </td>
+          <td><input type="radio" name="pupils_use_intaccess" value="pupils_use_intaccess_always">
+          </td>
+          <td><input name="pupils_use_intaccess_subject" type="text" id="pupils_use_intaccess_subject" size="20" maxlength="400" class="txt">
+</td>
+          <td><input type="radio" name="pupils_use_intaccess" value="pupils_use_intaccess_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td><label for ="pupils_use_iwb">An IWB &amp; projector</label>
+          </td>
+          <td><input type="radio" name="pupils_use_iwb" id="pupils_use_iwb" value="pupils_use_iwb_sometimes">
+          </td>
+          <td><input type="radio" name="pupils_use_iwb" value="pupils_use_iwb_whenapp">
+          </td>
+          <td><input type="radio" name="pupils_use_iwb" value="pupils_use_iwb_most">
+          </td>
+          <td><input type="radio" name="pupils_use_iwb" value="pupils_use_iwb_always">
+          </td>
+          <td><input name="pupils_use_iwb_subject" type="text" id="pupils_use_iwb_subject" size="20" maxlength="400" class="txt">
+          </td>
+          <td><input type="radio" name="pupils_use_iwb" value="pupils_use_iwb_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td><label for ="pupils_use_proj">A projector</label>
+          </td>
+          <td><input type="radio" name="pupils_use_proj" id="pupils_use_proj" value="pupils_use_proj_sometimes">
+          </td>
+          <td><input type="radio" name="pupils_use_proj" value="pupils_use_proj_whenapp">
+          </td>
+          <td><input type="radio" name="pupils_use_proj" value="pupils_use_proj_most">
+          </td>
+          <td><input type="radio" name="pupils_use_proj" value="pupils_use_proj_always">
+          </td>
+          <td><input name="pupils_use_proj_subject" type="text" id="pupils_use_proj_subject" size="20" maxlength="400" class="txt">
+</td>
+          <td><input type="radio" name="pupils_use_proj" value="pupils_use_proj_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td><label for ="pupils_use_hhd">A hand-held device</label>
+          </td>
+          <td><input type="radio" name="pupils_use_hhd" id="pupils_use_hhd" value="pupils_use_hhd_sometimes">
+          </td>
+          <td><input type="radio" name="pupils_use_hhd" value="pupils_use_hhd_whenapp">
+          </td>
+          <td><input type="radio" name="pupils_use_hhd" value="pupils_use_hhd_most">
+          </td>
+          <td><input type="radio" name="pupils_use_hhd" value="pupils_use_hhd_always">
+          </td>
+          <td><input name="pupils_use_hhd_subject" type="text" id="pupils_use_hhd_subject" size="20" maxlength="400" class="txt">
+          </td>
+          <td><input type="radio" name="pupils_use_hhd" value="pupils_use_hhd_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td><label for ="pupils_use_lp">A Learning Platform</label>
+          </td>
+          <td><input type="radio" name="pupils_use_lp" id="pupils_use_lp" value="pupils_use_lp_sometimes">
+          </td>
+          <td><input type="radio" name="pupils_use_lp" value="pupils_use_lp_whenapp">
+          </td>
+          <td><input type="radio" name="pupils_use_lp" value="pupils_use_lp_most">
+          </td>
+          <td><input type="radio" name="pupils_use_lp" value="pupils_use_lp_always">
+          </td>
+          <td><input name="pupils_use_lp_subject" type="text" id="pupils_use_lp_subject" size="20" maxlength="400" class="txt">
+</td>
+          <td><input type="radio" name="pupils_use_lp" value="pupils_use_lp_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td><label for ="pupils_use_other">Other</label>
+          </td>
+          <td><input type="radio" name="pupils_use_other" id="pupils_use_other" value="pupils_use_other_sometimes">
+          </td>
+          <td><input type="radio" name="pupils_use_other" value="pupils_use_other_whenapp">
+          </td>
+          <td><input type="radio" name="pupils_use_other" value="pupils_use_other_most">
+          </td>
+          <td><input type="radio" name="pupils_use_other" value="pupils_use_other_always">
+          </td>
+          <td><input name="pupils_use_other_subject" type="text" id="pupils_use_other_subject" size="20" maxlength="400" class="txt">
+          </td>
+          <td><input type="radio" name="pupils_use_other" value="pupils_use_other_na" checked>
+          </td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+      <table width="90%"  border="1" cellspacing="0" cellpadding="5">
+        <tr>
+          <td rowspan="2">&nbsp;</td>
+          <td colspan="6"><strong>How much impact has this had?</strong></td>
+        </tr>
+        <tr>
+          <td>None at all</td>
+          <td>A slight impact</td>
+          <td>Some impact</td>
+          <td>Quite a lot</td>
+          <td>A lot</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td><label for ="pupils_impact_lap">A laptop</label>
+          </td>
+          <td><input type="radio" name="pupils_impact_lap" id="pupils_impact_lap" value="pupils_impact_lap_none">
+          </td>
+          <td><input type="radio" name="pupils_impact_lap" value="pupils_impact_lap_slight">
+          </td>
+          <td><input type="radio" name="pupils_impact_lap" value="pupils_impact_lap_some">
+          </td>
+          <td><input type="radio" name="pupils_impact_lap" value="pupils_impact_lap_quite">
+          </td>
+          <td><input type="radio" name="pupils_impact_lap" value="pupils_impact_lap_alot">
+          </td>
+          <td><input type="radio" name="pupils_impact_lap" value="pupils_impact_lap_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td><label for ="pupils_impact_intaccess">Internet Access</label>
+          </td>
+          <td><input type="radio" name="pupils_impact_intaccess" id="pupils_impact_intaccess" value="pupils_impact_intaccess_none">
+          </td>
+          <td><input type="radio" name="pupils_impact_intaccess" value="pupils_impact_intaccess_slight">
+          </td>
+          <td><input type="radio" name="pupils_impact_intaccess" value="pupils_impact_intaccess_some">
+          </td>
+          <td><input type="radio" name="pupils_impact_intaccess" value="pupils_impact_intaccess_quite">
+          </td>
+          <td><input type="radio" name="pupils_impact_intaccess" value="pupils_impact_intaccess_alot">
+          </td>
+          <td><input type="radio" name="pupils_impact_intaccess" value="pupils_impact_intaccess_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td><label for ="pupils_impact_iwb">An IWB &amp; projector</label>
+          </td>
+          <td><input type="radio" name="pupils_impact_iwb" id="pupils_impact_iwb" value="pupils_impact_iwb_none">
+          </td>
+          <td><input type="radio" name="pupils_impact_iwb" value="pupils_impact_iwb_slight">
+          </td>
+          <td><input type="radio" name="pupils_impact_iwb" value="pupils_impact_iwb_some">
+          </td>
+          <td><input type="radio" name="pupils_impact_iwb" value="pupils_impact_iwb_quite">
+          </td>
+          <td><input type="radio" name="pupils_impact_iwb" value="pupils_impact_iwb_alot">
+          </td>
+          <td><input type="radio" name="pupils_impact_iwb" value="pupils_impact_iwb_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td><label for ="pupils_impact_proj">A projector</label>
+          </td>
+          <td><input type="radio" name="pupils_impact_proj" id="pupils_impact_proj" value="pupils_impact_proj_none">
+          </td>
+          <td><input type="radio" name="pupils_impact_proj" value="pupils_impact_proj_slight">
+          </td>
+          <td><input type="radio" name="pupils_impact_proj" value="pupils_impact_proj_some">
+          </td>
+          <td><input type="radio" name="pupils_impact_proj" value="pupils_impact_proj_quite">
+          </td>
+          <td><input type="radio" name="pupils_impact_proj" value="pupils_impact_proj_alot">
+          </td>
+          <td><input type="radio" name="pupils_impact_proj" value="pupils_impact_proj_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td><label for ="pupils_impact_hhd">A hand-held device</label>
+          </td>
+          <td><input type="radio" name="pupils_impact_hhd" id="pupils_impact_hhd" value="pupils_impact_hhd_none">
+          </td>
+          <td><input type="radio" name="pupils_impact_hhd" value="pupils_impact_hhd_slight">
+          </td>
+          <td><input type="radio" name="pupils_impact_hhd" value="pupils_impact_hhd_some">
+          </td>
+          <td><input type="radio" name="pupils_impact_hhd" value="pupils_impact_hhd_quite">
+          </td>
+          <td><input type="radio" name="pupils_impact_hhd" value="pupils_impact_hhd_alot">
+          </td>
+          <td><input type="radio" name="pupils_impact_hhd" value="pupils_impact_hhd_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td><label for ="pupils_impact_lp">A Learning Platform</label>
+          </td>
+          <td><input type="radio" name="pupils_impact_lp" id="pupils_impact_lp" value="pupils_impact_lp_none">
+          </td>
+          <td><input type="radio" name="pupils_impact_lp" value="pupils_impact_lp_slight">
+          </td>
+          <td><input type="radio" name="pupils_impact_lp" value="pupils_impact_lp_some">
+          </td>
+          <td><input type="radio" name="pupils_impact_lp" value="pupils_impact_lp_quite">
+          </td>
+          <td><input type="radio" name="pupils_impact_lp" value="pupils_impact_lp_alot">
+          </td>
+          <td><input type="radio" name="pupils_impact_lp" value="pupils_impact_lp_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td><label for ="pupils_impact_other">Other</label>
+          </td>
+          <td><input type="radio" name="pupils_impact_other" id="pupils_impact_other" value="pupils_impact_other_none">
+          </td>
+          <td><input type="radio" name="pupils_impact_other" value="pupils_impact_other_slight">
+          </td>
+          <td><input type="radio" name="pupils_impact_other" value="pupils_impact_other_some">
+          </td>
+          <td><input type="radio" name="pupils_impact_other" value="pupils_impact_other_quite">
+          </td>
+          <td><input type="radio" name="pupils_impact_other" value="pupils_impact_other_alot">
+          </td>
+          <td><input type="radio" name="pupils_impact_other" value="pupils_impact_other_na" checked>
+          </td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p><strong>Have you worked with any of the following colleagues?</strong></p>
+      <p>&nbsp;</p>
+      <table width="90%"  border="1" cellspacing="0" cellpadding="5">
+        <tr>
+          <td rowspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>Never</td>
+          <td>Sometimes</td>
+          <td>For particular subjects</td>
+          <td>Quite a lot</td>
+          <td>A lot</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>
+            <label for ="workedwith_ast">Advanced Skills Teacher</label>
+          </td>
+          <td>
+            <input type="radio" name="workedwith_ast" id="workedwith_ast" value="workedwith_ast_never">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_ast" value="workedwith_ast_some">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_ast" value="workedwith_ast_particular">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_ast" value="workedwith_ast_quite">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_ast" value="workedwith_ast_alot">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_ast" value="workedwith_ast_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for ="workedwith_hlta">HLTA</label>
+          </td>
+          <td>
+            <input type="radio" name="workedwith_hlta" id="workedwith_hlta" value="workedwith_hlta_never">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_hlta" value="workedwith_hlta_some">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_hlta" value="workedwith_hlta_particular">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_hlta" value="workedwith_hlta_quite">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_hlta" value="workedwith_hlta_alot">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_hlta" value="workedwith_hlta_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for ="workedwith_sip">School Improvement Partner</label>
+          </td>
+          <td>
+            <input type="radio" name="workedwith_sip" id="workedwith_sip" value="workedwith_sip_never">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_sip" value="workedwith_sip_some">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_sip" value="workedwith_sip_particular">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_sip" value="workedwith_sip_quite">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_sip" value="workedwith_sip_alot">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_sip" value="workedwith_sip_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td height="30">
+            <label for ="workedwith_laa">LA Adviser</label>
+          </td>
+          <td>
+            <input type="radio" name="workedwith_laa" id="workedwith_laa" value="workedwith_laa_never">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_laa" value="workedwith_laa_some">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_laa" value="workedwith_laa_particular">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_laa" value="workedwith_laa_quite">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_laa" value="workedwith_laa_alot">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_laa" value="workedwith_laa_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for ="workedwith_other1_item">Other (please specify)</label>
+            <input name="workedwith_other1_item" type="text" id="workedwith_other1_item" size="35" maxlength="400" class="txt">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_other1" value="workedwith_other1_never">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_other1" value="workedwith_other1_some">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_other1" value="workedwith_other1_particular">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_other1" value="workedwith_other1_quite">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_other1" value="workedwith_other1_alot">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_other1" value="workedwith_other1_na" checked>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for ="workedwith_other2_item">Other (please specify)</label>
+            <input name="workedwith_other2_item" type="text" id="workedwith_other2_item" size="35" maxlength="400" class="txt">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_other2" value="workedwith_other2_never">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_other2" value="workedwith_other2_some">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_other2" value="workedwith_other2_particular">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_other2" value="workedwith_other2_quite">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_other2" value="workedwith_other2_alot">
+          </td>
+          <td>
+            <input type="radio" name="workedwith_other2" value="workedwith_other2_na" checked>
+          </td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+    </fieldset>  
+    <fieldset>
+      <legend>Your personal use of ICT</legend>
+      <table width="90%"  border="1" cellspacing="0" cellpadding="5">
+        <tr>
+          <td colspan="2"><strong>I use technology professionally and personally
+              for</strong> (tick all that apply):</td>
+        </tr>
+        <tr>
+          <td><label for ="use_booking">Booking tickets, purchasing flights and holidays, and resourcing lessons</label></td>
+          <td><input name="use_booking" id="use_booking" type="checkbox" value="use_booking"></td>
+        </tr>
+        <tr>
+          <td><label for ="use_profdev">Professional development</label></td>
+          <td><input name="use_profdev" id="use_profdev" type="checkbox" value="use_profdev"></td>
+        </tr>
+        <tr>
+          <td><label for ="use_purchasingbooks">Purchasing books or CDs</label></td>
+          <td><input name="use_purchasingbooks" id="use_purchasingbooks" type="checkbox" value="use_purchasingbooks"></td>
+        <tr>
+          <td><label for ="use_banking">Banking and finance and purchasing items</label></td>
+          <td><input name="use_banking" id="use_banking" type="checkbox" value="use_banking"></td>
+        </tr>
+        <tr>
+          <td><label for ="use_support">To support teaching and learning</label></td>
+          <td><input name="use_support" id="use_support" type="checkbox" value="use_support"></td>
+        </tr>
+        <tr>
+          <td><label for ="use_providing">Providing e-learning for students</label></td>
+          <td><input name="use_providing" id="use_providing" type="checkbox" value="use_providing"></td>
+        </tr>
+        <tr>
+          <td><label for ="use_onlinecomm">Online communities - Facebook, etc</label></td>
+          <td><input name="use_onlinecomm" id="use_onlinecomm" type="checkbox" value="use_onlinecomm"></td>
+        </tr>
+        <tr>
+          <td><label for ="use_storage">Online storage of documents, images and other things</label></td>
+          <td><input name="use_storage" id="use_storage" type="checkbox" value="use_storage"></td>
+        </tr>
+        <tr>
+          <td><label for ="use_communicating">Communicating with friends and family</label></td>
+          <td><input name="use_communicating" id="use_communicating" type="checkbox" value="use_communicating"></td>
+        </tr>
+        <tr>
+          <td><label for ="use_archiving">Archiving and distributing photographs</label></td>
+          <td><input name="use_archiving" id="use_archiving" type="checkbox" value="use_archiving"></td>
+        </tr>
+        <tr>
+          <td><label for ="use_music">Listening to music on an iPod or MP3</label></td>
+          <td><input name="use_music" id="use_music" type="checkbox" value="use_music"></td>
+        </tr>
+        <tr>
+          <td><label for ="use_audiobook">Listening to audiobooks</label></td>
+          <td><input name="use_audiobook" id="use_audiobook" type="checkbox" value="use_audiobook"></td>
+        </tr>
+         <tr>
+          <td><label for ="use_blogs">Writing, or commenting on, blogs</label></td>
+          <td><input name="use_blogs" id="use_blogs" type="checkbox" value="use_blogs"></td>
+        </tr>
+        <tr>
+          <td><label for ="use_digital_videos">Making digital videos</label></td>
+          <td><input name="use_digital_videos" id="use_digital_videos" type="checkbox" value="use_digital_videos"></td>
+        </tr>
+       <tr>
+          <td colspan="2"><label for="use_other_technologies">Are there other digital technologies you use personally or professionally?<br>
+		  Add further items here:</label> 
+          <input name="use_other_technologies" type="text" id="use_other_technologies" size="35" maxlength="400" class="txt"></td>
+	    </tr>
+      </table>
+      <p>&nbsp;</p>
+    
+    
+    
+    
+    
+    </fieldset>  
+    <fieldset>
+    <legend>Using the Netbooks (Ultraportables)</legend>
+      <p><strong>What CPD have you been given to support the use of the Netbooks?</strong></p>
+      <p> 
+        <label for ="nb_cpd_a">a) None at all</label>
+        <input name="nb_cpd" id="nb_cpd_a" type="radio" value="nb_cpd_none">
+      </p>
+      <p> 
+        <label for ="nb_cpd_b">b) 1 - 2 hours:</label>
+        <input name="nb_cpd" id="nb_cpd_b" type="radio" value="nb_cpd_12h">
+      </p>
+      <p> 
+        <label for ="nb_cpd_c">c) 3 - 4 hours:</label>
+        <input name="nb_cpd" id="nb_cpd_c" type="radio" value="nb_cpd_34h">
+      </p>
+    <p>
+        <label for ="nb_cpd_d">d) A number of sessions:</label>
+        <input name="nb_cpd" id="nb_cpd_d" type="radio" value="nb_cpd_number">
+    </p>
+    <p>
+        <label for ="nb_cpd_e">e) Continuous CPD with others:</label>
+        <input name="nb_cpd" id="nb_cpd_e" type="radio" value="nb_cpd_continuous">
+    </p>
+    <p>
+      <label for="nb_cpd_focus"><em>If you had CPD in the use of the Netbooks, on what
+      did it focus?</em></label>
+	  <textarea name="nb_cpd_focus" type="text" id="nb_cpd_focus" cols="40" rows="2"></textarea>
+    </p>
+    <p>&nbsp;</p>
+       <p><strong>How easy do you find it to use the Netbooks?</strong></p>
+       <p> 
+        <label for ="nb_use_a">a) Difficult:</label>
+        <input name="nb_use" id="nb_use_a" type="radio" value="nb_use_diff">
+      </p>
+      <p> 
+        <label for ="nb_use_b">b) Not easy:</label>
+        <input name="nb_use" id="nb_use_b" type="radio" value="nb_use_noteasy">
+      </p>
+      <p> 
+        <label for ="nb_use_c">c) Relatively:</label>
+        <input name="nb_use" id="nb_use_c" type="radio" value="nb_use_relatively">
+      </p>
+    <p>
+        <label for ="nb_use_d">d) Quite easy:</label>
+        <input name="nb_use" id="nb_use_d" type="radio" value="nb_use_quiteeasy">
+    </p>
+    <p>
+        <label for ="nb_use_e">e) Very easy:</label>
+        <input name="nb_use" id="nb_use_e" type="radio" value="nb_use_veryeasy">
+    </p>
+    <p>
+      <label for="nb_use_examples"><em>Please provide examples where necessary:</em> </label>
+	  <textarea name="nb_use_examples" type="text" id="nb_use_examples" cols="40" rows="2"></textarea>
+    </p>
+	<p>&nbsp;</p>
+       <p><strong>How easy did you find it to integrate the Netbooks into curriculum
+       activities?</strong></p>
+       <p> 
+        <label for ="nb_integrate_a">a) Difficult:</label>
+        <input name="nb_integrate" id="nb_integrate_a" type="radio" value="nb_integrate_diff">
+      </p>
+      <p> 
+        <label for ="nb_integrate_b">b) Not easy:</label>
+        <input name="nb_integrate" id="nb_integrate_b" type="radio" value="nb_integrate_noteasy">
+      </p>
+      <p> 
+        <label for ="nb_integrate_c">c) Relatively:</label>
+        <input name="nb_integrate" id="nb_integrate_c" type="radio" value="nb_integrate_relatively">
+      </p>
+    <p>
+        <label for ="nb_integrate_d">d) Quite easy:</label>
+        <input name="nb_integrate" id="nb_integrate_d" type="radio" value="nb_integrate_quiteeasy">
+    </p>
+    <p>
+        <label for ="nb_integrate_e">e) Very easy:</label>
+        <input name="nb_integrate" id="nb_integrate_e" type="radio" value="nb_integrate_veryeasy">
+    </p>
+    <p>
+      <label for="nb_integrate_examples"><em>Please provide examples where necessary:</em> </label>
+	  <textarea name="nb_integrate_examples" type="text" id="nb_integrate_examples" cols="40" rows="2"></textarea>
+    </p>
+	<p>&nbsp;</p>
+       <p><strong>How difficult do you find it to manage use of the Netbooks
+       in the classroom?</strong></p>
+       <p> 
+        <label for ="nb_manage_a">a) Difficult:</label>
+        <input name="nb_manage" id="nb_manage_a" type="radio" value="nb_manage_diff">
+      </p>
+      <p> 
+        <label for ="nb_manage_b">b) Not easy:</label>
+        <input name="nb_manage" id="nb_manage_b" type="radio" value="nb_manage_noteasy">
+      </p>
+      <p> 
+        <label for ="nb_manage_c">c) Relatively:</label>
+        <input name="nb_manage" id="nb_manage_c" type="radio" value="nb_manage_relatively">
+      </p>
+    <p>
+        <label for ="nb_manage_d">d) Quite easy:</label>
+        <input name="nb_manage" id="nb_manage_d" type="radio" value="nb_manage_quiteeasy">
+    </p>
+    <p>
+        <label for ="nb_manage_e">e) Very easy:</label>
+        <input name="nb_manage" id="nb_manage_e" type="radio" value="nb_manage_veryeasy">
+    </p>
+    <p>
+      <label for="nb_manage_examples"><em>Please provide examples where necessary:</em> </label>
+	  <textarea name="nb_manage_examples" type="text" id="nb_manage_examples" cols="40" rows="2"></textarea>
+    </p>
+	<p>&nbsp;</p>
+       <p><strong>Have you had any problems in using the Netbooks?</strong></p>
+       <p> 
+        <label for ="nb_problems_a">a) Distributing machines to the class:</label>
+        <input type="checkbox" name="nb_problems_a" id="nb_problems_a" value="nb_problems_distributing">
+      </p>
+      <p> 
+        <label for ="nb_problems_b">b) Charging the batteries:</label>
+        <input type="checkbox" name="nb_problems_b" id="nb_problems_b" value="nb_problems_charging">
+      </p>
+      <p> 
+        <label for ="nb_problems_c">c) Using the Internet:</label>
+        <input type="checkbox" name="nb_problems_c" id="nb_problems_c" value="nb_problems_useint">
+      </p>
+    <p>
+        <label for ="nb_problems_d">d) Accessing the school server:</label>
+        <input type="checkbox" name="nb_problems_d" id="nb_problems_d" value="nb_problems_accessserver">
+    </p>
+    <p>
+        <label for ="nb_problems_e">e) Networking:</label>
+        <input type="checkbox" name="nb_problems_e" id="nb_problems_e" value="nb_problems_networking">
+    </p>
+    <p>
+      <label for="nb_problems_examples"><em>Please provide examples where necessary:</em> </label>
+	  <textarea name="nb_problems_examples" type="text" id="nb_problems_examples" cols="40" rows="2"></textarea>
+    </p>
+	<p>&nbsp;</p>
+       <p><strong>Do you ever need technical support for the Netbooks?</strong></p>
+       <p> 
+        <label for ="nb_techsupport_a">a) Always:</label>
+        <input name="nb_techsupport" id="nb_techsupport_a" type="radio" value="nb_techsupport_always">
+      </p>
+      <p> 
+        <label for ="nb_techsupport_b">b) Often:</label>
+        <input name="nb_techsupport" id="nb_techsupport_b" type="radio" value="nb_techsupport_often">
+      </p>
+      <p> 
+        <label for ="nb_techsupport_c">c) Sometimes:</label>
+        <input name="nb_techsupport" id="nb_techsupport_c" type="radio" value="nb_techsupport_sometimes">
+      </p>
+    <p>
+        <label for ="nb_techsupport_d">d) Rarely:</label>
+        <input name="nb_techsupport" id="nb_techsupport_d" type="radio" value="nb_techsupport_rarely">
+    </p>
+    <p>
+        <label for ="nb_techsupport_e">e) Never:</label>
+        <input name="nb_techsupport" id="nb_techsupport_e" type="radio" value="nb_techsupport_never">
+    </p>
+    <p>
+      <label for="nb_techsupport_examples"><em>Please provide examples where necessary:</em> </label>
+	  <textarea name="nb_techsupport_examples" type="text" id="nb_techsupport_examples" cols="40" rows="2"></textarea>
+    </p>
+	<p>&nbsp;</p>
+       <p><strong>How are the Netbooks used?</strong></p>
+       <p> 
+        <label for ="nb_usehomeschool">They can use them at home and at school for everything:</label>
+        <input type="checkbox" name="nb_usehomeschool" id="nb_usehomeschool" value="nb_usehomeschool">
+      </p>
+    <p>
+      <label for="nb_usehomeschool_examples"><em>Please provide examples where necessary:</em> </label>
+	  <textarea name="nb_usehomeschool_examples" type="text" id="nb_usehomeschool_examples" cols="40" rows="2"></textarea>
+    </p>
+      <p> 
+        <label for ="nb_useschool">The pupils use them at school for everything:</label>
+        <input type="checkbox" name="nb_useschool" id="nb_useschool" value="nb_useschool">
+      </p>
+    <p>
+      <label for="nb_useschool_examples"><em>Please provide examples where necessary:</em> </label>
+	  <textarea name="nb_useschool_examples" type="text" id="nb_useschool_examples" cols="40" rows="2"></textarea>
+    </p>
+      <p> 
+        <label for ="nb_useclass">The pupils use them in class when they need to:</label>
+        <input type="checkbox" name="nb_useclass" id="nb_useclass" value="nb_useclass">
+      </p>
+    <p>
+      <label for="nb_useclass_examples"><em>Please provide examples where necessary:</em> </label>
+	  <textarea name="nb_useclass_examples" type="text" id="nb_useclass_examples" cols="40" rows="2"></textarea>
+    </p>
+    <p>
+        <label for ="nb_usespecific">The Netbooks are distributed for specific activities:</label>
+        <input type="checkbox" name="nb_usespecific" id="nb_usespecific" value="nb_usespecific">
+    </p>
+    <p>
+      <label for="nb_usespecific_examples"><em>Please provide examples where necessary:</em> </label>
+	  <textarea name="nb_usespecific_examples" type="text" id="nb_usespecific_examples" cols="40" rows="2"></textarea>
+    </p>
+    <p>
+        <label for ="nb_usecertaindays">The Netbooks are used on certain days:</label>
+        <input type="checkbox" name="nb_usecertaindays" id="nb_usecertaindays" value="nb_usecertaindays">
+    </p>
+    <p>
+      <label for="nb_uscertaindays_examples"><em>Please provide examples where necessary:</em> </label>
+	  <textarea name="nb_uscertaindays_examples" type="text" id="nb_uscertaindays_examples" cols="40" rows="2"></textarea>
+    </p>
+	<p>&nbsp;</p>
+    <p><strong>Some outcomes from using the Notebooks</strong></p>
+    <p>
+	    <label for="nb_pupilreactions">How have the pupils reacted to using the Netbooks?</label>
+	    <textarea name="nb_pupilreactions" type="text" id="nb_pupilreactions" cols="40" rows="2"></textarea>
+    </p>
+     <p>
+	    <label for="nb_pupilmotvation">Has motivation improved?</label>
+	    <textarea name="nb_pupilmotvation" type="text" id="nb_pupilmotvation" cols="40" rows="2"></textarea>
+    </p>
+    <p>
+	    <label for="nb_pupilquantitywork">How has the use of the devices impacted on the quantity of pupil work?</label>
+	    <textarea name="nb_pupilquantitywork" type="text" id="nb_pupilquantitywork" cols="40" rows="2"></textarea>
+    </p>
+    <p>
+	    <label for="nb_pupilqualitywork">How has the use of the devices impacted on the quality of pupil work?</label>
+	    <textarea name="nb_pupilqualitywork" type="text" id="nb_pupilqualitywork" cols="40" rows="2"></textarea>
+    </p>
+    <p>
+	    <label for="nb_pupilbehaviour">How has the use of the devices impacted on pupil behaviour?</label>
+	    <textarea name="nb_pupilbehaviour" type="text" id="nb_pupilbehaviour" cols="40" rows="2"></textarea>
+    </p>
+    <p>
+	    <label for="nb_pupilattendance">Has there been any impact on attendance?</label>
+	    <textarea name="nb_pupilattendance" type="text" id="nb_pupilattendance" cols="40" rows="2"></textarea>
+    </p>
+    <p>
+	    <label for="nb_homeschool">Have Home &#8211; School links been changed by pupil use of the Netbooks?</label>
+	    <textarea name="nb_homeschool" type="text" id="nb_homeschool" cols="40" rows="2"></textarea>
+    </p>
+   <p>&nbsp;</p>
+   <p><strong>How often do you organise the following learning activities with your class?</strong></p>
+   <table width="90%"  border="1" cellspacing="0" cellpadding="5">
+        <tr>
+          <td rowspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>Always</td>
+          <td>Often</td>
+          <td>Sometimes</td>
+          <td>Rarely</td>
+          <td>Never</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td><label for ="learnact_ind">Individual work</label></td>
+          <td><input type="radio" name="learnact_ind" id="learnact_ind" value="learnact_ind_always"></td>
+          <td><input type="radio" name="learnact_ind" value="learnact_ind_often"></td>
+          <td><input type="radio" name="learnact_ind" value="learnact_ind_sometimes"></td>
+          <td><input type="radio" name="learnact_ind" value="learnact_ind_rarely"></td>
+          <td><input type="radio" name="learnact_ind" value="learnact_ind_never"></td>
+          <td><input type="radio" name="learnact_ind" value="learnact_ind_na" checked></td>
+        </tr>
+        <tr>
+          <td><label for ="learnact_pair">Pair work</label></td>
+          <td><input type="radio" name="learnact_pair" id="learnact_pair" value="learnact_pair_always"></td>
+          <td><input type="radio" name="learnact_pair" value="learnact_pair_often"></td>
+          <td><input type="radio" name="learnact_pair" value="learnact_pair_sometimes"></td>
+          <td><input type="radio" name="learnact_pair" value="learnact_pair_rarely"></td>
+          <td><input type="radio" name="learnact_pair" value="learnact_pair_never"></td>
+          <td><input type="radio" name="learnact_pair" value="learnact_pair_na" checked></td>
+        </tr>
+         <tr>
+          <td><label for ="learnact_group">Group work</label></td>
+          <td><input type="radio" name="learnact_group" id="learnact_group" value="learnact_group_always"></td>
+          <td><input type="radio" name="learnact_group" value="learnact_group_often"></td>
+          <td><input type="radio" name="learnact_group" value="learnact_group_sometimes"></td>
+          <td><input type="radio" name="learnact_group" value="learnact_group_rarely"></td>
+          <td><input type="radio" name="learnact_group" value="learnact_group_never"></td>
+          <td><input type="radio" name="learnact_group" value="learnact_group_na" checked></td>
+        </tr>
+       <tr>
+          <td><label for ="learnact_project">Project  work</label></td>
+          <td><input type="radio" name="learnact_project" id="learnact_project" value="learnact_project_always"></td>
+          <td><input type="radio" name="learnact_project" value="learnact_project_often"></td>
+          <td><input type="radio" name="learnact_project" value="learnact_project_sometimes"></td>
+          <td><input type="radio" name="learnact_project" value="learnact_project_rarely"></td>
+          <td><input type="radio" name="learnact_project" value="learnact_project_never"></td>
+          <td><input type="radio" name="learnact_project" value="learnact_project_na" checked></td>
+        </tr>
+        <tr>
+          <td><label for ="learnact_collaboration"> Collaboration outside the classroom</label></td>
+          <td><input type="radio" name="learnact_collaboration" id="learnact_collaboration" value="learnact_collaboration_always"></td>
+          <td><input type="radio" name="learnact_collaboration" value="learnact_collaboration_often"></td>
+          <td><input type="radio" name="learnact_collaboration" value="learnact_collaboration_sometimes"></td>
+          <td><input type="radio" name="learnact_collaboration" value="learnact_collaboration_rarely"></td>
+          <td><input type="radio" name="learnact_collaboration" value="learnact_collaboration_never"></td>
+          <td><input type="radio" name="learnact_collaboration" value="learnact_collaboration_na" checked></td>
+        </tr>
+      </table>
+
+    <p>&nbsp;</p>
+       <p>&nbsp;</p>
+    </fieldset>
+    <fieldset>
+    <legend>Thank you</legend>
+    <p>Thank you very much for providing these answers. The information from
+      this evaluation will help to improve the second phase of the project. If
+      you are willing to be interviewed further about these topics then please
+      either email me directly
+	  (<script type="text/javascript"><!--
+	  display("","john.cuthell","","Arrange an Interview for the Ultraportables Survey")
+	  // -->
+	  </script>)
+	  or add your telephone number and/or email address here:</p>
+    <p>
+      <label for="Telephone"><strong>Telephone</strong>: </label>
+      <input name="Telephone" type="text" id="Telephone" size="35" maxlength="400" class="txt">
+    </p>
+    <p>
+      <label for="Email"><strong>Email address</strong>: </label>
+      <input name="Email" type="text" id="Email" size="35" maxlength="400" class="txt">
+    </p>
+    <p>&nbsp;</p>
+	<p>&nbsp; 
+      <input type="submit" name="submit1" value="submit" class="buttonSubmit" 
+	  onClick="return confirm('You are about to send your form. Is this OK?')"  >
+      &nbsp;&nbsp;&nbsp; &nbsp; 
+      <input type="reset" name="Reset" value="Reset" class="buttonReset"  
+	  onClick="return confirm('Do you really want to clear the form and start again?')">
+    </p>
+    </fieldset>
+  </form>
+  
+    <p>[<a href="#top">Back to the top</a>]</p>
+  <p>[<a href="javascript:history.back()">Back</a>]</p>
+</div>
+<div id="footer">
+  <img src="../images/bar-home.gif" width="100%" height="30" alt="">  
+  <!--include virtual="/footer.htm"-->
+</div>
+</div>
+</body>
+</html>

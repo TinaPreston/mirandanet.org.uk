@@ -1,0 +1,429 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<title>MirandaNet Naace CPD Report</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The MirandaNet Fellowship Web Site">
+<meta name="keywords" content="ICT communities education learning support">
+<meta name="language" content="en">
+<link href="../common.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../common.js"></script>
+<style type="text/css">.buttonSubmit {
+	color: green;
+	text-transform: uppercase;
+	border: 1px solid green;
+	margin-top: 1em;
+	font-size: 1em;
+}
+
+.buttonReset {
+	color: red;
+	text-transform: uppercase;
+	border: 1px solid red;
+	margin-top: 1em;
+	font-size: 1em;
+}
+
+.buttonSubmitHide {
+	display: none;
+}
+
+</style>
+<script type="text/JavaScript">
+
+function checkscript() {
+	for (i=0;i<4;i++) {
+		box = document.example.elements[i];
+		if (!box.value) {
+			alert('You haven\'t filled in ' + box.name + '!');
+			box.focus()
+			return false;
+		}
+	}
+	return true;
+}
+function checkNever() { 
+	var submit = document.questionnaire.submit;
+//	var never = document.questionnaire.last_receive[5];
+//	if (never.checked == true) { 
+//		alert('You have clicked Never');
+		classChange('buttonSubmitHide',submit)
+//		} else {
+//		alert('You did not click Never');
+//		}
+}
+
+function classChange(styleChange,item) {
+    item.className = styleChange;
+}
+</script>
+
+</head>
+<body onLoad="return show('profdev')">
+<div id="page">
+<div id="header"><a name="top"></a>
+    <div id="home"><a tabindex="0" href="../index.html"><img src="../images/logo.gif" alt="MirandaNet Index Page" width="200" height="100" title="MirandaNet Index Page"></a> 
+      <img src="../images/bar-start.gif" width="201" height="30" alt=""> </div>
+  <img src="../images/bar-profdevel.gif" width="100%" height="30" alt="MirandaNet" title="MirandaNet"> 
+  <h1>Continuing Professional Development</h1>
+</div>
+
+	<div id="leftColumn"> <a href="http://www.naace.org/"><img src="../images/naace_logo.gif" alt="MirandaNet" width="200" height="126"></a> 
+  <!--ignore_perlfect_search-->
+<div id="navsite">
+  <p>Site navigation</p>
+  <ul>
+    <li class="divider">MirandaNet Fellowship</li>
+    <li><a href="../home.php.html" title="Home" id="homepage" class="normal">Home</a></li>
+    <li><a href="../associates/index.html" title="Company Associates" id="partners" class="normal"> 
+      Associates</a></li>
+   <!-- <li><a href="/bett/" title="BETT12" id="bett" class="normal">BETT12</a></li> --> 
+    <li><a href="https://www.mirandanet.org.uk/phorum/default.php" title="Forums" id="forums" class="normal">Forums</a></li>
+    <li><a href="../international/index.html" title="International MirandaNet" id="internat" class="normal">International 
+      MirandaNet</a></li>
+    <li><a href="../fellowship/index.html" title="The Fellowship" id="fellowship" class="normal">Fellowship</a></li>
+     <!-- <li><a href="/membership/index.php" title="Members" id="members" class="normal">Log
+        on/off</a></li> -->
+    <li><a href="../membership/index.php.html" title="Members Log on/off" id="members">Members 
+        Log on/off</a> </li>
+    <li class="divider">MirandaNet Resources</li>
+    <li><a href="../research/index.html" title="Case Studies &amp; Research" id="research" class="normal">Case 
+      Studies &amp; Research</a></li>
+    <li><a href="../ejournal/index.html" title="The Braided Learning E-Journal" id="ejournal" class="normal"> 
+      E-Journal</a></li>
+    <li><a href="../mirandamods/index.html" title="MirandaMods" id="mirandamods" class="normal">MirandaMods</a></li>
+    <li><a href="../news/letter.php.html" title="News, Diary, Seminars" id="news" class="normal">Newsletter</a></li>
+    <li><a href="index.html" title="Profdev" id="profdev" class="normal">Professional 
+      Development</a></li>
+    <li><a href="../publications/index.html" title="Publications" id="pubs" class="normal">Publications</a></li>
+    <li><a href="../researchexchange/index.html" title="Research Exchange" id="rex" class="normal">Research Exchange</a></li>
+    <li><a href="../resources/index.html" title="Resources" id="resources" class="normal">Resources</a></li>
+    <li><a href="../vl_blog/index.html" title="Visual Learning" id="vis" class="normal">Visual&nbsp;Learning</a></li>
+    <li class="divider">MirandaNet Consultancy</li>
+    <li><a href="../consultancy/index.html" title="The Consultancy" id="consultancy" class="normal"> 
+      Consultancy</a></li>
+    <li class="divider">World Ecitizens Charity</li>
+    <li><a href="../worldecitizens/index.html" title="World Ecitizens Etopia" id="worldecitizens" class="normal">World 
+      Ecitizens Etopia</a></li>
+  </ul>
+</div>
+
+    <!-- Search begins -->
+    <form action="http://www.google.co.uk/search" method="get" name="search" id="search">
+      <p class="center">
+    <label for="q">Search MirandaNet: 
+    <input type="text" name="q" id="q" size="15" style="width:154px;" alt="Search MirandaNet" title="Search MirandaNet" value="Search" onClick="this.select()" />
+    </label>
+        <br />
+        <input type="submit" value="Search" name="submit" />
+        <input name="sitesearch" type="hidden" value="mirandanet.org.uk" />
+      </p>
+	</form>
+    <!-- Search ends -->
+<!--/ignore_perlfect_search-->
+  </div>
+
+<div id="mainBody"> 
+  <h2>ICT and CPD</h2>
+    <p><strong><a href="index.htm">CPD</a></strong> | <a href="webritte.htm">WEBRITTe</a> 
+      | <a href="misconceptions.htm">Common Misconceptions</a> | <a href="../ejournal/casestudies.htm">Case 
+      Studies</a> | <a href="../ejournal/index.html">E-Journals</a> | <a href="../news/seminars.htm">Seminars</a></p>
+    <h3>MirandaNet Fellows presenting ICT CPD models at Naace</h3>
+    <p><strong>From the MirandaNet Newsletter</strong><br>
+      This year John Cuthell and I organised the ICT Continuing Professional
+        Development (CPD) theme for the Naace conference that took place in Torquay
+        this February. Naace, English professional association for those concerned
+        with advancing education through the appropriate use of information and
+        communications technology (ICT). About ten members of MirandaNet are
+    also members of Naace.</p>
+    <p> Some of the delegates followed our strand throughout. In the plenary
+      they expressed a view about the use of ICT in schools which MirandaNetters
+      will
+      recognise. In the first place they cited key barriers
+      in some schools as teachers&#8217; lack of time, poor technical support,
+      the lack of effective ICT CPD programmes and assessment which does not
+      value the impact of ICTs in learning. However, what they agreed overwhelmingly
+      was that lack of vision for learning was the reason why the take up of
+      ICT and results are still so poor in about 75% of schools. Communities
+    of practice for professionals were seen as a key way of changing attitudes.</p>
+    <p>Running
+      this strand on ICT CPD was part of researching into the ICT CPD experience
+      of the members of Naace, MirandaNet and ITTE. Our hypothesis
+      here is that many people who are charged with teaching other teachers about
+      ICT have had very little support themselves in any formal way. This is
+    why communities of professionals like MirandaNet are so important. </p>
+    <p>In the
+      conference John and I were concentrating on the achievements we have seen
+      in the use of practice-based research for whole school CPD. Richard
+      Millwood opened the theme by talking about the practice-based ICT CPD models
+      that he and Stephen Heppell used to run at Ultralab. Niel McLean, Becta,
+      talked about multimodality and Vanessa Pittard, Becta, looked at the research
+      that has been published about effective ICT CPD. Again, practice-based
+      research came out very well. Tim Tarrant talked about Effective Models
+      for ICT CPD with examples from UK teachers who joined him. Byron Evans,
+      Adviser, RTU explained how teachers&#8217; communities have been developed
+    in Northern Ireland based on project work. </p>
+    <p>We also invited several senior
+      managers and teachers from MirandaNet to present practice-based models
+      that seem to be working in schools. You will
+      find more about these presentations in the report: John Cuthell and Dai
+      Thomas on ICT CPD &#8211; The MirandaNet Model: David Litchfield on Managing
+      Information, Managing Change: Jane Finch, Primary adviser, There&#8217;s
+      more to IT than just &#8216;getting someone in&#8217;, Mark Bennison, Vice
+      Principal at Westminster Academy on Developing a Global Citizenship and
+      Enterprise Agenda through ICT Underpinned CPD: Michael Smith, the Professional
+      Development Coordinator, Forest School, Snaresbrook, who described his
+      own CPD journey in ICT to bring out strategic issues and offer an opportunity
+    for future thinking.</p>
+    <p>The final presentation mentioned in the report is Roger
+      Broadie&#8217;s
+      project for Naace: Practically Transforming Learning, offers teachers a
+      web space where they can go for instant information on running leading-edge
+      practice based projects. We will be in touch with Fellows for support on
+    building this knowledge base</p>
+    <p>John Cuthell and I are currently working on
+      the whole staff ICT CPD programmes with Westminster Academy, London and
+      Castle View School, Sunderland. Teachers
+      from both these schools came to Prague. Do get in touch with us if you
+      would like us to advise on ICT CPD programmes in your school as well christina@mirandanet.ac.uk,
+    john.cuthell@mirandanet.org.uk. </p>
+    <h3>Naace Conference Report</h3>
+    <p> The Naace Conference was held in Torquay from February 27 &#8211; March
+      2 this year, with the theme: 20:20 Vision &#8211; The Future of ICT in
+    Education &#8211; Clarity for the Present, Possibilities for the Next Decade.</p>
+    <p>One
+      of the strands of the conference was ICT CPD, managed by Christina Preston
+      and John Cuthell, who were also engaged in researching Naace members&#8217; experiences
+    of ICT CPD. </p>
+    <p> <strong>Lead Presentation: Latest Research into Effective Pedagogy in ICT CPD</strong><br>
+    Richard Millwood, formerly Director of Ultralab</p>
+    <p> Richard&#8217;s session shared the progress made in the Naace/Ultralab
+      DfES funded project to develop new continuing professional development
+      approaches for teachers using inquiry-based learning, online community,
+    patchwork assessment, exhibition and personalised learning.</p>
+    <p> Contributions were made by a number of MirandaNet Members and Fellows.
+      David Litchfield presented the first of the sessions. His theme was:</p>
+    <p>      <strong>Managing Information, Managing Change</strong></p>
+    <p>
+      David Litchfield is the Headteacher of Castle View, Sunderland: Caroline
+        McHale is Director of Business and Community Services at Castle View
+        School.</p>
+    <p>Senior
+      managers face not only the developments of new technologies, but also the
+      changing demands on information and communication. At Castle View
+      School, the leadership group has been working to bring a coherent approach
+      to development, monitoring and improvement by concentrating on the impact
+      for the individual student. This session explored the approaches to student
+      participation and individual learning that have driven the changes in information
+    systems and the skills of the workforce.</p>
+    <p><strong>John Cuthell ICT CPD &#8211; The
+      MirandaNet Model</strong><br>
+      John&#8217;s presentation looked at the MirandaNet model, and the ways
+      in which members of the MirandaNet Community of Practice use it for their
+      professional development. He outlined the ways in which the technologies
+      of MirandaNet &#8211; the listserv, MirandaLink, the resources on the website,
+      the Case Studies, the Discussion Forums and the working groups build a
+      resource for the whole community. Not only that, but the resource is available
+    to all, both nationally and internationally.</p>
+    <p><strong>Evaluating ICT CPD Programmes</strong><br>
+      Was the title of the presentation by Margaret Danby, Education Consultant
+    and Mirandanet Fellow.</p>
+    <p>The essential features of effective CPD evaluation
+        were described and illustrated with examples of lessons learned about
+        what promotes and what impedes effective
+      CPD, drawn from previous various evaluations. The session included points
+      raised with evaluators by both teachers and providers about what worked
+      really well for them as well as what went wrong. These lessons were used
+      to highlight key considerations for schools that will help them select
+      and plan appropriate CPD provision, and to raise awareness of the wide
+      range of potential CPD opportunities available. The benefits of formative,
+      as well as summative evaluation were highlighted, especially its role in
+      facilitating intervention when problems are identified and acknowledgement
+      of effort and progress. An example evaluation framework was constructed
+      to show how key sources of evidence can be identified and how it can be
+      used to monitor the effectiveness of a CPD programme. A member of the audience
+      contributed to testing out aspects of the framework against a recent CPD
+      experience. The merits of a range of evaluation techniques were also discussed,
+      with valuable input from the audience on newer technology -based techniques,
+    such as photographs and video.</p>
+    <p>Jane Finch is a MirandaNet Fellow and a leader
+    in the Visual Learning group. Her talk looked at:</p>
+    <p>      <strong>Primary ICT CPD&#8230; There&#8217;s more to it than just &#8216;getting
+      someone in&#8217;</strong><br>
+    Jane Finch, Teacher Adviser ICT, HoS Manager, Worcestershire LA</p>
+    <p>This session
+      considered some of the features of successful Primary ICT CPD, capitalising
+      on lessons learned in the Worcestershire Hands on Support
+    Scheme.</p>
+    <p>Mark Bennison is Deputy Head at Westminster Academy. His talk looked
+    at the ways in which ICT can underpin hole-school change.</p>
+    <p><strong>Developing a Global
+      Citizenship and Enterprise Agenda through ICT Underpinned CPD</strong><br>
+      Embracing the RSA 21st century competency-based curriculum, learning is
+      integrated and thematic; moving from the yearly theme of community, through
+      global citizenship
+  to enterprise in the first 3 years (KS3). Tutoring is vertical, e-learning
+  embedded, through their Connetix Learning Environment; at its heart, an individual
+  learning plan for all students.</p>
+    <p>In a secondary school whose catchment is probably
+      the most diverse in the UK; 75% of students are EAL, 35 main languages
+      are spoken: Westminster Academy
+  cannot help but embrace the agenda of global citizenship and has as a core
+  vision, the importance of preparing its young people for a perspective which
+  is global; economically, socially and technologically. In this session, Mark
+  Introduced &#8220;school for a global future&#8221; showing how, working closely
+  with organisations &#8211; MirandaNet and iNET &#8211; the global citizenship
+  agenda comes to life.</p>
+    <p><strong>Practice Based Research - The Becta View</strong><br>
+      Dr Vanessa Pittard is Director Evidence and Evaluation, Becta. Her talk
+        looked at a theme that is at the core of the MirandaNet community- Practice
+        Based
+  Research.</p>
+    <p>Practice-based research has an important role to play in building
+        up evidence of how technology can be used effectively to support learning.    </p>
+    <p>It also plays an important role in enabling learning to take place from
+        the leading edge and enabling effective professional reflection on emerging
+    practice. </p>
+    <p>In researching new practice with technology practitioners need
+      to consider: robustness of design, capturing the learner experience, assessment
+      of outcomes,
+  salience and transferability of findings. </p>
+    <p>There are particular challenges in
+      assessing the value of learning technologies to learning outcomes. A framework
+      of outcomes relating to technology for learning
+  is presented.</p>
+    <p><strong>Dai Thomas, Director of ICT at Warden Park Specialist School and
+    Mirandanet Fellow</strong></p>
+    <p>Dai&#8217;s talked looked at the reality of CPD for many
+      teachers &#8211; and
+  then examined what constitutes effective CPD.</p>
+    <p>This theme explored a number of
+      approaches to ICT CPD and evaluated their effectiveness in terms of school
+      improvement, pedagogical change and learning for both pupils
+  and teachers. Examples were drawn from a number of projects that have examined
+  the affordances provided by new technologies, and ways in which these have
+  been used to promote personal and institutional transformation in learning.    </p>
+    <p>Discussion following the presentation focused on the issues that still
+      arise where teachers fail to take a professional role in their own CPD
+      process. This
+  is still problematic: possible solutions were discussed. The underlying problem
+  seemed to be that many teachers felt that INSET was seen as CPD, and was something
+  that was &#8216;done&#8217; to them</p>
+    <p> Traditional delivery models of ICT CPD were challenged, particularly
+      one-day courses involving large groups, where the theme was inevitably
+      general, and
+    specific application in the school context was difficult to achieve.</p>
+    <p> Teacher research seen as an essential tool for effective CPD focus. The
+      MirandaNet model, and the Best Practice Research Scheme, were considered
+      as exemplars.</p>
+    <p> <strong>Lead Presentation: The Future; Multimodal Literacy &#8211; Examples
+      of what this means for Teachers and Children in the Near Future</strong></p>
+    <p> Niel McLean, Executive Director, Becta</p>
+    <p> Niel&#8217;s presentation looked at the needed for multi-modal models
+      of learning to become part of the repertoire of teaching and learning strategies.
+      Many
+      of the themes were familiar to MirandaNet members, and supported much of
+      the work that the community has done in the past few years.</p>
+    <p> <strong>ICT CPD in Northern Ireland</strong><br>
+      Byron Evans, Adviser, RTU</p>
+    <p> This presentation reported on a pilot programme involving forty-eight
+      schools in Northern Ireland. The programme had as its main aim the exploration
+      of an online collaborative community approach to develop the ICT competence
+      of staff
+      and to embedding ICT into the life and work of the school, in the context
+      of school development planning and whole school improvement.</p>
+    <p> <strong>Effective Models for ICT CPD</strong><br>
+      Tim Tarrant&#8217;s presentation was a collaborative effort involving Tim Tarrant,
+      Head of ICT Team, TDA; Georgina Stein, Canterbury Christ Church University
+      and Member of the Naace Executive Committee; Sarah Neild, Teacher, ICT Coordinator
+      and AST at Birchley St Mary&#8217;s Catholic Primary School; Zoe Goodwin, Vice
+      Principle, Greensward College and Margaret Baxter, Teacher, ICT Team Member
+      and AST at Eccleston Lane Ends Primary School</p>
+    <p> This session drew on the experience of the TDA and covered its draft
+      CPD strategy for the school workforce. It drew on the TDA&#8217;s experience over the last
+      8 years and the conclusions that could be drawn. One conclusion was the simple
+      fact that the best CPD is most often teachers working with teachers and this
+      was illustrated by the work and experience of Sarah Neild and Margaret Baxter.
+      A challenge was how we can make initial teacher training, induction and professional
+      development a continuum and help reduce the loss of teachers in the first 5
+      years of their teaching. The session examined the factors that influence professional
+      development in the future and how we might address them.</p>
+    <p> <strong>An Inspirational Journey</strong><br>
+      Michael Smith is the Professional Development Coordinator, Forest School,
+      Snaresbrook</p>
+    <p> Michael described his own CPD journey in ICT to bring out strategic issues
+      and offer an opportunity for future thinking. This session also investigated
+      the importance of collaborative learning environments and multi modal mapping
+      for professional development and learning.</p>
+    <p> Michael described his own personal journey, which brought him to realise
+      the importance of visual learning as a way to recover the complexity of
+      ideas and
+      engage learners. Through his work as a teacher/researcher with Mirandanet,
+      he has investigated the power of multi-modal learning and considered the
+      implications for the future in our schools. Do we still need textbooks
+      providing information
+      in a linear fashion? What are the implications for classrooms as the role
+      of teacher and learner becomes blurred,as are the boundaries between schools
+      and
+      the external community.</p>
+    <p> The audience discussed the implications for software development especially
+      mapping software and the need for learners to have a more sophisticated
+      understanding of how multimedia presentations can be used to influence
+      views.</p>
+    <p> <strong>Practically Transforming Learning &#8211; The view of the Naace
+        Community</strong><br>
+      Roger Broadie of Broadie Associates Ltd is Member of the Naace Advisers
+      and Consultants Working Group and Coordinator of the Transformed Education
+      and
+      Pull CPD projects, and as such a long-time friend of MirandaNet.</p>
+    <p> Assessment of &#8216;Quality of use&#8217; of ICT in schools is currently geared
+      to doing the best we can with what we have &#8211; in the way the school currently
+      operates. This is optimisation.</p>
+    <p> Schools that have already optimised use of ICT, through use of the Self
+      Review Framework and by gaining the ICT Mark, and who wish to aspire to
+      transformation
+      will require a systemic rethink of the way that learning is organized so
+      that schools can achieve significantly greater impact upon pupil achievement &#8211; for
+      all. Some schools are now doing this, stretching the gap between schools in
+      educational offering and achievement.</p>
+    <p> The Transformed Education project has created practical tools for schools
+        to assess and develop the best approach to fit their culture and community.
+        The
+        Pull CPD project is now developing knowledge bases that will aid all
+      schools, whether they are still at the stage of optimisation or are amongst
+      the
+        20% of schools that are developing new pedagogical and school organisation
+        approaches.</p>
+    <p>[<a href="#top">Back to the top</a>]</p>
+  <p>[<a href="javascript:history.back()">Back</a>]</p>
+</div>
+<div id="footer">
+  <img src="../images/bar-home.gif" width="100%" height="30" alt="">  
+  <!-- Footer Starts -->
+<div id="footer_left"> 
+  <ul class="accessBar">
+    <li class="accessBar"><a href="../associates/bedfordshire.htm"><img src="../images/associates_logos/Uni_Bed_logo_small.jpg" alt="University of Bedfordshire" title="University of Bedfordshire" width="72" height="28" style="vertical-align: -40%;"></a> 
+    </li>
+    <li class="accessBar"><a href="../associates/index.html">Associates</a></li>
+    <li class="accessBar"><a href="../about.php.html">About&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../contact.php.html">Contact&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../fellowship/join.htm">Join&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../membership/index.php.html" title="Members Log on/off" id="members_logon" class="normal">Members&nbsp;Log&nbsp;on/off</a></li>
+  </ul>
+</div>
+<div id="footer_right">
+  <ul class="accessBar">
+    <li class="accessBar"><a href="http://www.linkedin.com/groups/MirandaMod-3726470?trk=myg_ugrp_ovr"><img src="../images/site/linkedin_logo.png" alt="Linked In MirandaNet" width="99" height="28" title="Linked In MirandaNet"></a></li>
+	<li class="accessBar"><a href="http://www.facebook.com/pages/MirandaMod/180379201990546"><img src="../images/site/f_logo.png" alt="MirandaNet on Facebook" width="28" height="28" title="MirandaNet on Facebook"></a></li>
+	<li class="accessBar"><img src="../images/site/twitter.jpg" alt="MirandaNet on Twitter - forthcoming feature" width="28" height="28" title="MirandaNet on Twitter - forthcoming feature"></li>
+	<li class="accessBar"><a href="https://plus.google.com/u/0/communities/116934752242714806891"><img src="../images/site/gplus-32.png" alt="Google + MirandaNet" width="28" height="28" title="Google + MirandaNet"></a></li>
+	<li class="accessBar"><a href="../feed.xml.rss"><img src="../images/site/rss.jpg" alt="RSS feed for MirandaNet" width="28" height="28" title="RSS feed for MirandaNet"></a></li> 
+  </ul>
+</div>
+<!-- Footer Ends -->
+</div>
+</div>
+</body>
+</html>

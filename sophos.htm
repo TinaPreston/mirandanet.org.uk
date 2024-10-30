@@ -1,0 +1,336 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<title>Sophos Virus and Hoax List</title>
+	<meta name="Description" content="The MirandaNet Community">
+	<meta name="keywords" content="Education,Teacher,Training,Lifelong,Learning,national learning grid,DfEE,Oracle-sponsored,Industry Partnerships,Children,Pupils,ICT,Information Communications Technology Project,Miranda,Writing,Text,MirandaNet">
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<p align="center"><font size="-1"><a href="index.html"><img src="images/logo.gif" width="100" height="50"></a></font></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif" size="-1"><strong>Sophos 
+  Virus and Hoax Lists</strong> </font> </p>
+
+<table width="100%" cellspacing="0" cellpadding="5">
+  <tr>
+    <td><!-- Sophos info feed: top virus hoaxes - START -->
+<script language="JavaScript1.1" type="text/javascript"
+src="http://www.sophos.com/virusinfo/infofeed/hoax.js"></script>
+<script language="JavaScript1.1" type="text/javascript">
+<!--
+
+// Want to customise the look and feel of the virus information
+// on your site? Simply change the following values to your own
+// preferences.
+//
+// Changing the value of 'count' will change the number of rows
+// displayed.
+// Changing the value of 'target' to 'new' will display the link in 
+// a new window.
+
+// *****************************************************************
+
+var bgcolour_main     = '#cccccc'
+var bgcolour_heading  = '#99cccc'
+var text_colour       = '#000000'
+var link_colour       = '#000099'
+var font_size         = '1'
+var font_face         = 'verdana, arial, helvetica, sans-serif'
+var count             =  10   // number should be between 1 and 10
+var first_column      = 'yes' // 'yes' or 'no'
+var cellspacing       = 'yes' // 'yes' or 'no'
+var target            = '_self' // '_self' or 'new'
+
+// *****************************************************************
+//  Be careful not to change anything below this line!
+
+
+var htmltxt = "";
+var font_desc = '<font face="' + font_face + '" size="'
+  + font_size + '" color="' + text_colour + '">';
+var tmp_count = 0;
+    
+if (first_column == "no") { 
+  colspan = 1;
+} else {
+  colspan = 2;
+}
+
+if (cellspacing == "no") { 
+  cellspacing = 0;
+} else {
+  cellspacing = 2;
+}  
+
+if (count > 0) {
+  if (count > 10) {count = 10}
+  htmltxt += '\n<table cellpadding="6" cellspacing="' 
+  + cellspacing + '" bgcolor="#ffffff">';
+  if (count == 1) {
+    htmltxt += '\n<tr><td colspan="' + colspan + '" bgcolor="'
+    + bgcolour_heading + '">' + font_desc 
+    + '<b>Top virus hoax</b></font></td></tr>';
+  } else { 
+    htmltxt += '\n<tr><td colspan="' + colspan + '" bgcolor="'
+    + bgcolour_heading + '">' + font_desc + '<b>Top ' 
+    + count + ' virus hoaxes</b></font></td></tr>';
+  }
+
+  for (var i=0; i<hoax.length; i+=3) {
+    tmp_count++;
+    if (tmp_count > count) {
+      break;
+    } else {
+      if (first_column == "no") {
+        htmltxt += '\n<tr><td bgcolor="' + bgcolour_main + '">' 
+        + font_desc + '<a href="' + hoax[i+2] + '" target="' 
+        + target + '"><font color="'
+        + link_colour + '"><nobr>' + hoax[i+1]
+        + '</nobr></font></a></font></td></tr>';
+      } else {  
+        htmltxt += '\n<tr><td bgcolor="' + bgcolour_main + '">' 
+        + font_desc + '<nobr>' + hoax[i+0] 
+        + '</nobr></font></td><td bgcolor="' + bgcolour_main + '">' 
+        + font_desc + '<a href="' + hoax[i+2] + '" target="' 
+        + target + '"><font color="'
+        + link_colour + '"><nobr>' + hoax[i+1]
+        + '</nobr></font></a></font></td></tr>';
+      }
+    }  
+  }
+} else {
+  document.write
+  ("=== Sophos info feed error: Specify value of count > 0 ===");
+}
+
+// Please do not remove the code after this point. 
+
+htmltxt += '\n<tr><td colspan="' + colspan + '" bgcolor="'
++ bgcolour_heading + '">' + font_desc 
++ 'Source: <a href="http://www.sophos.com" target="' 
++ target + '"><font color="' + link_colour 
++ '">Sophos Anti-Virus</font></a></font></td></tr>';
+htmltxt += '\n</table>';
+
+document.write(htmltxt);
+//-->
+</script>
+<!-- Sophos info feed: top virus hoaxes - END --></td>
+    <td><!-- Sophos info feed: top viruses last month - START -->
+<script language="JavaScript1.1" type="text/javascript"
+src="http://www.sophos.com/virusinfo/infofeed/topten.js"></script>
+<script language="JavaScript1.1" type="text/javascript">
+<!--
+
+// Want to customise the look and feel of the virus information
+// on your site? Simply change the following values to your own
+// preferences.
+//
+// Changing the value of 'count' will change the number of rows
+// displayed.
+// Changing the value of 'target' to 'new' will display the link in 
+// a new window.
+
+// *****************************************************************
+
+var bgcolour_main     = '#cccccc'
+var bgcolour_heading  = '#99cccc'
+var text_colour       = '#000000'
+var link_colour       = '#000099'
+var font_size         = '1'
+var font_face         = 'verdana, arial, helvetica, sans-serif'
+var count             =  10   // number should be between 1 and 10
+var first_column      = 'yes' // 'yes' or 'no'
+var cellspacing       = 'yes' // 'yes' or 'no'
+var target            = '_self' // '_self' or 'new'
+
+// *****************************************************************
+//  Be careful not to change anything below this line!
+
+
+var htmltxt = "";
+var font_desc = '<font face="' + font_face + '" size="'
+  + font_size + '" color="' + text_colour + '">';
+var tmp_count = 0;
+    
+if (first_column == "no") { 
+  colspan = 1;
+} else {
+  colspan = 2;
+}
+
+if (cellspacing == "no") { 
+  cellspacing = 0;
+} else {
+  cellspacing = 2;
+}  
+
+if (count > 0) {
+  if (count > 10) {count = 10}
+  htmltxt += '\n<table cellpadding="6" cellspacing="' 
+  + cellspacing + '" bgcolor="#ffffff">';
+  if (count == 1) {
+    htmltxt += '\n<tr><td colspan="' + colspan + '" bgcolor="'
+    + bgcolour_heading + '">' + font_desc + '<b>Top virus in ' 
+    + month + '</b></font></td></tr>';
+  } else { 
+    htmltxt += '\n<tr><td colspan="' + colspan + '" bgcolor="'
+    + bgcolour_heading + '">' + font_desc + '<b>Top ' 
+    + count + ' viruses in ' + month + '</b></font></td></tr>';
+  }
+
+  for (var i=0; i<topten.length; i+=3) {
+    tmp_count++;
+    if (tmp_count > count) {
+      break;
+    } else {
+      if (first_column == "no") {
+        htmltxt += '\n<tr><td bgcolor="' + bgcolour_main + '">' 
+        + font_desc + '<a href="' + topten[i+2] + '" target="' 
+        + target + '"><font color="'
+        + link_colour + '"><nobr>' + topten[i+1]
+        + '</nobr></font></a></font></td></tr>';
+      } else {  
+        htmltxt += '\n<tr><td bgcolor="' + bgcolour_main + '">' 
+        + font_desc + '<nobr>' + topten[i+0] 
+        + '</nobr></font></td><td bgcolor="' + bgcolour_main + '">' 
+        + font_desc + '<a href="' + topten[i+2] + '" target="' 
+        + target + '"><font color="'
+        + link_colour + '"><nobr>' + topten[i+1]
+        + '</nobr></font></a></font></td></tr>';
+      }
+    }  
+  }
+} else {
+  document.write
+  ("=== Sophos info feed error: Specify value of count > 0 ===");
+}
+
+// Please do not remove the code after this point. 
+
+htmltxt += '\n<tr><td colspan="' + colspan + '" bgcolor="'
++ bgcolour_heading + '">' + font_desc 
++ 'Source: <a href="http://www.sophos.com" target="' 
++ target + '"><font color="' + link_colour 
++ '">Sophos Anti-Virus</font></a></font></td></tr>';
+htmltxt += '\n</table>';
+
+document.write(htmltxt);
+//-->
+</script>
+<!-- Sophos info feed: top viruses last month - END -->
+
+</td>
+    <td><!-- Sophos info feed: latest virus alerts - START -->
+<script language="JavaScript1.1" type="text/javascript"
+src="http://www.sophos.com/virusinfo/infofeed/tenalerts.js"></script>
+<script language="JavaScript1.1" type="text/javascript">
+<!--
+
+// Want to customise the look and feel of the virus information
+// on your site? Simply change the following values to your own
+// preferences.
+//
+// Changing the value of 'count' will change the number of rows
+// displayed.
+// Changing the value of 'target' to 'new' will display the link in 
+// a new window.
+
+// *****************************************************************
+
+var bgcolour_main     = '#cccccc'
+var bgcolour_heading  = '#99cccc'
+var text_colour       = '#000000'
+var link_colour       = '#000099'
+var font_size         = '1'
+var font_face         = 'verdana, arial, helvetica, sans-serif'
+var count             =  10   // number should be between 1 and 10
+var first_column      = 'yes' // 'yes' or 'no'
+var cellspacing       = 'yes' // 'yes' or 'no'
+var target            = '_self' // '_self' or 'new'
+
+// *****************************************************************
+//  Be careful not to change anything below this line!
+
+
+var htmltxt = "";
+var font_desc = '<font face="' + font_face + '" size="'
+  + font_size + '" color="' + text_colour + '">';
+var tmp_count = 0;
+    
+if (first_column == "no") { 
+  colspan = 1;
+} else {
+  colspan = 2;
+}
+
+if (cellspacing == "no") { 
+  cellspacing = 0;
+} else {
+  cellspacing = 2;
+}  
+
+if (count > 0) {
+  if (count > 10) {count = 10}
+  htmltxt += '\n<table cellpadding="6" cellspacing="' 
+  + cellspacing + '" bgcolor="#ffffff">';
+  if (count == 1) {
+    htmltxt += '\n<tr><td colspan="' + colspan + '" bgcolor="'
+    + bgcolour_heading + '">' + font_desc 
+    + '<b>Latest virus alert</b></font></td></tr>';
+  } else { 
+    htmltxt += '\n<tr><td colspan="' + colspan + '" bgcolor="'
+    + bgcolour_heading + '">' + font_desc + '<b>Latest ' 
+    + count + ' virus alerts</b></font></td></tr>';
+  }
+
+  for (var i=0; i<tenalerts.length; i+=3) {
+    tmp_count++;
+    if (tmp_count > count) {
+      break;
+    } else {
+      if (first_column == "no") {
+        htmltxt += '\n<tr><td bgcolor="' + bgcolour_main + '">' 
+        + font_desc + '<a href="' + tenalerts[i+2] + '" target="' 
+        + target + '"><font color="'
+        + link_colour + '"><nobr>' + tenalerts[i+1]
+        + '</nobr></font></a></font></td></tr>';
+      } else {  
+        htmltxt += '\n<tr><td bgcolor="' + bgcolour_main + '">' 
+        + font_desc + '<nobr>' + tenalerts[i+0] 
+        + '</nobr></font></td><td bgcolor="' + bgcolour_main + '">' 
+        + font_desc + '<a href="' + tenalerts[i+2] + '" target="' 
+        + target + '"><font color="'
+        + link_colour + '"><nobr>' + tenalerts[i+1]
+        + '</nobr></font></a></font></td></tr>';
+      }
+    }  
+  }
+} else {
+  document.write
+  ("=== Sophos info feed error: Specify value of count > 0 ===");
+}
+
+// Please do not remove the code after this point. 
+
+htmltxt += '\n<tr><td colspan="' + colspan + '" bgcolor="'
++ bgcolour_heading + '">' + font_desc 
++ 'Source: <a href="http://www.sophos.com" target="' 
++ target + '"><font color="' + link_colour 
++ '">Sophos Anti-Virus</font></a></font></td></tr>';
+htmltxt += '\n</table>';
+
+document.write(htmltxt);
+//-->
+</script>
+<!-- Sophos info feed: latest virus alerts - END -->
+
+</td>
+  </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MirandaNet - Members Log on and off Form</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The MirandaNet Fellowship Web Site" />
+<meta name="keywords" content="ICT communities education learning support" />
+<link rel="stylesheet" type="text/css" href="../mirandanet.css" />
+<link rel="stylesheet" type="text/css" href="../fellowship/fellowship.css" />
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/fix_ie.css" /></style><![endif]-->
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+<script type="text/javascript" src="../mirandanet.js"></script>
+<script type="text/javascript" src="../md5.js"></script>
+
+</head>
+<body onload="return  show('logon')">
+<div id="header" class="group">
+<a  id="top"></a>
+<a href ="../index.html"><img src="../images/logos/mirandanet_nl.gif" alt="The MirandaNet Organisation Logo" width="167" height="61" title="The MirandaNet Organisation: return to home page" /></a> 
+	<h1 class="name"><a href ="../index.html">MirandaNet</a></h1>
+	<h2 class="strapline">Sharing experience and expertise</h2>
+	<div class="topnav_wrapper">
+	  <h5>Site navigation:</h5>
+		<ul class="topnav">
+			<li><a href ="../index.html">Home</a></li>
+			<li><a href ="../fellowship/index.html" id="current">Fellowship</a></li>
+			<li><a href ="../researchexchange/index.html">Research Exchange</a></li>
+			<li><a href ="../consultancy/index.html">Consultancy</a></li>
+			<li><a href ="https://wec.mirandanet.org.uk/">World Ecitizens</a></li>
+		</ul>
+	</div>
+</div>
+
+<div id="content" class="group">
+<div id="leftColumn">
+	<!-- Place all the items for the left hand section here -->
+	<div class="group box">
+	  <!--MENU-->
+	  <!--#include virtual="/fellowship/fellowship_menu.htm"-->
+	  <div id="nav"> 
+  <ul>
+    <li><a href="../fellowship/index.php.html" id="home" class="normal">Fellowship</a></li>
+    <li><a href="../bett/index.html" id="bett" class="normal">BETT</a> 
+      <ul id="sub_bett">
+        <li><a href="../bett/programme.htm" id="programme" class="normal">BETT Programme</a></li>
+      </ul>
+    </li>
+    <li><a href="../fellowship/about.htm" id="about" class="normal">About Us</a> 
+      <ul id="sub_about">
+        <li><a href="../fellowship/founder.htm" id="founder" class="normal">Founder</a></li>
+        <li><a href="../fellowship/researchexchange.htm" id="research" class="normal">Research 
+          Exchange</a></li>
+        <li><a href="../fellowship/consultancy.htm" id="consultancy" class="normal">Consultancy</a></li>
+        <li><a href="../fellowship/worldecitizens.htm" id="worldecitizens" class="normal">World 
+          Ecitizens</a></li>
+      </ul>
+    </li>
+    <li><a href="../profiles/index.html" id="membership" class="normal">The Membership</a></li>
+    <li><a href="../associates/index.html" id="associates" class="normal">Associates</a></li>
+    <li><a href="../news/news.php.html" id="newsarea" class="normal">News &amp; Diary</a> 
+      <ul id="sub_newsarea">
+        <li><a href="../news/diary.php.html" id="diary" class="normal">Diary</a></li>
+        <li><a href="../news/letter.php.html" id="newsletter" class="normal">Newsletter</a></li>
+        <li><a href="../news/mirandanews.htm" id="letterarchive" class="normal">Newsletter 
+          Archive</a></li>
+      </ul>
+    </li>
+    <li><a href="../contact.php.html" id="contact" class="normal">Contact Us</a></li>
+    <li><a href="../mirandamods/index.html" id="mirandamods" class="normal">MirandaMods</a></li>
+    <li><a href="../casestudies/index.html" id="casestudies" class="normal">Case Studies</a></li>
+    <li><a href="../articles/index.html" id="articles" class="normal">Articles</a></li>
+    <li><a href="https://www.mirandanet.org.uk/phorum/default.php" id="forum" class="normal">Forum</a></li>
+    <li><a href="../index_old.htm" id="archive" class="normal">Archive Site</a></li>
+    <li><a href="../fellowship/join.htm" id="join" class="normal">Join MirandaNet</a></li>
+    <li><a href="index.php.html" title="Members Log on/off" id="logon" class="normal">Members 
+      Log on/off</a></li>
+  </ul>
+</div>
+	</div>
+<!-- 	<div class="group box">
+    <div id="news"> 
+      <h3>News Item Area</h3>
+      <p><strong>A sub-heading</strong></p>
+      <p>Normal, but the text is all small.</p>
+	</div>
+	</div> -->
+</div>
+  <div id="mainBody" class="group"> 
+    <h1>MirandaNet Members' Area - Archive Site only!</h1>
+    <p><strong>Existing members:</strong> the log in form below has been disabled. <strong>NB</strong>: 
+      this is the archive site! Go to the <a href="http://mirandanet.ac.uk/">new 
+      site</a> to update your current membership details! </p>
+    <p><strong>New members</strong>: you cannot join here (go to the <a href="http://mirandanet.ac.uk/">new 
+      site</a> to join).</p>
+    <h2>Log on or off the Archive Site</h2>
+		
+    <p>Members please log on to <strong>update your profile on the archive site</strong> 
+      or to access the members-only areas of the MirandaNet <strong>archive</strong>.</p>
+		    <form id="members" action="" method="post" class="join">
+    <fieldset>
+      <legend>Log in to the archive site</legend>
+<p>
+  <label for='User_Name'>Your Username:</label>
+  <input name='User_Name' type='text' id='User_Name' placeholder='Username' size='40' maxlength='50' />
+</p>
+<p>
+  <label for='Password'>Your password:</label>
+  <input name='Password' type='password' id='Password'  placeholder='Password'size='40' maxlength='50' />
+</p>  
+<p>  
+  <input type="submit" value="Log in"/>
+</p>
+  <!-- input type="hidden" name="action" value="login"/>
+  <input type="hidden" name="return" value="$return" / -->
+</fieldset>
+</form>
+
+        <!-- style=" display: inline-block" -->
+    <form id="reminder1" method="post" action="" class="join">
+    <fieldset>
+    <legend>Request a Password Reminder</legend>
+      <p>Problems with remembering? Provided your <strong>email address</strong> 
+        is correct the system can help you. A password reminder can be sent to 
+        a valid email address provided you know your username. If you have forgotten 
+        this, go down further to the second field to ask for a username reminder.</p>
+      <p>&nbsp;</p>
+      <p>If you can remember your username, you can <strong>request a password 
+        reminder</strong>.</p>
+<p>
+        <label for='User_Name1'>Your <strong>Username</strong>:</label>
+  <input name='User_Name1' type='text' id='User_Name1' placeholder='Username' size='40' maxlength='50' />
+  <!-- input type="hidden" name="action" value="password_reminder"/ -->
+</p>
+<p><input name="Password Reminder" type="submit" id="Password_Reminder" value="Password Reminder" /></p>
+</fieldset>
+</form>
+
+<form id="reminder2" method="post" action="" class="join">
+    <fieldset>
+    <legend>Request Username Reminder</legend>
+      <p>A username reminder can be sent to a valid email address, provided of 
+        course you have a valid email address! If your email address has changed 
+        or you can no longer access the one you used to create or update your 
+        membership, please get in touch with the Editor.</p>
+      <p>&nbsp;</p>
+      <p>If you have forgotten your username, you can <strong>request a username 
+        reminder</strong>.</p>
+ <p>
+        <label for='MailBox'>Your <strong>email address</strong>:</label>
+  <input name='MailBox' type='text' id='MailBox' size='40' placeholder='Email address' maxlength='50' />
+</p>
+<p><input name="submit2" type="submit" id="submit2" value="Username Reminder" /></p>
+  <!-- input type="hidden" name="return" value="$return" />
+  <input type="hidden" name="action" value="username_reminder"/ -->
+</fieldset>
+</form>
+<h3>Difficulties, comments, contact</h3>
+    <p>If you want to make any comments about this process, or you can't use the 
+      reminder buttons because you have changed your email address, please email 
+      the
+	      <script type="text/javascript"><!--
+	  display("MirandaNet editor","editor","mirandanet.org.uk","MirandaNet Membership Log on")
+	  // -->
+	  </script>.</p>
+
+	<h3><a id="cookie"></a>Cookies</h3>
+    <p>This website only sets <strong>session</strong> cookies if you log on. 
+      We assume that by logging on you have given us permission to set these cookies 
+      which, unlike 'normal' cookies, can only be seen by the server and cannot 
+      be used to gather any information about you or your browsing habits. We 
+      use the cookies to remember your username and membership status and to allow 
+      you to access resources on the site. These cookies are deleted when you 
+      log off, or if you close the browser (which means that if you leave your 
+      computer unattended in a public area after logging in, you are still logged 
+      on unless you close the browser).</p>
+    <p>If you access one of our sound files, the Yahoo Web Player will place a 
+      few cookies which store the volume you have set, and which collect some 
+      anonymous information (see <a href="http://info.yahoo.com/privacy/us/yahoo/details.html">Yahoo's 
+      Privacy Statement</a> for further details).</p>
+    <p>There are several sections of the site which use <strong>WordPress</strong> 
+      to function. Again, no cookies are set unless you log in to these WordPress 
+      installations. There is <a href="http://codex.wordpress.org/WordPress_Cookies">further 
+      information about WordPress Cookies on the WordPress Codex</a> site.</p>
+    <p>[<a href="javascript:history.back()">Back</a>]</p>
+</div>
+</div>
+<div id="footer" class="group"> 
+  <!--FOOTER-->
+  <!--#include virtual="/footer.htm"-->
+  <!-- Footer Starts -->
+<div id="footer_left"> 
+  <ul class="accessBar">
+    <li class="accessBar"><a href="../associates/bedfordshire.htm"><img src="../images/associates_logos/Uni_Bed_logo_small.jpg" alt="University of Bedfordshire" title="University of Bedfordshire" width="72" height="28" style="vertical-align: -40%;"></a> 
+    </li>
+    <li class="accessBar"><a href="../associates/index.html">Associates</a></li>
+    <li class="accessBar"><a href="../about.php.html">About&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../contact.php.html">Contact&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../fellowship/join.htm">Join&nbsp;Us</a></li>
+    <li class="accessBar"><a href="index.php.html" title="Members Log on/off" id="members_logon" class="normal">Members&nbsp;Log&nbsp;on/off</a></li>
+  </ul>
+</div>
+<div id="footer_right">
+  <ul class="accessBar">
+    <li class="accessBar"><a href="http://www.linkedin.com/groups/MirandaMod-3726470?trk=myg_ugrp_ovr"><img src="../images/site/linkedin_logo.png" alt="Linked In MirandaNet" width="99" height="28" title="Linked In MirandaNet"></a></li>
+	<li class="accessBar"><a href="http://www.facebook.com/pages/MirandaMod/180379201990546"><img src="../images/site/f_logo.png" alt="MirandaNet on Facebook" width="28" height="28" title="MirandaNet on Facebook"></a></li>
+	<li class="accessBar"><img src="../images/site/twitter.jpg" alt="MirandaNet on Twitter - forthcoming feature" width="28" height="28" title="MirandaNet on Twitter - forthcoming feature"></li>
+	<li class="accessBar"><a href="https://plus.google.com/u/0/communities/116934752242714806891"><img src="../images/site/gplus-32.png" alt="Google + MirandaNet" width="28" height="28" title="Google + MirandaNet"></a></li>
+	<li class="accessBar"><a href="../feed.xml.rss"><img src="../images/site/rss.jpg" alt="RSS feed for MirandaNet" width="28" height="28" title="RSS feed for MirandaNet"></a></li> 
+  </ul>
+</div>
+<!-- Footer Ends --></div>
+</body>
+</html>

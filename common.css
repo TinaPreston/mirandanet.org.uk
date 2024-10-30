@@ -1,0 +1,435 @@
+/* MirandaNet CSS Document */
+
+body {
+	color: #000; 
+	background-color: #fff; /*f99*/
+	margin: 0; 
+	padding:0; 
+	font-size: 0.9em;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	min-width: 760px;
+	max-width: 1024px;
+}
+
+body, p, td, li, blockquote {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+p, td, li, blockquote {
+	font-size: 0.9em;
+}
+
+
+
+#page { /* Locate main page and put band down left hand side */
+	margin: 0;
+	border: 0;
+	padding: 0;
+	width: 100%;
+	background-image:url(images/menu.gif);
+	background-repeat:repeat-y;
+	}
+
+#plain { /* for pages with no header menu or footer */
+	margin: 5px;
+	border: 5px;
+	}
+
+#header { /* logo, horizontal stripe and title go here */
+	height: 100px;
+	margin: 0;
+	padding: 0;
+	display:block; 
+	background-color: transparent;
+	border-bottom: solid 1px;
+}
+
+#header h1 { /*	place the header title clear of the logo */
+	margin-left:211px;
+}
+
+#home { /* place background rollover logo  */
+	position:absolute; 
+	top: 0; 
+	left: 0;
+	margin: 0;
+	padding: 0;
+	background: url(images/logo-hl.gif) no-repeat;
+	background-position: top left;
+	border: 0;
+	display: block;
+	width: 200px;
+	height: 100px;
+}
+
+#home a { /* alternative image in the home location */
+	position:absolute; 
+	top: 1px; 
+	left: 0px;
+	margin: 0;
+	padding: 0;
+	display: block;
+	background-color: transparent;
+	border: 0;
+	}
+
+* html a:hover{
+	visibility:visible;
+	}
+
+#home a:hover img { 
+	visibility: hidden;
+	}
+
+#leftColumn {
+	float: left;
+	width: 201px;
+	border: 0;
+	margin: 0; 
+	padding: 0; 
+	color: white; 
+	background-color: inherit; 
+	}
+
+#leftColumn img {
+	border-bottom: 1px solid #000;
+	display:block;
+	}
+	
+#mainBody {
+	margin: 0 1em 0 210px;
+	}
+
+#footer { /*finish off page  */ 
+	clear: both;
+	margin: 0;
+	padding: 0;
+	width: 100%; 
+	display:block; 
+	color: inherit;
+	background-color: #fff;
+	text-align: center
+	}
+ 
+#frontpage p.credits {
+	display: none;
+}
+
+#navsite { /* menu container */
+	width: 194px
+}
+
+#navsite p {
+	display: none;
+}
+
+#navsite ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#navsite ul li {
+	margin: 0;
+}
+
+#navsite ul li a {
+	display: block; 
+	padding: 2px 2px 2px 3px;
+	border-right: #ad7484 1px solid; 
+	border-top: #e3d4da 1px solid; 										
+	border-bottom: #ad7484 1px solid; 
+	background-color: #8d3b51; 
+	color: #fff; 
+	text-decoration: none;
+	width: 100%;
+	font-weight: normal;
+}
+
+#navsite li.divider {
+	display: block; 
+	width: 100%;
+	padding: 2px 2px 2px 3px;
+/*	border: #e3d4da 1px solid;
+	border-right: #e3d4da 1px solid;
+	border-left: #e3d4da 1px solid;    */
+	border-top: #e3d4da 2px solid; 
+	border-bottom: #e3d4da 1px solid;
+	color: #fff; 
+	font-weight: bold;
+	background-color: #6b001b;
+}
+
+
+
+/* This is technically needed for IE5 Mac and Netscape 6, but it causes problems for other browsers...
+html>body #navsite ul li a {
+	width: auto;
+}
+*/
+#navsite ul li a:hover {
+	padding: 3px 0px 1px 4px;
+	border-right: #e3d4da 1px solid; 
+	border-top: #ad7484 1px solid; 
+	border-left: #ad7484 1px solid; 
+	border-bottom: #e3d4da 1px solid; 
+	color: #fff; 
+	background-color: #6b001b;
+}
+
+#navsite a.selected {
+	padding: 3px 0px 1px 4px;
+	border-right: #e3d4da 1px solid; 
+	border-top: #ad7484 1px solid; 
+	border-left: #ad7484 1px solid; 
+	border-bottom: #e3d4da 1px solid; 
+	color: #fff; 
+	background-color: #6b001b;
+}
+
+
+#mainColumn1, #mainColumn2 { /* if we want to divide the main section into two panels */
+	margin: 0;
+	width: 38%;
+	float: left;
+}
+
+.centre { /* because I can or can't spell */
+	text-align: center
+}
+
+.center {
+	text-align: center
+}
+
+.logos img { /* space round logos in footer  */
+/*	padding: 2px */
+	}
+
+p.logos { /* to hide the separator bars between images which are links */
+	color: #fff;
+	background-color: inherit;
+	}
+
+.block {
+	color: #000000;
+	background-color: #ddd;
+	font-style: normal;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: normal;
+		
+}
+.clear { /* use this where you need to clear  */
+	clear:both;
+	}	
+
+.centre {
+	text-align: center;
+}
+
+
+li.links {
+	padding: 0px 0px 10px 0px;	
+}
+
+.picture_notes {
+	font-size: 8pt;
+}
+
+.nopic_caption {
+	font-style: italic;
+	font-size: 8pt
+}
+
+.caption {
+	text-align: center;
+	font-style: italic;
+/*	font-size: 8pt */
+}
+
+h1 {
+	font-size: 1.6em;
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+h3 {
+	font-size: 1.1em;
+}
+
+h4 {
+	font-size: 1.0em;
+}
+
+h5 {
+	font-size: 1.0em;
+}
+
+td {
+	vertical-align: top;
+}
+
+.red {
+	color: #ff0000;
+	background-color: #ffffff;
+}
+
+.green {
+	color: #00ff00;
+	background-color: #ffffff;
+}
+
+.blue {
+	color: #0000ff;
+	background-color: #ffffff;
+}
+
+.gray {
+	color: #cccccc;
+	background-color: #ffffff;
+}
+
+.darkgray {
+	color: gray;
+	background-color: #ffffff;
+}
+
+input {  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif}
+
+img { 
+	border: none;
+}
+
+img a { 
+	border: none;
+}
+
+a:link {
+	color : #603; /* 5a7798 600 603  #6B001B */
+	background-color: inherit;
+	text-decoration : none;
+	font-weight: normal;
+}
+
+a:visited {
+	color : #603; /* 5a7798 933*/
+	background-color: inherit;
+	text-decoration : none;
+	font-weight: normal;
+}
+
+a:hover {
+	color : #603; /* 44658a 600*/
+	background-color: inherit;
+	text-decoration : underline;
+	font-weight: normal;
+}
+
+span.image {
+	padding: 0 20px 20px;
+	font-style:italic;
+	text-align: center;
+	font-size: 0.9em;
+} 
+
+span.image img { 
+	display: block; 
+} 
+
+.centeredImage {
+    text-align:center;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding:0px;
+	border: none;
+}
+
+.imageRight { 
+	clear: right;
+	float: right;
+	padding: 0 20px 20px 20px;
+	font-style:italic; 
+	text-align: center;
+} 
+
+.imageRight img { 
+	display: block;
+} 
+
+.container { } /* this is to float items left and right on the same line*/
+
+.left-element {
+   float: left;
+   width: 49%;
+   }
+
+.right-element {
+   float: right;
+   width: 49%;
+   text-align: right; /* depends on element width */
+   } 
+
+
+form.join p {
+	clear: left;
+	margin: 0;
+	padding: 5px 0 0 0;
+	}
+
+form.join p label {
+	float: left;
+	width: 40%;
+/*	font: bold;*/
+	}
+fieldset {
+	padding: 10px;
+	width: 90%;
+	}
+
+legend {
+	color: #00008B;
+	background-color: #FFF
+	}
+
+.hide {
+	display: none;
+	}
+
+p.access { /* to hide the separator bars between images which are links */
+	color: #fff;
+	background-color: inherit;
+	}
+
+p.accessBar { /* to hide the separator bars between images which are links */
+	color: #fff;
+	background-color: inherit;
+	}
+ul.accessBar { /* used to replace the bars in the trick used above and instead to separate images which are links using lists */
+	list-style: none; 
+	padding-left: 0;
+	}
+li.accessBar { /* used to separate images which are links */
+	display:inline-block;
+	}
+
+.centered { 
+	text-align: center; 
+	}
+
+.centered-table {
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+}
+
+#inspiration { /* to put some space on the Inspiration Map page */
+	margin: 10px;
+	padding: 10px
+	}
+label {
+	display: block;
+	}
+

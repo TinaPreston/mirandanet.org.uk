@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MirandaNet Fellowship - Casestudy</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The MirandaNet Fellowship Web Site" />
+<meta name="keywords" content="ICT communities education learning support" />
+<link rel="stylesheet" type="text/css" href="../mirandanet.css" />
+<link rel="stylesheet" type="text/css" href="../fellowship/fellowship.css" />
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/fix_ie.css" /></style><![endif]-->
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+<script type="text/javascript" src="../mirandanet.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<body onload="return show('casestudies')">
+<div id="header" class="group">
+<a id="top"></a>
+<a href ="../index.html"><img src="../images/logos/mirandanet_nl.gif" alt="The MirandaNet Organisation Logo" width="167" height="61" title="The MirandaNet Organisation: return to home page" /></a> 
+	<h1 class="name"><a href ="../index.html">MirandaNet</a></h1>
+	<h2 class="strapline">Sharing experience and expertise</h2>
+	<div class="topnav_wrapper">
+	  <h5>Site navigation:</h5>
+		<ul class="topnav">
+			<li><a href ="../index.html">Home</a></li>
+			<li><a href ="../fellowship/index.html" id="current">Fellowship</a></li>
+			<li><a href ="../researchexchange/index.html">Research Exchange</a></li>
+			<li><a href ="../consultancy/index.html">Consultancy</a></li>
+			<li><a href ="http://wec.mirandanet.org.uk/">World Ecitizens</a></li>
+		</ul>
+	</div>
+</div>
+
+<div id="content" class="group">
+<div id="leftColumn">
+	<!-- Place all the items for the left hand section here -->
+	<div class="group box">
+	  <!--#include virtual="/fellowship/fellowship_menu.htm"-->
+	  <div id="nav"> 
+  <ul>
+    <li><a href="../fellowship/index.php.html" id="home" class="normal">Fellowship</a></li>
+    <li><a href="../bett/index.html" id="bett" class="normal">BETT</a> 
+      <ul id="sub_bett">
+        <li><a href="../bett/programme.htm" id="programme" class="normal">BETT Programme</a></li>
+      </ul>
+    </li>
+    <li><a href="../fellowship/about.htm" id="about" class="normal">About Us</a> 
+      <ul id="sub_about">
+        <li><a href="../fellowship/founder.htm" id="founder" class="normal">Founder</a></li>
+        <li><a href="../fellowship/researchexchange.htm" id="research" class="normal">Research 
+          Exchange</a></li>
+        <li><a href="../fellowship/consultancy.htm" id="consultancy" class="normal">Consultancy</a></li>
+        <li><a href="../fellowship/worldecitizens.htm" id="worldecitizens" class="normal">World 
+          Ecitizens</a></li>
+      </ul>
+    </li>
+    <li><a href="../profiles/index.html" id="membership" class="normal">The Membership</a></li>
+    <li><a href="../associates/index.html" id="associates" class="normal">Associates</a></li>
+    <li><a href="../news/news.php.html" id="newsarea" class="normal">News &amp; Diary</a> 
+      <ul id="sub_newsarea">
+        <li><a href="../news/diary.php.html" id="diary" class="normal">Diary</a></li>
+        <li><a href="../news/letter.php.html" id="newsletter" class="normal">Newsletter</a></li>
+        <li><a href="../news/mirandanews.htm" id="letterarchive" class="normal">Newsletter 
+          Archive</a></li>
+      </ul>
+    </li>
+    <li><a href="../contact.php.html" id="contact" class="normal">Contact Us</a></li>
+    <li><a href="../mirandamods/index.html" id="mirandamods" class="normal">MirandaMods</a></li>
+    <li><a href="index.html" id="casestudies" class="normal">Case Studies</a></li>
+    <li><a href="../articles/index.html" id="articles" class="normal">Articles</a></li>
+    <li><a href="https://www.mirandanet.org.uk/phorum/default.php" id="forum" class="normal">Forum</a></li>
+    <li><a href="../index_old.htm" id="archive" class="normal">Archive Site</a></li>
+    <li><a href="../fellowship/join.htm" id="join" class="normal">Join MirandaNet</a></li>
+    <li><a href="../membership/index.php.html" title="Members Log on/off" id="logon" class="normal">Members 
+      Log on/off</a></li>
+  </ul>
+</div>
+	</div>
+		<!-- Search Case Studies Module -->
+	<div class="group box" style="margin-bottom:0">
+	<h1>Search the Case Studies</h1> 
+ 	<form method="post" action="../fellowship/casestudies_search.php.html" class="join">
+    <fieldset>
+    <legend>Search Form</legend>
+          <p>Search for:<br />
+            <select name="field" title="Choose search area">
+			 <option value="Title">Title</option>
+			 <option value="Abstract">Abstract</option>
+			 <option value="keywords">Keywords</option>
+			 <option value="article">Professional Study</option>
+			 <option value="Name">Author Name</option>
+            </select>
+            <br />
+            <input class="txtinput" type="text" id="find1" name="find" placeholder="Enter search term" title="Enter search term" />
+            <br />
+            <input type="hidden" name="searching" value="yes" />
+            <input type="submit" name="search" value="Search" />
+          </p>
+ 	</fieldset>
+	</form>
+	</div>
+		<!-- Search Case Studies Module -->
+	<div class="group box" style="margin-bottom:0">
+	
+  <h1>Search the Articles</h1> 
+ 	<form method="post" action="../fellowship/articles_search.php.html" class="join">
+    <fieldset>
+    <legend>Search Form</legend>
+          <p>Search for:<br />
+            <select name="field" title="Choose search area">
+			 <option value="Title">Title</option>
+			 <option value="keywords">Keywords</option>
+			 <option value="article">Article</option>
+			 <option value="Name">Author Name</option>
+            </select>
+            <br />
+            <input class="txtinput" type="text" id="find2" name="find" placeholder="Enter search term" title="Enter search term" />
+            <br />
+            <input type="hidden" name="searching" value="yes" />
+            <input type="submit" name="search" value="Search" />
+          </p>
+ 	</fieldset>
+	</form>
+	</div>
+		<!-- Search Membership Module -->
+	<div class="group box" style="margin-bottom:0">
+	<h1>Search the Membership</h1> 
+	<form method="post" action="../fellowship/listing_search.php.html" class="join">
+     <fieldset>
+    <legend>Search Form</legend>
+          <p>Search for:<br />
+            <select name="field" title="Choose search area">
+              <option value="Anything">Anything</option>
+			  <option value="Surname">Last Name</option>
+              <option value="Forename">First Name</option>
+              <option value="Profile">Profile</option>
+            </select>
+            <br />
+            <input class="txtinput" type="text" id="find" name="find" placeholder="Enter search term" title="Enter search term" />
+            <br />
+            <input type="hidden" name="searching" value="yes" />
+            <input type="submit" name="search" value="Search" />
+          </p>
+	</fieldset>
+	</form>
+	</div>	<!-- Search MirandaNet Module -->
+<div class="group box" style="margin-bottom:0">
+	
+  <h1>Search MirandaNet</h1> 
+ 	<form method="get" action="https://www.google.com/search">
+    <fieldset>
+    <legend>Search Form</legend>
+          <p>Search in:<br />
+            <select name="sitesearch" title="Choose search area">
+			 <option value="mirandanet.org.uk">MirandaNet</option>
+			 <option value="worldecitizens.net">World Ecitizens</option>
+			 <option value="">The Web</option>
+            </select>
+            <br />
+            <input class="txtinput" type="text" name="q" maxlength="255" placeholder="Enter search term" title="Enter search term"/>
+            <br />
+            <input type="hidden" name="searching" value="yes" />
+            <input type="submit" name="search" value="Google Search" />
+          </p>
+ 	</fieldset>
+	</form>
+	</div>
+
+</div>
+  <div id="mainBody" class="group"> 
+    <h1>MirandaNet Fellowship Casestudy</h1>
+    <p><a href="../fellowship/listing.php.html">Membership List</a> | <a href="../publications/index.html">Publications</a> 
+      | <a href="../publications/research.htm">Research</a> | <a href="../publications/personal.php.html">Specialist 
+      Area List</a> | <a href="../ejournal/index.html">Braided Learning Ejournal</a></p>
+    <hr />
+    <h2>To observe and describe the process of using an online pupils' community</h2>
+<p><strong>Michael Smith</strong></p>
+<p><strong>Year of posting:</strong> 2004</p>
+<hr />
+<p><strong>Abstract:</strong></p><p>My practical introduction to the concept of e-learning and e-facilitation started with participation in mentored GTCE&rsquo;s online discussion forums led to practice in efacilitation in forums with fellow course members on the GTCE site. I began to see the power of online discussion as an effective learning resource and as an excellent medium to give practitioners and pupils a voice and an outlet for ideas and the opportunity for creative collaborative learning. This lead to the development of a research project, to describe and observe the processes at work in an online pupil&rsquo;s forum in a secondary school, in which I was the efacilitator. Subsequently I have gone on to set up a departmental discussion forum at the same school.</p>
+<p>The central theme of this paper is an investigation of what constitutes elearning and it concludes with a model of epedagogy, with particular reference to the school environment. From a case study of the observation and description of a pupils&rsquo; online community, phases in the elearning process are identified. A key theme is transformational learning. E-learning is seen as an emancipatory knowledge creation process in which teacher and pupil interchange roles in a collaborative learning environment. The teacher as facilitator guides the learners through the process of acquiring skills to the collection of information, which is then developed into knowledge streams for group analysis. The internet offers a global information network and ICT hardware assists in maintaining an interactive learning environment. An important part of successful epedagogy is effective e-facilitation.</p>
+<hr />
+<p><strong>Keywords: </strong></p><p>pupils' online communities,  citizenship, transforming learning,</p>
+<hr />
+<p><strong>Study</strong></p><h1>Context of the study</h1>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoBodyText"><span style="font-size: 12pt; font-weight: normal;">After participating online in GTCE forums and looking at the model of e- learning for online community that Salmon (2002) has put forward, I wondered how the processes compared with similar communities in schools. Salmon&rsquo;s predominantly university, distance learning environment and the GTCE forums were very different in many aspects to that found in the secondary school. Would an alternative model emerge?. There is also another strand to all of this project. Askew and Carnell (1998) talk about Transformatory Learning and seem to offer a lens through which to view e- learning. And so the story begins with a year 9 class coming into my classroom after a presentation on citizenship. Instant feedback showed that they were frustrated by the lack of opportunity to discuss the meaning and value of citizenship at their own pace and in smaller groups. The group of 12 pupils were keen to explore their ideas. An online forum offered them a means to investigate their ideas, in their own</span><span style="font-size: 12pt;"> </span><span style="font-size: 12pt; font-weight: normal;">space</span><span style="font-size: 12pt;"> </span><span style="font-size: 12pt; font-weight: normal;">and preferred pace. The subject for investigation and the title of the forum was &lsquo;The Meaning and Value of Citizenship&rsquo;</span></p>
+<p class="MsoNormal" style="text-align: justify;">&nbsp;</p>
+<h2>The Research Questions</h2>
+<p class="MsoNormal" style="text-align: justify;">&nbsp;</p>
+<ol style="margin-top: 0cm;" type="1">
+<li class="MsoNormal" style="text-align: justify; mso-list: l6 level1 lfo4; tab-stops: list 36.0pt;"><strong>What are the processes involved in setting up and running an online forum?</strong><span style="text-decoration: underline;"></span></li>
+</ol>
+<p class="MsoNormal" style="margin-left: 36pt; text-align: justify;"><span style="font-size: 12pt;">This is the first online forum that has been constructed in the school where this research has taken place. In observing the processes that the project goes through, the aim is to model what happens, and use the observations to assist staff who would like to use this learning environment</span><span style="font-size: 10pt; mso-bidi-font-size: 12.0pt;">. </span></p>
+<p class="MsoNormal" style="margin-left: 36pt; text-align: justify;">&nbsp;</p>
+<ol style="margin-top: 0cm;" type="1" start="2">
+<li class="MsoNormal" style="text-align: justify; mso-list: l6 level1 lfo4; tab-stops: list 36.0pt;"><strong>How far do the processes match the Salmon model?</strong><span style="text-decoration: underline;"></span></li>
+</ol>
+<p class="MsoNormal" style="margin-left: 36pt; text-align: justify;">The Salmon model is a five stage model for online discussion forums, which runs through</p>
+<ol style="margin-top: 0cm;" type="1" start="2"><ol style="margin-top: 0cm;" type="1">
+<li class="MsoNormal" style="text-align: justify; mso-list: l6 level2 lfo4; tab-stops: list 72.0pt;">Access,</li>
+<li class="MsoNormal" style="text-align: justify; mso-list: l6 level2 lfo4; tab-stops: list 72.0pt;">Socialisation,</li>
+<li class="MsoNormal" style="text-align: justify; mso-list: l6 level2 lfo4; tab-stops: list 72.0pt;">Information exchange</li>
+<li class="MsoNormal" style="text-align: justify; mso-list: l6 level2 lfo4; tab-stops: list 72.0pt;">Knowledge construction</li>
+<li class="MsoNormal" style="text-align: justify; mso-list: l6 level2 lfo4; tab-stops: list 72.0pt;">Development</li>
+</ol></ol>
+<p class="MsoBodyTextIndent">Developed in a university, distance learning environment, it is interesting to observe any modifications that will need to be made for the secondary school context of this research.</p>
+<p class="MsoNormal" style="margin-left: 35.45pt; text-align: justify;">&nbsp;</p>
+<ol style="margin-top: 0cm;" type="1" start="3">
+<li class="MsoNormal" style="text-align: justify; mso-list: l6 level1 lfo4; tab-stops: list 36.0pt;"><strong>What constitutes e- learning?</strong></li>
+</ol>
+<p class="MsoBodyTextIndent2">In recording the learning process and its outcomes I was looking for any patterns or reactions from students, which differentiated this kind of, learning environment. What might be the &lsquo;e&rsquo; be?</p>
+<p class="MsoBodyTextIndent2">&nbsp;</p>
+<p class="MsoBodyTextIndent2">&nbsp;</p>
+<h2>Methodology</h2>
+<p class="MsoNormal">&nbsp;</p>
+<ol style="margin-top: 0cm;" type="1">
+<li class="MsoNormal" style="mso-list: l12 level1 lfo6; tab-stops: list 36.0pt;"><strong>A questionnaire</strong> and <strong>mind mapping exercise</strong> was given to the students at the start of the project to survey the following:</li>
+</ol>
+<p class="MsoNormal">&nbsp;</p>
+<ol style="margin-top: 0cm;" type="1"><ol style="margin-top: 0cm;" type="a">
+<li class="MsoNormal" style="mso-list: l12 level2 lfo6; tab-stops: list 72.0pt;">The questionnaire surveyed the pupils' views on face to face discussion of citizenship issues and why this had not been successful in their opinion.</li>
+</ol></ol>
+<p class="MsoNormal">&nbsp;</p>
+<ol style="margin-top: 0cm;" type="1"><ol style="margin-top: 0cm;" type="a" start="2">
+<li class="MsoNormal" style="mso-list: l12 level2 lfo6; tab-stops: list 72.0pt;">Pupils&rsquo; knowledge about the meaning and value of citizenship was captured on mindmaps before the online discussion group was created, to create a baseline set of data for comparison at the end of the project. In this way one could sense any additional learning that taken place during participation in the forum.</li>
+</ol></ol>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 36pt; text-indent: -18pt; mso-list: l12 level1 lfo6; tab-stops: list 36.0pt;">2.<span style="font: 7pt 'Times New Roman';"> </span><strong>A questionnaire and a mind mapping exercise</strong> was given to pupils at the end of the project to obtain data on the following;</p>
+<p class="MsoBodyTextIndent3">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 72pt; text-indent: -18pt; mso-list: l12 level2 lfo6; tab-stops: list 72.0pt;">a.<span style="font: 7pt 'Times New Roman';"> </span>The questionnaire asked pupils their views on the online forum, how effective they felt it was and how it compared with the face to face sessions they had in discussing citizenship.</p>
+<p class="MsoBodyTextIndent3">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 72pt; text-indent: -18pt; mso-list: l12 level2 lfo6; tab-stops: list 72.0pt;">b.<span style="font: 7pt 'Times New Roman';"> </span>Pupils recorded their knowledge about the meaning and value of<span style="mso-spacerun: yes;"> </span>citizenship using a mind map and these were compared with the maps created at the start of the project.</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 36pt; text-indent: -18pt; mso-list: l12 level1 lfo6; tab-stops: list 36.0pt;"><strong>3.<span style="font: 7pt 'Times New Roman';"> </span></strong><strong>Setting up an online forum </strong></p>
+<p class="MsoBodyTextIndent3">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 72pt; text-indent: -18pt; mso-list: l12 level2 lfo6; tab-stops: list 72.0pt;">a.<span style="font: 7pt 'Times New Roman';"> </span><strong>Logistics. </strong></p>
+<p class="MsoBodyTextIndent3" style="margin-left: 90pt; text-indent: -18pt; mso-list: l3 level1 lfo7; tab-stops: list 90.0pt;"><span style="font-family: Symbol;">&middot;<span style="font: 7pt 'Times New Roman';"> </span></span>A closed forum was set up at <a href="../index.html">www.mirandanet.ac.uk</a>.</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 90pt; text-indent: -18pt; mso-list: l3 level1 lfo7; tab-stops: list 90.0pt;"><span style="font-family: Symbol;">&middot;<span style="font: 7pt 'Times New Roman';"> </span></span>Access was restricted to the project group, all of whom were given a password when they first logged in with their email address.</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 90pt; text-indent: -18pt; mso-list: l3 level1 lfo7; tab-stops: list 90.0pt;"><span style="font-family: Symbol;">&middot;<span style="font: 7pt 'Times New Roman';"> </span></span>All participants could opt to receive replies to their postings by email.</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 72pt;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 72pt; text-indent: -18pt; mso-list: l12 level2 lfo6; tab-stops: list 72.0pt;"><strong>b.<span style="font: 7pt 'Times New Roman';"> </span></strong><strong>Ethical considerations</strong></p>
+<p class="MsoBodyTextIndent3">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 70.9pt; text-indent: -49.6pt;"><span style="mso-spacerun: yes;"> </span>There were a number of issues regarding the conduct of the online discussions that were considered before starting up the forum.</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 70.9pt; text-indent: -49.6pt;"><span style="mso-spacerun: yes;"> </span>The articles from an online workshop by Norbert Pachler,<a href="http://www.ioe.ac.uk/schools/clc/pachler/writing-workshop/ethics.html">http://www.ioe.ac.uk/schools/clc/pachler/writing-workshop/ethics.html</a>, provided a synopsis of some of the issues, which can be summarised as:</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 108pt; text-indent: -18pt; mso-list: l7 level1 lfo8; tab-stops: list 108.0pt;"><span style="font-family: Symbol;">&middot;<span style="font: 7pt 'Times New Roman';"> </span></span>Privacy of responses for the participants</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 108pt; text-indent: -18pt; mso-list: l7 level1 lfo8; tab-stops: list 108.0pt;"><span style="font-family: Symbol;">&middot;<span style="font: 7pt 'Times New Roman';"> </span></span>Ownership of the research material</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 108pt; text-indent: -18pt; mso-list: l7 level1 lfo8; tab-stops: list 108.0pt;"><span style="font-family: Symbol;">&middot;<span style="font: 7pt 'Times New Roman';"> </span></span>Whether a Code of Conduct should be adapted</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 72pt;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 72pt;">A closed forum was chosen so that individuals could feel safe that their contributions remained with the group. At each stage the aims and the outcomes of the research project was outlined to the participants and their permission was sought to release information coming out of the study.</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 73.95pt;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 73.95pt;">Discussions with colleagues on the GTCE<span style="mso-spacerun: yes;"> </span>e-facilitators website provided useful insights.</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 73.95pt;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 73.95pt;">A sample of these discussions is shown below.</p>
+<p class="MsoBodyTextIndent3">&nbsp;</p>
+<p class="MsoNormal"><!--?xml:namespace prefix = v ns = "urn:schemas-microsoft-com:vml" ?--><!--?xml:namespace prefix = w ns = "urn:schemas-microsoft-com:office:word" ?--><strong><span style="color: red; font-size: 10pt; mso-bidi-font-size: 12.0pt;">My</span></strong><strong><span style="color: red; font-size: 10pt; mso-bidi-font-size: 12.0pt; mso-bidi-font-family: Arial;"> posting </span></strong><span style="color: red; font-size: 10pt; mso-bidi-font-size: 12.0pt; mso-bidi-font-family: Arial;"></span></p>
+<p>When setting up a forum with my own students for my research project, the first thing they asked about, were the 'rules of engagement'. They wanted some rules to be posted before they started about respect and in addition they wanted everyone to be clearly identified. <br clear="left" /><strong><span style="color: red;">John</span></strong></p>
+<p>I feel that your last paragraph is absolutely critical. If any discussion is to be taken seriously then all participants have to be accorded respect.</p>
+<p>Without your rules of engagement this can't really happen.</p>
+<p><strong><span style="color: red;">Peter</span></strong></p>
+<p>This is interesting. I feel that Codes of Practices should be adopted. You may lose some people and some discussion, but if people have something to say, they will say it. The environment is a safe one, and people will not feel intimidated by being in this area.</p>
+<p>So rules of engagement are essential for a decent discussion forum.</p>
+<div><hr width="200" size="2" /></div>
+<p class="MsoNormal"><span style="font-size: 10pt; mso-bidi-font-size: 12.0pt; mso-bidi-font-family: Arial;"><span style="mso-spacerun: yes;"> </span><strong>John </strong></span></p>
+<p>Ask the students to come up with a list of five rules and use those.</p>
+<p>Then they can monitor postings themselves. It's a highly relevant issue for Citizenship.</p>
+<div class="MsoBodyTextIndent3"><hr width="200" size="2" /></div>
+<p class="MsoBodyTextIndent3" style="margin-left: 36pt;">A discussion with the pupils participating in the project brought two points. It was agreed that anonymous postings would make the whole process rather sterile and further divorced from normal conversation. So the decision was made to use identifiable names or abbreviations in the forum. We decided to develop our own Code of Conduct through discussion online.</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 36pt;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;"><strong>4. Facilitating the discussion forum and observing the processes</strong></p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">The forum ran for a period of four weeks and it was titled &lsquo;The Meaning and Value of Citizenship. I facilitated the forum. To capture the processes of using an online pupil forum the following techniques were used.</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 71.45pt; text-indent: -18pt; mso-list: l8 level1 lfo10; tab-stops: list 71.45pt;"><span style="font-family: Symbol;">&middot;<span style="font: 7pt 'Times New Roman';"> </span></span><strong>An e-facilitation journal</strong> was kept to record thoughts, issues, problems and attempted solutions.</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 49.65pt; text-indent: -14.2pt;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 71.45pt; text-indent: -18pt; mso-list: l8 level1 lfo10; tab-stops: list 71.45pt;"><span style="font-family: Symbol;">&middot;<span style="font: 7pt 'Times New Roman';"> </span></span><strong>Archived discussion log</strong> of the forum for later analysis</p>
+<p class="MsoBodyTextIndent3">&nbsp;</p>
+<p class="MsoBodyTextIndent3">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;"><strong><span style="text-decoration: underline;">Outcomes</span></strong></p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;"><strong>1. <span style="text-decoration: underline;">Processes of setting up and running an online forum</span></strong></p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;"><strong><span style="mso-spacerun: yes;"> </span>The life of the forum progressed through the following stages;</strong></p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;"><strong>a. Getting pupils on line</strong></p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">Once the forum had been set up by Mirandanet, participant logged in and received their password. On entering the forum they found a welcome message, shown below.</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;"><span style="color: #3366ff; font-family: 'Courier New'; font-size: 9pt;">Author: <a href="https://www.mirandanet.org.uk/phorum/profile.php?f=9&amp;id=15"><span style="color: #3366ff;">Michael Smith</span></a> <br />Date: 09-15-03 21:58<br /><br />Well done for signing on and agreeing to take part in this forum. <br /><br />We will be investigating Citizenship and what you think it means and why it might be important to you.<br /><br />First off though, to many, of you discussing ideas in an electronic forum is new . Many of you have suggested that we need some Rules of Conduct. So I would like you to suggest some ideas so that we can work towards an agreed set of guidelines for our online community.<br /><br />To start you off here are some ideas...<br /><br />We should use our real names when logging in for discussions in this forum. <br /><br />This is a closed forum and is only open to the students I have already mentioned to you or to other that we as a group would like to invite. <br /><br />So there you are what are your ideas on the Rules of Conduct?<br /></span><span style="color: black; font-family: 'Courier New'; font-size: 9pt;"><br /></span><span style="color: black; font-family: 'Times New Roman'; font-size: 12pt; mso-bidi-font-size: 9.0pt;">There were some members of the group who started straight away and other needed some encouragement and training to show them how to log in as the following entry from the e-facilitation journal describes</span><span style="color: black; font-family: 'Courier New'; font-size: 12pt; mso-bidi-font-size: 9.0pt;">.</span><span style="font-size: 12pt; mso-bidi-font-size: 10.0pt;"></span></p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">&nbsp;</p>
+<div style="padding-bottom: 1pt; padding-left: 4pt; padding-right: 4pt; padding-top: 1pt; border: windowtext 0.5pt solid;">
+<p class="MsoNormal" style="mso-border-alt: solid windowtext .5pt; mso-padding-alt: 1.0pt 4.0pt 1.0pt 4.0pt; padding: 0cm;">Extract from<span style="mso-spacerun: yes;"> </span>E-facilitation journal.</p>
+<p class="MsoNormal" style="mso-border-alt: solid windowtext .5pt; mso-padding-alt: 1.0pt 4.0pt 1.0pt 4.0pt; padding: 0cm;">&nbsp;</p>
+<p class="MsoNormal" style="mso-border-alt: solid windowtext .5pt; mso-padding-alt: 1.0pt 4.0pt 1.0pt 4.0pt; padding: 0cm;">24<sup>th</sup> September 2003</p>
+<p class="MsoNormal" style="mso-border-alt: solid windowtext .5pt; mso-padding-alt: 1.0pt 4.0pt 1.0pt 4.0pt; padding: 0cm;">&nbsp;</p>
+<p class="MsoNormal" style="mso-border-alt: solid windowtext .5pt; mso-padding-alt: 1.0pt 4.0pt 1.0pt 4.0pt; padding: 0cm;">So the journal has been running a few days now. Although advertised in class I had to get pupils to log in during class time. There.<span style="mso-spacerun: yes;"> </span>Are still a few more to get going. Plenty of promises to log in at home but no a great response yet. Still, four people have made postings.</p>
+<p class="MsoNormal" style="mso-border-alt: solid windowtext .5pt; mso-padding-alt: 1.0pt 4.0pt 1.0pt 4.0pt; padding: 0cm;">&nbsp;</p>
+<p class="MsoNormal" style="mso-border-alt: solid windowtext .5pt; mso-padding-alt: 1.0pt 4.0pt 1.0pt 4.0pt; padding: 0cm;">My role to date has been to encourage, welcome, congratulate.</p>
+<p class="MsoNormal" style="mso-border-alt: solid windowtext .5pt; mso-padding-alt: 1.0pt 4.0pt 1.0pt 4.0pt; padding: 0cm;">It is important not to keep a thread open too long. Change topic name and summarise as you go along. Try and keep things moving. Use questions to offer new avenues of approach to the forum members.</p>
+<p class="MsoNormal" style="mso-border-alt: solid windowtext .5pt; mso-padding-alt: 1.0pt 4.0pt 1.0pt 4.0pt; padding: 0cm;">&nbsp;</p>
+<p class="MsoNormal" style="mso-border-alt: solid windowtext .5pt; mso-padding-alt: 1.0pt 4.0pt 1.0pt 4.0pt; padding: 0cm;">To date we have some simple rules of conduct and this was a useful neutral area to form a basis of discussion for the group. It was important and even requested to move on to the central questions quickly.</p>
+<p class="MsoNormal" style="mso-border-alt: solid windowtext .5pt; mso-padding-alt: 1.0pt 4.0pt 1.0pt 4.0pt; padding: 0cm;">&nbsp;</p>
+<p class="MsoNormal" style="mso-border-alt: solid windowtext .5pt; mso-padding-alt: 1.0pt 4.0pt 1.0pt 4.0pt; padding: 0cm;">Even in cyberspace the attention span of adolescent boys is short!</p>
+</div>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;"><strong>b. The Rules of Conduct</strong></p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">The group discussed the concept of rules of conduct and a consensus opinion produced the following code;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">Respect the views of others in the forum</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">Do not be rude or swear</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">If you disagree with what has been said, be polite when you reply</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">Try not to digress from the subject matter of the thread</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;"><strong>c. Mentoring, encouraging, question setting</strong></p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">In the early stages of our forum, the teacher acted as a mentor and facilitator and this can be illustrated the discourse in extracts 1 and 2 below.<span style="mso-spacerun: yes;"> </span>The participants are learning the skills of forum discussion; they are being encouraged to unfreeze their ideas through the setting of challenging questions.</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">Extract 1</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">c. <span style="color: black; font-family: 'Courier New'; font-size: 9pt;">Welcome Sanj and Alex, thank you for your contributions. If you go to the new thread on Rules of Conduct, so far... you will see a summary of where we have got to. Your comments will be most welcome.<br /><br />You have to be a careful not to trivialise the debate. Do you think it is part of citizenship to seek retribution, or rather to use the existing legal framework to seek justice?<br style="mso-special-character: line-break;" /><br style="mso-special-character: line-break;" /></span></p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;"><span style="color: black; font-family: 'Courier New'; font-size: 9pt;">Extract 2</span></p>
+<table style="width: 95%; mso-padding-alt: 1.5pt 1.5pt 1.5pt 1.5pt; mso-cellspacing: 0cm; border: black 0.75pt solid;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="background: #003366; padding: 1.5pt;">
+<p class="MsoNormal"><strong><span style="color: white; font-family: Verdana; font-size: 9pt;"> Is citizenship an impossible ideal or a useful model for life</span></strong><span style="font-family: Verdana; font-size: 9pt; mso-bidi-font-family: 'Arial Unicode MS'; mso-fareast-font-family: 'Arial Unicode MS';"></span></p>
+</td>
+</tr>
+<tr>
+<td style="background: #cccc99; padding: 1.5pt;" valign="top">
+<table style="width: 100%; mso-padding-alt: 3.75pt 3.75pt 3.75pt 3.75pt; mso-cellspacing: 0cm;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="background: #cccc99; width: 100%; padding: 3.75pt;" valign="top" width="100%">
+<p class="MsoNormal" style="margin-bottom: 12pt;"><span style="color: black; font-family: 'Courier New'; font-size: 9pt;">Author: <a href="https://www.mirandanet.org.uk/phorum/profile.php?f=9&amp;id=15">Michael Smith</a> <br />Date: 09-25-03 17:46<br /><br />bishai made an interesting point. He feels that as we are not perfect beings it is impossible to aspire to true values for everyone. <br /><br />I agree that whatever virtues you wish a society to aspire to, some perhaps many may not follow or adopt them. <br /><br />However, do we feel that citizenship - or the values of being a citizen might provide a useful model for living? <br /><br />If so what might be useful values to aspire to?</span><span style="font-family: Verdana; font-size: 9pt; mso-bidi-font-family: 'Arial Unicode MS'; mso-fareast-font-family: 'Arial Unicode MS';"></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="MsoNormal">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">&nbsp;</p>
+<table style="width: 95%; mso-padding-alt: 1.5pt 1.5pt 1.5pt 1.5pt; mso-cellspacing: 0cm; border: black 0.75pt solid;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="background: #003366; padding: 1.5pt;">&nbsp;</td>
+</tr>
+<tr>
+<td style="background: #cccc99; padding: 1.5pt;" valign="top">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;"><strong>c. Information collection to sharing knowledge streams</strong></p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">As the online discussion progress a large amount of information on views and ideas is collected. This needs to be summarised by the forum facilitator, or as participants become more used to the forum, they do the summaries and this is illustrated by the pupil posting in extract 3 below. Here the participant has become a learner and a facilitator, considering the information collected, sharing a viewpoint and drawing out streams of ideas.</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">Extract 3</p>
+<table style="width: 95%; mso-padding-alt: 1.5pt 1.5pt 1.5pt 1.5pt; mso-cellspacing: 0cm; border: black 0.75pt solid;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="background: #003366; padding: 1.5pt;">
+<p class="MsoNormal"><strong><span style="color: white; font-family: Verdana; font-size: 9pt;">Re: What do you think Citizenship is?</span></strong><span style="font-family: Verdana; font-size: 9pt; mso-bidi-font-family: 'Arial Unicode MS'; mso-fareast-font-family: 'Arial Unicode MS';"></span></p>
+</td>
+</tr>
+<tr>
+<td style="background: #cccc99; padding: 1.5pt;" valign="top">
+<table style="width: 100%; mso-padding-alt: 3.75pt 3.75pt 3.75pt 3.75pt; mso-cellspacing: 0cm;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="background: #cccc99; width: 100%; padding: 3.75pt;" valign="top" width="100%">
+<p class="MsoNormal" style="margin-bottom: 12pt;"><span style="color: black; font-family: 'Courier New'; font-size: 9pt;">Author: <a href="https://www.mirandanet.org.uk/phorum/profile.php?f=9&amp;id=30">Wesley</a> <br />Date: 09-24-03 19:30<br /><br />I think citizenship is about any action you make that benefits your society and contributes to it, i.e "being a good citizen".<br /><br />However, I suppose that what I have just said is probably flawed as what you perceive to be "good" may not be to another person, or doing one thing will benefit some people, but may not others.<br /><br />Perhaps deciding what is or is not a "good" action depends on a mixture of both your perceived views and intentions and the perceptions of the people you affect.<br /><br />What do you think?</span><span style="font-family: Verdana; font-size: 9pt; mso-bidi-font-family: 'Arial Unicode MS'; mso-fareast-font-family: 'Arial Unicode MS';"></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="MsoNormal">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;"><strong>d. Knowledge creation and reflection, an iterative process</strong></p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">As the life of the forum matures the participants are constructing knowledge about the topic under discussion. Extract 3 shows how they are interacting with other viewpoints and reflecting on their own ideas, in an iterative manner, refining their understanding. At this stage the teacher facilitator has now become a learner as well, entering into the reflective debate. More importantly the participants are now facilitators, asking questions of others, and pushing the debate forward as researchers.</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">Extract 4</p>
+<table style="width: 95%; mso-padding-alt: 1.5pt 1.5pt 1.5pt 1.5pt; mso-cellspacing: 0cm; border: black 0.75pt solid;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="background: #003366; padding: 1.5pt;">
+<p class="MsoNormal"><strong><span style="color: white; font-family: Verdana; font-size: 9pt;">Re: The discussion centre for 6-11th October</span></strong><span style="font-family: Verdana; font-size: 9pt; mso-bidi-font-family: 'Arial Unicode MS'; mso-fareast-font-family: 'Arial Unicode MS';"></span></p>
+</td>
+</tr>
+<tr>
+<td style="background: #cccc99; padding: 1.5pt;" valign="top">
+<table style="width: 100%; mso-padding-alt: 3.75pt 3.75pt 3.75pt 3.75pt; mso-cellspacing: 0cm;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="background: #cccc99; width: 100%; padding: 3.75pt;" valign="top" width="100%">
+<p class="MsoNormal" style="margin-bottom: 12pt;"><span style="color: black; font-family: 'Courier New'; font-size: 9pt;">Author: <a href="https://www.mirandanet.org.uk/phorum/profile.php?f=9&amp;id=29">talat</a> <br />Date: 10-08-03 11:49<br /><br />I disagree with Alex to a certain extent:<br />it is as a result of the interferance of MEDC's that has caused 'the war against terroism'. Although they showed there intentions as being good, it is possible to notice that millions of lives have been affected in good ways but many have been affected in bad ways. Would you consider the 'help' from America as being global citizenship.</span><span style="font-family: Verdana; font-size: 9pt; mso-bidi-font-family: 'Arial Unicode MS'; mso-fareast-font-family: 'Arial Unicode MS';"></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="MsoNormal">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;"><strong>2. A comparison of the online processes observed with Salmon&rsquo;s five stage model.</strong></p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">Salmon describes online teaching and learning as moving through five stages, access and motivation, socialisation, information exchange, knowledge construction and development .In general the forum<span style="mso-spacerun: yes;"> </span>observed did follow a series of stages which involved issues of access, motivation, creating a learning community, leading to information exchange and knowledge development. However believe that there are useful conceptual additions that should be made to set the model in the context of a school environment and a modified &lsquo;School Model shown below.</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;"><strong>Stage 1<span style="mso-spacerun: yes;"> </span>Skills acquisition</strong></p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;"><span style="mso-spacerun: yes;"> </span>Teacher transfers study and access skills</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;"><span style="mso-spacerun: yes;"> </span>Teacher as instructor</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;"><span style="mso-spacerun: yes;"> </span><span style="mso-spacerun: yes;"> </span>Participants as learners</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;"><strong>Stage 2<span style="mso-spacerun: yes;"> </span>Setting up a collaborative learning environment</strong></p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">Teacher welcomes, encourages, mentors, question setting</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;"><span style="mso-spacerun: yes;"> </span>Teacher as mentor and facilitator</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;"><span style="mso-spacerun: yes;"> </span>Participants as learners</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;"><strong>Stage 3</strong><span style="mso-spacerun: yes;"> </span><strong>Information collection and sharing knowledge streams</strong></p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;"><span style="mso-spacerun: yes;"> </span>Accumulation of ideas and data</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;"><span style="mso-spacerun: yes;"> </span>Sharing of ideas</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;"><span style="mso-spacerun: yes;"> </span>Summarising and the formation of knowledge streams</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 0cm;"><span style="mso-spacerun: yes;"> </span>Teacher as facilitator, learner and researcher</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 2cm;">Learner also becomes a researcher, pushing the process of learning<span style="mso-spacerun: yes;"> </span>forward with questions and analysis</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 2cm;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 2cm; text-indent: -2cm;"><strong>Stage 4<span style="mso-spacerun: yes;"> </span>Knowledge Creation and Reflection</strong></p>
+<p class="MsoBodyTextIndent3" style="margin-left: 2cm; text-indent: -2cm;">This is an iterative process and involves the teacher and the participants operating together as facilitators, learners and researchers, with roles changing as the reflective process leads to knowledge creation and further knowledge construction.</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 2cm; text-indent: -2cm;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 2cm; text-indent: -2cm;"><strong>Stage 5<span style="mso-spacerun: yes;"> </span>Communicating the ideas</strong></p>
+<p class="MsoBodyTextIndent3" style="margin-left: 2cm; text-indent: -2cm;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 2cm; text-align: justify; text-indent: -2cm;"><strong>3. What constitutes e- learning?</strong><span style="mso-spacerun: yes;"> </span></p>
+<p class="MsoBodyTextIndent3" style="margin-left: 2cm; text-align: justify; text-indent: -2cm;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 35.45pt; text-align: justify; text-indent: -21.25pt;"><strong>a. What kind of learning development<span style="mso-spacerun: yes;"> </span>took place in the forum?<span style="mso-spacerun: yes;"> </span></strong></p>
+<p class="MsoBodyTextIndent3" style="margin-left: 14.2pt; text-align: justify;">Capturing the views of pupils at the start of the forum on the &lsquo;Meaning and Value of Citizenship produced the following definitions;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 14.2pt; text-align: justify;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 14.2pt; text-align: justify;"><span style="mso-spacerun: yes;"> </span>How to be good</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 14.2pt; text-align: justify;"><span style="mso-spacerun: yes;"> </span>How society works</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 14.2pt; text-align: justify;"><span style="mso-spacerun: yes;"> </span>How you should behave</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 14.2pt; text-align: justify;"><span style="mso-spacerun: yes;"> </span>About government</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 14.2pt; text-align: justify;"><span style="mso-spacerun: yes;"> </span>The laws we obey</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 14.2pt; text-align: justify;"><span style="mso-spacerun: yes;"> </span>People</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 14.2pt; text-align: justify;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 14.2pt; text-align: justify;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 14.2pt; text-align: justify;">The views expressed in answer to the same question, &lsquo;What do you think Citizenship is? after the forum, bought a different style of answer. 90% of the participants wrote a sentence, rather than a phrase, with words such as moral value, responsibility and community or society.<span style="mso-spacerun: yes;"> </span></p>
+<p class="MsoBodyTextIndent3" style="margin-left: 14.2pt; text-align: justify;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 14.2pt; text-align: justify;"><em>A typical response was &lsquo; Citizenship is about being a member of a society and behaving in such a way that helps others and contributes your services to the society</em></p>
+<p class="MsoBodyTextIndent3" style="margin-left: 14.2pt; text-align: justify;">&nbsp;</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 14.2pt; text-align: justify;">The responses were confidentand offered a more detailed response.<span style="mso-spacerun: yes;"> </span></p>
+<p class="MsoNormal" style="margin-left: 14.2pt; text-align: justify; text-indent: -14.2pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;">b<strong>. How does the experience of the online forum differ from face to face<span style="mso-spacerun: yes;"> </span>classroom learning?</strong></p>
+<p class="MsoNormal" style="margin-left: 14.2pt; text-align: justify; text-indent: -14.2pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style="font-family: 'Arial Unicode MS'; font-size: 12pt;"><span style="mso-spacerun: yes;"> </span>Observing the online processes and recording the participants view the following points emerged about learning in an online forum. </span></p>
+<ul type="disc">
+<li class="MsoNormal" style="text-align: justify; mso-list: l4 level1 lfo12; tab-stops: list 36.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;">more relaxed, time to structure ideas properly</li>
+<li class="MsoNormal" style="text-align: justify; mso-list: l4 level1 lfo12; tab-stops: list 36.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;">slower in time but more efficient</li>
+<li class="MsoNormal" style="text-align: justify; mso-list: l4 level1 lfo12; tab-stops: list 36.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;">there is an archive to look back on picture</li>
+<li class="MsoNormal" style="text-align: justify; mso-list: l4 level1 lfo12; tab-stops: list 36.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;">allows for easier relaxing framing and reframing ideas</li>
+<li class="MsoNormal" style="text-align: justify; mso-list: l4 level1 lfo12; tab-stops: list 36.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;">calmer, perhaps less confrontational</li>
+<li class="MsoNormal" style="text-align: justify; mso-list: l4 level1 lfo12; tab-stops: list 36.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;">not as personal, however, the action of posting on line helps fix ideas and concepts in your mind.</li>
+<li class="MsoNormal" style="text-align: justify; mso-list: l4 level1 lfo12; tab-stops: list 36.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;">a different learning culture which is focused on being a learner and constructing knowledge</li>
+<li class="MsoNormal" style="text-align: justify; mso-list: l4 level1 lfo12; tab-stops: list 36.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;">the action of posting ideas online assists in clarifying ones ideas and concepts.</li>
+<li class="MsoNormal" style="text-align: justify; mso-list: l4 level1 lfo12; tab-stops: list 36.0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;">A richer learning environment in that it covers a wide range of higher ideas and skills than the traditional body of knowledge transfer type of learning.</li>
+</ul>
+<p class="MsoBodyTextIndent3" style="margin-left: 36pt; text-indent: -18pt; mso-list: l4 level1 lfo12; tab-stops: list 36.0pt;"><span style="font-family: Symbol; font-size: 10pt;">&middot;<span style="font: 7pt 'Times New Roman';"> </span></span>In general though the way forward must be to enrich the sound and vision environment of online interaction.</p>
+<p class="MsoBodyTextIndent3" style="margin-left: 2cm; text-indent: -2cm;">&nbsp;</p>
+<p class="MsoNormal" style="text-align: justify; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;">I think e-learning can be viewed as a philosophy of learning. It is an emancipatory knowledge creation process, which empowers the pupils to own the process, by creating a collaborative learning environment, using electronic media to facilitate the learning process.</p>
+<p><strong>The critique : The literature that has influenced the design of the pilot study and my insights into elearning</strong>.</p>
+<p align="justify">I found the holistic, Transformatory approach to learning described by Askew and Carnell (1998) particularly compelling. Right from the start of reading about this &lsquo;philosophy of learning&rsquo; it seemed to strike chords with my own experiences of elearning and ecommunities.</p>
+<p align="justify">There is an interconnection between the emotional, spiritual, physical and the cognitive. The traditional way of learning focuses almost entirely at the cognitive level only. The idea here is that we move from individual cognitive development, to learning as a social event in a complex and multi-dimensional or possibly multi media elearning environment. If learning is to produce an effect on the individual then this comes through a change in behaviour consequent upon a change in the meaning of experience. Positive outcomes occur when the learning process connects with the learners context. Self is central not the pedagogue. The learner impacts on the context and the context on the learner. And this it seems is what lies behind the whole of the DfES document &lsquo;Towards a Unified e-Learning Strategy&rsquo;. Technology can help us change the way we learn by making it more possible to place the learner at the centre, in a stimulating interactive environment.</p>
+<p align="justify">Papert (1980) makes the point that we do not necessarily need a teacher &ndash; curriculum focused learning environment for learning to take place in our school. He points out that there is a capacity and desire for self-development, in all of us, that can be called a self &ndash; actualizing tendency. My experience of online forums seemed to display many characteristics of Transformatory learning and this approach offers the opportunities for learners to own the experience, as they construct knowledge, by interacting with one another. These ideas were the spark which led to the use of an online forum to help my students develop their ideas about citizenship, as they felt that the classroom environment was restrictive. The epistemology of the Transformational approach to learning provides a lens through which one can view the processes involved in elearning. The learner after acquiring access skills moves on to becomes a member of a collaborative learning environment, to become a facilitator and researcher with others to construct knowledge.</p>
+<p align="justify">I found that Askew and Carnell also had some valid points of advice for efaciltators.They describe crucial skills of negotiation, conflict resolution, risk taking as important activities to bring about changes in a group. It is this list that reminds me of Tuckman&rsquo;s storming, forming, norming, performing phases of group formation. This is a particularly useful mental image to have in mind as a facilitator, as one nurtures a group and develops it towards its goals.</p>
+<p align="justify">The following points are also pertinent from their book, as these feelings were the first thoughts of the participants in the forum I formed for the research assignment.</p>
+<p align="justify"><em>&lsquo;Clearly learners must feel that they are in a safe environment in order to perceive the learning to be enhanced. Perhaps not so obviously, they must also perceive the learning organisation as one in which risks are possible.' </em></p>
+<p align="justify"><em> '</em><em>&hellip;learners must believe that their ideas will be honoured and valued and their failures will not be ridiculed. &hellip;.closely related to a sense of psychological safety is a sense on the part of the learners that they are accepted by their teachers and peers.' </em></p>
+<p align="justify">And one could add here, be that a central learning theme is the importance of allowing an interchange roles between learner, researcher and facilitator.</p>
+<p align="justify">Pachler&rsquo;s (2003) online writing course provided a series of references which provided food for thought when setting up an online forum. Of particular relevance has been Knobel&rsquo;s (2002) article on research ethics. He makes the point that one must study the ethical issues right from the start. His maxim of &lsquo;Do no harm, be informed, honest, open and be prepared to practice an ongoing reflection of the research process&rsquo; has been instructive. When preparing my own research, initial discussions on privacy and whether postings should be anonymous were issues which were at the heart of determining whether participants felt safe and able to contribute.</p>
+<p align="justify">Salmon(2002) has had a central role also in developing my thinking about elearning. She has formulated an elearning model which goes through a series of phases which I have recognised in my experiences of participating in GTCE forums. The model moves through access, socialization, information exchange, knowledge construction and development. This has been a helpful framework to use when first establishing a forum for use with pupils and staff in my own school. However there are some modifications that I would make, particularly in relation to the school context. Firstly there is not enough emphasis in the model about the changing nature of the learning process. One must spend time setting up a collaborative learning environment and this is an extension of the socialization phase in the Salmon model. In this phase of the process the participants are learners, taking on the access skills and developing communication skills in an &lsquo;unfamiliar medium&rsquo;. The Salmon model needs to address the transformation that occurs as the collaborative learning environment enables the learners to become independent, analyse the information available to them and generate knowledge streams. In this way participants become researchers and as they interact with one another to develop ideas, they become facilitators.</p>
+<p align="justify">In another way Salmon does not address the issues of establishing forums amongst academic staff, where there is no imperative of a course or qualifications to be obtained. In setting up a departmental forum for staff to exchange views, one needs to &lsquo;market the forum&rsquo;. People need to have a reason to visit a forum. What are they going to get out of it? An initial phase of marketing could be considered as an essential element in starting a forum.</p>
+<p align="justify">Bibliography</p>
+<p align="justify">Askew,S and Carnell, E. (1998) Transforming Learning: Individual and Global Change, London, Institute of Education.</p>
+<p align="justify">Pachler, N.(2003) <a href="http://www.ioe.ac.uk/schools/clc/pachler/writing-workshop/ethics.html">http://www.ioe.ac.uk/schools/clc/pachler/writing-workshop/ethics.html</a></p>
+<p align="justify">Papert, S. (1980) Mindstorms, Children, Computers and Powerful Ideas, London, Harvester Press.</p>
+<p align="justify">Salmon,G (2002) E - activities, The Key to Online Learning, London, Kogan Page.</p>
+<h3>A model of e-pedagogy</h3>
+<p>&nbsp;</p>
+<p>The Smith Model, see&nbsp; <a href="../tar/index.html">www.mirandanet.ac.uk/gtc/</a>&nbsp;draws the strands of this&nbsp;paper together. This model has been built up from observations from the research project and through analysis of the experiences and research of colleague investigating elearning. It draws on the concept of a school as a learning organisation. (Askew and Carnell 1998 p 117)</p>
+<ul>
+<li>
+<div>&nbsp;Knowledge is created&nbsp; by learning in different contexts and methods (multi media)</div>
+</li>
+<li>Boundaries are blurred between the school and the external community (internet and video link)&nbsp;</li>
+<li>Roles are blurred and interchangeable</li>
+<li>The learning process is transparent, open and discussed</li>
+<li>There is a climate of high expectations, a collaborative process</li>
+</ul>
+<p>It builds on the Watkins model in which technology helps to bring learners together into a learning community. In Tina&rsquo;s model the democratic client centred classroom is seen as a key element in transforming learning. This model aims to show how the learning process progresses through the stages of skills acquisition, information collection, through to knowledge creation and reflection. At its core is the development of a collaborative environment and the interchangeable roles of the teachers and learners.</p>
+<p>&nbsp;This essentially therefore is the philosophy behind elearning. It is a transformatory approach to learning. The students are empowered to own the process. Technology assists in developing a collaborative learning environment. E- media provide access to global information which through group interaction and analysis becomes knowledge, constructed and shared amongst the immediate group and with others through the internet. In this way we become a global learning organisation.</p>
+<hr><p>MirandaNet Members can go to the <a href = '../membership/index.php.html'>Log on/off</a> area to edit their own casestudies.</a></p><hr>    <p>[<a href="#top">Back to the top</a>]</p>
+  <p>[<a href="javascript:history.back()">Back</a>]</p>
+</div>
+</div>
+<div id="footer" class="group"> 
+  <!--#include virtual="/footer.htm"-->
+  <!-- Footer Starts -->
+<div id="footer_left"> 
+  <ul class="accessBar">
+    <li class="accessBar"><a href="../associates/bedfordshire.htm"><img src="../images/associates_logos/Uni_Bed_logo_small.jpg" alt="University of Bedfordshire" title="University of Bedfordshire" width="72" height="28" style="vertical-align: -40%;"></a> 
+    </li>
+    <li class="accessBar"><a href="../associates/index.html">Associates</a></li>
+    <li class="accessBar"><a href="../about.php.html">About&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../contact.php.html">Contact&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../fellowship/join.htm">Join&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../membership/index.php.html" title="Members Log on/off" id="members_logon" class="normal">Members&nbsp;Log&nbsp;on/off</a></li>
+  </ul>
+</div>
+<div id="footer_right">
+  <ul class="accessBar">
+    <li class="accessBar"><a href="http://www.linkedin.com/groups/MirandaMod-3726470?trk=myg_ugrp_ovr"><img src="../images/site/linkedin_logo.png" alt="Linked In MirandaNet" width="99" height="28" title="Linked In MirandaNet"></a></li>
+	<li class="accessBar"><a href="http://www.facebook.com/pages/MirandaMod/180379201990546"><img src="../images/site/f_logo.png" alt="MirandaNet on Facebook" width="28" height="28" title="MirandaNet on Facebook"></a></li>
+	<li class="accessBar"><img src="../images/site/twitter.jpg" alt="MirandaNet on Twitter - forthcoming feature" width="28" height="28" title="MirandaNet on Twitter - forthcoming feature"></li>
+	<li class="accessBar"><a href="https://plus.google.com/u/0/communities/116934752242714806891"><img src="../images/site/gplus-32.png" alt="Google + MirandaNet" width="28" height="28" title="Google + MirandaNet"></a></li>
+	<li class="accessBar"><a href="../feed.xml.rss"><img src="../images/site/rss.jpg" alt="RSS feed for MirandaNet" width="28" height="28" title="RSS feed for MirandaNet"></a></li> 
+  </ul>
+</div>
+<!-- Footer Ends --></div>
+</body>
+</html>

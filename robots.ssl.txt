@@ -1,0 +1,15 @@
+User-agent: AhrefsBot
+Disallow: / 
+
+User-agent: *
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /elapa_docs/
+Disallow: /lpdocs/
+Disallow: /members/
+Disallow: /phorum/
+Disallow: /preston/
+Disallow: /private/
+Disallow: /templates/
+Disallow: /tinymce/
+Disallow: /wordpress/

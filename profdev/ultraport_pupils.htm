@@ -1,0 +1,685 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<title>MirandaNet ICT CPD - Ultraportables Questionnaire - Pupils</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The MirandaNet Fellowship Web Site">
+<meta name="keywords" content="ICT communities education learning support">
+<meta name="language" content="en">
+<link href="../common.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../common.js"></script>
+<style type="text/css">.buttonSubmit {
+	color: green;
+	text-transform: uppercase;
+	border: 1px solid green;
+	margin-top: 1em;
+	font-size: 1em;
+}
+
+.buttonReset {
+	color: red;
+	text-transform: uppercase;
+	border: 1px solid red;
+	margin-top: 1em;
+	font-size: 1em;
+}
+
+.buttonSubmitHide {
+	display: none;
+}
+
+</style>
+<script type="text/JavaScript">
+
+function checkscript() {
+	for (i=0;i<4;i++) {
+		box = document.example.elements[i];
+		if (!box.value) {
+			alert('You haven\'t filled in ' + box.name + '!');
+			box.focus()
+			return false;
+		}
+	}
+	return true;
+}
+function checkNever() { 
+	var submit = document.questionnaire.submit;
+//	var never = document.questionnaire.last_receive[5];
+//	if (never.checked == true) { 
+//		alert('You have clicked Never');
+		classChange('buttonSubmitHide',submit)
+//		} else {
+//		alert('You did not click Never');
+//		}
+}
+
+function classChange(styleChange,item) {
+    item.className = styleChange;
+}
+function ValidateQuestionnaire() {
+//    var institution = document.questionnaire.institution;
+    var job_title = document.questionnaire.job_title;
+    var post_code_region = document.questionnaire.post_code_region;
+
+/*    if (institution.value == "")
+    {
+        window.alert("Please tell us your Institution.");
+        institution.focus();
+        return false;
+    }
+*/
+       if (job_title.value == "")
+    {
+        window.alert("Please tell us your Job Title.");
+        job_title.focus();
+        return false;
+    }
+
+       if (post_code_region.value == "")
+    {
+        window.alert("Please tell us the first part of your Post Code or tell us which Region you are in.");
+        post_code_region.focus();
+        return false;
+    }
+
+  if (document.questionnaire.consent.checked == false) {
+    alert('Please check the Consent Box to continue.');
+	document.questionnaire.consent.focus()
+    return false;
+  } else
+    return true;
+}
+</script>
+
+</head>
+<body onLoad="return show('Pupils')">
+<div id="page">
+<div id="header"><a name="top"></a>
+    <div id="home"><a tabindex="0" href="../index.html"><img src="../images/logo.gif" alt="MirandaNet Index Page" width="200" height="100" title="MirandaNet Index Page"></a> 
+      <img src="../images/bar-start.gif" width="201" height="30" alt=""> </div>
+  <img src="../images/bar-profdevel.gif" width="100%" height="30" alt="MirandaNet" title="MirandaNet"> 
+  <h1>MirandaNet Questionnaires</h1>
+</div>
+
+	
+  <div id="leftColumn"> <img src="ultraport/Dell_ultra_portable.jpg" width="200" height="133" alt="Dell Inspiron Mini 9 Ultra portable Laptop" title="Dell Inspiron Mini 9 Ultra portable Laptop">	
+    
+<!--ignore_perlfect_search-->
+<div id="navsite">
+  <p>Site navigation</p>
+  <ul>
+    <li><a tabindex="1" href="ultraport.htm" title="Home" id="Home" class="normal"> 
+      Ultraportables Home</a></li>
+    <li><a tabindex="2" href="ultraport_pupils.htm" title="Pupils" id="Pupils" class="normal"> 
+      Ultraportables Pupils</a></li>
+    <li><a tabindex="3" href="ultraport_teachers.htm" title="Teachers" id="Teachers" class="normal"> 
+      Ultraportables Teachers</a></li>
+    <li><a tabindex="4" href="ultraport_leaders.htm" title="Leaders" id="Leaders" class="normal"> 
+      Ultraportables Leaders</a></li>
+  </ul>
+</div>
+
+  </div>
+
+  <div id="mainBody"> 
+    <h2>Ultraportables: Pupils' Survey</h2>
+    <p>As part of the evaluation of the Ultraportable - Netbook - Project it would be most helpful if you could answer the following questions. Please feel free to add any comments that you feel would expand your answers.</p>
+    <p>All data will be confidential and responses in the report will be anonymised.</p>
+	<form class="join" action="https://www.mirandanet.org.uk/cgi-bin/csv/csvwrite_ultraport_pupils.pl" method="post" name="questionnaire" id="questionnaire"
+    onSubmit="return true">
+    <fieldset>
+      <legend>Background questions</legend>
+      <p><label for="school">What is the name of your school?</label>
+        <input name="school" type="text" id="school" size="40" maxlength="400" class="txt"></p>
+	  <p><label for ="sex_b">Are you a boy or a girl?</label>
+	  </p>
+	  <p> 
+        <label for ="sex_b">Boy:</label>
+        <input name="sex" id="sex_b" type="radio" value="boy">
+      </p>
+	  <p> 
+        <label for ="sex_g">Girl:</label>
+        <input name="sex" id="sex_g" type="radio" value="girl">
+      </p>
+    </fieldset>  
+    <fieldset>
+    <legend>Questions about home computers</legend>
+ 	  <p><label for ="comp_home_y">Do you use a computer at home?</label></p>
+	  <p> 
+        <label for ="comp_home_y">Yes:</label>
+        <input name="comp_home" id="comp_home_y" type="radio" value="yes">
+      </p>
+     <p> 
+        <label for ="comp_home_n">No:</label>
+        <input name="comp_home" id="comp_home_n" type="radio" value="no">
+      </p>
+      <p>
+          <label for="belong">Who does it belong to?</label>
+        <input name="belong" type="text" id="belong" size="40" maxlength="400" class="txt">
+      </p>
+      <p>&nbsp; </p>
+      <p> 
+        <label for="where_use">Where do you use it?</label>
+        <input name="where_use" type="text" id="where_use" size="40" maxlength="400" class="txt">
+</p>
+      <p>&nbsp; </p>
+      <p>
+      <label for="use_with">Do you use it with anyone?</label>
+        <input name="use_with" type="text" id="use_with" size="40" maxlength="400" class="txt">
+      </p>
+    <p>&nbsp;</p>
+	  <p> 
+        <label for="use_for">What do you use it for?</label>
+        <input name="use_for" type="text" id="use_for" size="40" maxlength="400" class="txt">
+      </p>
+      <p>&nbsp;</p>
+      <p> 
+        <label for="how_often">How often do you use it?</label>
+        <input name="how_often" type="text" id="how_often" size="40" maxlength="400" class="txt">
+      </p>
+      <p>&nbsp;</p>
+
+    </fieldset>  
+    <fieldset>
+    <legend>Questions about the Netbook (Ultraportable) Project</legend>
+    <table width="90%"  border="1" cellspacing="0" cellpadding="5">
+        <tr>
+          <td colspan="2"><p><strong>How did you learn how to use your Netbook?</strong> (tick
+              all that apply)</p>
+          </td>
+        </tr>
+        <tr>
+          <td><p><label for ="learn_help">The 'Help' button tells you how to use it</label></p></td>
+          <td>
+            <input name="learn_help" id="learn_help" type="checkbox" value="learn_help">
+          </td>
+        </tr>
+        <tr>
+          <td><p>
+            <label for ="learn_self">I worked it out myself</label>
+          </p></td>
+          <td> <input name="learn_self" id="learn_self" type="checkbox" value="learn_self">
+          </td>
+        </tr>
+        <tr>
+          <td><p>
+            <label for ="learn_friends">My friends and I worked together</label>
+          </p></td>
+          <td><input name="learn_friends" id="learn_friends" type="checkbox" value="learn_friends">
+          </td>
+        </tr>
+        <tr>
+          <td><p>
+		  <label for ="learn_demo">We had a demonstration in an ICT lesson</label></p></td>
+          <td><input name="learn_demo" id="learn_demo" type="checkbox" value="learn_demo">
+          </td>
+        </tr>
+        <tr>
+          <td><p>
+            <label for ="learn_lessons">We had lessons on how to use it</label>
+          </p></td>
+          <td><input name="learn_lessons" id="learn_lessons" type="checkbox" value="learn_lessons">
+          </td>
+        </tr>
+        <tr>
+      </table>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    
+    
+      <table width="90%"  border="1" cellspacing="0" cellpadding="5">
+        <tr>
+          <td colspan="2"><p><strong>When do you use your Netbook?</strong> (tick
+            all that apply):</p></td>
+        </tr>
+        <tr>
+          <td><p>
+            <label for ="use_home_before">At home, before school</label>
+          </p></td>
+          <td><input name="use_home_before" id="use_home_before" type="checkbox" value="use_home_before"></td>
+        </tr>
+        <tr>
+          <td><p>
+            <label for ="use_home_after">At home, after school</label>
+          </p></td>
+          <td><input name="use_home_after" id="use_home_after" type="checkbox" value="use_home_after"></td>
+        </tr>
+        <tr>
+          <td><p>
+            <label for ="use_school_before">At school, before lessons</label>
+          </p></td>
+          <td><input name="use_school_before" id="use_school_before" type="checkbox" value="use_school_before"></td>
+        <tr>
+          <td><p>
+            <label for ="use_school_during">At school, during lessons</label>
+          </p></td>
+          <td><input name="use_school_during" id="use_school_during" type="checkbox" value="use_school_during"></td>
+        </tr>
+        <tr>
+          <td><p>
+            <label for ="use_school_break">At school, during break</label>
+          </p></td>
+          <td><input name="use_school_break" id="use_school_break" type="checkbox" value="use_school_break"></td>
+        </tr>
+        <tr>
+          <td><p>
+            <label for ="use_school_lunchtime">At school, at lunchtime</label>
+          </p></td>
+          <td><input name="use_school_lunchtime" id="use_school_lunchtime" type="checkbox" value="use_school_lunchtime"></td>
+        </tr>
+        <tr>
+          <td><p>
+            <label for ="use_school_after">At school, after lessons</label>
+          </p></td>
+          <td><input name="use_school_after" id="use_school_after" type="checkbox" value="use_school_after"></td>
+        </tr>
+       <tr>
+          <td colspan="2"><p>
+            <label for="use_homeschool_anything_else">Anything else?</label></p> 
+            <input name="use_homeschool_anything_else" type="text" id="use_homeschool_anything_else" size="35" maxlength="400" class="txt"></td>
+	    </tr>
+      </table>
+      <p>&nbsp;</p>
+    <table width="90%"  border="1" cellspacing="0" cellpadding="5">
+        <tr>
+          <td colspan="2"><p><strong>What do you use it for?</strong> (tick
+            all that apply):</p></td>
+        </tr>
+        <tr>
+          <td><p>
+            <label for ="use_photos">Taking photos</label></p></td>
+          <td><input name="use_photos" id="use_photos" type="checkbox" value="use_photos"></td>
+        </tr>
+        <tr>
+          <td><p>
+            <label for ="use_film">Filmmaking</label>
+          </p></td>
+          <td><input name="use_film" id="use_film" type="checkbox" value="use_film"></td>
+        </tr>
+        <tr>
+          <td><p>
+            <label for ="use_internet">Using the Internet</label>
+          </p></td>
+          <td><input name="use_internet" id="use_internet" type="checkbox" value="use_internet"></td>
+        <tr>
+          <td><p>
+            <label for ="use_writing">Writing</label>
+          </p></td>
+          <td><input name="use_writing" id="use_writing" type="checkbox" value="use_writing"></td>
+        </tr>
+        <tr>
+          <td><p>
+            <label for ="use_podcasting">Podcasting</label>
+          </p></td>
+          <td><input name="use_podcasting" id="use_podcasting" type="checkbox" value="use_podcasting"></td>
+        </tr>
+       <tr>
+          <td colspan="2"><p>
+            <label for="use_anything_else">Anything else?</label></p> 
+          <input name="use_anything_else" type="text" id="use_anything_else" size="35" maxlength="400" class="txt"></td>
+	    </tr>
+      </table>
+    
+    <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p><strong>How many times a week do you use your Netbook at school?</strong></p>
+      <p> 
+        <label for ="times_a">a) Never:</label>
+        <input name="times" id="times_a" type="radio" value="never">
+      </p>
+      <p> 
+        <label for ="times_b">b) Once a week:</label>
+        <input name="times" id="times_b" type="radio" value="once_week">
+      </p>
+      <p> 
+        <label for ="times_c">c) Up to three days a week:</label>
+        <input name="times" id="times_c" type="radio" value="3_week">
+      </p>
+    <p>
+        <label for ="times_d">d) Every day:</label>
+        <input name="times" id="times_d" type="radio" value="every_day">
+    </p>
+      <p> 
+        <label for ="times_e">e) Every lesson:</label>
+        <input name="times" id="times_e" type="radio" value="every_lesson">
+      </p>
+      <p>&nbsp;</p>
+<table width="90%"  border="1" cellspacing="0" cellpadding="5">
+        <tr>
+          <td colspan="2"><p><strong>When I use my Netbook I like to...</strong> (tick
+            all that apply):</p></td>
+        </tr>
+        <tr>
+          <td><p>
+            <label for ="like_workown">Work on my own</label></p></td>
+          <td><input name="like_workown" id="like_workown" type="checkbox" value="like_workown"></td>
+        </tr>
+        <tr>
+          <td><p>
+            <label for ="like_workanother">Work with another person</label>
+            </p></td>
+          <td><input name="like_workanother" id="like_workanother" type="checkbox" value="like_workanother"></td>
+        </tr>
+        <tr>
+          <td><p>
+            <label for ="like_useinternet">Use information from the Internet</label>
+          </p></td>
+          <td><input name="like_useinternet" id="like_useinternet" type="checkbox" value="like_useinternet"></td>
+        <tr>
+          <td><p>
+            <label for ="like_email">Email other people and work with them</label>
+            </p></td>
+          <td><input name="like_email" id="like_email" type="checkbox" value="like_email"></td>
+        </tr>
+      </table>
+	  <p>&nbsp;</p>
+      <p>
+          <label for="use_subjects">For which subjects do you use your Netbook?</label>
+        <textarea name="use_subjects" type="text" id="use_subjects" cols="40" rows="2"></textarea>
+      </p>
+	  <p>&nbsp;</p>
+	  <table width="90%"  border="1" cellspacing="0" cellpadding="5">
+        <tr>
+          <td colspan="2"><p><strong>Do you... </strong> (tick
+            all that apply):</p></td>
+        </tr>
+        <tr>
+          <td><p>
+            <label for ="use_sendteachers">Use your Netbook to send messages to your
+            teachers about your work?</label></p></td>
+          <td><input name="use_sendteachers" id="use_sendteachers" type="checkbox" value="use_sendteachers"></td>
+        </tr>
+        <tr>
+          <td><p>
+            <label for ="use_workfriends">Use your Netbook to work with your friends?</label>
+            </p></td>
+          <td><input name="use_workfriends" id="use_workfriends" type="checkbox" value="use_workfriends"></td>
+        </tr>
+        <tr>
+          <td><p>
+            <label for ="use_athome">Use your Netbook when you are at
+            home?</label>
+          </p></td>
+          <td><input name="use_athome" id="use_athome" type="checkbox" value="use_athome"></td>
+        <tr>
+          <td><p>
+            <label for ="use_onlinetests">Ever do online quizzes or tests?</label>
+            </p></td>
+          <td><input name="use_onlinetests" id="use_onlinetests" type="checkbox" value="use_onlinetests"></td>
+        </tr>
+         <tr>
+          <td><p>
+            <label for ="use_teacherssend">And do your teachers use the Netbook to send messages to you about
+            your work?</label>
+            </p></td>
+          <td><input name="use_teacherssend" id="use_teacherssend" type="checkbox" value="use_teacherssend"></td>
+        </tr>
+     </table>
+	  <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p><strong>I use my Netbook...</strong></p>
+      <p> 
+        <label for ="use_a">a) Every lesson:</label>
+        <input name="use" id="use_a" type="radio" value="every_lesson">
+      </p>
+      <p> 
+        <label for ="use_b">b) Every day:</label>
+        <input name="use" id="use_b" type="radio" value="every_day">
+      </p>
+      <p> 
+        <label for ="use_c">c) Up to three days a week:</label>
+        <input name="use" id="use_c" type="radio" value="3_week">
+      </p>
+    <p>
+        <label for ="use_d">d) Once a week:</label>
+        <input name="use" id="use_d" type="radio" value="once_week">
+    </p>
+      <p> 
+        <label for ="use_e">e) Never:</label>
+        <input name="use" id="use_e" type="radio" value="never">
+      </p>
+      <p>&nbsp;</p>
+      <p>How much do you agree with this statement?</p>
+      <p><em>Using the Netbook improves my work.</em></p>
+      <p> 
+        <label for ="improve_a">a) I strongly agree:</label>
+        <input name="improve" id="improve_a" type="radio" value="s_agree">
+      </p>
+      <p> 
+        <label for ="improve_b">b) I agree:</label>
+        <input name="improve" id="improve_b" type="radio" value="agree">
+      </p>
+      <p> 
+        <label for ="improve_c">c) I'm neutral:</label>
+        <input name="improve" id="improve_c" type="radio" value="neutral">
+      </p>
+    <p>
+        <label for ="improve_d">d) I disagree:</label>
+     <input name="improve" id="improve_d" type="radio" value="disagree">
+    </p>
+      <p> 
+        <label for ="improve_e">e) I strongly disagree:</label>
+        <input name="improve" id="improve_e" type="radio" value="s_disagree">
+      </p>
+      <p>&nbsp;</p>
+      <table width="90%"  border="1" cellspacing="0" cellpadding="5">
+        <tr>
+          <td><p><strong>Which of these statements describes how you feel?</strong> Answer
+              Yes or No for each one.</p>
+          </td>
+          <td><p><strong>Yes</strong></p>
+          </td>
+          <td><p><strong>No</strong></p>
+          </td>
+        </tr>
+        <tr>
+          <td><p>
+              <label for="fun_working">Working with a Netbook makes schoolwork
+              more fun.</label>
+            </p>
+          </td>
+          <td><input name="fun_working" id="fun_working" type="radio" value="yes">
+          </td>
+          <td><input name="fun_working" type="radio" value="no">
+          </td>
+        </tr>
+        <tr>
+          <td><p>
+              <label for="look_forward">I look forward to coming to school.</label>
+            </p>
+          </td>
+          <td><input name="look_forward" id="look_forward" type="radio" value="yes">
+          </td>
+          <td><input name="look_forward" type="radio" value="no">
+          </td>
+        </tr>
+  <td><p>
+        <label for="enjoy_working">I enjoy working at home.</label>
+      </p>
+    </td>
+      <td><input name="enjoy_working" id="enjoy_working" type="radio" value="yes">
+      </td>
+      <td><input name="enjoy_working" type="radio" value="no">
+      </td>
+  </tr>
+  <tr>
+    <td><p>
+        <label for="takes_longer">Working with a Netbook makes the work take longer.</label>
+      </p>
+    </td>
+    <td><input name="takes_longer" id="takes_longer" type="radio" value="yes">
+    </td>
+    <td><input name="takes_longer" type="radio" value="no">
+    </td>
+  </tr>
+  <tr>
+    <td><p>
+        <label for="difficult_use">I find it difficult to use an Netbook for my
+        work.</label>
+      </p>
+    </td>
+    <td><input name="difficult_use" id="difficult_use" type="radio" value="yes">
+    </td>
+    <td><input name="difficult_use" type="radio" value="no">
+    </td>
+  </tr>
+      </table>
+      <p>&nbsp;</p>
+      <p>
+        <label for="helps_do_work"><strong>The Netbook helps me do work that is...</strong></label>
+	    <textarea name="helps_do_work" type="text" id="helps_do_work" cols="40" rows="2"></textarea>
+	  </p>
+      <p>&nbsp;</p>
+	 <table width="90%"  border="1" cellspacing="0" cellpadding="5">
+        <tr>
+          <td colspan="6"><p><strong>Since I started using my Netbook my work
+          has improved...</strong></p></td>
+        </tr>
+        <tr>
+          <td><p>
+              <label for="improved_alot">A&nbsp;lot</label>
+              </p></td>
+          <td><p>
+            <label for="improved_quite">Quite&nbsp;a&nbsp;lot</label>
+          </p>
+          </td>
+          <td><p>
+            <label for="improved_some">Some</label>
+          </p></td>
+          <td><p>
+            <label for="improved_notmuch">Not&nbsp;much</label>
+          </p></td>
+          <td><p>
+            <label for="improved_notatall">Not&nbsp;at&nbsp;all</label>
+          </p></td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="improved" id="improved_alot" value="improved_alot"></td>
+          <td><input type="radio" name="improved" id="improved_quite" value="improved_quite"></td>
+          <td><input type="radio" name="improved" id="improved_some" value="improved_some"></td>
+          <td><input type="radio" name="improved" id="improved_notmuch" value="improved_notmuch"></td>
+          <td><input type="radio" name="improved" id="improved_notatall" value="improved_notatall"> </td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+<table width="90%"  border="1" cellspacing="0" cellpadding="5">
+        <tr>
+          <td colspan="6"><p><strong>Using the Netbook makes my work more fun...</strong></p></td>
+        </tr>
+        <tr>
+          <td><p>
+              <label for="morefun_strongagree">I&nbsp;strongly&nbsp;agree</label>
+              </p></td>
+          <td><p>
+            <label for="morefun_agree">I&nbsp;agree</label>
+          </p>
+          </td>
+          <td><p>
+            <label for="morefun_neutral">Neutral</label>
+          </p></td>
+          <td><p>
+            <label for="morefun_disagree">I&nbsp;disagree</label>
+          </p></td>
+          <td><p>
+            <label for="morefun_strongdisagree">I&nbsp;strongly&nbsp;disagree</label>
+          </p></td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="morefun" id="morefun_strongagree" value="morefun_strongagree"></td>
+          <td><input type="radio" name="morefun" id="morefun_agree" value="morefun_agree"></td>
+          <td><input type="radio" name="morefun" id="morefun_neutral" value="morefun_neutral"></td>
+          <td><input type="radio" name="morefun" id="morefun_disagree" value="morefun_disagree"></td>
+          <td><input type="radio" name="morefun" id="morefun_strongdisagree" value="morefun_strongdisagree"> </td>
+        </tr>
+      </table>      <p>
+        <label for="changed_way"><strong>How has using your Netbook changed the way you
+        work? </strong></label>
+	    <textarea name="changed_way" type="text" id="changed_way" cols="40" rows="2"></textarea>
+	  </p>
+      <p>&nbsp;</p>
+<table width="90%"  border="1" cellspacing="0" cellpadding="5">
+        <tr>
+          <td colspan="6"><p><strong>I like using my Netbook...</strong></p></td>
+        </tr>
+        <tr>
+          <td><p>
+              <label for="likeusing_strongagree">I&nbsp;strongly&nbsp;agree</label>
+              </p></td>
+          <td><p>
+            <label for="likeusing_agree">I&nbsp;agree</label>
+          </p>
+          </td>
+          <td><p>
+            <label for="likeusing_neutral">Neutral</label>
+          </p></td>
+          <td><p>
+            <label for="likeusing_disagree">I&nbsp;disagree</label>
+          </p></td>
+          <td><p>
+            <label for="likeusing_strongdisagree">I&nbsp;strongly&nbsp;disagree</label>
+          </p></td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="likeusing" id="likeusing_strongagree" value="likeusing_strongagree"></td>
+          <td><input type="radio" name="likeusing" id="likeusing_agree" value="likeusing_agree"></td>
+          <td><input type="radio" name="likeusing" id="likeusing_neutral" value="likeusing_neutral"></td>
+          <td><input type="radio" name="likeusing" id="likeusing_disagree" value="likeusing_disagree"></td>
+          <td><input type="radio" name="likeusing" id="likeusing_strongdisagree" value="likeusing_strongdisagree"> </td>
+        </tr>
+      </table>      
+      <p>&nbsp;</p>
+	  <p>
+        <label for="like_best"><strong>The thing I like best about my Netbook
+        is...</strong></label>
+	    <textarea name="like_best" type="text" id="like_best" cols="40" rows="2"></textarea>
+	  </p>
+      <p>&nbsp;</p>
+       <p>&nbsp;</p>
+      <p>
+        <label for="interesting_things"><strong>Tell me what interesting things you have done
+        with your Netbook</strong></label>
+	    <textarea name="interesting_things" type="text" id="interesting_things" cols="40" rows="2"></textarea>
+	  </p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>
+        <label for="use_anythingelse"><strong>Is there anything else you would like to say
+        about the Netbook?</strong></label>
+	    <textarea name="use_anythingelse" type="text" id="use_anythingelse" cols="40" rows="2"></textarea>
+	  </p>
+      <p>&nbsp;</p>
+     <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </fieldset>  
+    <fieldset>
+    <legend>Thank you</legend>
+    <p>If you would like to say more about your Netbook and the ways in which
+      you use it speak to your teacher. You will then be able to provide us with
+      more information.</p>
+    <p>Thank you very much for answering these questions. Don't forget to press
+      the Submit button below to send off your answers.</p>
+    <p>&nbsp;</p>
+	<p>&nbsp; 
+      <input type="submit" name="submit1" value="submit" class="buttonSubmit" 
+	  onClick="return confirm('You are about to send your form. Is this OK?')"  >
+      &nbsp;&nbsp;&nbsp; &nbsp; 
+      <input type="reset" name="Reset" value="Reset" class="buttonReset"  
+	  onClick="return confirm('Do you really want to clear the form and start again?')">
+    </p>
+    </fieldset>
+  </form>
+  
+   
+ 
+    <p>[<a href="#top">Back to the top</a>]</p>
+  <p>[<a href="javascript:history.back()">Back</a>]</p>
+</div>
+<div id="footer">
+  <img src="../images/bar-home.gif" width="100%" height="30" alt="">  
+  <!--include virtual="/footer.htm"-->
+</div>
+</div>
+</body>
+</html>

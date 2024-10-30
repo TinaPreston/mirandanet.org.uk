@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MirandaNet Fellowship - Casestudy</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The MirandaNet Fellowship Web Site" />
+<meta name="keywords" content="ICT communities education learning support" />
+<link rel="stylesheet" type="text/css" href="../mirandanet.css" />
+<link rel="stylesheet" type="text/css" href="../fellowship/fellowship.css" />
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/fix_ie.css" /></style><![endif]-->
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+<script type="text/javascript" src="../mirandanet.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<body onload="return show('casestudies')">
+<div id="header" class="group">
+<a id="top"></a>
+<a href ="../index.html"><img src="../images/logos/mirandanet_nl.gif" alt="The MirandaNet Organisation Logo" width="167" height="61" title="The MirandaNet Organisation: return to home page" /></a> 
+	<h1 class="name"><a href ="../index.html">MirandaNet</a></h1>
+	<h2 class="strapline">Sharing experience and expertise</h2>
+	<div class="topnav_wrapper">
+	  <h5>Site navigation:</h5>
+		<ul class="topnav">
+			<li><a href ="../index.html">Home</a></li>
+			<li><a href ="../fellowship/index.html" id="current">Fellowship</a></li>
+			<li><a href ="../researchexchange/index.html">Research Exchange</a></li>
+			<li><a href ="../consultancy/index.html">Consultancy</a></li>
+			<li><a href ="http://wec.mirandanet.org.uk/">World Ecitizens</a></li>
+		</ul>
+	</div>
+</div>
+
+<div id="content" class="group">
+<div id="leftColumn">
+	<!-- Place all the items for the left hand section here -->
+	<div class="group box">
+	  <!--#include virtual="/fellowship/fellowship_menu.htm"-->
+	  <div id="nav"> 
+  <ul>
+    <li><a href="../fellowship/index.php.html" id="home" class="normal">Fellowship</a></li>
+    <li><a href="../bett/index.html" id="bett" class="normal">BETT</a> 
+      <ul id="sub_bett">
+        <li><a href="../bett/programme.htm" id="programme" class="normal">BETT Programme</a></li>
+      </ul>
+    </li>
+    <li><a href="../fellowship/about.htm" id="about" class="normal">About Us</a> 
+      <ul id="sub_about">
+        <li><a href="../fellowship/founder.htm" id="founder" class="normal">Founder</a></li>
+        <li><a href="../fellowship/researchexchange.htm" id="research" class="normal">Research 
+          Exchange</a></li>
+        <li><a href="../fellowship/consultancy.htm" id="consultancy" class="normal">Consultancy</a></li>
+        <li><a href="../fellowship/worldecitizens.htm" id="worldecitizens" class="normal">World 
+          Ecitizens</a></li>
+      </ul>
+    </li>
+    <li><a href="../profiles/index.html" id="membership" class="normal">The Membership</a></li>
+    <li><a href="../associates/index.html" id="associates" class="normal">Associates</a></li>
+    <li><a href="../news/news.php.html" id="newsarea" class="normal">News &amp; Diary</a> 
+      <ul id="sub_newsarea">
+        <li><a href="../news/diary.php.html" id="diary" class="normal">Diary</a></li>
+        <li><a href="../news/letter.php.html" id="newsletter" class="normal">Newsletter</a></li>
+        <li><a href="../news/mirandanews.htm" id="letterarchive" class="normal">Newsletter 
+          Archive</a></li>
+      </ul>
+    </li>
+    <li><a href="../contact.php.html" id="contact" class="normal">Contact Us</a></li>
+    <li><a href="../mirandamods/index.html" id="mirandamods" class="normal">MirandaMods</a></li>
+    <li><a href="index.html" id="casestudies" class="normal">Case Studies</a></li>
+    <li><a href="../articles/index.html" id="articles" class="normal">Articles</a></li>
+    <li><a href="https://www.mirandanet.org.uk/phorum/default.php" id="forum" class="normal">Forum</a></li>
+    <li><a href="../index_old.htm" id="archive" class="normal">Archive Site</a></li>
+    <li><a href="../fellowship/join.htm" id="join" class="normal">Join MirandaNet</a></li>
+    <li><a href="../membership/index.php.html" title="Members Log on/off" id="logon" class="normal">Members 
+      Log on/off</a></li>
+  </ul>
+</div>
+	</div>
+		<!-- Search Case Studies Module -->
+	<div class="group box" style="margin-bottom:0">
+	<h1>Search the Case Studies</h1> 
+ 	<form method="post" action="../fellowship/casestudies_search.php.html" class="join">
+    <fieldset>
+    <legend>Search Form</legend>
+          <p>Search for:<br />
+            <select name="field" title="Choose search area">
+			 <option value="Title">Title</option>
+			 <option value="Abstract">Abstract</option>
+			 <option value="keywords">Keywords</option>
+			 <option value="article">Professional Study</option>
+			 <option value="Name">Author Name</option>
+            </select>
+            <br />
+            <input class="txtinput" type="text" id="find1" name="find" placeholder="Enter search term" title="Enter search term" />
+            <br />
+            <input type="hidden" name="searching" value="yes" />
+            <input type="submit" name="search" value="Search" />
+          </p>
+ 	</fieldset>
+	</form>
+	</div>
+		<!-- Search Case Studies Module -->
+	<div class="group box" style="margin-bottom:0">
+	
+  <h1>Search the Articles</h1> 
+ 	<form method="post" action="../fellowship/articles_search.php.html" class="join">
+    <fieldset>
+    <legend>Search Form</legend>
+          <p>Search for:<br />
+            <select name="field" title="Choose search area">
+			 <option value="Title">Title</option>
+			 <option value="keywords">Keywords</option>
+			 <option value="article">Article</option>
+			 <option value="Name">Author Name</option>
+            </select>
+            <br />
+            <input class="txtinput" type="text" id="find2" name="find" placeholder="Enter search term" title="Enter search term" />
+            <br />
+            <input type="hidden" name="searching" value="yes" />
+            <input type="submit" name="search" value="Search" />
+          </p>
+ 	</fieldset>
+	</form>
+	</div>
+		<!-- Search Membership Module -->
+	<div class="group box" style="margin-bottom:0">
+	<h1>Search the Membership</h1> 
+	<form method="post" action="../fellowship/listing_search.php.html" class="join">
+     <fieldset>
+    <legend>Search Form</legend>
+          <p>Search for:<br />
+            <select name="field" title="Choose search area">
+              <option value="Anything">Anything</option>
+			  <option value="Surname">Last Name</option>
+              <option value="Forename">First Name</option>
+              <option value="Profile">Profile</option>
+            </select>
+            <br />
+            <input class="txtinput" type="text" id="find" name="find" placeholder="Enter search term" title="Enter search term" />
+            <br />
+            <input type="hidden" name="searching" value="yes" />
+            <input type="submit" name="search" value="Search" />
+          </p>
+	</fieldset>
+	</form>
+	</div>	<!-- Search MirandaNet Module -->
+<div class="group box" style="margin-bottom:0">
+	
+  <h1>Search MirandaNet</h1> 
+ 	<form method="get" action="https://www.google.com/search">
+    <fieldset>
+    <legend>Search Form</legend>
+          <p>Search in:<br />
+            <select name="sitesearch" title="Choose search area">
+			 <option value="mirandanet.org.uk">MirandaNet</option>
+			 <option value="worldecitizens.net">World Ecitizens</option>
+			 <option value="">The Web</option>
+            </select>
+            <br />
+            <input class="txtinput" type="text" name="q" maxlength="255" placeholder="Enter search term" title="Enter search term"/>
+            <br />
+            <input type="hidden" name="searching" value="yes" />
+            <input type="submit" name="search" value="Google Search" />
+          </p>
+ 	</fieldset>
+	</form>
+	</div>
+
+</div>
+  <div id="mainBody" class="group"> 
+    <h1>MirandaNet Fellowship Casestudy</h1>
+    <p><a href="../fellowship/listing.php.html">Membership List</a> | <a href="../publications/index.html">Publications</a> 
+      | <a href="../publications/research.htm">Research</a> | <a href="../publications/personal.php.html">Specialist 
+      Area List</a> | <a href="../ejournal/index.html">Braided Learning Ejournal</a></p>
+    <hr />
+    <h2>THE IMPACT OF CAD/CAM TECHNOLOGY IN KS 3 AND ITS EFFECT ON LEARNING, MOTIVATION AND ATTITUDE</h2>
+<p><strong>Darryl Shear</strong></p>
+<p><strong>Year of posting:</strong> 2005</p>
+<hr />
+<p><strong>Study</strong></p><P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify"><B style="mso-bidi-font-weight: normal"><U>CONTEXT<?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></U></B></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify"><B style="mso-bidi-font-weight: normal"><U>&nbsp;<o:p></o:p></U></B></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">This paper considers how the implementation of a new Laser Cutter will affect the way in which we deliver CAD/CAM to our students and if there will be a change in the attitudes and motivation of students.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>This can only be done by comparing the current CAD/CAM system with the new Laser Cutter. </P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt 18pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<UL style="MARGIN-TOP: 0cm" type=disc>
+<LI class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify; tab-stops: list 36.0pt; mso-list: l12 level1 lfo1">Background </LI></UL>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">Being a Teacher of Design technology for the last five years, I have begun to see swift changes in the types of projects that students are taught.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>It seems a long time ago since we taught lathe skills or wood turning skills to make a balancing toy.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>The trend now seems to be smart materials, 3D modelling and CAD/CAM (Computer Aided Design/ Computer Aided Manufacture) simply because this technology is now readily available and used to enhance everyday life via the products we use and buy.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN></P>
+<DIV style="BORDER-RIGHT: medium none; PADDING-RIGHT: 0cm; BORDER-TOP: windowtext 0.5pt solid; PADDING-LEFT: 0cm; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 7pt; BORDER-BOTTOM: medium none">
+<H1 style="BORDER-RIGHT: medium none; PADDING-RIGHT: 0cm; BORDER-TOP: medium none; PADDING-LEFT: 0cm; PADDING-BOTTOM: 0cm; MARGIN: 12pt 0cm 3pt; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: medium none; mso-border-top-alt: solid windowtext .5pt; mso-padding-alt: 7.0pt 0cm 0cm 0cm"><FONT face=Arial size=5>The National Curriculum for England: design and technology</FONT></H1></DIV>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<H2 style="MARGIN: 0cm 0cm 6pt"><SPAN lang=EN-AU><FONT face="Comic Sans MS">Programme of study: design and technology - Key stage 3</FONT></SPAN></H2>
+<P class=MsoPlainText style="MARGIN: 0cm 0cm 6pt; TEXT-ALIGN: justify"><I style="mso-bidi-font-style: normal"><SPAN lang=EN-US style="FONT-FAMILY: 'Comic Sans MS'">[During key stage 3 pupils use a wide range of materials to design and make products. They work out their ideas with some precision, taking into account how products will be used, who will use them, how much they cost and their appearance. They develop their understanding of designing and making by investigating products and finding out about the work of professional designers and manufacturing industry. They use computers, including computer-aided design and manufacture (CAD/CAM) and control software, as an integral part of designing and making. They draw on knowledge and understanding from</SPAN></I><SPAN lang=EN-US style="FONT-FAMILY: 'Comic Sans MS'"> <I style="mso-bidi-font-style: normal">other areas of the curriculum.]</I><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify"><A href="http://www.standards.dfes.gov.uk/schemes3/">http://www.standards.dfes.gov.uk/schemes3/</A> </P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">[Accessed 3<SUP>rd</SUP> May]</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">There has been a drive from the government and other external agencies, to raise the profile of manufacturing and engineering skills within schools, primarily this is because there is a shortfall of skilled workers in these areas.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Part of the National Curriculum <SPAN style="mso-bidi-font-weight: bold">states<B> </B></SPAN>that pupils in Key Stage 3 (KS3) need to cover the following areas:- <SPAN style="mso-spacerun: yes">&nbsp;</SPAN></P>
+<P><FONT size=2><FONT face=Verdana><B><SPAN lang=EN-US>Developing, planning and communicating ideas<BR></SPAN></B><SPAN lang=EN-US>1a: Identify relevant sources of information, using a range of resources including ICT</SPAN></FONT></FONT></P>
+<P><SPAN lang=EN-US><FONT face=Verdana size=2>1h: Use graphic techniques, including computer-aided design (CAD) to explore, develop, model and communicate design proposals (for example, using CAD software or clip-art libraries, CD-ROM and internet-based resources, or scanners and digital cameras)</FONT></SPAN></P>
+<P style="TEXT-ALIGN: justify"><FONT size=2><FONT face=Verdana><B><SPAN lang=EN-US>Working with tools, equipment, materials and components to produce quality products<BR></SPAN></B><SPAN lang=EN-US>2a: Select and use tools, equipment and processes, including computer-aided design and manufacture (CAD/CAM), to shape and form materials safely and accurately and finish them appropriately (for example, using CAM software linked to a cutter/plotter, lathe, milling machine or sewing machine)</SPAN></FONT></FONT></P>
+<P><SPAN lang=EN-US><FONT face=Verdana size=2>2d: Make single products and products in quantity, using a range of techniques, including CAD/CAM, to ensure consistency and accuracy</FONT></SPAN></P>
+<P><FONT size=2><FONT face=Verdana><B><SPAN lang=EN-US>Knowledge and understanding of systems and control<BR></SPAN></B><SPAN lang=EN-US>5g: Use ICT to design sub-systems and systems</SPAN></FONT></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify"><A href="http://www.ncaction.org.uk/subjects/design/ict-reqs.htm">http://www.ncaction.org.uk/subjects/design/ict-reqs.htm</A></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">[Accessed 26th April]</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">As a result of the above information, and being able to purchase a CAD/CAM machine, the Design Technology Department restructured KS3 to enable us to teach specific CAD related project.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Over the last few years, GCSE Exam Boards have also begun to demand more of a CAD/CAM input in student products.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">During a parents meeting, I was talking to an intelligent girl, who had been given a low mark for her ICT coursework.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>When questioned about this she explained that she did not like computers and that she would not need them when she left school.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>I spent some time talking to both girl and parent explaining how ICT enriches our lives, makes live easier, speeds up shopping queues via bar coding etc and that this is the future.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>The only comment I received in return was “it’s your future not ours”!<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>This was a comment from a parent who could not see the values or benefits of ICT.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Had this attitude affected her daughter who has grown up in the technology revolution?<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>It had been three years since this meeting, so I though it would be interesting to get an up to date statement.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify; tab-stops: 14.0cm"><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-SIZE: 10pt">“I think computers are useful in some circumstances, such as the internet (research), communicating via e-mail, making the world appear smaller, doing graphs and charts etc”<SPAN style="mso-spacerun: yes">&nbsp;&nbsp; </SPAN><o:p></o:p></SPAN></B></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify"><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-SIZE: 10pt"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Year 11 student 2005<o:p></o:p></SPAN></B></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify; tab-stops: 14.0cm">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">In my opinion a typical response form someone who has needed to use ICT to get through her school life.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>I then asked the following question:-</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify; tab-stops: 14.0cm">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">How do you feel about computers? Her response was a little more negative.</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify; tab-stops: 14.0cm">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt 56.65pt; TEXT-ALIGN: justify; tab-stops: 14.0cm"><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-SIZE: 10pt">“I feel that people are becoming more reliant on computers and technology.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>This means that if they break or get a virus the world won’t be able to manage/function properly.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>The increasing use of technology means people are communicating face to face less and eventually people will do everything from home”.<o:p></o:p></SPAN></B></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify"><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-SIZE: 10pt"><SPAN style="mso-tab-count: 9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Year 11 student 2005</SPAN></B></P>
+<UL style="MARGIN-TOP: 0cm" type=disc>
+<LI class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify; tab-stops: list 36.0pt; mso-list: l12 level1 lfo1">Before the Laser Cutter </LI></UL>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt 18pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">One of the first major pieces of equipment bought was an A3 flat bed CNC machine in 2003. This equipment, at the time was a major piece of ICT hardware within our Design Technology Department.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>This machine now appears very temperamental and slow in comparison with the Laser Cutter. When the A3 flat bed CNC machine was delivered, we had crowds of students swarming round this CNC machine and showing lots of interest. Over a period of time I could see some students with Special Educational Needs (SEN) felt alienated, because of the complex CAD programme needed to run this machine.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>When we first started to teach CAD/CAM we found that the machine took up a lot of teacher time, as it required setting parameters, tool compensations, locking materials in place and then setting the datum point.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">It was felt that we could not give the pupils ownership of this equipment, because of the levels of trouble shooting needed, in order to complete a successful product.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>This meant that we could not get around the class and aid students with their design work.<SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">Most able students who managed to grasp the CAD package, would design basic products, with a higher quality finish, helping to build self esteem and confidence.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>A great deal of students seemed more impressed with the way the machine traversed along its axis to create a product rather than having to go through the process of getting to grips with a CAD package and produce a design on screen rather than on paper.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>OFSTED made the point:- </P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 0.1pt; TEXT-ALIGN: justify; mso-layout-grid-align: none"><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-US style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-US">The challenge for teachers using CAD continues to be, to find out which aspects of designing are best tackled with CAD software genuinely to raise design and technology capability, rather than just the ‘appearance of capability’ shown by the production of sophisticated drawings. The early evidence suggests that CAD is more successfully used in ‘design development’ than for basic ‘conceptual design’ when pencil and paper or other forms of design </SPAN></B><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">modelling</SPAN></B><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-US style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-US"> are better. Similarly, further work needs to be done to find out the most effective ways of teaching pupils to use the software to help them in solving design tasks. Suitable curriculum materials need to be developed that foster creative responses from pupils using these new designing and manufacturing resources.<o:p></o:p></SPAN></B></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 0.1pt; TEXT-ALIGN: justify; mso-layout-grid-align: none"><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-US style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-US">&nbsp;<o:p></o:p></SPAN></B></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 0.1pt; TEXT-ALIGN: justify; mso-layout-grid-align: none; mso-char-indent-count: .01; mso-char-indent-size: 10.0pt"><B style="mso-bidi-font-weight: normal"><I><SPAN lang=EN-US style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-US">In one lesson the teacher introduced Year 7 pupils to 2D CAD software so competently, that not only did they learn to use the basic operations of the software, but they also understood when it was appropriate to use this facility and when it was better to make quick initial design ideas with pencil and paper.<o:p></o:p></SPAN></I></B></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify"><A href="http://www.ofsted.gov.uk/publications/index.cfm?fuseaction=pubs.displayfile&amp;id=2585&amp;type=pdf">http://www.ofsted.gov.uk/publications/index.cfm?fuseaction=pubs.displayfile&amp;id=2585&amp;type=pdf</A></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">[Accessed 26<SUP>th</SUP> April]</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify"><SPAN style="mso-spacerun: yes">&nbsp;</SPAN>It would appear that for some pupils, watching the CNC machine cutting out a kit for them to assemble gave them just as much satisfaction as those who had designed and manufactured their own product; an important point as this helped raise self-esteem with students with Special Educational Needs (SEN).<SPAN style="mso-spacerun: yes">&nbsp; </SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify"><?xml:namespace prefix = v ns = "urn:schemas-microsoft-com:vml" /><v:shapetype id=_x0000_t75 stroked="f" filled="f" path="m@4@5l@4@11@9@11@9@5xe" o:preferrelative="t" o:spt="75" coordsize="21600,21600"><v:stroke joinstyle="miter"></v:stroke><v:formulas><v:f eqn="if lineDrawn pixelLineWidth 0"></v:f><v:f eqn="sum @0 1 0"></v:f><v:f eqn="sum 0 0 @1"></v:f><v:f eqn="prod @2 1 2"></v:f><v:f eqn="prod @3 21600 pixelWidth"></v:f><v:f eqn="prod @3 21600 pixelHeight"></v:f><v:f eqn="sum @0 0 1"></v:f><v:f eqn="prod @6 1 2"></v:f><v:f eqn="prod @7 21600 pixelWidth"></v:f><v:f eqn="sum @8 21600 0"></v:f><v:f eqn="prod @7 21600 pixelHeight"></v:f><v:f eqn="sum @10 21600 0"></v:f></v:formulas><v:path o:connecttype="rect" gradientshapeok="t" o:extrusionok="f"></v:path><o:lock aspectratio="t" v:ext="edit"></o:lock></v:shapetype><v:shape id=_x0000_s1041 style="MARGIN-TOP: 48.8pt; Z-INDEX: 14; LEFT: 0px; MARGIN-LEFT: 250pt; WIDTH: 180pt; POSITION: absolute; HEIGHT: 135pt; TEXT-ALIGN: left" type="#_x0000_t75"><v:imagedata o:title="112-1287_IMG" src="file:///C:/DOCUME~1/MAGGIE~1/LOCALS~1/Temp/msoclip1/01/clip_image001.jpg"></v:imagedata><?xml:namespace prefix = w ns = "urn:schemas-microsoft-com:office:word" /><w:wrap type="square"></w:wrap></v:shape>We decided to run Pupils with Marked Aptitudes (PUMA) classes during the summer half term, for year eight, to help raise the profile of the current CNC machine and for students to impart their knowledge to others.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>This worked really well and after a short time, we had several CAD/CAM assistants that would facilitate other students within the class, which allowed the teacher more freedom to help others.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Ideally we would have liked to focus purely on the designing and then e-mailing the designs to the technician for him to manufacture and then return the product back to the student’s next lesson. However the students were more motivated when they could see their designs (and others) being cut right in front of them.<SPAN style="mso-spacerun: yes">&nbsp;&nbsp; </SPAN><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify"><SPAN style="mso-tab-count: 7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Mini Light Project Using Gallard</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify"><SPAN style="mso-tab-count: 6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></P>
+<UL style="MARGIN-TOP: 0cm" type=disc>
+<LI class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify; tab-stops: list 36.0pt; mso-list: l12 level1 lfo1">How and why we acquired a Laser Cutter </LI></UL>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify; mso-layout-grid-align: none"><SPAN lang=EN-US style="mso-bidi-font-weight: bold; mso-ansi-language: EN-US">Before arriving at Ringmer Community College in 2002, CAD/CAM had already been targeted as a major piece of equipment that could potentially raise standards.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>The following points were made as part of the Departments Development Plan.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify; mso-layout-grid-align: none"><SPAN lang=EN-US style="mso-bidi-font-weight: bold; mso-ansi-language: EN-US">&nbsp;<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><B style="mso-bidi-font-weight: normal">Key Objective 1 – Raising Achievement<o:p></o:p></B></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><B style="mso-bidi-font-weight: normal">&nbsp;<o:p></o:p></B></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt 36pt; TEXT-INDENT: -36pt; tab-stops: list 36.0pt; mso-list: l21 level2 lfo5"><B style="mso-bidi-font-weight: normal">1.1<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></B><B style="mso-bidi-font-weight: normal">Development Objective – To raise further the quality of teaching and learning and, in particular, (a) to increase levels of responsibility and accountability in the learner, and (b) to challenge pupils with marked aptitudes.<o:p></o:p></B></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><B style="mso-bidi-font-weight: normal">&nbsp;<o:p></o:p></B></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt 36pt; TEXT-INDENT: -36pt; TEXT-ALIGN: justify; tab-stops: list 36.0pt; mso-list: l10 level2 lfo6"><B style="mso-bidi-font-weight: normal">1.3<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></B><B style="mso-bidi-font-weight: normal">Development Objective – To build on increased achievement in SATS during 1998/1999 in order to achieve SATS performance targets for 2001 and 2002 by focussing on pupils at the level 4/5 borderline and on those capable of achieving levels 7 and 8.<o:p></o:p></B></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><B style="mso-bidi-font-weight: normal">&nbsp;<o:p></o:p></B></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify; mso-pagination: none"><B style="mso-bidi-font-weight: normal">4.0<SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Development Objective – To further develop the College strategy for ICT so <SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp; </SPAN>as to <SPAN style="mso-tab-count: 1">&nbsp;&nbsp; </SPAN>enhance the curriculum and improve pupil achievement<o:p></o:p></B></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><B style="mso-bidi-font-weight: normal">&nbsp;<o:p></o:p></B></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify; mso-pagination: none">To achieve these targets in Design Technology, it was firmly believed that the introduction of CAD/CAM, Rapid prototype theories, and External speakers would enhance the knowledge and understanding of students and so increase SATS performances.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN><SPAN style="mso-spacerun: yes">&nbsp;</SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify; tab-stops: 14.0cm; mso-layout-grid-align: none">Ringmer Community College gained Technology College Status in 1999, about the same time the then Minister Charles Clark launched the CAD/CAM in Schools Initiative at the University of Warwick.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>According to <B><SPAN lang=EN-US style="COLOR: #292526; mso-ansi-language: EN-US">Dr John Garside, </SPAN></B><SPAN lang=EN-US style="COLOR: #292526; mso-ansi-language: EN-US">Principal Fellow, Warwick Manufacturing Group, University of Warwick:-<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify; tab-stops: 14.0cm; mso-layout-grid-align: none"><SPAN lang=EN-US style="COLOR: #292526; mso-ansi-language: EN-US">&nbsp;<o:p></o:p></SPAN></P>
+<UL style="MARGIN-TOP: 0cm" type=disc>
+<LI class=MsoNormal style="MARGIN: 0cm 0cm 0pt; COLOR: #292526; TEXT-ALIGN: justify; tab-stops: list 36.0pt left 14.0cm; mso-list: l12 level1 lfo1; mso-layout-grid-align: none"><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-US style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-US">CAD and CAM has enabled pupils across all key stages to develop <o:p></o:p></SPAN></B></LI>
+<LI class=MsoNormal style="MARGIN: 0cm 0cm 0pt; COLOR: #292526; TEXT-ALIGN: justify; tab-stops: list 36.0pt left 14.0cm; mso-list: l12 level1 lfo1; mso-layout-grid-align: none"><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-US style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-US">knowledge, skills and processes so needed by British industry namely:<o:p></o:p></SPAN></B></LI></UL>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt 47.35pt; TEXT-ALIGN: justify; tab-stops: 14.0cm; mso-layout-grid-align: none"><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-US style="FONT-SIZE: 10pt; COLOR: #292526; FONT-FAMILY: Arial; mso-ansi-language: EN-US">&nbsp;<o:p></o:p></SPAN></B></P>
+<UL style="MARGIN-TOP: 0cm" type=disc>
+<LI class=MsoNormal style="MARGIN: 0cm 0cm 0pt; COLOR: #292526; TEXT-ALIGN: justify; tab-stops: list 36.0pt left 14.0cm; mso-list: l12 level1 lfo1; mso-layout-grid-align: none"><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-US style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-US">The ability to model, adapt and develop ideas as an interactive process (i.e. design)<o:p></o:p></SPAN></B></LI>
+<LI class=MsoNormal style="MARGIN: 0cm 0cm 0pt; COLOR: #292526; TEXT-ALIGN: justify; tab-stops: list 36.0pt left 14.0cm; mso-list: l12 level1 lfo1; mso-layout-grid-align: none"><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-US style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-US">The development of three-dimensional thinking<o:p></o:p></SPAN></B></LI>
+<LI class=MsoNormal style="MARGIN: 0cm 0cm 0pt; COLOR: black; TEXT-ALIGN: justify; tab-stops: list 36.0pt left 14.0cm; mso-list: l12 level1 lfo1; mso-layout-grid-align: none"><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-US style="FONT-SIZE: 10pt; COLOR: #292526; FONT-FAMILY: Arial; mso-ansi-language: EN-US">An understanding of the need for quality and precision in making</SPAN></B><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-US style="FONT-SIZE: 10pt; FONT-FAMILY: Arial; mso-ansi-language: EN-US"><o:p></o:p></SPAN></B></LI></UL>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<UL style="MARGIN-TOP: 0cm" type=disc>
+<LI class=MsoNormal style="MARGIN: 0cm 0cm 0pt; COLOR: #292526; TEXT-ALIGN: justify; tab-stops: list 36.0pt; mso-list: l12 level1 lfo1; mso-layout-grid-align: none"><SPAN lang=EN-US style="mso-ansi-language: EN-US">It is worthy of note that research has revealed that for many students, the use of CAD/CAM has dramatically raised:<o:p></o:p></SPAN></LI>
+<LI class=MsoNormal style="MARGIN: 0cm 0cm 0pt; COLOR: #292526; TEXT-ALIGN: justify; tab-stops: list 36.0pt; mso-list: l12 level1 lfo1; mso-layout-grid-align: none"><SPAN lang=EN-US style="mso-ansi-language: EN-US">Their ambition in Design and Technology in tackling activities which are unrestricted by the<SPAN style="mso-spacerun: yes">&nbsp;&nbsp; </SPAN>acquisition of traditional hand skills.<o:p></o:p></SPAN></LI>
+<LI class=MsoNormal style="MARGIN: 0cm 0cm 0pt; COLOR: #292526; TEXT-ALIGN: justify; tab-stops: list 36.0pt; mso-list: l12 level1 lfo1; mso-layout-grid-align: none"><SPAN lang=EN-US style="mso-ansi-language: EN-US">Their educational esteem, giving some students a fresh start in the educational process<o:p></o:p></SPAN></LI>
+<LI class=MsoNormal style="MARGIN: 0cm 0cm 0pt; COLOR: black; TEXT-ALIGN: justify; tab-stops: list 36.0pt; mso-list: l12 level1 lfo1; mso-layout-grid-align: none"><SPAN lang=EN-US style="COLOR: #292526; mso-ansi-language: EN-US">Examination performance in Design and Technology</SPAN><SPAN lang=EN-US style="mso-ansi-language: EN-US"><o:p></o:p></SPAN></LI></UL>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none"><SPAN lang=EN-US style="mso-bidi-font-weight: bold; mso-ansi-language: EN-US">From: <A href="http://www.cadinschools.org/support/CAM%20Equipment%20Spec%20&amp;%20Rec.pdf">http://www.cadinschools.org/support/CAM%20Equipment%20Spec%20&amp;%20Rec.pdf</A><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none"><SPAN lang=EN-US style="mso-bidi-font-weight: bold; mso-ansi-language: EN-US">&nbsp;<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; mso-layout-grid-align: none"><SPAN lang=EN-US style="mso-bidi-font-weight: bold; mso-ansi-language: EN-US">[Accessed 22<SUP>nd</SUP> April 2005]<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">After employing a new Design Technology Technician in 2003, we were made aware of a new piece of equipment ‘The Laser Cutter’.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>After a year of fundraising and applying for grants, we managed to obtain a second hand Laser Cutter.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">The main reasons for getting this piece of equipment, was to improve the quality of our Graphics work and to enable us to ensure that we could have a CAD/CAM influence in Textiles, as this Laser Cutter would cut through a wide variety of material.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">Being a Technical College, I felt it was also important to keep up with the latest Technologies available to schools.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>At this time the department did not have any idea how much of an impact it would have on teaching and learning.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">Below are two key areas of our Technology College Bid (TCB) and a progress report that I wrote in 2003:-<SPAN style="mso-spacerun: yes">&nbsp;&nbsp; </SPAN><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;</SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><B style="mso-bidi-font-weight: normal">DT 1 <o:p></o:p></B></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><B style="mso-bidi-font-weight: normal">Raise standards at Key Stage 3 so that a greater proportion of pupils reach level 5 by the end of Year 9<o:p></o:p></B></P>
+<H1 style="MARGIN: 12pt 0cm 3pt"><v:shapetype id=_x0000_t202 path="m0,0l0,21600,21600,21600,21600,0xe" o:spt="202" coordsize="21600,21600"><v:stroke joinstyle="miter"></v:stroke><v:path o:connecttype="rect" gradientshapeok="t"></v:path></v:shapetype><v:shape id=_x0000_s1033 style="MARGIN-TOP: 4.55pt; Z-INDEX: 6; MARGIN-LEFT: -3.25pt; WIDTH: 429.75pt; POSITION: absolute; HEIGHT: 68pt" type="#_x0000_t202" fillcolor="#9c0"><v:textbox style="mso-next-textbox: #_x0000_s1033"></v:textbox></v:shape><SPAN style="Z-INDEX: 6; POSITION: absolute">
+<TABLE cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TD style="BORDER-RIGHT: #ece9d8; BORDER-TOP: #ece9d8; BORDER-LEFT: #ece9d8; BORDER-BOTTOM: #ece9d8; BACKGROUND-COLOR: transparent">
+<DIV class=shape style="PADDING-RIGHT: 7.2pt; PADDING-LEFT: 7.2pt; PADDING-BOTTOM: 3.6pt; PADDING-TOP: 3.6pt" v:shape="_x0000_s1033">
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US style="mso-ansi-language: EN-US">2003- 70% of students achieved a level 5 or above<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US style="mso-ansi-language: EN-US">2004- 75% of students achieved a level 5 or above<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US style="mso-ansi-language: EN-US">Although this was 5% off our target, according to our PECs our value added for both boys and girls was 1.13 show that we achieved excellent value added.<o:p></o:p></SPAN></P></DIV></TD></TR></TBODY></TABLE></SPAN><SPAN style="FONT-SIZE: 12pt"><FONT face=Arial>&nbsp;<o:p></o:p></FONT></SPAN></H1>
+<H1 style="MARGIN: 12pt 0cm 3pt"><SPAN style="FONT-SIZE: 12pt"><FONT face=Arial>&nbsp;<o:p></o:p></FONT></SPAN></H1>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><v:shape id=_x0000_s1034 style="MARGIN-TOP: 4.15pt; Z-INDEX: 7; MARGIN-LEFT: -4.9pt; WIDTH: 429pt; POSITION: absolute; HEIGHT: 140.5pt" type="#_x0000_t202" fillcolor="#9c0"><v:textbox style="mso-next-textbox: #_x0000_s1034"></v:textbox></v:shape><SPAN style="Z-INDEX: 7; POSITION: absolute">
+<TABLE cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TD style="BORDER-RIGHT: #ece9d8; BORDER-TOP: #ece9d8; BORDER-LEFT: #ece9d8; BORDER-BOTTOM: #ece9d8; BACKGROUND-COLOR: transparent">
+<DIV class=shape style="PADDING-RIGHT: 7.2pt; PADDING-LEFT: 7.2pt; PADDING-BOTTOM: 3.6pt; PADDING-TOP: 3.6pt" v:shape="_x0000_s1034">
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">Introduction of the KS3 strategies have commenced.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>The use of keywords has been used for some time now.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>We have plans to introduce a comprehensive glossary of technology terms.<SPAN style="mso-spacerun: yes">&nbsp;&nbsp; </SPAN>MSB has redesigned new assessment sheets for teachers and pupils.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>This allows the pupils to see how we are marking and to see the assessment criteria they are marked against.</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">In 2003/04 the assessment sheets have been modified and improved so that the targets pupils receive are directly linked to the project they are working on.</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">DLS has re-written SoW to enrich pupils D&amp;T experiences. Which now include CAD/CAM, Electronics, Graphics and Resident Materials.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">&nbsp;<o:p></o:p></P></DIV></TD></TR></TBODY></TABLE></SPAN>&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">&nbsp;<o:p></o:p></P>
+<H1 style="MARGIN: 12pt 0cm 3pt"><SPAN style="FONT-SIZE: 12pt"><FONT face=Arial>&nbsp;<o:p></o:p></FONT></SPAN></H1>
+<H1 style="MARGIN: 12pt 0cm 3pt"><SPAN style="FONT-SIZE: 12pt"><FONT face=Arial>&nbsp;<o:p></o:p></FONT></SPAN></H1>
+<H1 style="MARGIN: 12pt 0cm 3pt"><SPAN style="FONT-SIZE: 12pt"><FONT face=Arial>&nbsp;<o:p></o:p></FONT></SPAN></H1><BR style="mso-ignore: vglayout" clear=all>
+<H1 style="MARGIN: 12pt 0cm 3pt"><SPAN style="FONT-SIZE: 12pt"><FONT face=Arial>DT 2: -<I style="mso-bidi-font-style: normal"><o:p></o:p></I></FONT></SPAN></H1>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><B>Raise standards at GCSE so as to increase the A*- C pass rate and the proportion of pupils gaining A and A* grades as well as consolidating the A*- G pass rate.<o:p></o:p></B></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify"><B>This objective links with D&amp;T 6<o:p></o:p></B></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify"><B>&nbsp;<o:p></o:p></B></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">By Easter 2003 we should have 12 laptops with CAD software installed.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>A CAD/CAM machine has been ordered which will allow us to for fill the National Curriculum.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>A Smart Board is needed so that we may effectively teach CAD/CAM.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Unimatic (supplier of our CAD/CAM equipment) will give our staff one days training.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Food will take our existing CAD/CAM machine so that they may cover their Syllabus, DLS to train.</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">Equipment has started to arrive for the new tech. Room (CO2).<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Yr 11 to have priority with timetabling in rooms CO2 and CO5.</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">As ICT is having a major effect on KS4 It is expected that with the CAD/CAM equipment and the newly fitted workshop, GCSE results should improve.<SPAN style="mso-spacerun: yes">&nbsp;&nbsp; </SPAN></P>
+<H1 style="MARGIN: 12pt 0cm 3pt"><SPAN style="FONT-SIZE: 12pt; FONT-FAMILY: 'Times New Roman'">Design and Technology – Wider Community 3<o:p></o:p></SPAN></H1>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><B style="mso-bidi-font-weight: normal">To extend the College’s community Design and Technology provision by encouraging evening and weekend use of our CAD by individuals and community groups.<o:p></o:p></B></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt 20.25pt; TEXT-INDENT: -18pt; tab-stops: list 20.25pt; mso-list: l8 level1 lfo22"><SPAN style="FONT-FAMILY: Symbol">·<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN>June 2003. CAD software used successfully to support one adult education class and provide facilities for one community group.</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify"><v:shape id=_x0000_s1030 style="MARGIN-TOP: 5.15pt; Z-INDEX: 3; LEFT: 0px; MARGIN-LEFT: 244.95pt; WIDTH: 216.75pt; POSITION: absolute; HEIGHT: 129.25pt; TEXT-ALIGN: left" type="#_x0000_t202" fillcolor="#ff9"></v:shape><v:shape id=_x0000_s1032 style="MARGIN-TOP: 99.45pt; Z-INDEX: 5; LEFT: 0px; MARGIN-LEFT: 8.8pt; WIDTH: 3in; POSITION: absolute; HEIGHT: 36pt; TEXT-ALIGN: left" type="#_x0000_t202" strokecolor="red"></v:shape><v:shape id=_x0000_s1031 style="MARGIN-TOP: 5.5pt; Z-INDEX: 4; LEFT: 0px; MARGIN-LEFT: 11.45pt; WIDTH: 216.75pt; POSITION: absolute; HEIGHT: 81pt; TEXT-ALIGN: left" type="#_x0000_t202" fillcolor="#ff9"></v:shape><SPAN style="Z-INDEX: 4; POSITION: absolute">
+<TABLE cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TD style="BORDER-RIGHT: #ece9d8; BORDER-TOP: #ece9d8; BORDER-LEFT: #ece9d8; BORDER-BOTTOM: #ece9d8; BACKGROUND-COLOR: transparent">
+<DIV class=shape style="PADDING-RIGHT: 7.2pt; PADDING-LEFT: 7.2pt; PADDING-BOTTOM: 3.6pt; PADDING-TOP: 3.6pt" v:shape="_x0000_s1031">
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">Meeting held with RHC and Steve Green on 02.04.03</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">Lots of positive work has been done on this.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>A full report is expected by RHC and Steve after easter.</P></DIV></TD></TR></TBODY></TABLE></SPAN><SPAN style="Z-INDEX: 3; POSITION: absolute">
+<TABLE cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TD style="BORDER-RIGHT: #ece9d8; BORDER-TOP: #ece9d8; BORDER-LEFT: #ece9d8; BORDER-BOTTOM: #ece9d8; BACKGROUND-COLOR: transparent">
+<DIV class=shape style="PADDING-RIGHT: 7.2pt; PADDING-LEFT: 7.2pt; PADDING-BOTTOM: 3.6pt; PADDING-TOP: 3.6pt" v:shape="_x0000_s1030">
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">Meeting held with RHC on 02.04.03</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">RHC to discuss with SH ways of introducing CAD into the community.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>DLS and<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>MSB are to provide a taster day for any possible adult ed class.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Evening classes to be run by external CAD/CAM tutor.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Have applied for a Smart Board to help deliver any future classes</P></DIV></TD></TR></TBODY></TABLE></SPAN><SPAN style="Z-INDEX: 5; POSITION: absolute">
+<TABLE cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TD style="BORDER-RIGHT: #ece9d8; BORDER-TOP: #ece9d8; BORDER-LEFT: #ece9d8; BORDER-BOTTOM: #ece9d8; BACKGROUND-COLOR: transparent">
+<DIV class=shape style="PADDING-RIGHT: 7.2pt; PADDING-LEFT: 7.2pt; PADDING-BOTTOM: 3.6pt; PADDING-TOP: 3.6pt" v:shape="_x0000_s1032">
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-US style="mso-ansi-language: EN-US">This was advertised by adult Ed.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>There were no takers. <o:p></o:p></SPAN></B></P></DIV></TD></TR></TBODY></TABLE></SPAN>&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P><BR style="mso-ignore: vglayout" clear=all>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt 21.3pt; TEXT-INDENT: -18pt; mso-list: l12 level1 lfo1"><SPAN style="FONT-FAMILY: Symbol">·<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN>To enrich technology courses through more effective linkage with business, industry and the local community.</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify"><v:shape id=_x0000_s1037 style="MARGIN-TOP: 6.4pt; Z-INDEX: 10; LEFT: 0px; MARGIN-LEFT: 20.75pt; WIDTH: 434.8pt; POSITION: absolute; HEIGHT: 58.85pt; TEXT-ALIGN: left" type="#_x0000_t202" fillcolor="#9c0"><v:textbox style="mso-next-textbox: #_x0000_s1037"></v:textbox></v:shape><SPAN style="Z-INDEX: 10; POSITION: absolute">
+<TABLE cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TD style="BORDER-RIGHT: #ece9d8; BORDER-TOP: #ece9d8; BORDER-LEFT: #ece9d8; BORDER-BOTTOM: #ece9d8; BACKGROUND-COLOR: transparent">
+<DIV class=shape style="PADDING-RIGHT: 7.2pt; PADDING-LEFT: 7.2pt; PADDING-BOTTOM: 3.6pt; PADDING-TOP: 3.6pt" v:shape="_x0000_s1037">
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US style="mso-ansi-language: EN-US">For the Summer Booster classes COLAS (Engineering Company) was used for a visit to demonstrate the use of CAD/CAM in the manufacturing of road signs. This link has been established and future projects are in the pipeline.<o:p></o:p></SPAN></P></DIV></TD></TR></TBODY></TABLE></SPAN>&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P><BR style="mso-ignore: vglayout" clear=all>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify"><B>DT 4<I style="mso-bidi-font-style: normal"><o:p></o:p></I></B></P>
+<P class=MsoBodyText style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify"><B><SPAN lang=EN-US style="FONT-SIZE: 12pt">To increase the use and application of ICT in technology, especially in relation to the use of CAD / CAM, control technology and research &amp; communication<o:p></o:p></SPAN></B></P>
+<P class=MsoBodyText style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify"><B><SPAN lang=EN-US style="FONT-SIZE: 12pt">&nbsp;<o:p></o:p></SPAN></B></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><B style="mso-bidi-font-weight: normal">KS3</B> </P>
+<UL style="MARGIN-TOP: 0cm" type=disc>
+<LI class=MsoNormal style="MARGIN: 0cm 0cm 0pt; tab-stops: list 36.0pt; mso-list: l12 level1 lfo1">Use graphic techniques and ICT, including computer-aided design (CAD) to explore, develop, model and communicate design proposals.</LI>
+<LI class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify; tab-stops: list 36.0pt; mso-list: l12 level1 lfo1">To select and use tools, equipment and processes, including computer-aided design and manufacture (CAD/CAM), to shape and form materials safely and accurately and finish them appropriately.</LI>
+<LI class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify; tab-stops: list 36.0pt; mso-list: l12 level1 lfo1">To make single products and products in quantity, using a range of techniques, including CAD/CAM to ensure consistency and accuracy.</LI></UL>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt 18pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm -0.25pt 0pt 0cm"><B style="mso-bidi-font-weight: normal">July 2002 </B>50% of Year 9 pupils.</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><B style="mso-bidi-font-weight: normal">July 2003 </B>85% of Year 9 pupils.</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><B style="mso-bidi-font-weight: normal">July 2004 and 2005 </B>100% of Year 9 pupils</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify"><v:shape id=_x0000_s1035 style="MARGIN-TOP: 7.15pt; Z-INDEX: 8; LEFT: 0px; MARGIN-LEFT: 1.8pt; WIDTH: 435.25pt; POSITION: absolute; HEIGHT: 43pt; TEXT-ALIGN: left" type="#_x0000_t202" fillcolor="#9c0"><v:textbox style="mso-next-textbox: #_x0000_s1035"></v:textbox></v:shape><SPAN style="Z-INDEX: 8; POSITION: absolute">
+<TABLE cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TD style="BORDER-RIGHT: #ece9d8; BORDER-TOP: #ece9d8; BORDER-LEFT: #ece9d8; BORDER-BOTTOM: #ece9d8; BACKGROUND-COLOR: transparent">
+<DIV class=shape style="PADDING-RIGHT: 7.2pt; PADDING-LEFT: 7.2pt; PADDING-BOTTOM: 3.6pt; PADDING-TOP: 3.6pt" v:shape="_x0000_s1035">
+<P class=MsoNormal style="TEXT-JUSTIFY: inter-ideograph; MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">CAD/CAM will be taught as a FPT for six weeks in year 7 and 8, giving complete ownership to the pupils by year 9. </P></DIV></TD></TR></TBODY></TABLE></SPAN>&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify"><v:shape id=_x0000_s1036 style="MARGIN-TOP: 7.8pt; Z-INDEX: 9; LEFT: 0px; MARGIN-LEFT: 0.8pt; WIDTH: 436pt; POSITION: absolute; HEIGHT: 58.25pt; TEXT-ALIGN: left" type="#_x0000_t202" fillcolor="#9c0"><v:textbox style="mso-next-textbox: #_x0000_s1036"></v:textbox></v:shape><SPAN style="Z-INDEX: 9; POSITION: absolute">
+<TABLE cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TD style="BORDER-RIGHT: #ece9d8; BORDER-TOP: #ece9d8; BORDER-LEFT: #ece9d8; BORDER-BOTTOM: #ece9d8; BACKGROUND-COLOR: transparent">
+<DIV class=shape style="PADDING-RIGHT: 7.2pt; PADDING-LEFT: 7.2pt; PADDING-BOTTOM: 3.6pt; PADDING-TOP: 3.6pt" v:shape="_x0000_s1036">
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">Due to new Specifications, all pupils taking Graphics and Product Design, will have to demonstrate graphic and CAD/CAM abilities.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>All equipment is in place and pupils successfully completed this task in 2002-3 </P></DIV></TD></TR></TBODY></TABLE></SPAN>&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoBodyText style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify"><B><SPAN lang=EN-US style="FONT-SIZE: 12pt">&nbsp;<o:p></o:p></SPAN></B></P>
+<P class=MsoBodyText style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify"><SPAN lang=EN-US style="FONT-SIZE: 12pt">&nbsp;<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify"><v:shape id=_x0000_s1038 style="MARGIN-TOP: 11.85pt; Z-INDEX: 11; LEFT: 0px; MARGIN-LEFT: 0.25pt; WIDTH: 435.8pt; POSITION: absolute; HEIGHT: 98.35pt; TEXT-ALIGN: left" type="#_x0000_t202" fillcolor="#9c0"><v:textbox style="mso-next-textbox: #_x0000_s1038"></v:textbox></v:shape><SPAN style="Z-INDEX: 11; POSITION: absolute">
+<TABLE cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TD style="BORDER-RIGHT: #ece9d8; BORDER-TOP: #ece9d8; BORDER-LEFT: #ece9d8; BORDER-BOTTOM: #ece9d8; BACKGROUND-COLOR: transparent">
+<DIV class=shape style="PADDING-RIGHT: 7.2pt; PADDING-LEFT: 7.2pt; PADDING-BOTTOM: 3.6pt; PADDING-TOP: 3.6pt" v:shape="_x0000_s1038">
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">New schemes of work allow pupils to explore CAD/CAM within D&amp;T.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Laptops allow pupils to refine research and measure and control events via crocodile clips. </P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">Key Stage 3 students follow the ICT framework sample units.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Therefore, in Yrs 7 &amp; 8 they use MS Excel for modelling and data handling. <SPAN style="mso-spacerun: yes">&nbsp;&nbsp;</SPAN>In addition they use Bridge Builder as an example of an alternative modelling program.</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">In addition Yr 9 students use MS Access for data handling.<B><o:p></o:p></B></P></DIV></TD></TR></TBODY></TABLE></SPAN>&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify"><v:shape id=_x0000_s1039 style="MARGIN-TOP: 10.45pt; Z-INDEX: 12; LEFT: 0px; MARGIN-LEFT: 0.25pt; WIDTH: 435.8pt; POSITION: absolute; HEIGHT: 45.35pt; TEXT-ALIGN: left" type="#_x0000_t202" fillcolor="#9c0"><v:textbox style="mso-next-textbox: #_x0000_s1039"></v:textbox></v:shape><SPAN style="Z-INDEX: 12; POSITION: absolute">
+<TABLE cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TD style="BORDER-RIGHT: #ece9d8; BORDER-TOP: #ece9d8; BORDER-LEFT: #ece9d8; BORDER-BOTTOM: #ece9d8; BACKGROUND-COLOR: transparent">
+<DIV class=shape style="PADDING-RIGHT: 7.2pt; PADDING-LEFT: 7.2pt; PADDING-BOTTOM: 3.6pt; PADDING-TOP: 3.6pt" v:shape="_x0000_s1039">
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">New schemes of work now include CAD/CAM.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Pupils will experience this in years 7,8 and 9.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Projects increasing in difficulty as they progress </P></DIV></TD></TR></TBODY></TABLE></SPAN>&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify"><v:shape id=_x0000_s1040 style="MARGIN-TOP: 9.25pt; Z-INDEX: 13; LEFT: 0px; MARGIN-LEFT: 1.25pt; WIDTH: 433pt; POSITION: absolute; HEIGHT: 138.35pt; TEXT-ALIGN: left" type="#_x0000_t202" fillcolor="#ff9"><v:textbox style="mso-next-textbox: #_x0000_s1040"></v:textbox></v:shape><SPAN style="Z-INDEX: 13; POSITION: absolute">
+<TABLE cellSpacing=0 cellPadding=0 width="100%">
+<TBODY>
+<TR>
+<TD style="BORDER-RIGHT: #ece9d8; BORDER-TOP: #ece9d8; BORDER-LEFT: #ece9d8; BORDER-BOTTOM: #ece9d8; BACKGROUND-COLOR: transparent">
+<DIV class=shape style="PADDING-RIGHT: 7.2pt; PADDING-LEFT: 7.2pt; PADDING-BOTTOM: 3.6pt; PADDING-TOP: 3.6pt" v:shape="_x0000_s1040">
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US style="mso-ansi-language: EN-US">CAD CAM is well established with several developments being made over recent months.<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US style="mso-ansi-language: EN-US">&nbsp;<o:p></o:p></SPAN></P>
+<UL style="MARGIN-TOP: 0cm" type=disc>
+<LI class=MsoNormal style="MARGIN: 0cm 0cm 0pt; tab-stops: list 36.0pt; mso-list: l0 level1 lfo23"><SPAN lang=EN-US style="mso-ansi-language: EN-US">Arrival of Laser cutter due 20<SUP>th</SUP> JAN<o:p></o:p></SPAN></LI>
+<LI class=MsoNormal style="MARGIN: 0cm 0cm 0pt; tab-stops: list 36.0pt; mso-list: l0 level1 lfo23"><SPAN lang=EN-US style="mso-ansi-language: EN-US">MSB accredited Pro/Desktop trainer and will pilot yr10 project.<o:p></o:p></SPAN></LI>
+<LI class=MsoNormal style="MARGIN: 0cm 0cm 0pt; tab-stops: list 36.0pt; mso-list: l0 level1 lfo23"><SPAN lang=EN-US style="mso-ansi-language: EN-US">Interactive whiteboard usage for C02 and projector used in other workshops.<o:p></o:p></SPAN></LI>
+<LI class=MsoNormal style="MARGIN: 0cm 0cm 0pt; tab-stops: list 36.0pt; mso-list: l0 level1 lfo23"><SPAN lang=EN-US style="mso-ansi-language: EN-US">New software introduce- Mechanical toy/Fairground/ Focus on Plastic/Wood joints.<o:p></o:p></SPAN></LI>
+<LI class=MsoNormal style="MARGIN: 0cm 0cm 0pt; tab-stops: list 36.0pt; mso-list: l0 level1 lfo23"><SPAN lang=EN-US style="mso-ansi-language: EN-US">Primary CAD software Block CAD<o:p></o:p></SPAN></LI></UL>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt 18pt"><SPAN lang=EN-US style="mso-ansi-language: EN-US">&nbsp;<o:p></o:p></SPAN></P></DIV></TD></TR></TBODY></TABLE></SPAN>&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P><BR style="mso-ignore: vglayout" clear=all>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">Having a “TRAFFIC LIGHT SYSTEM” allowed us and Senior Management (SMT) to follow our progress.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">Working closely with the Tech. College Bid as this forms the basis for our development plan, we have:</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt 18pt; TEXT-INDENT: -18pt; TEXT-ALIGN: justify; tab-stops: list 18.0pt; mso-list: l5 level1 lfo11">1.<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Purchased an industrial standard CAD/CAM machine and trained all staff.</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt 18pt; TEXT-INDENT: -18pt; TEXT-ALIGN: justify; tab-stops: list 18.0pt; mso-list: l5 level1 lfo11">2.<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Re-written KS3 and 4 schemes of work to include and aid the development of ICT in the curriculum </P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt 18pt; TEXT-INDENT: -18pt; TEXT-ALIGN: justify; tab-stops: list 18.0pt; mso-list: l5 level1 lfo11">3.<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Development of industrial links and links to the community.</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt 18pt; TEXT-INDENT: -18pt; TEXT-ALIGN: justify; tab-stops: list 18.0pt; mso-list: l5 level1 lfo11">4.<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Redesigned our assessment strategies to come in line with current trackers.</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt 18pt; TEXT-INDENT: -18pt; TEXT-ALIGN: justify; tab-stops: list 18.0pt; mso-list: l5 level1 lfo11">5.<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Built and fully equipped a new tech room.</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt 18pt; TEXT-INDENT: -18pt; TEXT-ALIGN: justify; tab-stops: list 18.0pt; mso-list: l5 level1 lfo11">6.<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Set up a resources centre for pupils within technology. </P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt 18pt; TEXT-INDENT: -18pt; TEXT-ALIGN: justify; tab-stops: list 18.0pt; mso-list: l5 level1 lfo11">7.<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Obtained laptops to enable us to teach CAD/CAM effectively. </P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt 18pt; TEXT-INDENT: -18pt; TEXT-ALIGN: justify; tab-stops: list 18.0pt; mso-list: l5 level1 lfo11">8.<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Consolidation of Food Technology courses and further development of schemes.</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt 18pt; TEXT-INDENT: -18pt; TEXT-ALIGN: justify; tab-stops: list 18.0pt; mso-list: l5 level1 lfo11">9.<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>PUMA opportunities within all the departments’ curriculum areas.</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt 18pt; TEXT-INDENT: -18pt; TEXT-ALIGN: justify; tab-stops: list 18.0pt; mso-list: l5 level1 lfo11">10.<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp; </SPAN>Staff training – ICT </P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<UL style="MARGIN-TOP: 0cm" type=disc>
+<LI class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify; tab-stops: list 36.0pt; mso-list: l2 level1 lfo2"><SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>Teaching and Learning </LI></UL>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">I am aware that through Curriculum Leader Meetings, Design Technology as a subject tends to have less behaviour problems than other subjects.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Design Technology appeals to all types of learners (Auditory, Kinaesthetic and Visual) which could explain this, or maybe students are generally more motivated in Design Technology because they can produce something 3 Dimensional. </P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify"><SPAN style="mso-spacerun: yes">&nbsp;</SPAN>The department has developed a clear assessment for learning policy which now focuses more on formative assessment rather than summative.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>We have created projects with half time assessment points, so that students can attain a half time level with specific areas for improvement, thus giving the student clear guidelines for improvement.<SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">With the use of a new Interactive White Board (IWB), Laser Cutter and twenty laptops, the DT Department has become very ICT orientated. The last OFSTED reported, </P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify">&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify; tab-stops: 49.65pt">“There is excellent planning of the overall learning programme in Years 7 to <SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>9, and this enables teachers to have well structured lessons. The technology <SPAN style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp; </SPAN>special status of the college has enabled the department to establish good use of ICT and use CAD in Year 8 lessons”.</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: justify; tab-stops: 49.65pt"><SPAN style="mso-tab-count: 7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<hr><p>MirandaNet Members can go to the <a href = '../membership/index.php.html'>Log on/off</a> area to edit their own casestudies.</a></p><hr>    <p>[<a href="#top">Back to the top</a>]</p>
+  <p>[<a href="javascript:history.back()">Back</a>]</p>
+</div>
+</div>
+<div id="footer" class="group"> 
+  <!--#include virtual="/footer.htm"-->
+  <!-- Footer Starts -->
+<div id="footer_left"> 
+  <ul class="accessBar">
+    <li class="accessBar"><a href="../associates/bedfordshire.htm"><img src="../images/associates_logos/Uni_Bed_logo_small.jpg" alt="University of Bedfordshire" title="University of Bedfordshire" width="72" height="28" style="vertical-align: -40%;"></a> 
+    </li>
+    <li class="accessBar"><a href="../associates/index.html">Associates</a></li>
+    <li class="accessBar"><a href="../about.php.html">About&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../contact.php.html">Contact&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../fellowship/join.htm">Join&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../membership/index.php.html" title="Members Log on/off" id="members_logon" class="normal">Members&nbsp;Log&nbsp;on/off</a></li>
+  </ul>
+</div>
+<div id="footer_right">
+  <ul class="accessBar">
+    <li class="accessBar"><a href="http://www.linkedin.com/groups/MirandaMod-3726470?trk=myg_ugrp_ovr"><img src="../images/site/linkedin_logo.png" alt="Linked In MirandaNet" width="99" height="28" title="Linked In MirandaNet"></a></li>
+	<li class="accessBar"><a href="http://www.facebook.com/pages/MirandaMod/180379201990546"><img src="../images/site/f_logo.png" alt="MirandaNet on Facebook" width="28" height="28" title="MirandaNet on Facebook"></a></li>
+	<li class="accessBar"><img src="../images/site/twitter.jpg" alt="MirandaNet on Twitter - forthcoming feature" width="28" height="28" title="MirandaNet on Twitter - forthcoming feature"></li>
+	<li class="accessBar"><a href="https://plus.google.com/u/0/communities/116934752242714806891"><img src="../images/site/gplus-32.png" alt="Google + MirandaNet" width="28" height="28" title="Google + MirandaNet"></a></li>
+	<li class="accessBar"><a href="../feed.xml.rss"><img src="../images/site/rss.jpg" alt="RSS feed for MirandaNet" width="28" height="28" title="RSS feed for MirandaNet"></a></li> 
+  </ul>
+</div>
+<!-- Footer Ends --></div>
+</body>
+</html>

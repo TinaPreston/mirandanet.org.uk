@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MirandaNet Fellowship - Casestudy</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The MirandaNet Fellowship Web Site" />
+<meta name="keywords" content="ICT communities education learning support" />
+<link rel="stylesheet" type="text/css" href="../mirandanet.css" />
+<link rel="stylesheet" type="text/css" href="../fellowship/fellowship.css" />
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/fix_ie.css" /></style><![endif]-->
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+<script type="text/javascript" src="../mirandanet.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<body onload="return show('casestudies')">
+<div id="header" class="group">
+<a id="top"></a>
+<a href ="../index.html"><img src="../images/logos/mirandanet_nl.gif" alt="The MirandaNet Organisation Logo" width="167" height="61" title="The MirandaNet Organisation: return to home page" /></a> 
+	<h1 class="name"><a href ="../index.html">MirandaNet</a></h1>
+	<h2 class="strapline">Sharing experience and expertise</h2>
+	<div class="topnav_wrapper">
+	  <h5>Site navigation:</h5>
+		<ul class="topnav">
+			<li><a href ="../index.html">Home</a></li>
+			<li><a href ="../fellowship/index.html" id="current">Fellowship</a></li>
+			<li><a href ="../researchexchange/index.html">Research Exchange</a></li>
+			<li><a href ="../consultancy/index.html">Consultancy</a></li>
+			<li><a href ="http://wec.mirandanet.org.uk/">World Ecitizens</a></li>
+		</ul>
+	</div>
+</div>
+
+<div id="content" class="group">
+<div id="leftColumn">
+	<!-- Place all the items for the left hand section here -->
+	<div class="group box">
+	  <!--#include virtual="/fellowship/fellowship_menu.htm"-->
+	  <div id="nav"> 
+  <ul>
+    <li><a href="../fellowship/index.php.html" id="home" class="normal">Fellowship</a></li>
+    <li><a href="../bett/index.html" id="bett" class="normal">BETT</a> 
+      <ul id="sub_bett">
+        <li><a href="../bett/programme.htm" id="programme" class="normal">BETT Programme</a></li>
+      </ul>
+    </li>
+    <li><a href="../fellowship/about.htm" id="about" class="normal">About Us</a> 
+      <ul id="sub_about">
+        <li><a href="../fellowship/founder.htm" id="founder" class="normal">Founder</a></li>
+        <li><a href="../fellowship/researchexchange.htm" id="research" class="normal">Research 
+          Exchange</a></li>
+        <li><a href="../fellowship/consultancy.htm" id="consultancy" class="normal">Consultancy</a></li>
+        <li><a href="../fellowship/worldecitizens.htm" id="worldecitizens" class="normal">World 
+          Ecitizens</a></li>
+      </ul>
+    </li>
+    <li><a href="../profiles/index.html" id="membership" class="normal">The Membership</a></li>
+    <li><a href="../associates/index.html" id="associates" class="normal">Associates</a></li>
+    <li><a href="../news/news.php.html" id="newsarea" class="normal">News &amp; Diary</a> 
+      <ul id="sub_newsarea">
+        <li><a href="../news/diary.php.html" id="diary" class="normal">Diary</a></li>
+        <li><a href="../news/letter.php.html" id="newsletter" class="normal">Newsletter</a></li>
+        <li><a href="../news/mirandanews.htm" id="letterarchive" class="normal">Newsletter 
+          Archive</a></li>
+      </ul>
+    </li>
+    <li><a href="../contact.php.html" id="contact" class="normal">Contact Us</a></li>
+    <li><a href="../mirandamods/index.html" id="mirandamods" class="normal">MirandaMods</a></li>
+    <li><a href="index.html" id="casestudies" class="normal">Case Studies</a></li>
+    <li><a href="../articles/index.html" id="articles" class="normal">Articles</a></li>
+    <li><a href="https://www.mirandanet.org.uk/phorum/default.php" id="forum" class="normal">Forum</a></li>
+    <li><a href="../index_old.htm" id="archive" class="normal">Archive Site</a></li>
+    <li><a href="../fellowship/join.htm" id="join" class="normal">Join MirandaNet</a></li>
+    <li><a href="../membership/index.php.html" title="Members Log on/off" id="logon" class="normal">Members 
+      Log on/off</a></li>
+  </ul>
+</div>
+	</div>
+		<!-- Search Case Studies Module -->
+	<div class="group box" style="margin-bottom:0">
+	<h1>Search the Case Studies</h1> 
+ 	<form method="post" action="../fellowship/casestudies_search.php.html" class="join">
+    <fieldset>
+    <legend>Search Form</legend>
+          <p>Search for:<br />
+            <select name="field" title="Choose search area">
+			 <option value="Title">Title</option>
+			 <option value="Abstract">Abstract</option>
+			 <option value="keywords">Keywords</option>
+			 <option value="article">Professional Study</option>
+			 <option value="Name">Author Name</option>
+            </select>
+            <br />
+            <input class="txtinput" type="text" id="find1" name="find" placeholder="Enter search term" title="Enter search term" />
+            <br />
+            <input type="hidden" name="searching" value="yes" />
+            <input type="submit" name="search" value="Search" />
+          </p>
+ 	</fieldset>
+	</form>
+	</div>
+		<!-- Search Case Studies Module -->
+	<div class="group box" style="margin-bottom:0">
+	
+  <h1>Search the Articles</h1> 
+ 	<form method="post" action="../fellowship/articles_search.php.html" class="join">
+    <fieldset>
+    <legend>Search Form</legend>
+          <p>Search for:<br />
+            <select name="field" title="Choose search area">
+			 <option value="Title">Title</option>
+			 <option value="keywords">Keywords</option>
+			 <option value="article">Article</option>
+			 <option value="Name">Author Name</option>
+            </select>
+            <br />
+            <input class="txtinput" type="text" id="find2" name="find" placeholder="Enter search term" title="Enter search term" />
+            <br />
+            <input type="hidden" name="searching" value="yes" />
+            <input type="submit" name="search" value="Search" />
+          </p>
+ 	</fieldset>
+	</form>
+	</div>
+		<!-- Search Membership Module -->
+	<div class="group box" style="margin-bottom:0">
+	<h1>Search the Membership</h1> 
+	<form method="post" action="../fellowship/listing_search.php.html" class="join">
+     <fieldset>
+    <legend>Search Form</legend>
+          <p>Search for:<br />
+            <select name="field" title="Choose search area">
+              <option value="Anything">Anything</option>
+			  <option value="Surname">Last Name</option>
+              <option value="Forename">First Name</option>
+              <option value="Profile">Profile</option>
+            </select>
+            <br />
+            <input class="txtinput" type="text" id="find" name="find" placeholder="Enter search term" title="Enter search term" />
+            <br />
+            <input type="hidden" name="searching" value="yes" />
+            <input type="submit" name="search" value="Search" />
+          </p>
+	</fieldset>
+	</form>
+	</div>	<!-- Search MirandaNet Module -->
+<div class="group box" style="margin-bottom:0">
+	
+  <h1>Search MirandaNet</h1> 
+ 	<form method="get" action="https://www.google.com/search">
+    <fieldset>
+    <legend>Search Form</legend>
+          <p>Search in:<br />
+            <select name="sitesearch" title="Choose search area">
+			 <option value="mirandanet.org.uk">MirandaNet</option>
+			 <option value="worldecitizens.net">World Ecitizens</option>
+			 <option value="">The Web</option>
+            </select>
+            <br />
+            <input class="txtinput" type="text" name="q" maxlength="255" placeholder="Enter search term" title="Enter search term"/>
+            <br />
+            <input type="hidden" name="searching" value="yes" />
+            <input type="submit" name="search" value="Google Search" />
+          </p>
+ 	</fieldset>
+	</form>
+	</div>
+
+</div>
+  <div id="mainBody" class="group"> 
+    <h1>MirandaNet Fellowship Casestudy</h1>
+    <p><a href="../fellowship/listing.php.html">Membership List</a> | <a href="../publications/index.html">Publications</a> 
+      | <a href="../publications/research.htm">Research</a> | <a href="../publications/personal.php.html">Specialist 
+      Area List</a> | <a href="../ejournal/index.html">Braided Learning Ejournal</a></p>
+    <hr />
+    <h2>Efacilitation and Online Communities</h2>
+<p><strong>An investigation into whether access to, and use of an online community can alter or affect learning outcomes.</strong></p>
+<p><strong>Fiona Garrett</strong></p>
+<p><strong>Year of posting:</strong> 2003</p>
+<hr />
+<p><strong>Abstract:</strong></p>Fiona Garrett – Research Outline
+GTC Action Research Diploma
+
+
+“Efacilitation and Online Communities”
+
+It is possible to view the acquisition of knowledge in four distinct systems.  Work completed by Mary Field Belenky and Carol Gilligan defines these systems as follows:
+
+Recieved knowledge - listening to the voices of others
+Subjective knowledge - the inner voice
+Procedural knowledge - the voice of reason
+Constructed knowledge - integrating the voices
+
+It is the final system that interests me and forms the theoretical base for my research project.
+
+In terms of constructivism and the concept of shared/group learning, participation in an internet forum or online community is a powerful tool.  The internet has the potential to contribute to a community based approach to learning and provide a method of transfering knowledge and establishing a comminity.  This is a powerful tool in that the community is unihibited by physical factors. 
+
+Within my project I am going to look at online communities and the affect they have on learning gains/oucomes for both students and teachers.  I will start 2 separate forums and study the gains made by each group.
+
+Using my training as an e-facilitator through the GTC I will train a student for each forum in e-facilitation.  I hope to analyse the discussion and the facilitation and apply my skills to steering students e-discussions.
+
+
+In summary:
+
+Aim
+To establish two online communities and asses the learning gains for each
+
+Method
+Both forums will use think.com 
+Students will be given formal access to the site twice a week for an extended period, however they will have informal access as often as the choose.
+
+
+Analysis
+I intend to:
+map interactions
+observe use by both gruops
+use qualitivtive analysis techniques such as group and one-to-one discussions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr />
+<p><strong>Study</strong></p> 
+<H1 align=center style="TEXT-ALIGN: center"><SPAN lang=EN-GB style="FONT-FAMILY: Impact; FONT-SIZE: 48pt; mso-bidi-font-size: 10.0pt">GTC Action Research <?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></SPAN></H1>
+<P class=MsoBodyText3><SPAN lang=EN-GB>Efacilitation and Online Communities</SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB><o:p> </o:p></SPAN></P>
+<P align=center class=MsoNormal style="TEXT-ALIGN: center"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'"><SPAN style="mso-spacerun: yes">  </SPAN><o:p></o:p></SPAN></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></B></P>
+<DIV style="BACKGROUND: #e5e5e5; BORDER-BOTTOM: windowtext 6pt solid; BORDER-LEFT: windowtext 6pt solid; BORDER-RIGHT: windowtext 6pt solid; BORDER-TOP: windowtext 6pt solid; PADDING-BOTTOM: 1pt; PADDING-LEFT: 4pt; PADDING-RIGHT: 4pt; PADDING-TOP: 1pt; mso-border-shadow: yes; mso-shading: white; mso-pattern: gray-10 auto">
+<P align=center class=MsoNormal style="BACKGROUND: #e5e5e5; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; PADDING-TOP: 0cm; TEXT-ALIGN: center; mso-border-shadow: yes; mso-shading: white; mso-pattern: gray-10 auto; mso-border-alt: solid windowtext 6.0pt; mso-padding-alt: 1.0pt 4.0pt 1.0pt 4.0pt"><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 20pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'">An investigation into whether </SPAN></B><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 20pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">access to, and use of an online community, </SPAN></B><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 20pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'">can alter or affect learning outcomes.</SPAN></B><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-FAMILY: Arial; FONT-SIZE: 20pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p></o:p></SPAN></B></P></DIV>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></P>
+<P align=center class=MsoNormal style="TEXT-ALIGN: center"><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'">By<o:p></o:p></SPAN></B></P>
+<P align=center class=MsoNormal style="TEXT-ALIGN: center"><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'">Fiona Garrett<o:p></o:p></SPAN></B></P>
+<P align=center class=MsoNormal style="TEXT-ALIGN: center"><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></B></P>
+<P align=center class=MsoNormal style="TEXT-ALIGN: center"><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></B></P>
+<P align=center class=MsoNormal style="TEXT-ALIGN: center"><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></B></P>
+<P align=center class=MsoNormal style="TEXT-ALIGN: center"><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></B></P>
+<P align=center class=MsoNormal style="TEXT-ALIGN: center"><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'">Based at </SPAN></B><?xml:namespace prefix = st1 ns = "urn:schemas-microsoft-com:office:smarttags" /><st1:place><st1:PlaceName><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'">Boston</SPAN></B></st1:PlaceName><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'"> </SPAN></B><st1:PlaceName><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'">Spa</SPAN></B></st1:PlaceName><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'"> </SPAN></B><st1:PlaceName><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'">Comprehensive</SPAN></B></st1:PlaceName><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'"> </SPAN></B><st1:PlaceType><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'">School</SPAN></B></st1:PlaceType></st1:place><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'">,<o:p></o:p></SPAN></B></P>
+<P align=center class=MsoNormal style="TEXT-ALIGN: center"><st1:place><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'">West Yorkshire</SPAN></B></st1:place><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'"> and </SPAN></B><st1:place><st1:PlaceName><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'">Haverstock</SPAN></B></st1:PlaceName><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'"> </SPAN></B><st1:PlaceType><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'">Secondary School</SPAN></B></st1:PlaceType></st1:place><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'">, </SPAN></B><st1:City><st1:place><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'">London</SPAN></B></st1:place></st1:City><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'"> <o:p></o:p></SPAN></B></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></P><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><BR clear=all style="PAGE-BREAK-BEFORE: always"></SPAN>
+<P align=center class=MsoNormal style="TEXT-ALIGN: center"><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'">Contents<o:p></o:p></SPAN></B></P>
+<P align=center class=MsoNormal style="TEXT-ALIGN: center"><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></B></P>
+<H1><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></H1>
+<H1><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">Synopsis<o:p></o:p></SPAN></H1>
+<P class=MsoNormal><SPAN lang=EN-GB><o:p> </o:p></SPAN></P>
+<H1><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">Think.com<o:p></o:p></SPAN></H1>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></B></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'">Introduction<o:p></o:p></SPAN></B></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></B></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'">Methodology & Theoretical Perspectives<o:p></o:p></SPAN></B></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></B></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'">Review of the Literature <o:p></o:p></SPAN></B></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></B></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'">Research Methodology<o:p></o:p></SPAN></B></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></B></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'">Findings<SPAN style="mso-tab-count: 3">                      </SPAN>The students’ initial response<o:p></o:p></SPAN></B></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'"><SPAN style="mso-tab-count: 4">                                      </SPAN>What happened as the project progressed?<o:p></o:p></SPAN></B></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></B></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'">Conclusions<o:p></o:p></SPAN></B></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></B></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'">Final Thoughts<o:p></o:p></SPAN></B></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></B></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'">Final Thoughts<o:p></o:p></SPAN></B></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></B></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'">Bibliography<o:p></o:p></SPAN></B></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></B></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'">Appendices<o:p></o:p></SPAN></B></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; FONT-SIZE: 14pt; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></B></P>
+<H1><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></H1>
+<P class=MsoNormal><SPAN lang=EN-GB><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB><o:p> </o:p></SPAN></P>
+<H1><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">Fiona Garrett - DFEE Best Practice Research Project<o:p></o:p></SPAN></H1>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></B></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></B></P>
+<DIV style="BACKGROUND: #e5e5e5; BORDER-BOTTOM: windowtext 1.5pt solid; BORDER-LEFT: windowtext 1.5pt solid; BORDER-RIGHT: windowtext 1.5pt solid; BORDER-TOP: windowtext 1.5pt solid; PADDING-BOTTOM: 1pt; PADDING-LEFT: 4pt; PADDING-RIGHT: 4pt; PADDING-TOP: 1pt; mso-shading: white; mso-pattern: gray-10 auto">
+<P class=MsoNormal style="BACKGROUND: #e5e5e5; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; PADDING-TOP: 0cm; mso-shading: white; mso-pattern: gray-10 auto; mso-border-alt: solid windowtext 1.5pt; mso-padding-alt: 1.0pt 4.0pt 1.0pt 4.0pt"><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">An investigation into whether access to, and use of</SPAN></B><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"> an online community, </SPAN></B><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">can alter or affect learning outcomes. </SPAN></B><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p></o:p></SPAN></B></P></DIV>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></B></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></B></P>
+<H2><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">Synopsis<o:p></o:p></SPAN></H2>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">The aim of the project was to study changes in learning outcomes when the user has access to an online learning community.<SPAN style="mso-spacerun: yes">  </SPAN>The study looks at two distinct groups of users, year 11 students and teachers.<SPAN style="mso-spacerun: yes">  </SPAN><o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">The study develops from one group to the other.<SPAN style="mso-spacerun: yes">  </SPAN>Initial research was carried out with the group of students.<SPAN style="mso-spacerun: yes">  </SPAN>Studies based on the teacher group developed from the conclusions arrived at following the student research.<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="COLOR: red; FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">**** (needs completing – efacilitation, constructed learning)<o:p></o:p></SPAN></P>
+<H2><SPAN style="FONT-FAMILY: Arial; FONT-WEIGHT: normal; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></H2>
+<H2><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">Think.com<o:p></o:p></SPAN></H2>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">The study makes use of one particular online community, Think.com.<SPAN style="mso-spacerun: yes">  </SPAN>This Internet community provides a safe, protected environment in which students and teachers can share ideas and learning with others around the globe.<SPAN style="mso-spacerun: yes">  </SPAN>It gives all members a space in which to create a personalised homepage, post work and communicate with other inside the community.<SPAN style="mso-spacerun: yes">  </SPAN>It is easy to use and therefore can be accessed by learners at all levels. <o:p></o:p></SPAN></P>
+<H2><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></H2>
+<H2><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">Introduction<o:p></o:p></SPAN></H2>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">The students I worked with I the initial part of the study were all in year 11. <B style="mso-bidi-font-weight: normal"><o:p></o:p></B></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">In terms of the group’s ICT skills at the onset of the course, most were familiar with basic word processing.<SPAN style="mso-spacerun: yes">  </SPAN>A few had used the Internet, however not as frequently as I thought.<SPAN style="mso-spacerun: yes">  </SPAN>Few of the students had access to a computer at home, thus as a group they were starting with a fairly limited skills/knowledge base.<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">The staff <o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="COLOR: red; FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">*** (needs completing) <o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<H2><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">Theoretical perspectives & Methodology <o:p></o:p></SPAN></H2>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">The study mostly uses observational research methodology.<SPAN style="mso-spacerun: yes">  </SPAN>Many of the conclusions are drawn from watching the group of students over the period of two terms, and looking in detail at the Think.com sites as they progressed.<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="COLOR: red; FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">**** (add staff info – how did I research this group?)<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">Due to this choice of methodology the project is grounded in an ethnographic approach.<SPAN style="mso-spacerun: yes">  </SPAN>That is to say it is a study that looks closely at the patterns of behaviour amongst the group of the students and teachers in relation to their use of Think.com.<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">An understanding of feminist constructs of knowledge is also important.<SPAN style="mso-spacerun: yes">  </SPAN>Research undertaken by Mary Field Belenky and associates, looks at the development of self, voice and mind.<SPAN style="mso-spacerun: yes">  </SPAN>Their work develops research by Carol Gilligan who looks specifically at women’s developmental theory and the notion of ‘voice’.<SPAN style="mso-spacerun: yes">  </SPAN>In the context of ‘development’ Blenkley draws attention to the idea that:<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 36pt"><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">“…’real’ and valued lessons learned did not necessarily grow out of academic work but in relationships with friends and teachers, life crises, and community involvements.”<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">The acquisition of knowledge is shown to be through four distinct systems: Received knowledge – listening to the voices of others; Subjective knowledge – the inner voice; Procedural Knowledge – the voice of reason; and Constructed knowledge – integrating the voices.<SPAN style="mso-spacerun: yes">  </SPAN>Much of Belenky’s work looks at the two institutions devoted to human development – the family and school, both of which hinder and promote development. <o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">Through the use of extended interviews Belenky concludes that intellectual, ethical and psychological development is not due to the educational setting alone.<SPAN style="mso-spacerun: yes">  </SPAN>In fact learning may occur through a variety of other means beyond a classroom.<SPAN style="mso-spacerun: yes">  </SPAN><o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">Belenky’s research also focuses on the concept of constructed knowledge, which is an important principle in terms of community learning and efacilitation.<SPAN style="mso-spacerun: yes">  </SPAN>She looks at the ability to contribute to a knowledge base and learn from other members in a community rather than the hierarchical paradigm often promoted by educational institutions.<SPAN style="mso-spacerun: yes">  </SPAN><SPAN style="COLOR: red">*** (add – look at the book again)<o:p></o:p></SPAN></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal style="tab-stops: 22.5pt"><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal style="tab-stops: 22.5pt"><SPAN style="COLOR: red; FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">Add my own methodology here – <SPAN style="mso-tab-count: 1">   </SPAN>observational<o:p></o:p></SPAN></P>
+<P class=MsoNormal style="tab-stops: 22.5pt"><SPAN style="COLOR: red; FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><SPAN style="mso-tab-count: 6">                                                            </SPAN>ethnographic<o:p></o:p></SPAN></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN style="COLOR: red; FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><SPAN style="mso-tab-count: 5">                                                            </SPAN></SPAN></B><SPAN style="COLOR: red; FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-bidi-font-weight: bold">one-to-one discussions<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="COLOR: red; FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-bidi-font-weight: bold"><SPAN style="mso-tab-count: 5">                                                            </SPAN>group discussions<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="COLOR: red; FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-bidi-font-weight: bold"><SPAN style="mso-tab-count: 5">                                                            </SPAN>triangulation<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="COLOR: red; FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-bidi-font-weight: bold"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="COLOR: #993366; FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">in terms of evidence for the research project was the accompanying observation.<SPAN style="mso-spacerun: yes">  </SPAN>The study is ethnographic in its nature.<SPAN style="mso-spacerun: yes">  </SPAN>I am part of the study and in many ways impact the study through my close involvement. My behaviour will have an effect on the students.<SPAN style="mso-spacerun: yes">  </SPAN>In many ways the whole study was subject to continual modification as relationships changed and my teaching style altered to meet the needs of the students.<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="COLOR: #993366; FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="COLOR: #993366; FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">Another important factor connected to my role with the students was the ability to engage in ongoing observation of the students’ behaviour.<SPAN style="mso-spacerun: yes">  </SPAN>This provided a strong narrative, which is the main substance of this project.<SPAN style="mso-spacerun: yes">  </SPAN>This narrative is again impacted by a growing relationship with the students involved in the research.<SPAN style="mso-spacerun: yes">  </SPAN>Thus the style of my discussion form here on is more personal than descriptions of the methodology and influential literature. <o:p></o:p></SPAN></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></B></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></B></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></B></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">Review of the Literature<SPAN style="mso-spacerun: yes">  </SPAN><o:p></o:p></SPAN></B></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">The issues covered by this research project are wide ranging.<SPAN style="mso-spacerun: yes">  </SPAN><o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">learning styles and preferences:<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 18pt; TEXT-INDENT: -18pt; tab-stops: list 18.0pt; mso-list: l0 level1 lfo1"><SPAN style="FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol; mso-ansi-language: EN-US"><SPAN style="mso-list: Ignore">·<SPAN style="FONT: 7pt 'Times New Roman'">        </SPAN></SPAN></SPAN><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">computers in the classroom and the issues of changing pedagogical styles; <o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 18pt; TEXT-INDENT: -18pt; tab-stops: list 18.0pt; mso-list: l1 level1 lfo2"><SPAN style="FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol; mso-ansi-language: EN-US"><SPAN style="mso-list: Ignore">·<SPAN style="FONT: 7pt 'Times New Roman'">        </SPAN></SPAN></SPAN><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">a consideration of the physical learning environment and its impact on the learner; <o:p></o:p></SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 18pt; TEXT-INDENT: -18pt; tab-stops: list 18.0pt; mso-list: l1 level1 lfo2"><SPAN style="FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol; mso-ansi-language: EN-US"><SPAN style="mso-list: Ignore">·<SPAN style="FONT: 7pt 'Times New Roman'">        </SPAN></SPAN></SPAN><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">the complex issues surrounding the use of the Internet and computers within education;<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<H2><SPAN style="FONT-FAMILY: Arial; FONT-WEIGHT: normal; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">Much research has been completed regarding learning styles and it is rightly an expanding field of study.<SPAN style="mso-spacerun: yes">  </SPAN>Gardener’s work on multiple intelligence and Piaget’s developmental theory form the backbone of a large body of study into the ways in which we learn and subsequently the pedegogies appropriate within education.<o:p></o:p></SPAN></H2>
+<H2><SPAN style="FONT-FAMILY: Arial; FONT-WEIGHT: normal; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></H2>
+<H2><SPAN style="FONT-FAMILY: Arial; FONT-WEIGHT: normal; mso-ansi-language: EN-US; mso-bidi-font-weight: bold">Much of the research surrounding the concept of constructivism leads to the conclusion that a computer-based environment will enhance many learners’ educational experience.<SPAN style="mso-spacerun: yes">  </SPAN>Through an examination of the principals of constructivism Bostock comes to the conclusion that students cannot feel ownership if the learning goals and methods are strictly defined by the teacher.<SPAN style="mso-spacerun: yes">  </SPAN>There must be room for negotiation with the teacher on the content and learning methods.<SPAN style="mso-spacerun: yes">  </SPAN>He concludes that students need to manage their own time and should access their own learning.<SPAN style="mso-spacerun: yes">  </SPAN>Thus an ideal learning environment would be rich in personal interaction with the teacher and other learners. It is therefore important to develop an appropriate learning space in order to improving learning outcomes.<SPAN style="mso-spacerun: yes">  </SPAN><o:p></o:p></SPAN></H2>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">O’Conner sees disaffection with learning as being in many ways a product of the classroom.<SPAN style="mso-spacerun: yes">  </SPAN>It is possible to trace the lack of motivation, resistance and failure of some students to the fact that school is limited to sequential, verbal presentations combined with uninspired private reading and writing activities.<o:p></o:p></SPAN></P>
+<H2><SPAN style="FONT-FAMILY: Arial; FONT-WEIGHT: normal; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></H2>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">With this in mind the requirement for a variety of learning contexts would seem to be logical way forward within education.<SPAN style="mso-spacerun: yes">  </SPAN>Computer technology has for many years been the identifiable progression route for teaching and learning.<SPAN style="mso-spacerun: yes">  </SPAN>Thus much of the research surrounding computers and education aims to assess whether this is real progress or just another feature of modern schooling alongside the textbook, paper and pens. <o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">Studies undertaken by Becker in the early eighties revealed that teachers using computers in class were five times as likely to report that computers increased student enthusiasm but couldn’t substantiate the idea that they improved learning outcomes.<SPAN style="mso-spacerun: yes">  </SPAN>In fact many of the subsequent studies have resulted in data establishing the fact that computers have a direct link with students increased motivation.<SPAN style="mso-spacerun: yes">  </SPAN>Cox (1993) showed that computers heightened pupils’ interest and enjoyment and also had a positive effect on the status of the subject.<SPAN style="mso-spacerun: yes">  </SPAN>Cox’s research resulted in the conclusion that use of a computer allowed students to work in an open ended way thereby allowing them to become involved in a more challenging learning situations.<SPAN style="mso-spacerun: yes">  </SPAN>Ryan (1991) writes about improved cooperation amongst members of the class when engaged with computer-based activities.<SPAN style="mso-spacerun: yes">  </SPAN>This was put down to the fact that students are competing with a machine in this context rather than each other thus promoting an altered state within the room.<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">Later work begins to test the notion that computers can impact thinking skills.<SPAN style="mso-spacerun: yes">  </SPAN>Many researchers have supported the idea that children need to be encouraged to think critically in order to problem solve and be self reflective.<SPAN style="mso-spacerun: yes">  </SPAN>Knight and Knight (1995) argue that computers have a valuable role in this task.<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">Scrimshaw (1998) studied the ways in which word processors support language development and the impact of the Internet in terms of language and communication.<SPAN style="mso-spacerun: yes">  </SPAN>The Internet develops skills of searching, interpreting and organising information, which Scrimshaw described as providing students with’network’ literacy<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">This finding is interesting and important as it could be argued that with in the context of many schools much of the teaching and learning online has been a transfer from a didactic teaching methodology of textbooks and a teacher who verbally annotates and explains the lesson, to a computer that replaces the teacher alongside the Internet which removes the need for the textbook.<SPAN style="mso-spacerun: yes">  </SPAN>Thus limiting community learning or constructed knowledge to take place Therefore it is important to consider current research into the use and development of online learning contexts and knowledge sharing.<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">Alexander and Boud argue that much use of the Internet within teaching is an attempt to ‘automate existing practices’ which ultimately becomes more time consuming and expensive.<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">Mayes argues that before adopting any new educational technology, pedagogy should be agreed.<SPAN style="mso-spacerun: yes">  </SPAN>He argues that this pedagogy should be founded around constructivism – collaborative learning, authentic tasks and the promotion of identities and learning communities.<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">Interestingly throughout my reading I found little written about the concept of wider educational communities, the virtual community and the changing shape of personal interaction.<SPAN style="mso-spacerun: yes">  </SPAN>In addition to this much of the research is based on higher education rather than secondary schools.<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">Using ICT is experiential learning.<SPAN style="mso-spacerun: yes">  </SPAN>Cuthell (2000) refers to the notion of cybersemiotics and the ideas that ICT involves the student in learning the language of screen icons.<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">I feel my research begins to extend the notions of motivation and learning outcomes in the context of ICT, the Internet and the on-line community. <o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="COLOR: red; FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="COLOR: red; FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US">*** (needs completing – salmon etc. – point out not related to school compulsory education rather motivated, mature learners..<SPAN style="mso-spacerun: yes">  </SPAN>add x2 paragraphs)<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">Stage 1 - Students<o:p></o:p></SPAN></B></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">Findings from the student based part of the study <SPAN style="COLOR: #993366">– do I want to keep this in<SPAN style="mso-spacerun: yes">  </SPAN>the project???</SPAN></SPAN></B><SPAN lang=EN-GB style="COLOR: #993366; FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'"><o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">Due to the nature of the course and emphasis within the programme on independent work, I decided to introduce the various members of the group to Think.com separately.<SPAN style="mso-spacerun: yes">   </SPAN>Prior to using Think.com I had worked individually with most members of the group assisting them with their English.<SPAN style="mso-spacerun: yes">  </SPAN>Each student had their own programme of study tailored to meet their needs in terms of the subject and, to some extent, learning styles.<SPAN style="mso-spacerun: yes">  </SPAN>Therefore within English lessons the classroom was not operating in a traditional teacher-led environment.<SPAN style="mso-spacerun: yes">  </SPAN>This seemed an ideal situation in which to introduce students to Think.com.<SPAN style="mso-spacerun: yes">  </SPAN>I felt that they had the space necessary to individually discover the on-line community.<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">In this context I hoped to provide students with access to the site and then leave them to discover the possibilities through personal exploration.<SPAN style="mso-spacerun: yes">  </SPAN>I perceived the site as relatively easy to negotiate and thought that the process of unravelling its potential would provide many exciting learning opportunities. <o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">This proved to be a false assumption.<SPAN style="mso-spacerun: yes">  </SPAN>The process of visualising the end result and negotiating their way towards such an ill-defined end result defied their working practices.<SPAN style="mso-spacerun: yes">  </SPAN>Without tangible objectives the students were not keen to engage with a discovery process.<SPAN style="mso-spacerun: yes">  </SPAN>Their motivation remained low and the possibilities of having their own web page seemed to leave them unmoved.<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">For all the students on the course, continual access to computers meant a gradual change in their ability with and tolerance towards technology.<SPAN style="mso-spacerun: yes">  </SPAN><SPAN style="COLOR: #993366">This was interesting in itself.<SPAN style="mso-spacerun: yes">  </SPAN>Unlike other members of the school who had designated times in special computer rooms, students on the Alternative Curriculum could use a computer at any point in the day.<SPAN style="mso-spacerun: yes">  </SPAN>The hardware very quickly became an integral part of the fabric of the room.<SPAN style="mso-spacerun: yes">  </SPAN>This was helpful in terms of Think.com.<SPAN style="mso-spacerun: yes">  </SPAN>A student such as Paul was able to access his site at any point.<SPAN style="mso-spacerun: yes">  </SPAN>He had the potential to interact with the community throughout the day.<o:p></o:p></SPAN></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">At first students using Think would only log on during their English lesson.<SPAN style="mso-spacerun: yes">  </SPAN>In other words they regarded Think as part of a subject and only to be accessed at times when the subject was being taught.<SPAN style="mso-spacerun: yes">  </SPAN>I found this interesting.<SPAN style="mso-spacerun: yes">  </SPAN>Students were used to regarding anything associated with a teacher as work and therefore something to avoid or disrupt.<SPAN style="mso-spacerun: yes">  </SPAN>They were also used to being told what to do and being given very prescriptive tasks.<SPAN style="mso-spacerun: yes">  </SPAN>It took a long time to deconstruct this idea and convince than that they could own their sites and be creative with them.<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></B></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">Conclusions from the student based part of the study<o:p></o:p></SPAN></B></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">This project has prompted a large range of conclusions.<SPAN style="mso-spacerun: yes">  </SPAN>Many arise from fragments of conversations with the students involved, some come from<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">viewing the students’ think.com sites, and others are observations I made of the students throughout the year.<SPAN style="mso-spacerun: yes">  </SPAN>In essence the conclusions are formed around the same categories as my initial literature review learning , computers and on-line learning.<SPAN style="mso-spacerun: yes">  </SPAN>Thus I have clustered my findings roughly into the same groupings.<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">You must have the flexibility to ignore the conventions of the ‘classroom’.<o:p></o:p></SPAN></B></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">A formal structure of teacher led learning is difficult to accommodate when students are using computers instead of pens and paper. In terms of the physical structure of a computer room there are often obvious differences to the regular classroom.<SPAN style="mso-spacerun: yes">  </SPAN>In </SPAN><st1:City><st1:place><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">Boston</SPAN></st1:place></st1:City><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'"> Spa Comprehensive students sit with their faces to the wall looking at the screens.<SPAN style="mso-spacerun: yes">  </SPAN>They do not face the front, therefore in order to look at a teacher positioned at the front of the class room students have to turn round and change their focus.<SPAN style="mso-spacerun: yes">  </SPAN>This may sound like an obvious point, however the positioning of the students within the room makes great differences to the possible interactions.<SPAN style="mso-spacerun: yes">  </SPAN>Students are engaging with the screen, not a human being.<SPAN style="mso-spacerun: yes">  </SPAN><o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">There are both positive and negative connotations to this conventional change.<SPAN style="mso-spacerun: yes">  </SPAN>Removing focus from the teacher deconstructs the students’ perception of a learning space.<SPAN style="mso-spacerun: yes">  </SPAN>However I believe providing a range of possible interactions is preferable.<SPAN style="mso-spacerun: yes">  </SPAN>Therefore more creative organisation of the classroom could offer students space to interact with the machinery and other human beings without having to continually move to and from their screens.<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">Within the room assigned to the Alternative Curriculum the computers were positioned along one wall, however the rest of the room was organised to offer movement and thus different spaces for interaction.<SPAN style="mso-spacerun: yes">  </SPAN><o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">Although not perfect, I found this altered focus and working environment to be of great benefit to both my relationship with the students, and the work ethos within the group.<SPAN style="mso-spacerun: yes">  </SPAN>It is much easier to engage with students who have largely rejected teachers and the formal school environment if they are not forced to focus on you as the teacher.<SPAN style="mso-spacerun: yes">  </SPAN>Interestingly, staring at a screen facilitates conversation and removes the awkward pressure of making eye contact - something many students who fall into the category of ‘disaffected’ find difficult.<SPAN style="mso-spacerun: yes">  </SPAN>As opposed to the usual frustrations of slow connections and general problems with Internet access, collectively waiting provides legitimate space for a conversation.<SPAN style="mso-spacerun: yes">  </SPAN><o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">Looking at and discussing information displayed on a screen objectifies the discussion.<SPAN style="mso-spacerun: yes">  </SPAN>It becomes transactional.<SPAN style="mso-spacerun: yes">  </SPAN>The conversation is based on changes and suggestions which can be implemented quickly and cleanly rather than the more intrusive red pen corrections on an exercise book.<SPAN style="mso-spacerun: yes">  </SPAN><o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">The natural differentiation that the technology allows is ideal for a group of this kind.<o:p></o:p></SPAN></B></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">Students can work at their own pace and make as great or as little use of the technology as their ability allows.<SPAN style="mso-spacerun: yes">  </SPAN>Students are allowed to develop their skills and understanding of the site.<SPAN style="mso-spacerun: yes">  </SPAN>They are able to develop their ‘Think’ language and the speed at which they do this determines the way in which they will be able to use the site.<SPAN style="mso-spacerun: yes">  </SPAN><SPAN style="COLOR: #993366">The principles of mixed ability teaching<o:p></o:p></SPAN></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">The lack of pressure on the students to produce a formal outcome (assessed work) gave them the freedom to control the content rather than have it dictated to them.<o:p></o:p></SPAN></B></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">This was significant in attracting students to the programme in the first place.<SPAN style="mso-spacerun: yes">  </SPAN>Most of the students on the course had consistently failed to achieve in an ‘academic’ context.<SPAN style="mso-spacerun: yes">  </SPAN>Test, examinations and assessments are points within school life at which all students on this course had failed.<SPAN style="mso-spacerun: yes">  </SPAN>By this I mean they had not achieved the required standard.<SPAN style="mso-spacerun: yes">  </SPAN>Much of their disaffection is measured through their lack of success with formal testing.<SPAN style="mso-spacerun: yes">  </SPAN>This raises a range of interesting questions, primarily whether assessment is an appropriate way to measure success.<SPAN style="mso-spacerun: yes">  </SPAN>I question the validity of the current assessment system.<SPAN style="mso-spacerun: yes">  </SPAN>I believe it to be controlling and non-inclusive.<SPAN style="mso-spacerun: yes">  </SPAN>In my opinion the demand for measurable results places gross restrictions on teaching and learning.<SPAN style="mso-spacerun: yes">  </SPAN>It is quick to exclude students who find this particular process difficult and are unable to display their skill in any other context/forum.<SPAN style="mso-spacerun: yes">  </SPAN>Removing this stain from this group allowed a more flexible approach to teaching and learning.<o:p></o:p></SPAN></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></B></P>
+<P class=MsoBodyText2><SPAN lang=EN-GB>Most students need to see the potential of the site the first time they look at it in order to engage with it.</SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">A quick tour around the community was required for the students in this particular class.<SPAN style="mso-spacerun: yes">  </SPAN>I discovered that they don’t have the patience or motivation at the outset to explore alone.<SPAN style="mso-spacerun: yes">  </SPAN>I suspect this would be different amongst a group of more able students.<SPAN style="mso-spacerun: yes">  </SPAN>Thus it is an important conclusion to draw as it dictates the pedagogical style required.<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">The girls seemed more interested initially in the idea of a ‘global’ audience for their ideas.<o:p></o:p></SPAN></B></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">This I found to be a very interesting observation.<SPAN style="mso-spacerun: yes">  </SPAN>I had thought that the girls would enjoy the opportunity to construct something they perceived as worth looking at.<SPAN style="mso-spacerun: yes">  </SPAN>I also imagined they would enjoy the chance to express themselves in their own space.<SPAN style="mso-spacerun: yes">  </SPAN>However, the function Amy was most interested in were those that invited a large audience.<SPAN style="mso-spacerun: yes">  </SPAN>I decided this desire to appeal to the wider audience was possibly connected to girls’ increased communication abilities.<SPAN style="mso-spacerun: yes">  </SPAN><o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'"><o:p> </o:p></SPAN></P>
+<P class=MsoBodyText2><SPAN lang=EN-GB>Think.com gives students the ability to construct their identity through language.<SPAN style="mso-spacerun: yes">  </SPAN></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">This conclusion is interesting in the light of the fact that most students on the Alternative Curriculum have avoided using written words for many years. The opportunity for personal voice is a very significant part of the Think.com ideology.<SPAN style="mso-spacerun: yes">  </SPAN>As my initial interviews revealed, most of the students classed as disaffected lacked a sense of voice within the context of the school.<SPAN style="mso-spacerun: yes">  </SPAN>This was primarily due to the fact that their ‘voice’ was often heard at inappropriate times and thus silenced.<SPAN style="mso-spacerun: yes">  </SPAN>Think.com gives them a new voice.<SPAN style="mso-spacerun: yes">  </SPAN>As with all computer identities, users are able to present themselves to the world in any way that they wish.<o:p></o:p></SPAN></P>
+<P class=MsoBodyText2><SPAN lang=EN-GB style="FONT-WEIGHT: normal"><o:p> </o:p></SPAN></P>
+<P class=MsoNormal><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">Feedback from the virtual audience has a very important impact on the students’ view of their own page and motivation towards the project.<o:p></o:p></SPAN></B></P>
+<P class=MsoNormal><SPAN lang=EN-GB style="FONT-FAMILY: Arial; mso-bidi-font-family: 'Times New Roman'">The opportunity to receive recognition within Think is very different to the usual school structure, which is that of the teacher praising the student.<SPAN style="mso-spacerun: yes">  </SPAN>Anyone can visit your home page and admire your work.<SPAN style="mso-spacerun: yes">  </SPAN>Therefore the amount of recognition a student can potentially receive for their work is infinitely more than in school. This is due to the number of possible visitors with their own thoughts about what constitutes good or bad.<o:p></o:p></SPAN></P>
+<P class=
+<hr><p>MirandaNet Members can go to the <a href = '../membership/index.php.html'>Log on/off</a> area to edit their own casestudies.</a></p><hr>    <p>[<a href="#top">Back to the top</a>]</p>
+  <p>[<a href="javascript:history.back()">Back</a>]</p>
+</div>
+</div>
+<div id="footer" class="group"> 
+  <!--#include virtual="/footer.htm"-->
+  <!-- Footer Starts -->
+<div id="footer_left"> 
+  <ul class="accessBar">
+    <li class="accessBar"><a href="../associates/bedfordshire.htm"><img src="../images/associates_logos/Uni_Bed_logo_small.jpg" alt="University of Bedfordshire" title="University of Bedfordshire" width="72" height="28" style="vertical-align: -40%;"></a> 
+    </li>
+    <li class="accessBar"><a href="../associates/index.html">Associates</a></li>
+    <li class="accessBar"><a href="../about.php.html">About&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../contact.php.html">Contact&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../fellowship/join.htm">Join&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../membership/index.php.html" title="Members Log on/off" id="members_logon" class="normal">Members&nbsp;Log&nbsp;on/off</a></li>
+  </ul>
+</div>
+<div id="footer_right">
+  <ul class="accessBar">
+    <li class="accessBar"><a href="http://www.linkedin.com/groups/MirandaMod-3726470?trk=myg_ugrp_ovr"><img src="../images/site/linkedin_logo.png" alt="Linked In MirandaNet" width="99" height="28" title="Linked In MirandaNet"></a></li>
+	<li class="accessBar"><a href="http://www.facebook.com/pages/MirandaMod/180379201990546"><img src="../images/site/f_logo.png" alt="MirandaNet on Facebook" width="28" height="28" title="MirandaNet on Facebook"></a></li>
+	<li class="accessBar"><img src="../images/site/twitter.jpg" alt="MirandaNet on Twitter - forthcoming feature" width="28" height="28" title="MirandaNet on Twitter - forthcoming feature"></li>
+	<li class="accessBar"><a href="https://plus.google.com/u/0/communities/116934752242714806891"><img src="../images/site/gplus-32.png" alt="Google + MirandaNet" width="28" height="28" title="Google + MirandaNet"></a></li>
+	<li class="accessBar"><a href="../feed.xml.rss"><img src="../images/site/rss.jpg" alt="RSS feed for MirandaNet" width="28" height="28" title="RSS feed for MirandaNet"></a></li> 
+  </ul>
+</div>
+<!-- Footer Ends --></div>
+</body>
+</html>

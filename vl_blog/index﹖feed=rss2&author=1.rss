@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>MirandaNet Editor &#8211; Seeing the Meaning</title>
+	<atom:link href="https://www.mirandanet.org.uk/vl_blog/?feed=rss2&#038;author=1" rel="self" type="application/rss+xml" />
+	<link>https://www.mirandanet.org.uk/vl_blog</link>
+	<description>Exploring Visual Learning on MirandaNet</description>
+	<lastBuildDate>Tue, 03 Feb 2015 13:15:18 +0000</lastBuildDate>
+	<language>en-GB</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.15</generator>
+	<item>
+		<title>Seeing the Meaning &#8211; Visual Learning</title>
+		<link>https://www.mirandanet.org.uk/vl_blog/?p=1</link>
+		
+		<dc:creator><![CDATA[MirandaNet Editor]]></dc:creator>
+		<pubDate>Tue, 10 Feb 2009 12:27:25 +0000</pubDate>
+				<category><![CDATA[Visual Learning]]></category>
+		<guid isPermaLink="false">http://www.mirandanet.ac.uk/vl_blog/?p=1</guid>
+
+					<description><![CDATA[MirandaNet has gathered its Visual Learning resources in this new section. You can return to the Visual Learning Map at any time by clicking on the &#8216;Home&#8217; link in the Pages list.]]></description>
+										<content:encoded><![CDATA[<p><a href="http://www.mirandanet.org.uk/vl_blog/wp-content/uploads/2009/02/overview2.jpg"><img loading="lazy" class="aligncenter size-medium wp-image-490" title="Overview" src="http://www.mirandanet.org.uk/vl_blog/wp-content/uploads/2009/02/overview2-300x151.jpg" alt="Overview" width="300" height="151" srcset="https://www.mirandanet.org.uk/vl_blog/wp-content/uploads/2009/02/overview2-300x151.jpg 300w, https://www.mirandanet.org.uk/vl_blog/wp-content/uploads/2009/02/overview2-1024x517.jpg 1024w, https://www.mirandanet.org.uk/vl_blog/wp-content/uploads/2009/02/overview2.jpg 1365w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>MirandaNet has gathered its Visual Learning resources in this new section. You can return to the Visual Learning Map at any time by clicking on the &#8216;Home&#8217; link in the Pages list.</p>
+<p><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img class=" alignnone" title="All content on this website is governed by a Creative Commons License." src="/images/creative_commons.jpg" alt="All content on this website is governed by a Creative Commons License." /></a></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

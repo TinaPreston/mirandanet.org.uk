@@ -1,0 +1,479 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<title>MirandaNet ICT CPD - Ultraportables Questionnaire - Leaders</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The MirandaNet Fellowship Web Site">
+<meta name="keywords" content="ICT communities education learning support">
+<meta name="language" content="en">
+<link href="../common.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../common.js"></script>
+<style type="text/css">.buttonSubmit {
+	color: green;
+	text-transform: uppercase;
+	border: 1px solid green;
+	margin-top: 1em;
+	font-size: 1em;
+}
+
+.buttonReset {
+	color: red;
+	text-transform: uppercase;
+	border: 1px solid red;
+	margin-top: 1em;
+	font-size: 1em;
+}
+
+.buttonSubmitHide {
+	display: none;
+}
+
+</style>
+<script type="text/JavaScript">
+
+function checkscript() {
+	for (i=0;i<4;i++) {
+		box = document.example.elements[i];
+		if (!box.value) {
+			alert('You haven\'t filled in ' + box.name + '!');
+			box.focus()
+			return false;
+		}
+	}
+	return true;
+}
+function checkNever() { 
+	var submit = document.questionnaire.submit;
+//	var never = document.questionnaire.last_receive[5];
+//	if (never.checked == true) { 
+//		alert('You have clicked Never');
+		classChange('buttonSubmitHide',submit)
+//		} else {
+//		alert('You did not click Never');
+//		}
+}
+
+function classChange(styleChange,item) {
+    item.className = styleChange;
+}
+function ValidateQuestionnaire() {
+//    var institution = document.questionnaire.institution;
+    var job_title = document.questionnaire.job_title;
+    var post_code_region = document.questionnaire.post_code_region;
+
+/*    if (institution.value == "")
+    {
+        window.alert("Please tell us your Institution.");
+        institution.focus();
+        return false;
+    }
+*/
+       if (job_title.value == "")
+    {
+        window.alert("Please tell us your Job Title.");
+        job_title.focus();
+        return false;
+    }
+
+       if (post_code_region.value == "")
+    {
+        window.alert("Please tell us the first part of your Post Code or tell us which Region you are in.");
+        post_code_region.focus();
+        return false;
+    }
+
+  if (document.questionnaire.consent.checked == false) {
+    alert('Please check the Consent Box to continue.');
+	document.questionnaire.consent.focus()
+    return false;
+  } else
+    return true;
+}
+</script>
+
+</head>
+<body onLoad="return show('Leaders')">
+<div id="page">
+<div id="header"><a name="top"></a>
+    <div id="home"><a tabindex="0" href="../index.html"><img src="../images/logo.gif" alt="MirandaNet Index Page" width="200" height="100" title="MirandaNet Index Page"></a> 
+      <img src="../images/bar-start.gif" width="201" height="30" alt=""> </div>
+  <img src="../images/bar-profdevel.gif" width="100%" height="30" alt="MirandaNet" title="MirandaNet"> 
+  <h1>MirandaNet Questionnaires</h1>
+</div>
+
+	
+  <div id="leftColumn"> <img src="ultraport/Dell_ultra_portable.jpg" width="200" height="133" alt="Dell Inspiron Mini 9 Ultra portable Laptop" title="Dell Inspiron Mini 9 Ultra portable Laptop">    
+<!--ignore_perlfect_search-->
+<div id="navsite">
+  <p>Site navigation</p>
+  <ul>
+    <li><a tabindex="1" href="ultraport.htm" title="Home" id="Home" class="normal"> 
+      Ultraportables Home</a></li>
+    <li><a tabindex="2" href="ultraport_pupils.htm" title="Pupils" id="Pupils" class="normal"> 
+      Ultraportables Pupils</a></li>
+    <li><a tabindex="3" href="ultraport_teachers.htm" title="Teachers" id="Teachers" class="normal"> 
+      Ultraportables Teachers</a></li>
+    <li><a tabindex="4" href="ultraport_leaders.htm" title="Leaders" id="Leaders" class="normal"> 
+      Ultraportables Leaders</a></li>
+  </ul>
+</div>
+
+  </div>
+
+  <div id="mainBody"> 
+    <h2>Ultraportables: School Leaders' Survey</h2>
+    <p>As part of the evaluation of the Ultraportable - Netbook - Project it would be most helpful if you could answer the following questions. Please feel free to add any comments that you feel would expand your answers.</p>
+    <p>All data will be confidential and responses in the report will be anonymised.
+      However, if you are willing to discuss the project further, please use
+      the contact links at the end of the questionnaire so that we can arrange
+    a discussion.</p>
+    <form class="join" action="https://www.mirandanet.org.uk/cgi-bin/csv/csvwrite_ultraport_leaders.pl" method="post" name="questionnaire" id="questionnaire"
+    onSubmit="return true">
+    <fieldset>
+      <legend>Introduction: you and your professional role</legend>
+      <p> 
+        <label for="school">What is the name of your school?</label>
+        <input name="school" type="text" id="school" size="40" maxlength="400" class="txt">
+</p>
+      <p>&nbsp; </p>
+      <p> 
+        <label for="job_title">What is your job title?</label>
+        <input name="job_title" type="text" id="job_title" size="40" maxlength="400" class="txt">
+</p>
+      <p>&nbsp; </p>
+      <p> 
+        <label for="role">What is your classroom role?</label>
+        <input name="role" type="text" id="role" size="40" maxlength="400" class="txt">
+</p>
+      <p>&nbsp; </p>
+      <p>
+      <label for="subject_area">What is your subject area?</label>
+        <input name="subject_area" type="text" id="subject_area" size="40" maxlength="400" class="txt">
+      </p>
+    <p>&nbsp;</p>
+	  <p> 
+        <label for="management_role">What is your management role in school?</label>
+        <input name="management_role" type="text" id="management_role" size="40" maxlength="400" class="txt">
+      </p>
+      <p>&nbsp;</p>
+      <p> 
+        <label for="take_part">Who/what made you decide to take part
+        in the Netbook project?</label>
+        <input name="take_part" type="text" id="take_part" size="40" maxlength="400" class="txt">
+      </p>
+      <p>&nbsp;</p>
+    </fieldset>  
+      <p>&nbsp;</p>
+    <fieldset>
+      <legend>Your personal use of ICT</legend>
+      <table width="90%"  border="1" cellspacing="0" cellpadding="5">
+        <tr>
+          <td colspan="2"><strong>I use technology professionally and personally
+              for</strong> (tick all that apply):</td>
+        </tr>
+        <tr>
+          <td><label for ="use_booking">Booking tickets, purchasing flights and holidays, and resourcing lessons</label></td>
+          <td><input name="use_booking" id="use_booking" type="checkbox" value="use_booking"></td>
+        </tr>
+        <tr>
+          <td><label for ="use_profdev">Professional development</label></td>
+          <td><input name="use_profdev" id="use_profdev" type="checkbox" value="use_profdev"></td>
+        </tr>
+        <tr>
+          <td><label for ="use_purchasingbooks">Purchasing books or CDs</label></td>
+          <td><input name="use_purchasingbooks" id="use_purchasingbooks" type="checkbox" value="use_purchasingbooks"></td>
+        <tr>
+          <td><label for ="use_banking">Banking and finance and purchasing items</label></td>
+          <td><input name="use_banking" id="use_banking" type="checkbox" value="use_banking"></td>
+        </tr>
+        <tr>
+          <td><label for ="use_support">To support teaching and learning</label></td>
+          <td><input name="use_support" id="use_support" type="checkbox" value="use_support"></td>
+        </tr>
+        <tr>
+          <td><label for ="use_providing">Providing e-learning for students</label></td>
+          <td><input name="use_providing" id="use_providing" type="checkbox" value="use_providing"></td>
+        </tr>
+        <tr>
+          <td><label for ="use_onlinecomm">Online communities - Facebook, etc</label></td>
+          <td><input name="use_onlinecomm" id="use_onlinecomm" type="checkbox" value="use_onlinecomm"></td>
+        </tr>
+        <tr>
+          <td><label for ="use_storage">Online storage of documents, images and other things</label></td>
+          <td><input name="use_storage" id="use_storage" type="checkbox" value="use_storage"></td>
+        </tr>
+        <tr>
+          <td><label for ="use_communicating">Communicating with friends and family</label></td>
+          <td><input name="use_communicating" id="use_communicating" type="checkbox" value="use_communicating"></td>
+        </tr>
+        <tr>
+          <td><label for ="use_archiving">Archiving and distributing photographs</label></td>
+          <td><input name="use_archiving" id="use_archiving" type="checkbox" value="use_archiving"></td>
+        </tr>
+        <tr>
+          <td><label for ="use_music">Listening to music on an iPod or MP3</label></td>
+          <td><input name="use_music" id="use_music" type="checkbox" value="use_music"></td>
+        </tr>
+        <tr>
+          <td><label for ="use_audiobook">Listening to audiobooks</label></td>
+          <td><input name="use_audiobook" id="use_audiobook" type="checkbox" value="use_audiobook"></td>
+        </tr>
+         <tr>
+          <td><label for ="use_blogs">Writing, or commenting on, blogs</label></td>
+          <td><input name="use_blogs" id="use_blogs" type="checkbox" value="use_blogs"></td>
+        </tr>
+        <tr>
+          <td><label for ="use_digital_videos">Making digital videos</label></td>
+          <td><input name="use_digital_videos" id="use_digital_videos" type="checkbox" value="use_digital_videos"></td>
+        </tr>
+       <tr>
+          <td colspan="2"><label for="use_other_technologies">Are there other digital technologies you use personally or professionally?<br>
+		  Add further items here:</label> 
+          <input name="use_other_technologies" type="text" id="use_other_technologies" size="35" maxlength="400" class="txt"></td>
+	    </tr>
+      </table>
+      <p>&nbsp;</p>
+    
+    
+    
+    
+    
+    </fieldset>  
+    <p>&nbsp;</p>
+	<fieldset>
+      <legend>Your views on ICT</legend><p><strong>How much do you agree with these statements?</strong></p>
+      <p><em>ICT makes a significant difference to learning and teaching</em></p>
+      <p> 
+        <label for ="sigdiff_a">a) Strongly disagree:</label>
+        <input name="sigdiff" id="sigdiff_a" type="radio" value="s_disagree">
+      </p>
+      <p> 
+        <label for ="sigdiff_b">b) Disagree:</label>
+        <input name="sigdiff" id="sigdiff_b" type="radio" value="disagree">
+      </p>
+      <p> 
+        <label for ="sigdiff_c">c) Neither agree nor disagree:</label>
+        <input name="sigdiff" id="sigdiff_c" type="radio" value="neither">
+      </p>
+    <p>
+        <label for ="sigdiff_d">d) Agree:</label>
+     <input name="sigdiff" id="sigdiff_d" type="radio" value="agree">
+    </p>
+      <p> 
+        <label for ="sigdiff_e">e) Strongly agree:</label>
+        <input name="sigdiff" id="sigdiff_e" type="radio" value="s_agree">
+      </p>
+      <p>&nbsp;</p>
+      <p>Good leadership is important for successful ICT implementation</p>
+      <p> 
+        <label for ="goodlead_a">a) Strongly disagree:</label>
+        <input name="goodlead" id="goodlead_a" type="radio" value="s_disagree">
+      </p>
+      <p> 
+        <label for ="goodlead_b">b) Disagree:</label>
+        <input name="goodlead" id="goodlead_b" type="radio" value="disagree">
+      </p>
+      <p> 
+        <label for ="goodlead_c">c) Neither agree nor disagree:</label>
+        <input name="goodlead" id="goodlead_c" type="radio" value="neither">
+      </p>
+    <p>
+        <label for ="goodlead_d">d) Agree:</label>
+     <input name="goodlead" id="goodlead_d" type="radio" value="agree">
+    </p>
+      <p> 
+        <label for ="goodlead_e">e) Strongly agree:</label>
+        <input name="goodlead" id="goodlead_e" type="radio" value="s_agree">
+      </p>
+      <p>&nbsp;</p>
+      <p><strong>We are interested in the impact the following items might have
+	      had on your  practice, as well as the amount of CPD support you
+	      might
+	    have been given. </strong><br>
+    Only evaluate those items which apply to you.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       </p>
+       <p>&nbsp;</p>
+      <table width="90%"  border="1" cellspacing="0" cellpadding="5">
+        <tr>
+          <td rowspan="2">My school has provided me/staff
+            with:</td>
+          <td colspan="6">How much impact has this had on classroom practice?</td>
+        </tr>
+        <tr>
+          <td>None at all</td>
+          <td>A slight impact</td>
+          <td>Some impact</td>
+          <td>Quite a lot</td>
+          <td>A lot</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td><label for ="provided_lap">A laptop</label></td>
+          <td><input type="radio" name="provided_lap" id="provided_lap" value="provided_lap_none"></td>
+          <td><input type="radio" name="provided_lap" value="provided_lap_slight"></td>
+          <td><input type="radio" name="provided_lap" value="provided_lap_some"></td>
+          <td><input type="radio" name="provided_lap" value="provided_lap_quite"></td>
+          <td><input type="radio" name="provided_lap" value="provided_lap_alot"></td>
+          <td><input type="radio" name="provided_lap" value="provided_lap_na" checked></td>
+        </tr>
+        <tr>
+          <td><label for ="provided_iwb">An IWB &amp; projector</label></td>
+          <td><input type="radio" name="provided_iwb" id="provided_iwb" value="provided_iwb_none"></td>
+          <td><input type="radio" name="provided_iwb" value="provided_iwb_slight"></td>
+          <td><input type="radio" name="provided_iwb" value="provided_iwb_some"></td>
+          <td><input type="radio" name="provided_iwb" value="provided_iwb_quite"></td>
+          <td><input type="radio" name="provided_iwb" value="provided_iwb_alot"></td>
+          <td><input type="radio" name="provided_iwb" value="provided_iwb_na" checked></td>
+        </tr>
+        <tr>
+          <td><label for ="provided_proj">A projector</label></td>
+          <td><input type="radio" name="provided_proj" id="provided_proj" value="provided_proj_none"></td>
+          <td><input type="radio" name="provided_proj" value="provided_proj_slight"></td>
+          <td><input type="radio" name="provided_proj" value="provided_proj_some"></td>
+          <td><input type="radio" name="provided_proj" value="provided_proj_quite"></td>
+          <td><input type="radio" name="provided_proj" value="provided_proj_alot"></td>
+          <td><input type="radio" name="provided_proj" value="provided_proj_na" checked></td>
+        </tr>
+        <tr>
+          <td><label for ="provided_hhd">A hand-held device</label></td>
+          <td><input type="radio" name="provided_hhd" id="provided_hhd" value="provided_hhd_none"></td>
+          <td><input type="radio" name="provided_hhd" value="provided_hhd_slight"></td>
+          <td><input type="radio" name="provided_hhd" value="provided_hhd_some"></td>
+          <td><input type="radio" name="provided_hhd" value="provided_hhd_quite"></td>
+          <td><input type="radio" name="provided_hhd" value="provided_hhd_alot"></td>
+          <td><input type="radio" name="provided_hhd" value="provided_hhd_na" checked></td>
+        </tr>
+        <tr>
+          <td><label for ="provided_lp">A Learning Platform</label></td>
+          <td><input type="radio" name="provided_lp" id="provided_lp" value="provided_lp_none"></td>
+          <td><input type="radio" name="provided_lp" value="provided_lp_slight"></td>
+          <td><input type="radio" name="provided_lp" value="provided_lp_some"></td>
+          <td><input type="radio" name="provided_lp" value="provided_lp_quite"></td>
+          <td><input type="radio" name="provided_lp" value="provided_lp_alot"></td>
+          <td><input type="radio" name="provided_lp" value="provided_lp_na" checked></td>
+        </tr>
+        <tr>
+          <td><label for ="provided_other">Other</label></td>
+          <td><input type="radio" name="provided_other" id="provided_other" value="provided_other_none"></td>
+          <td><input type="radio" name="provided_other" value="provided_other_slight"></td>
+          <td><input type="radio" name="provided_other" value="provided_other_some"></td>
+          <td><input type="radio" name="provided_other" value="provided_other_quite"></td>
+          <td><input type="radio" name="provided_other" value="provided_other_alot"></td>
+          <td><input type="radio" name="provided_other" value="provided_other_na" checked></td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+      <table width="90%"  border="1" cellspacing="0" cellpadding="5">
+        <tr>
+          <td rowspan="2">My school has provided me/staff
+            with:</td>
+          <td colspan="6">How much, and what type, of CPD have you or another
+          ICT leader given to support its use?</td>
+        </tr>
+        <tr>
+          <td>None at all</td>
+          <td>1-2 hours</td>
+          <td>3-4 hours</td>
+          <td>A number of sessions</td>
+          <td>Continuous CPD with others</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td><label for ="cpd_lap">A laptop</label></td>
+          <td><input type="radio" name="cpd_lap" id="cpd_lap" value="cpd_lap_none"></td>
+          <td><input type="radio" name="cpd_lap" value="cpd_lap_12"></td>
+          <td><input type="radio" name="cpd_lap" value="cpd_lap_34"></td>
+          <td><input type="radio" name="cpd_lap" value="cpd_lap_number"></td>
+          <td><input type="radio" name="cpd_lap" value="cpd_lap_continuous"></td>
+          <td><input type="radio" name="cpd_lap" value="cpd_lap_na" checked></td>
+        </tr>
+        <tr>
+          <td><label for ="cpd_iwb">An IWB &amp; projector</label></td>
+          <td><input type="radio" name="cpd_iwb" id="cpd_iwb" value="cpd_iwb_none"></td>
+          <td><input type="radio" name="cpd_iwb" value="cpd_iwb_12"></td>
+          <td><input type="radio" name="cpd_iwb" value="cpd_iwb_34"></td>
+          <td><input type="radio" name="cpd_iwb" value="cpd_iwb_number"></td>
+          <td><input type="radio" name="cpd_iwb" value="cpd_iwb_continuous"></td>
+          <td><input type="radio" name="cpd_iwb" value="cpd_liwb_na" checked></td>
+        </tr>
+        <tr>
+          <td><label for ="cpd_proj">A projector</label></td>
+          <td><input type="radio" name="cpd_proj" id="cpd_proj" value="cpd_proj_none"></td>
+          <td><input type="radio" name="cpd_proj" value="cpd_proj_12"></td>
+          <td><input type="radio" name="cpd_proj" value="cpd_proj_34"></td>
+          <td><input type="radio" name="cpd_proj" value="cpd_proj_number"></td>
+          <td><input type="radio" name="cpd_proj" value="cpd_proj_continuous"></td>
+          <td><input type="radio" name="cpd_proj" value="cpd_proj_na" checked></td>
+        </tr>
+        <tr>
+          <td><label for ="cpd_hhd">A hand-held device</label></td>
+          <td><input type="radio" name="cpd_hhd" id="cpd_hhd" value="cpd_hhd_none"></td>
+          <td><input type="radio" name="cpd_hhd" value="cpd_hhd_12"></td>
+          <td><input type="radio" name="cpd_hhd" value="cpd_hhd_34"></td>
+          <td><input type="radio" name="cpd_hhd" value="cpd_hhd_number"></td>
+          <td><input type="radio" name="cpd_hhd" value="cpd_hhd_continuous"></td>
+          <td><input type="radio" name="cpd_hhd" value="cpd_hhd_na" checked></td>
+        </tr>
+        <tr>
+          <td><label for ="cpd_lp">A Learning Platform</label></td>
+          <td><input type="radio" name="cpd_lp" id="cpd_lp" value="cpd_lp_none"></td>
+          <td><input type="radio" name="cpd_lp" value="cpd_lp_12"></td>
+          <td><input type="radio" name="cpd_lp" value="cpd_lp_34"></td>
+          <td><input type="radio" name="cpd_lp" value="cpd_lp_number"></td>
+          <td><input type="radio" name="cpd_lp" value="cpd_lp_continuous"></td>
+          <td><input type="radio" name="cpd_lp" value="cpd_lp_na" checked></td>
+        </tr>
+        <tr>
+          <td><label for ="cpd_other">Other</label></td>
+          <td><input type="radio" name="cpd_other" id="cpd_other" value="cpd_other_none"></td>
+          <td><input type="radio" name="cpd_other" value="cpd_other_12"></td>
+          <td><input type="radio" name="cpd_other" value="cpd_other_34"></td>
+          <td><input type="radio" name="cpd_other" value="cpd_other_number"></td>
+          <td><input type="radio" name="cpd_other" value="cpd_other_continuous"></td>
+          <td><input type="radio" name="cpd_other" value="cpd_other_na" checked></td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+    </fieldset>  
+    <p>&nbsp;</p>
+	<fieldset>
+    <legend>Thank you</legend>
+    <p>Thank you very much for electing to fill in this questionnaire. Your answers
+      will be very important in developing ICT CPD programme designs. If you
+      are willing to be interviewed further about these topics then please either
+      email me directly (
+      <script type="text/javascript"><!--
+	  display("","john.cuthell","","Arrange an Interview for the Ultraportables Survey")
+	  // -->
+	  </script>
+      ) or add your telephone number and email address here:</p>
+    <p>
+      <label for="Telephone"><strong>Telephone</strong>: </label>
+      <input name="Telephone" type="text" id="Telephone" size="35" maxlength="400" class="txt">
+    </p>
+    <p>
+      <label for="Email"><strong>Email address</strong>: </label>
+      <input name="Email" type="text" id="Email" size="35" maxlength="400" class="txt">
+    </p>
+    <p>&nbsp;</p>
+	<p>&nbsp; 
+      <input type="submit" name="submit1" value="submit" class="buttonSubmit" 
+	  onClick="return confirm('You are about to send your form. Is this OK?')"  >
+      &nbsp;&nbsp;&nbsp; &nbsp; 
+      <input type="reset" name="Reset" value="Reset" class="buttonReset"  
+	  onClick="return confirm('Do you really want to clear the form and start again?')">
+    </p>
+    </fieldset>
+  </form>
+  
+    <p>[<a href="#top">Back to the top</a>]</p>
+  <p>[<a href="javascript:history.back()">Back</a>]</p>
+</div>
+<div id="footer">
+  <img src="../images/bar-home.gif" width="100%" height="30" alt="">  
+  <!--include virtual="/footer.htm"-->
+</div>
+</div>
+</body>
+</html>

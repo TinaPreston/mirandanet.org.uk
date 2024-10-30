@@ -1,0 +1,1126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<title>MirandaNet Professional Development</title>
+<meta name="Description" content="The MirandaNet Community">
+<meta http-equiv="charset" content="iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+<meta http-equiv="Content-Language" content="zh">
+<link href="../common.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../common.js"></script>
+<style type="text/css">.buttonSubmit {
+	color: green;
+	text-transform: uppercase;
+	border: 1px solid green;
+	margin-top: 1em;
+	font-size: 1em;
+}
+
+.buttonReset {
+	color: red;
+	text-transform: uppercase;
+	border: 1px solid red;
+	margin-top: 1em;
+	font-size: 1em;
+}
+
+function classChange(styleChange,item) {
+    item.className = styleChange;
+}
+
+.buttonSubmitHide {
+	display: none;
+}
+
+</style>
+</head>
+
+<body>
+<div id="page">
+<div id="header"><a name="top"></a>
+    <div id="home"><a tabindex="0" href="../index.html"><img src="../images/logo.gif" alt="MirandaNet Index Page" width="200" height="100" title="MirandaNet Index Page"></a> 
+      <img src="../images/bar-start.gif" width="201" height="30" alt=""> </div>
+  <img src="../images/bar-profdevel.gif" width="100%" height="30" alt="MirandaNet" title="MirandaNet"> 
+  <h1>MirandaNet International Research Centre</h1>
+</div>
+<div id="leftColumn"><img src="../associates/promethean_boy.jpg" alt="Promethean ACTIVboard" width="200" height="150"> 
+  <!--ignore_perlfect_search-->
+<div id="navsite">
+  <p>Site navigation</p>
+  <ul>
+    <li class="divider">MirandaNet Fellowship</li>
+    <li><a href="../home.php.html" title="Home" id="homepage" class="normal">Home</a></li>
+    <li><a href="../associates/index.html" title="Company Associates" id="partners" class="normal"> 
+      Associates</a></li>
+   <!-- <li><a href="/bett/" title="BETT12" id="bett" class="normal">BETT12</a></li> --> 
+    <li><a href="https://www.mirandanet.org.uk/phorum/default.php" title="Forums" id="forums" class="normal">Forums</a></li>
+    <li><a href="../international/index.html" title="International MirandaNet" id="internat" class="normal">International 
+      MirandaNet</a></li>
+    <li><a href="../fellowship/index.html" title="The Fellowship" id="fellowship" class="normal">Fellowship</a></li>
+     <!-- <li><a href="/membership/index.php" title="Members" id="members" class="normal">Log
+        on/off</a></li> -->
+    <li><a href="../membership/index.php.html" title="Members Log on/off" id="members">Members 
+        Log on/off</a> </li>
+    <li class="divider">MirandaNet Resources</li>
+    <li><a href="../research/index.html" title="Case Studies &amp; Research" id="research" class="normal">Case 
+      Studies &amp; Research</a></li>
+    <li><a href="../ejournal/index.html" title="The Braided Learning E-Journal" id="ejournal" class="normal"> 
+      E-Journal</a></li>
+    <li><a href="../mirandamods/index.html" title="MirandaMods" id="mirandamods" class="normal">MirandaMods</a></li>
+    <li><a href="../news/letter.php.html" title="News, Diary, Seminars" id="news" class="normal">Newsletter</a></li>
+    <li><a href="index.html" title="Profdev" id="profdev" class="normal">Professional 
+      Development</a></li>
+    <li><a href="../publications/index.html" title="Publications" id="pubs" class="normal">Publications</a></li>
+    <li><a href="../researchexchange/index.html" title="Research Exchange" id="rex" class="normal">Research Exchange</a></li>
+    <li><a href="../resources/index.html" title="Resources" id="resources" class="normal">Resources</a></li>
+    <li><a href="../vl_blog/index.html" title="Visual Learning" id="vis" class="normal">Visual&nbsp;Learning</a></li>
+    <li class="divider">MirandaNet Consultancy</li>
+    <li><a href="../consultancy/index.html" title="The Consultancy" id="consultancy" class="normal"> 
+      Consultancy</a></li>
+    <li class="divider">World Ecitizens Charity</li>
+    <li><a href="../worldecitizens/index.html" title="World Ecitizens Etopia" id="worldecitizens" class="normal">World 
+      Ecitizens Etopia</a></li>
+  </ul>
+</div>
+
+    <!-- Search begins -->
+    <form action="http://www.google.co.uk/search" method="get" name="search" id="search">
+      <p class="center">
+    <label for="q">Search MirandaNet: 
+    <input type="text" name="q" id="q" size="15" style="width:154px;" alt="Search MirandaNet" title="Search MirandaNet" value="Search" onClick="this.select()" />
+    </label>
+        <br />
+        <input type="submit" value="Search" name="submit" />
+        <input name="sitesearch" type="hidden" value="mirandanet.org.uk" />
+      </p>
+	</form>
+    <!-- Search ends -->
+<!--/ignore_perlfect_search-->
+    </div>
+
+<div id="mainBody"> 
+  <h2>Interactive Whiteboards - Teachers' Questionnaire &#25945;&#24072;&#38382;&#21367;&#35843;&#26597;</h2>
+  <form class="join" action="https://www.mirandanet.org.uk/cgi-bin/csv/csvwrite_teacher.pl" method="post" name="questionnaire" id="questionnaire"
+		 onSubmit="return ValidateQuestionnaire(); classChange('buttonSubmitHide',submit); return true">
+    <fieldset>
+    <legend>&#20010;&#20154;&#36164;&#26009;</legend>
+    <p>(<span class="red">*</span>This information is required only so that we 
+      can contact you: answers will be treated in confidence)</p>
+    <p> 
+      <label for="name">&#22995;&#21517;<span class="red">*</span>: </label>
+      <input name="Name" type="text" id="Name" alt="Name" size="35" maxlength="40" class="txt">
+    </p>
+    <p> 
+      <label for="School">&#23398;&#26657;: </label>
+      <input name="School" type="text" id="School" alt="School" size="35" maxlength="40" class="txt">
+    </p>
+    <p> 
+      <label for="Position">&#32844;&#21153;: </label>
+      <input name="Position" type="text" id="Position" alt="Position" size="35" maxlength="40" class="txt">
+    </p>
+    <p> 
+      <label for="Email">&#37038;&#31665;&#22320;&#22336;: </label>
+      <input name="Email" type="text" id="Email" alt="Email" size="35" maxlength="40" class="txt">
+    </p>
+    </fieldset>
+    <fieldset>
+    <legend>&#35828;&#26126;</legend>
+    <p>&#35828;&#26126;&#65306;&#20180;&#32454;&#38405;&#35835;&#27599;&#19968;&#23567;&#39064;&#65292;&#22312;&#24744;&#35748;&#20026;&#26368;&#21512;&#36866;&#30340;&#36873;&#39033;&#30446;&#37324;&#30011; 
+      X &#65292;&#26368;&#22810;&#19981;&#36229;&#36807;&#19977;&#20010;</p>
+    <p>&#36825;&#26159;&#22312;&#20960;&#20010;&#22269;&#23478;&#30340;&#23398;&#26657;&#20013;&#20570;&#30340;&#19968;&#20221;&#26377;&#20851;&#30333;&#26495;&#20351;&#29992;&#30340;&#38382;&#21367;&#35843;&#26597;&#65292;&#25105;&#20204;&#21487;&#20197;&#20844;&#24320;&#24744;&#30340;&#31572;&#26696;&#21527;? 
+      &#36825;&#20123;&#31572;&#26696;&#22312;&#20844;&#24320;&#30340;&#26102;&#20505;&#26159;&#21311;&#21517;&#30340;.</p>
+    <p> 
+      <label for ="quote">&#25105;&#20204;&#21487;&#20197;&#20844;&#24320;&#24744;&#30340;&#31572;&#26696;&#21527;? 
+      </label>
+      <input name="quote" type="radio" value="yes" checked>
+      &#26159; &nbsp;&nbsp;&nbsp;&nbsp; 
+      <input type="radio" name="quote" value="no">
+      &#21542;</p>
+    </fieldset>
+    <fieldset>
+    <legend>ACTIVboards in your School</legend>
+    <p> 
+      <label for ="enjoy7_other">1) &#36149;&#26657;&#26377;&#22810;&#23569;&#22359;&#30333;&#26495;?</label>
+      <input type="text" name="how_many" size="3" maxlength="4">
+    </p>
+    <p>&nbsp; </p>
+    <p>2) &#20160;&#20040;&#21378;&#23478;&#30340;?</p>
+    <p> 
+      <label for ="brand1">Promethean &#20844;&#21496;&#30340; </label>
+      <input type="checkbox" name="brand1" value="Promethean">
+    </p>
+    <p>
+      <label for ="brand2">&#25105;&#19981;&#30693;&#36947; </label>
+      <input type="checkbox" name="brand2" value="dont_know">
+    </p>
+    <p>
+      <label for ="brand3">&#20854;&#20182; </label>
+      <input type="checkbox" name="brand3" value="other">
+    </p>
+    <p> 
+      <label for ="brand3_other">&#20363;&#22914;?</label>
+      <input type="text" name="brand3_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>3) &#36825;&#20123;&#30333;&#26495;&#26159;&#20160;&#20040;&#22411;&#21495;?</p>
+    <p>
+      <label for ="type1">&#22266;&#23450;&#30340; </label>
+      <input type="checkbox" name="type1" value="Fixed">
+    </p>
+    <p>
+      <label for ="type2">&#21487;&#31227;&#21160;&#30340; </label>
+      <input type="checkbox" name="type2" value="Portable">
+    </p>
+    <p>&nbsp;</p>
+    <p>4) &#22914;&#26524;&#26159;&#22266;&#23450;&#30340; , &#23427;&#20204;&#34987;&#23433;&#35013;&#22312;&#21738;&#37324;?</p>
+    <p> 
+      <label for ="fixed1">&#22312;&#25105;&#30340;&#25945;&#23460; </label>
+      <input type="checkbox" name="fixed1" value="classroom">
+    </p>
+    <p> 
+      <label for ="fixed2">&#22312;&#19987;&#26377;&#25945;&#23460;</label>
+      <input type="checkbox" name="fixed2" value="special">
+    </p>
+    <p>&nbsp;</p>
+    <p> 5) &#24744;&#20351;&#29992;&#30340;&#39057;&#29575;&#26159;&#22810;&#23569;?</p>
+    <p> 
+      <label for ="specific_subjects">&#22312;&#20123;&#19987;&#38376;&#30340;&#35838;&#19978;&#25165;&#19978;</label>
+      <input type="checkbox" name="specific_subjects" value="yes">
+    </p>
+    <p> 
+      <label for ="frequency">&#27599; &#22530; &#35838;</label>
+      <input type="radio" name="frequency" value="every_lesson" onClick="checkNever()">
+    </p>
+    <p> 
+      <label for ="frequency">&#19968;&#22825;&#33267;&#23569;&#19968;&#27425;</label>
+      <input type="radio" name="frequency" value="once_day" onClick="checkNever()">
+    </p>
+    <p> 
+      <label for ="frequency">&#19968;&#21608;&#19968;&#27425;</label>
+      <input type="radio" name="frequency" value="once_week" onClick="checkNever()">
+    </p>
+    <p> 
+      <label for ="frequency">&#19968;&#21608;&#19981;&#21040;&#19968;&#27425;</label>
+      <input name="frequency" type="radio" value="less_than_once_week" onClick="checkNever()">
+    </p>
+    <p> 
+      <label for ="frequency">&#20174;&#26469;&#27809;&#26377;&#20351;&#29992; 
+      </label>
+      <input type="radio" name="frequency" value="never" onClick="checkNever()">
+    </p>
+    <p>&#22914;&#26524;&#24744;&#20197;&#19978;&#22635;&#30340;&#26159;&#20174;&#26469;&#27809;&#26377;&#65292;&#20197;&#19979;&#23558;&#19981;&#29992;&#22635;&#20889;&#65292;&#24863;&#35874;&#24744;&#25277;&#20986;&#24744;&#30340;&#23453;&#36149;&#26102;&#38388;&#65292;&#35874;&#35874;&#24744;&#30340;&#21512;&#20316;&#65281; 
+      .</p>
+    <p>If &#8216;<strong>Never</strong>&#8217;, thank you for your time. Click 
+      <a href="#submit">here</a> to submit your response. 
+      <input type="submit" name="submit1" value="submit" class="buttonSubmitHide">
+    </p>
+    </fieldset>
+    <fieldset>
+    <legend>ACTIVboards in use</legend>
+    <p> 
+      <label for ="how_long_used">6) &#24744;&#22312;&#24744;&#30340;&#29677;&#37324;&#20351;&#29992;&#30333;&#26495;&#20197;&#26469;&#38271;&#26102;&#38388;&#20102;&#65311; 
+      </label>
+      <input type="text" name="how_long_used" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>6a) &#30333;&#26495;&#30340;&#20351;&#29992;&#24773;&#20917; (&#26368;&#22810;&#19981;&#36229;&#36807;&#19977;&#20010;)</p>
+    <p>
+      <label for ="whatways1">&#23567;&#32452;&#27963;&#21160;</label>
+      <input type="checkbox" name="whatways1" value="small_group">
+      <!--input type="checkbox" name="ST" value="ST_1" onClick="checkbox_checker(ST,10,0,0)"-->
+    </p>
+    <p> 
+      <label for ="whatways2">&#20840;&#29677;&#21516;&#23398;</label>
+      <input type="checkbox" name="whatways2" value="whole_class">
+    </p>
+    <p> 
+      <label for ="whatways3">&#20010;&#21035;&#23398;&#29983;&#20351;&#29992;</label>
+      <input type="checkbox" name="whatways3" value="individuals">
+    </p>
+    <p> 
+      <label for ="whatways4">&#23398;&#29983;&#21442;&#19982;&#20351;&#29992;</label>
+      <input type="checkbox" name="whatways4" value="Student">
+    </p>
+    <p> 
+      <label for ="whatways5">&#34987;&#20801;&#35768;&#20351;&#29992; </label>
+      <input type="checkbox" name="whatways5" value="Didactically">
+    </p>
+    <p> 
+      <label for ="whatways6">&#29992;&#26469;&#20570;&#35270;&#39057;&#20250;&#35758; 
+      </label>
+      <input type="checkbox" name="whatways6" value="video">
+    </p>
+    <p> 
+      <label for ="whatways7">&#20316;&#20026;&#30740;&#31350;&#30340;&#37096;&#20998;</label>
+      <input type="checkbox" name="whatways7" value="research">
+    </p>
+    <p> 
+      <label for ="whatways8">&#29992;&#26469;&#20256;&#36882;&#35838;&#22530;&#25945;&#23398;&#36164;&#28304;</label>
+      <input type="checkbox" name="whatways8" value="deliver">
+    </p>
+    <p> 
+      <label for ="whatways9">&#20854;</label>
+      <input type="checkbox" name="whatways9" value="other">
+    </p>
+    <p> 
+      <label for ="whatways9_other">&#20182;?</label>
+      <input type="text" name="whatways9_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>7) &#23398;&#29983;&#21644;&#30333;&#26495;&#30340;&#20301;&#32622;&#20851;&#31995;?</p>
+    <p> 
+      <label for ="where_sit">&#30333; &#26495; &#21069; &#38754;</label>
+      <input type="radio" name="where_sit" value="in_front">
+    </p>
+    <p> 
+      <label for ="where_sit">&#22352;&#22312;&#33258;&#24049;&#30340;&#24231;&#20301;&#19978;</label>
+      <input type="radio" name="where_sit" value="at_desks">
+    </p>
+    <p> 
+      <label for ="where_sit">&#20004; &#32773; &#37117; &#26377; </label>
+      <input type="radio" name="where_sit" value="both">
+    </p>
+    <p>&nbsp; </p>
+    <p>8) &#30333;&#26495;&#35013;&#22312;&#21738;&#37324;?</p>
+    <p> 
+      <label for ="board_location">&#35762; &#21488; &#21518;</label>
+      <input type="radio" name="board_location" value="behind">
+    </p>
+    <p> 
+      <label for ="board_location">&#35838; &#26700; &#30340; &#19968; &#20391;</label>
+      <input type="radio" name="board_location" value="at_side">
+    </p>
+    <p> 
+      <label for ="board_location">&#22312; &#21478; &#22806; &#19968; &#38754; 
+      &#22681; &#19978;</label>
+      <input type="radio" name="board_location" value="another_wall">
+    </p>
+    <p>&nbsp; </p>
+    <p>9) &#24744;&#30340;&#23398;&#29983;&#25163;&#33021;&#35302;&#21040;&#30333;&#26495;&#30340;&#39030;&#37096;&#21527;?</p>
+    <p> 
+      <label for ="reach_top">&#26159;</label>
+      <input type="radio" name="reach_top" value="yes">
+    </p>
+    <p> 
+      <label for ="reach_top">&#21542;</label>
+      <input type="radio" name="reach_top" value="no">
+    </p>
+    <p>&nbsp; </p>
+    <p>10) &#22312;&#30333;&#26495;&#25945;&#23398;&#30340;&#26102;&#20505;&#20250;&#20351;&#29992;&#21040;&#21738;&#20123;&#36164;&#28304; 
+      ? (&#21487;&#20840;&#36873;)</p>
+    <p> 
+      <label for ="materials1">&#21830;&#19994;&#36719;&#20214;</label>
+      <input type="checkbox" name="materials1" value="Commercial">
+    </p>
+    <p> 
+      <label for ="materials2">&#32593;&#19978;&#30340;&#36164;&#28304;</label>
+      <input type="checkbox" name="materials2" value="Web">
+    </p>
+    <p> 
+      <label for ="materials3">&#30333;&#26495;&#20844;&#21496;&#25552;&#20379;&#30340;&#36164;&#28304;</label>
+      <input type="checkbox" name="materials3" value="teacher">
+    </p>
+    <p> 
+      <label for ="materials4">&#30333;&#26495;&#19978;&#30340;&#25945;&#32946;&#36164;&#28304;</label>
+      <input type="checkbox" name="materials4" value="included">
+    </p>
+    <p>&nbsp; </p>
+    <p>11) &#24744;&#22312;&#20351;&#29992;&#30333;&#26495;&#30340;&#26159;&#24590;&#20040;&#22521;&#35757;&#30340;</p>
+    <p> 
+      <label for ="training1">&#20844;&#21496;&#22521;&#35757;</label>
+      <input type="checkbox" name="training1" value="company">
+    </p>
+    <p> 
+      <label for ="training2">&#25945;&#32946;&#37096;&#38376;&#30340;&#26426;&#26500;</label>
+      <input type="checkbox" name="training2" value="advisers">
+    </p>
+    <p> 
+      <label for ="training3">&#19968;&#20010;&#22242;&#20307;</label>
+      <input type="checkbox" name="training3" value="colleague">
+    </p>
+    <p> 
+      <label for ="training4">&#33258; &#23398;</label>
+      <input type="checkbox" name="training4" value="self">
+    </p>
+    <p> 
+      <label for ="training5">&#20854;</label>
+      <input type="checkbox" name="training5" value="other">
+    </p>
+    <p> 
+      <label for ="training5_other">&#20182;?</label>
+      <input type="text" name="training5_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p> 
+      <label for ="training_how_long">11a) &#24744;&#30340;&#30333;&#26495;&#22521;&#35757;&#35838;&#22810;&#38271;&#26102;&#38388;?</label>
+      <input type="text" name="training_how_long" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>12) &#24744;&#26368;&#21916;&#27426;&#20197;&#19979;&#30340;&#21738;&#31181;&#22521;&#35757; 
+      ? (&#33267;&#22810;&#21487;&#20197;&#36873;&#19977;&#20010;)</p>
+    <p> 
+      <label for ="like1">&#30333;&#26495;&#37324;&#30340;&#21151;&#33021;&#20171;&#32461;&#21644;&#24037;&#20855;&#30340;&#20351;&#29992;</label>
+      <input type="checkbox" name="like1" value="functions">
+    </p>
+    <p> 
+      <label for ="like2">&#22686;&#21152;&#20351;&#29992;&#30333;&#26495;&#30340;&#33258;&#20449;&#24515;</label>
+      <input type="checkbox" name="like2" value="confidence">
+    </p>
+    <p> 
+      <label for ="like3">&#20419;&#36827;&#25945;&#32946;&#25945;&#23398;</label>
+      <input type="checkbox" name="like3" value="pedagogical">
+    </p>
+    <p> 
+      <label for ="like4">&#21644;&#23567;&#32452;&#25104;&#21592;&#20998;&#20139;&#32463;&#39564;</label>
+      <input type="checkbox" name="like4" value="ideas">
+    </p>
+    <p> 
+      <label for ="like5">&#21644;&#23567;&#32452;&#35752;&#35770;&#19968;&#20123;&#30097;&#38590;&#38382;&#39064;</label>
+      <input type="checkbox" name="like5" value="doubts">
+    </p>
+    <p> 
+      <label for ="like6">&#20854;&#20182; </label>
+      <input type="checkbox" name="like6" value="others">
+    </p>
+    <p> 
+      <label for ="like6_other">&#20363;&#22914;?</label>
+      <input type="text" name="like6_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>13) &#20320;&#26368;&#19981;&#21916;&#27426;&#30340;&#26159;&#20160;&#20040; 
+      ? ( &#33267;&#22810;&#21487;&#20197;&#36873;&#19977;&#20010; )</p>
+    <p> 
+      <label for ="like_least1">&#22521;&#35757;&#30340;&#22826;&#31548;&#32479;</label>
+      <input type="checkbox" name="like_least1" value="brief">
+    </p>
+    <p> 
+      <label for ="like_least2">&#19981;&#26159;&#29992;&#25105;&#30340;&#27597;&#35821;&#22521;&#35757;&#30340; 
+      </label>
+      <input type="checkbox" name="like_least2" value="language">
+    </p>
+    <p> 
+      <label for ="like_least3">&#23545;&#20110;&#30333;&#26495;&#30340;&#24037;&#20855;&#30340;&#20351;&#29992;&#24773;&#20917;&#21644;&#21151;&#33021;&#20171;&#32461;&#19981;&#26159;&#24456;&#35814;&#32454;</label>
+      <input type="checkbox" name="like_least3" value="functions">
+    </p>
+    <p> 
+      <label for ="like_least4">&#26377;&#20851;&#30333;&#26495;&#30340;&#20445;&#20859;&#24773;&#20917;&#27809;&#26377;&#35828;&#26126;</label>
+      <input type="checkbox" name="like_least4" value="maintain">
+    </p>
+    <p> 
+      <label for ="like_least5">&#25105;&#22312;&#22521;&#35757;&#30340;&#26102;&#20505;&#19981;&#33021;&#20146;&#25163;&#20351;&#29992;&#30333;&#26495;</label>
+      <input type="checkbox" name="like_least5" value="use">
+    </p>
+    <p> 
+      <label for ="like_least6">&#20854;&#20182;</label>
+      <input type="checkbox" name="like_least6" value="others">
+    </p>
+    <p> 
+      <label for ="like_least6_other">&#20363;&#22914;?</label>
+      <input type="text" name="like_least6_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>14) &#24744;&#26368;&#21916;&#27426;&#29992;&#30333;&#26495;&#25945;&#21738;&#33410;&#35838; 
+      ? (&#33267;&#22810;&#21487;&#20197;&#36873;&#19977;&#20010;)</p>
+    <p> 
+      <label for ="lesson1">&#25968; &#23398; </label>
+      <input type="checkbox" name="lesson1" value="Mathematics">
+    </p>
+    <p> 
+      <label for ="lesson2">&#21382; &#21490;</label>
+      <input type="checkbox" name="lesson2" value="History">
+    </p>
+    <p> 
+      <label for ="lesson3">&#35821; &#25991; </label>
+      <input type="checkbox" name="lesson3" value="EngSpanChin">
+    </p>
+    <p> 
+      <label for ="lesson4">&#33258;&#28982;&#31185;&#23398; </label>
+      <input type="checkbox" name="lesson4" value="Science">
+    </p>
+    <p> 
+      <label for ="lesson5">&#22806; &#35821;</label>
+      <input type="checkbox" name="lesson5" value="mfl">
+    </p>
+    <p> 
+      <label for ="lesson7">&#22320; &#29702;</label>
+      <input type="checkbox" name="lesson7" value="Geography">
+    </p>
+    <p> 
+      <label for ="lesson8">&#20854; </label>
+      <input type="checkbox" name="lesson8" value="others">
+    </p>
+    <p> 
+      <label for ="lesson8_other">&#20182;?</label>
+      <input type="text" name="lesson8_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>15) &#24744;&#26368;&#19981;&#21916;&#27426;&#29992;&#30333;&#26495;&#35838;&#25945;&#30340;&#31185;&#30446;&#26159;? 
+      (&#33267;&#22810;&#21487;&#20197;&#36873;&#19977;&#20010;)</p>
+    <p> 
+      <label for ="lesson_least1">&#25968; &#23398; </label>
+      <input type="checkbox" name="lesson_least1" value="Mathematics">
+    </p>
+    <p> 
+      <label for ="lesson_least2">&#21382; &#21490;</label>
+      <input type="checkbox" name="lesson_least2" value="History">
+    </p>
+    <p> 
+      <label for ="lesson_least3">&#35821; &#25991; </label>
+      <input type="checkbox" name="lesson_least3" value="EngSpanChin">
+    </p>
+    <p> 
+      <label for ="lesson_least4">&#33258;&#28982;&#31185;&#23398; </label>
+      <input type="checkbox" name="lesson_least4" value="Science">
+    </p>
+    <p> 
+      <label for ="lesson_least5">&#22806; &#35821;</label>
+      <input type="checkbox" name="lesson_least5" value="mfl">
+    </p>
+    <p> 
+      <label for ="lesson_least7">&#22320; &#29702;</label>
+      <input type="checkbox" name="lesson_least7" value="Geography">
+    </p>
+    <p> 
+      <label for ="lesson_least8">&#20854; </label>
+      <input type="checkbox" name="lesson_least8" value="others">
+    </p>
+    <p> 
+      <label for ="lesson_least8_other">&#20182;?</label>
+      <input type="text" name="lesson_least8_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>16) &#24744;&#26368;&#21916;&#27426;&#29992;&#30333;&#26495;&#37324;&#30340;&#21738;&#20010;&#36719;&#20214;? 
+      (&#33267;&#22810;&#21487;&#20197;&#36873;&#19977;&#20010;)</p>
+    <p> 
+      <label for ="activities1">&#31508;&#35760;&#26412;&#21151;&#33021; </label>
+      <input type="checkbox" name="activities1" value="Notebook">
+    </p>
+    <p> 
+      <label for ="activities2">&#28216; &#25103; </label>
+      <input type="checkbox" name="activities2" value="Games">
+    </p>
+    <p> 
+      <label for ="activities3">&#25968;&#23383;&#35760;&#24405;&#26412;</label>
+      <input type="checkbox" name="activities3" value="Digital">
+    </p>
+    <p> 
+      <label for ="activities4">&#32452;&#32455;&#35838;&#22530;&#25945;&#23398;&#30340;&#24037;&#20855; 
+      ( &#31454;&#25216;&#22330; , &#27719;&#25253;&#21345;&#31561; )</label>
+      <input type="checkbox" name="activities4" value="Tools">
+    </p>
+    <p> 
+      <label for ="activities5">&#20854; </label>
+      <input type="checkbox" name="activities5" value="others">
+    </p>
+    <p> 
+      <label for ="activities5_other">&#20182;?</label>
+      <input type="text" name="activities5_other" size="35" maxlength="40">
+    </p>
+    </fieldset>
+    <fieldset>
+    <legend>Using the ACTIVvote System</legend>
+    <p><img src="../images/ACTIV.jpg" alt="eLapa Students at BETT05 using ACTIVvote" width="200" height="150" hspace="5" class="imageRight">17) 
+      Do you have the Voting System? (&#22914;&#26524;&#20320;&#30340;&#30333;&#26495;&#26377;&#36873;&#20030;&#21151;&#33021;&#24744;&#20250;&#21916;&#27426;&#21527;?)</p>
+    <p> 
+      <label for ="voting_system">&#26159; </label>
+      <input type="radio" name="voting_system" value="yes">
+    </p>
+    <p> 
+      <label for ="voting_system">&#21542;</label>
+      <input type="radio" name="voting_system" value="no">
+    </p>
+    <p>&nbsp; </p>
+    <p>17a) &#22914;&#26524;&#20320;&#30340;&#30333;&#26495;&#26377;&#36873;&#20030;&#21151;&#33021;&#24744;&#20250;&#21916;&#27426;&#21527;?</p>
+    <p> 
+      <label for ="voting_system_comment">&#21916; &#27426;</label>
+      <input type="radio" name="voting_system_comment" value="like">
+    </p>
+    <p> 
+      <label for ="voting_system_comment">&#20013; &#31561;</label>
+      <input type="radio" name="voting_system_comment" value="neutral">
+    </p>
+    <p> 
+      <label for ="voting_system_comment">&#19981; &#21916; &#27426;</label>
+      <input type="radio" name="voting_system_comment" value="dont_like">
+    </p>
+    <p>&nbsp; </p>
+    </fieldset>
+    <fieldset>
+    <legend>Lessons learned from using ACTIVboards</legend>
+    <p>18) &#27809;&#26377;&#30333;&#26495;&#30340;&#24773;&#20917;&#19979;&#65292;&#24744;&#26377;&#27809;&#26377;&#35748;&#20026;&#20197;&#19979;&#30340;&#31185;&#30446;&#25945;&#36215;&#26469;&#19981;&#23481;&#26131;?</p>
+    <p> 
+      <label for ="difficult_teach1">&#25968; &#23398; </label>
+      <input type="checkbox" name="difficult_teach1" value="Mathematics">
+    </p>
+    <p> 
+      <label for ="difficult_teach2">&#21382; &#21490; </label>
+      <input type="checkbox" name="difficult_teach2" value="History">
+    </p>
+    <p> 
+      <label for ="difficult_teach3">&#35821; &#25991; </label>
+      <input type="checkbox" name="difficult_teach3" value="EngSpanChin">
+    </p>
+    <p> 
+      <label for ="difficult_teach4">&#33258;&#28982;&#31185;&#23398; </label>
+      <input type="checkbox" name="difficult_teach4" value="Science">
+    </p>
+    <p> 
+      <label for ="difficult_teach5">&#22806; &#35821; </label>
+      <input type="checkbox" name="difficult_teach5" value="mfl">
+    </p>
+    <p> 
+      <label for ="difficult_teach7">&#22320; &#29702;</label>
+      <input type="checkbox" name="difficult_teach7" value="Geography">
+    </p>
+    <p> 
+      <label for ="difficult_teach8">&#20854; </label>
+      <input type="checkbox" name="difficult_teach8" value="others">
+    </p>
+    <p> 
+      <label for ="difficult_teach8_other">&#20182;?</label>
+      <input type="text" name="difficult_teach8_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>19) &#22312;&#30333;&#26495;&#26041;&#38754;&#65292;&#24744;&#24076;&#26395;&#30333;&#26495;&#20844;&#21496;&#22312;&#21738;&#20123;&#21151;&#33021;&#19978;&#26377;&#25152;&#25913;&#36827;&#21527; 
+    </p>
+    <p> 
+      <label for ="new1">&#30011;&#22270;&#21151;&#33021; </label>
+      <input type="checkbox" name="new1" value="draw">
+    </p>
+    <p> 
+      <label for ="new2">&#22320; &#22270; </label>
+      <input type="checkbox" name="new2" value="Maps">
+    </p>
+    <p> 
+      <label for ="new3">&#25945;&#32946;&#24615;&#30340;&#28216;&#25103;</label>
+      <input type="checkbox" name="new3" value="games">
+    </p>
+    <p> 
+      <label for ="new4">&#25945;&#22806;&#35821;&#30340;&#21151;&#33021; </label>
+      <input type="checkbox" name="new4" value="mfl">
+    </p>
+    <p> 
+      <label for ="new5">&#24405; &#35937; </label>
+      <input type="checkbox" name="new5" value="Video">
+    </p>
+    <p> 
+      <label for ="new5">&#20854; </label>
+      <input type="checkbox" name="new5" value="others">
+    </p>
+    <p> 
+      <label for ="new5_others">&#20182;?</label>
+      <input type="text" name="new5_others" size="35" maxlength="40">
+    </p>
+    <p>&nbsp;</p>
+    <p>20) &#22312;&#25945;&#23398;&#20013;&#65292;&#24744;&#33021;&#23601;&#30333;&#26495;&#30340;&#36866;&#29992;&#24615;&#20030;&#20986;&#19968;&#20123;&#35838;&#20363;&#21527;&#65311; 
+      (&#33267;&#22810;&#21487;&#20197;&#36873;&#19977;&#20010;)</p>
+    <p> 
+      <label for ="students_work1">&#20889;&#20316; </label>
+      <input type="checkbox" name="students_work1" value="Writing">
+    </p>
+    <p> 
+      <label for ="students_work2">&#23398;&#29983;&#25253;&#21578; </label>
+      <input type="checkbox" name="students_work2" value="Presentations">
+    </p>
+    <p> 
+      <label for ="students_work3">&#25968;&#23398;&#35299;&#39064;</label>
+      <input type="checkbox" name="students_work3" value="Math">
+    </p>
+    <p> 
+      <label for ="students_work4">&#20316; &#19994; </label>
+      <input type="checkbox" name="students_work4" value="Exercises">
+    </p>
+    <p> 
+      <label for ="students_work5">&#38405;&#35835;&#29702;&#35299;&#19978;</label>
+      <input type="checkbox" name="students_work5" value="Reading">
+    </p>
+    <p> 
+      <label for ="students_work6">&#25216;&#26415;&#19978;&#30340;&#20351;&#29992;</label>
+      <input type="checkbox" name="students_work6" value="technology">
+    </p>
+    <p> 
+      <label for ="students_work7">&#30740; &#31350; </label>
+      <input type="checkbox" name="students_work7" value="Research">
+    </p>
+    <p> 
+      <label for ="students_work8">&#20854; </label>
+      <input type="checkbox" name="students_work8" value="others">
+    </p>
+    <p> 
+      <label for ="students_work8_others">&#20182;?</label>
+      <input type="text" name="students_work8_others" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>21) &#24744;&#30456;&#20449;&#22312;&#20351;&#29992;&#30333;&#26495;&#30340;&#24773;&#20917;&#19979;&#23398;&#29983;&#30340;&#23398;&#20064;&#25928;&#29575;&#25552;&#39640;&#20102;&#21527;?</p>
+    <p> 
+      <label for ="raise">&#26159; </label>
+      <input type="radio" name="raise" value="yes">
+    </p>
+    <p> 
+      <label for ="raise">&#21542; </label>
+      <input type="radio" name="raise" value="no">
+    </p>
+    <p>&nbsp; </p>
+    <p>21a) &#24744;&#35748;&#20026;&#22312;&#21738;&#20123;&#26041;&#38754;&#25552;&#39640;&#20102;&#23398;&#29983;&#30340; 
+      &#23398;&#20064;&#25928;&#29575;? (&#33267;&#22810;&#21487;&#20197;&#36873;&#19977;&#20010;)</p>
+    <p> 
+      <label for ="how_raise1">&#25552;&#39640;&#20102;&#23398;&#29983;&#30340;&#20070;&#38754;&#34920;&#36798;&#30340;&#33021;&#21147;</label>
+      <input type="checkbox" name="how_raise1" value="writing">
+    </p>
+    <p> 
+      <label for ="how_raise2">&#25552;&#39640;&#20102;&#23398;&#29983;&#30340;&#38405;&#35835;&#33021;&#21147; 
+      </label>
+      <input type="checkbox" name="how_raise2" value="reading">
+    </p>
+    <p> 
+      <label for ="how_raise3">&#25552;&#39640;&#20102;&#23398;&#29983;&#19968;&#20123;&#31185;&#30446;&#30340;&#25104;&#32489;</label>
+      <input type="checkbox" name="how_raise3" value="lessons">
+    </p>
+    <p> 
+      <label for ="how_raise4">&#22686;&#24378;&#20102;&#23398;&#29983;&#30340;&#23398;&#20064;&#21160;&#26426;</label>
+      <input type="checkbox" name="how_raise4" value="motivation">
+    </p>
+    <p> 
+      <label for ="how_raise5">&#23398;&#29983;&#30340;&#21442;&#19982;&#24615;&#26356;&#24378;&#20102;</label>
+      <input type="checkbox" name="how_raise5" value="participation">
+    </p>
+    <p> 
+      <label for ="how_raise6">&#23545;&#23398;&#20064;&#37325;&#28857;&#26377;&#20102;&#26356;&#22909;&#30340;&#25226;&#25569; 
+      </label>
+      <input type="checkbox" name="how_raise6" value="understanding">
+    </p>
+    <p> 
+      <label for ="how_raise7">&#23398;&#29983;&#30340;&#30693;&#35782;&#26356;&#26377;&#36866;&#29992;&#24615; 
+      </label>
+      <input type="checkbox" name="how_raise7" value="applied">
+    </p>
+    <p> 
+      <label for ="how_raise8">&#20854;&#20182;</label>
+      <input type="checkbox" name="how_raise8" value="Others">
+    </p>
+    <p> 
+      <label for ="how_raise8_others">&#20363;&#22914;?</label>
+      <input type="text" name="how_raise8_others" size="35" maxlength="40">
+    </p>
+    <p>&nbsp;</p>
+    <p>22) &#20320;&#23545;&#37027;&#26679;&#23398;&#20064;&#25928;&#29575;&#36827;&#34892;&#36807;&#27979;&#35780;&#21527;?</p>
+    <p> 
+      <label for ="measure1">&#25105;&#20570;&#19981;&#20102;&#37027;&#26679;&#30340;&#24037;&#20316; 
+      </label>
+      <input type="checkbox" name="measure1" value="not_able">
+    </p>
+    <p> 
+      <label for ="measure2">&#33021;&#30475;&#35265;&#30340;&#36136;&#37327;&#25552;&#39640; 
+      (&#23398;&#29983;&#21442;&#19982;&#24615;&#31561;) </label>
+      <input type="checkbox" name="measure2" value="qualitative">
+    </p>
+    <p> 
+      <label for ="measure3">&#36890;&#36807;&#23545;&#23398;&#29983;&#30340;&#23398;&#20064;&#25928;&#26524;&#30340;&#27979;&#35780; 
+      (&#25104;&#32489;&#30340;&#25552;&#39640;&#31561;)</label>
+      <input type="checkbox" name="measure3" value="quantitative">
+    </p>
+    <p>&nbsp; </p>
+    <p>23) &#20351;&#29992;&#30333;&#26495;&#23545;&#20320;&#30340;&#25945;&#23398;&#26377;&#21464;&#21270;&#21527;?</p>
+    <p> 
+      <label for ="change1">&#20851;&#20110;&#25105;&#30340;&#35838;&#22530;&#25945;&#23398;&#25105;&#26377;&#20102;&#26356;&#22810;&#30340;&#36164;&#28304;</label>
+      <input type="checkbox" name="change1" value="resources">
+    </p>
+    <p> 
+      <label for ="change2">&#25945;&#23398;&#26356;&#38590;&#20102;</label>
+      <input type="checkbox" name="change2" value="difficult">
+    </p>
+    <p> 
+      <label for ="change3">&#25945;&#23398;&#26356;&#23481;&#26131;&#20102;</label>
+      <input type="checkbox" name="change3" value="easier">
+    </p>
+    <p> 
+      <label for ="change4">&#25105;&#30340;&#35838;&#22530;&#21464;&#30340;&#26356;&#26377;&#36259;&#20102;</label>
+      <input type="checkbox" name="change4" value="interesting">
+    </p>
+    <p> 
+      <label for ="change5">&#25105;&#27809;&#26377;&#21457;&#29616;&#26377;&#20160;&#20040;&#30340;&#21464;&#21270;</label>
+      <input type="checkbox" name="change5" value="no_change">
+    </p>
+    <p> 
+      <label for ="change6">&#20854;&#20182; </label>
+      <input type="checkbox" name="change6" value="others">
+    </p>
+    <p> 
+      <label for ="change6_other">&#20363;&#22914;?</label>
+      <input type="text" name="change6_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>24) &#20351;&#29992;&#30333;&#26495;&#23545;&#20320;&#30340;&#23398;&#29983;&#23398;&#20064;&#26041;&#24335;&#26377;&#21464;&#21270;&#21527;?</p>
+    <p> 
+      <label for ="how_change1">&#20182;&#20204;&#30340;&#27880;&#24847;&#21147;&#38598;&#20013;&#20102;</label>
+      <input type="checkbox" name="how_change1" value="topics">
+    </p>
+    <p> 
+      <label for ="how_change2">&#20182;&#20204;&#23545;&#30333;&#26495;&#25945;&#23398;&#20013;&#30340;&#25216;&#26415;&#20351;&#29992;&#26356;&#38598;&#20013;&#27880;&#24847;&#21147;</label>
+      <input type="checkbox" name="how_change2" value="technical">
+    </p>
+    <p> 
+      <label for ="how_change3">&#20182;&#20204;&#26356;&#19981;&#38598;&#20013;&#27880;&#24847;&#21147;&#20102;</label>
+      <input type="checkbox" name="how_change3" value="absent_minded">
+    </p>
+    <p> 
+      <label for ="how_change4">&#20182;&#20204;&#30340;&#23398;&#20064;&#26356;&#26377;&#32784;&#24515;&#20102;</label>
+      <input type="checkbox" name="how_change4" value="tolerant">
+    </p>
+    <p> 
+      <label for ="how_change5">&#20182;&#20204;&#30340;&#22242;&#38431;&#31934;&#31070;&#25552;&#39640; 
+      </label>
+      <input type="checkbox" name="how_change5" value="collaborate">
+    </p>
+    <p> 
+      <label for ="how_change6">&#20182;&#20204;&#26377;&#26356;&#22810;&#30340;&#36164;&#28304;&#26469;&#29702;&#35299;&#30693;&#35782; 
+      </label>
+      <input type="checkbox" name="how_change6" value="resources">
+    </p>
+    <p> 
+      <label for ="how_change7">&#20182;&#20204;&#30340;&#21442;&#19982;&#33021;&#21147;&#26377;&#25552;&#39640;&#20102; 
+      </label>
+      <input type="checkbox" name="how_change7" value="participation">
+    </p>
+    <p> 
+      <label for ="how_change8">&#25105;&#27809;&#26377;&#21457;&#29616;&#26377;&#20160;&#20040;&#30340;&#21464;&#21270; 
+      </label>
+      <input type="checkbox" name="how_change8" value="no_change">
+    </p>
+    <p> 
+      <label for ="how_change9">&#20854; </label>
+      <input type="checkbox" name="how_change9" value="others">
+    </p>
+    <p> 
+      <label for ="how_change9_other">&#20182;?</label>
+      <input type="text" name="how_change9_other" size="35" maxlength="40">
+    </p>
+    </fieldset>
+    <fieldset>
+    <legend>ACTIVboards and your School Organisation</legend>
+    <p>25) &#24744;&#30340;&#21516;&#20107;&#23545;&#20110;&#30333;&#26495;&#30340;&#20351;&#29992;&#26377;&#20160;&#20040;&#26679;&#30340;&#30475;&#27861;?</p>
+    <p> 
+      <label for ="attitude1">&#24456;&#36190;&#21516;&#20351;&#29992;&#30333;&#26495; 
+      </label>
+      <input type="checkbox" name="attitude1" value="favourable">
+    </p>
+    <p> 
+      <label for ="attitude2">&#20182;&#20204;&#30340;&#24577;&#24230;&#27604;&#36739;&#20013;&#31435;&#22240;&#20026;&#20182;&#20204;&#23545;&#36825;&#20123;&#19981;&#20102;&#35299;</label>
+      <input type="checkbox" name="attitude2" value="neutral">
+    </p>
+    <p> 
+      <label for ="attitude3">&#20182;&#20204;&#19981;&#36190;&#21516;&#20351;&#29992;&#30333;&#26495; 
+      </label>
+      <input type="checkbox" name="attitude3" value="unfavourable">
+    </p>
+    <p> 
+      <label for ="attitude4">&#20854; </label>
+      <input type="checkbox" name="attitude4" value="others">
+    </p>
+    <p> 
+      <label for ="attitude4_other">&#20182;?</label>
+      <input type="text" name="attitude4_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>26) &#22312;&#30333;&#26495;&#24212;&#29992;&#25945;&#32946;&#25945;&#23398;&#20013;&#65292;&#24744;&#30340;&#20013;&#23618;&#20197;&#19978;&#39046;&#23548;&#23545;&#27492;&#26377;&#20160;&#20040;&#26679;&#30340;&#24577;&#24230;?</p>
+    <p> 
+      <label for ="attitude_sm1">&#20182;&#20204;&#23545;&#36825;&#20123;&#20102;&#35299;&#19981;&#22810; 
+      </label>
+      <input type="checkbox" name="attitude_sm1" value="not_involved">
+    </p>
+    <p> 
+      <label for ="attitude_sm2">&#20182;&#20204;&#24076;&#26395;&#26377;&#26356;&#22810;&#30340;&#23398;&#26657;&#21442;&#19982;&#20351;&#29992;&#30333;&#26495;&#25945;&#23398; 
+      </label>
+      <input type="checkbox" name="attitude_sm2" value="other">
+    </p>
+    <p> 
+      <label for ="attitude_sm3">&#20182;&#20204;&#24456;&#20851;&#27880;&#36825;&#20123;&#65292;&#24182;&#40723;&#21169;&#25552;&#39640;&#20351;&#29992;&#30333;&#26495;&#25945;&#23398;</label>
+      <input type="checkbox" name="attitude_sm3" value="involved">
+    </p>
+    <p> 
+      <label for ="attitude_sm4">&#20854;: </label>
+      <input type="checkbox" name="attitude_sm4" value="others">
+    </p>
+    <p> 
+      <label for ="attitude_sm4_other">&#20182;?</label>
+      <input type="text" name="attitude_sm4_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>27) &#24744;&#35748;&#20026;&#22312;&#23558;&#26469;&#24744;&#30340;&#23398;&#26657;&#30340;&#30333;&#26495;&#20351;&#29992;&#24773;&#20917;&#26159;&#20160;&#20040;?</p>
+    <p> 
+      <label for ="future1">&#23558; &#20250; &#24456;&#26222; &#36941; </label>
+      <input type="checkbox" name="future1" value="ordinary">
+    </p>
+    <p> 
+      <label for ="future2">&#20250; &#21464; &#30340; &#33618; &#24223; </label>
+      <input type="checkbox" name="future2" value="obsolete">
+    </p>
+    <p> 
+      <label for ="future3">&#20540; &#24471; &#20105; &#35758;</label>
+      <input type="checkbox" name="future3" value="sophisticated">
+    </p>
+    <p> 
+      <label for ="future4">&#20854;&#20182;</label>
+      <input type="checkbox" name="future4" value="others">
+    </p>
+    <p> 
+      <label for ="future4_other">&#20363;&#22914;?</label>
+      <input type="text" name="future4_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>28) &#24744;&#26159;&#24590;&#20040;&#26469;&#20419;&#36827;&#30333;&#26495;&#20351;&#29992;&#24773;&#20917;?</p>
+    <p> 
+      <label for ="progress1">&#33609;&#25311;&#19968;&#20010;&#35745;&#21010;&#26469;&#25913;&#36827;&#30333;&#26495;&#25945;&#23398;&#20351;&#29992; 
+      </label>
+      <input type="checkbox" name="progress1" value="plan">
+    </p>
+    <p> 
+      <label for ="progress2">&#20419;&#36827;&#20102;&#25945;&#24072;&#22312;&#23478;&#37324;&#20351;&#29992;&#30005;&#33041;&#65292;&#20419;&#36827;&#30333;&#26495;&#25945;&#23398;&#24773;&#20917;</label>
+      <input type="checkbox" name="progress2" value="Supporting">
+    </p>
+    <p> 
+      <label for ="progress2">&#20854; </label>
+      <input type="checkbox" name="progress2" value="others">
+    </p>
+    <p> 
+      <label for ="progress2_other">&#20182;?</label>
+      <input type="text" name="progress2_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>29) &#22312;&#30333;&#26495;&#20351;&#29992;&#26102;&#26377;&#21738;&#20123;&#38556;&#30861;?</p>
+    <p> 
+      <label for ="barriers1">&#25105;&#26377;&#24456;&#22810;&#20854;&#20182;&#38656;&#27714;</label>
+      <input type="checkbox" name="barriers1" value="other_needs">
+    </p>
+    <p> 
+      <label for ="barriers2">&#25945;&#24072;&#23545;&#36825;&#20010;&#30333;&#26495;&#20351;&#29992;&#27809;&#26377;&#28608;&#24773;</label>
+      <input type="checkbox" name="barriers2" value="not_motivated">
+    </p>
+    <p> 
+      <label for ="barriers3">&#25945;&#24072;&#25509;&#21463;&#30340;&#22521;&#35757;&#19981;&#22815; 
+      </label>
+      <input type="checkbox" name="barriers3" value="not_trained">
+    </p>
+    <p> 
+      <label for ="barriers4">&#20854; &#20182;</label>
+      <input type="checkbox" name="barriers4" value="others">
+    </p>
+    <p> 
+      <label for ="barriers4_other">&#20363;&#22914;?</label>
+      <input type="text" name="barriers4_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>30) &#30333;&#26495;&#24456;&#36149;&#21527;?</p>
+    <p> 
+      <label for ="raise">&#26159; </label>
+      <input type="radio" name="vfm" value="yes">
+    </p>
+    <p> 
+      <label for ="vfm">&#21542; </label>
+      <input type="radio" name="vfm" value="no">
+    </p>
+    <p> 
+      <label for ="raise">&#25105;&#19981;&#30693;&#36947;&#20854;&#20215;&#26684;</label>
+      <input type="radio" name="vfm" value="unsure">
+    </p>
+    <p>&nbsp; </p>
+    <p>31) &#20320;&#24819;&#25512;&#33616;&#20854;&#20182;&#30340;&#19968;&#20123;&#22810;&#23186;&#20307;&#25945;&#23398;&#29992;&#20855;&#21527;?</p>
+    <p> 
+      <label for ="recommend1">&#20010;&#20154;&#30005;&#33041;</label>
+      <input type="checkbox" name="recommend1" value="pc">
+    </p>
+    <p> 
+      <label for ="recommend2">&#30005;&#35759;&#24037;&#20855;&#65292;&#35843;&#33410;&#22120;&#25163;&#26426;&#31561;&#29992;&#20855; 
+      </label>
+      <input type="checkbox" name="recommend2" value="Telecommunication">
+    </p>
+    <p> 
+      <label for ="recommend3">&#30005;&#35270;,&#35270;&#39057;&#25668;&#30456;&#22836;&#31561;.</label>
+      <input type="checkbox" name="recommend3" value="Television">
+    </p>
+    <p> 
+      <label for ="recommend4">&#32593; &#32476; &#21151; &#33021; </label>
+      <input type="checkbox" name="recommend4" value="Internet">
+    </p>
+    <p> 
+      <label for ="recommend5">&#20854; &#20182;</label>
+      <input type="checkbox" name="recommend5" value="others">
+    </p>
+    <p> 
+      <label for ="recommend5_other">&#20363;&#22914;?</label>
+      <input type="text" name="recommend5_other" size="35" maxlength="40">
+    </p>
+    </fieldset>
+    <fieldset>
+    <legend>Practice-based Research</legend>
+    <p>32) &#24744;&#29616;&#22312;&#22312;&#20570;&#26377;&#20851;&#30340;&#30333;&#26495;&#25945;&#23398;&#23454;&#36341;&#30740;&#31350;&#21527;?</p>
+    <p> 
+      <label for ="research">&#26159; </label>
+      <input type="radio" name="research" value="yes">
+    </p>
+    <p> 
+      <label for ="research">&#21542; </label>
+      <input type="radio" name="research" value="no">
+    </p>
+    <p>&nbsp; </p>
+    <p>32a) &#22312;&#21738;&#20123;&#26041;&#38754;&#23454;&#29616;&#30740;&#31350;&#36807;&#31243;&#24110;&#21161;&#20102;&#24744;&#30340;&#25945;&#24072;&#19987;&#19994;&#30340;&#21457;&#23637;?</p>
+    <p> 
+      <label for ="help1">&#25105;&#23545;&#25105;&#30340;&#23454;&#36341;&#24615;&#30740;&#31350;&#21453;&#39304;&#26377;&#25152;&#25552;&#39640; 
+      </label>
+      <input type="checkbox" name="help1" value="reflexive">
+    </p>
+    <p> 
+      <label for ="help2">&#25105;&#22312;&#30528;&#25163;&#19968;&#31181;&#26032;&#30340;&#23398;&#20064;&#31574;&#30053;&#30740;&#31350; 
+      </label>
+      <input type="checkbox" name="help2" value="applying">
+    </p>
+    <p> 
+      <label for ="help3"> &#23545;&#35838;&#22530;&#30340;&#25928;&#29575;&#30740;&#31350;&#25105;&#26377;&#20102;&#20854;&#20182;&#25216;&#26415;&#25163;&#27573;</label>
+      <input type="checkbox" name="help3" value="techniques">
+    </p>
+    <p> 
+      <label for ="help4">&#22312;&#25105;&#30340;&#25945;&#23398;&#26102;&#38388;&#20013;&#25105;&#26377;&#26032;&#30340;&#38382;&#39064;</label>
+      <input type="checkbox" name="help4" value="problems">
+    </p>
+    <p> 
+      <label for ="help5">&#20854; </label>
+      <input type="checkbox" name="help5" value="others">
+    </p>
+    <p> 
+      <label for ="help5_other">&#20182;?</label>
+      <input type="text" name="help5_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>33) &#24744;&#36824;&#23558;&#32487;&#32493;&#36825;&#26679;&#30340;&#23454;&#36341;&#24615;&#30340;&#30333;&#26495;&#25945;&#23398;&#30740;&#31350;&#21527;?</p>
+    <p> 
+      <label for ="continue">&#26159; </label>
+      <input type="radio" name="continue" value="yes">
+    </p>
+    <p> 
+      <label for ="continue">&#21542; </label>
+      <input type="radio" name="continue" value="no">
+    </p>
+    <p>&nbsp; </p>
+    <p>34) &#24744;&#30340;&#20316;&#21697;&#22312;&#32593;&#19978;&#25110;&#26399;&#21002;&#19978;&#26377;&#25152;&#21457;&#34920;&#21527;?</p>
+    <p> 
+      <label for ="published1">&#25253; &#32440;</label>
+      <input type="checkbox" name="published1" value="Newspapers">
+    </p>
+    <p> 
+      <label for ="published2">&#31185;&#25216;&#26399;&#21002; </label>
+      <input type="checkbox" name="published2" value="Journals">
+    </p>
+    <p> 
+      <label for ="published3">&#26434; &#24535; </label>
+      <input type="checkbox" name="published3" value="Magazines">
+    </p>
+    <p> 
+      <label for ="published4">&#25253; &#21578; </label>
+      <input type="checkbox" name="published4" value="Bulletins">
+    </p>
+    <p> 
+      <label for ="published5">&#24191;&#25773;&#37324; </label>
+      <input type="checkbox" name="published5" value="Radio">
+    </p>
+    <p> 
+      <label for ="published6">&#30005;&#35270;&#19978; </label>
+      <input type="checkbox" name="published6" value="Television">
+    </p>
+    <p> 
+      <label for ="published7">&#32593; &#19978; </label>
+      <input type="checkbox" name="published7" value="Internet">
+    </p>
+    <p> 
+      <label for ="published8">&#25105;&#30340;&#20316;&#21697;&#36824;&#27809;&#26377;&#21457;&#34920; 
+      </label>
+      <input type="checkbox" name="published8" value="not_published">
+    </p>
+    <p>&#25105;&#20204;&#22312;&#21738;&#37324;&#33021;&#30475;&#35265;?</p>
+    <p> 
+      <textarea name="published_where" cols="60" rows="2"></textarea>
+    </p>
+    <p>&nbsp; </p>
+    <p>35) &#33258;&#20174;&#30333;&#26495;&#20351;&#29992;&#20102;&#20043;&#21518;&#65292;&#24744;&#30340;&#29677;&#37324;&#30340;&#26700;&#26885;&#23433;&#25490;&#26377;&#20160;&#20040;&#21464;&#21160;&#21527;&#65311;</p>
+    <p> 
+      <label for ="rearranged">&#26159; </label>
+      <input type="radio" name="rearranged" value="yes">
+    </p>
+    <p> 
+      <label for ="rearranged">&#21542; </label>
+      <input type="radio" name="rearranged" value="no">
+    </p>
+    <p>&nbsp; </p>
+    <p>35a) &#22914;&#26524;&#26377;, &#26159;&#24590;&#20040;&#21464;&#30340;?</p>
+    <p> 
+      <label for ="how_rearranged1">&#23398;&#29983;&#30340;&#35838;&#26700;&#26377;&#25913;&#21464;&#20102;</label>
+      <input type="checkbox" name="how_rearranged1" value="students_desk">
+    </p>
+    <p> 
+      <label for ="how_rearranged2">&#25945;&#24072;&#30340;&#35762;&#21488;&#26377;&#25152;&#21464;&#21160;</label>
+      <input type="checkbox" name="how_rearranged2" value="my_desk">
+    </p>
+    <p> 
+      <label for ="how_rearranged4">&#20854; </label>
+      <input type="checkbox" name="how_rearranged4" value="others">
+    </p>
+    <p>&nbsp; </p>
+    <p>36) &#35831;&#24744;&#22312;&#26412;&#32440;&#24352;&#30340;&#32972;&#21518;&#21015;&#20986;&#33609;&#22270;&#65292;&#26377;&#20851;&#24744;&#22312;&#25945;&#23398;&#20013;&#30340;&#25945;&#23460;&#26700;&#26885;&#20998;&#24067;&#30340;&#21464;&#21270;&#65292;&#25110;&#32773;&#25552;&#20379;&#25968;&#23383;&#22270;&#29255;&#12290;</p>
+    <p> 
+      <textarea name="how_rearranged_description" cols="60" rows="2"></textarea>
+    </p>
+    <p>&nbsp;</p>
+    <p>37) &#25105;&#20204;&#38656;&#35201;&#23613;&#21487;&#33021;&#22810;&#30340;&#30333;&#26495;&#30740;&#31350;&#20154;&#21592;&#26469;&#21442;&#19982;&#36825;&#20010;&#38382;&#21367;&#30740;&#31350;&#25105;&#20204;&#38656;&#35201;&#23613;&#21487;&#33021;&#22810;&#30340;&#30333;&#26495;&#30740;&#31350;&#20154;&#21592;&#26469;&#21442;&#19982;&#36825;&#20010;&#38382;&#21367;&#30740;&#31350;&#24744;&#33021;&#20171;&#32461;&#20854;&#20182;&#19968;&#20123;&#24895;&#24847;&#22238;&#31572;&#27492;&#38382;&#21367;&#30340;&#20154;&#21527;&#65311;&#20182;&#20204;&#24590;&#20040;&#32852;&#31995;&#65311;</p>
+    <p> 
+      <textarea name="other_contacts" cols="60" rows="2"></textarea>
+    </p>
+    <p>&nbsp;</p>
+    <p>38) &#22914;&#26524;&#24744;&#36824;&#26377;&#20854;&#20182;&#30340;&#24314;&#35758;&#65292;&#35831;&#24744;&#38468;&#22312;&#27492;&#38382;&#21367;&#30340;&#32972;&#21518;.</p>
+    <p> 
+      <textarea name="other_comments" cols="60" rows="4"></textarea>
+    </p>
+    <p>&nbsp;</p>
+    </fieldset>
+    <p>&#24863;&#35874;&#24744;&#30340;&#21512;&#20316;&#65281;</p>
+    <p>T<a name="submit"></a>hank you for completing this questionnaire. When 
+      you are ready, please press the 'Submit' button.</p>
+    <p>Press here to <strong>clear</strong> the form: 
+      <input type="reset" name="Reset" value="Reset" class="buttonReset"  onClick="return confirm('Do you really want to clear the form and start again?')">
+      &nbsp;&nbsp;&nbsp;&nbsp; Press here to <strong>submit</strong> the form: 
+      <input type="submit" name="submit" value="submit" class="buttonSubmit" onClick="return confirm('You are about to send your form. Is this OK?')">
+    </p>
+    <p>&nbsp;</p>
+    <h2>Thanks for helping us! &#24863;&#35874;&#24744;&#30340;&#21512;&#20316;&#65281;</h2>
+  </form>
+  <p>[<a href="#top">Back to the top</a>]</p>
+  <p>[<a href="javascript:history.back()">Back</a>]</p>
+</div>
+<div id="footer">
+<img src="../images/bar-home.gif" width="100%" height="30" alt="">
+	<!-- Footer Starts -->
+<div id="footer_left"> 
+  <ul class="accessBar">
+    <li class="accessBar"><a href="../associates/bedfordshire.htm"><img src="../images/associates_logos/Uni_Bed_logo_small.jpg" alt="University of Bedfordshire" title="University of Bedfordshire" width="72" height="28" style="vertical-align: -40%;"></a> 
+    </li>
+    <li class="accessBar"><a href="../associates/index.html">Associates</a></li>
+    <li class="accessBar"><a href="../about.php.html">About&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../contact.php.html">Contact&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../fellowship/join.htm">Join&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../membership/index.php.html" title="Members Log on/off" id="members_logon" class="normal">Members&nbsp;Log&nbsp;on/off</a></li>
+  </ul>
+</div>
+<div id="footer_right">
+  <ul class="accessBar">
+    <li class="accessBar"><a href="http://www.linkedin.com/groups/MirandaMod-3726470?trk=myg_ugrp_ovr"><img src="../images/site/linkedin_logo.png" alt="Linked In MirandaNet" width="99" height="28" title="Linked In MirandaNet"></a></li>
+	<li class="accessBar"><a href="http://www.facebook.com/pages/MirandaMod/180379201990546"><img src="../images/site/f_logo.png" alt="MirandaNet on Facebook" width="28" height="28" title="MirandaNet on Facebook"></a></li>
+	<li class="accessBar"><img src="../images/site/twitter.jpg" alt="MirandaNet on Twitter - forthcoming feature" width="28" height="28" title="MirandaNet on Twitter - forthcoming feature"></li>
+	<li class="accessBar"><a href="https://plus.google.com/u/0/communities/116934752242714806891"><img src="../images/site/gplus-32.png" alt="Google + MirandaNet" width="28" height="28" title="Google + MirandaNet"></a></li>
+	<li class="accessBar"><a href="../feed.xml.rss"><img src="../images/site/rss.jpg" alt="RSS feed for MirandaNet" width="28" height="28" title="RSS feed for MirandaNet"></a></li> 
+  </ul>
+</div>
+<!-- Footer Ends -->
+</div>
+</div>
+</body>
+</html>

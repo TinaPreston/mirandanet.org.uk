@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+
+
+
+<title>Welcome to MirandaNet</title>
+
+<description>The MirandaNet Fellowship, founded in 1992, is an e-community of practice for international ICT policy makers, teachers, teacher educators, researchers and commercial developers who are passionate about digital technology in teaching and learning and about using technologies to promote cultural understanding and democratic participation.</description>
+
+<link>http://www.mirandanet.org.uk/index.php</link>
+
+<atom:link href="http://www.mirandanet.org.uk/feed.xml" rel="self" type="application/rss+xml" />
+
+
+
+<item>
+
+<title>MirandaNet - Home Page</title>
+
+<description>We put details of the latest news and postings to the site on this page. There are also links to the latest newsletter.</description>
+
+<link>http://www.mirandanet.org.uk/index.php</link>
+
+<guid>http://www.mirandanet.org.uk/index.php</guid>
+
+</item>
+
+
+
+<item>
+
+<title>MirandaNet - News</title>
+
+<description>We put the latest news here.</description>
+
+<link>http://www.mirandanet.org.uk/news/news.php</link>
+
+<guid>http://www.mirandanet.org.uk/news/news.php</guid>
+
+</item>
+
+
+
+<item>
+
+<title>MirandaNet - Diary</title>
+
+<description>Find all the items in our Calendar here.</description>
+
+<link>http://www.mirandanet.org.uk/news/diary.php</link>
+
+<guid>http://www.mirandanet.org.uk/news/diary.php</guid>
+
+</item>
+
+
+
+<item>
+
+<title>MirandaNet - Latest Newsletter</title>
+
+<description>MirandaNews goes out to every MirandaNet member.</description>
+
+<link>http://www.mirandanet.org.uk/news/letter.php</link>
+
+<guid>http://www.mirandanet.org.uk/news/letter.php</guid>
+
+</item>
+
+
+
+<item>
+
+<title>MirandaNet - MirandaMods</title>
+
+<description>Details of the next MirandaMod. Follow the link for full details including how to register.</description>
+
+<link>http://www.mirandanet.org.uk/mirandamods/events/</link>
+
+<guid>http://www.mirandanet.org.uk/mirandamods/events/</guid>
+
+</item>
+
+
+
+</channel>
+
+</rss>

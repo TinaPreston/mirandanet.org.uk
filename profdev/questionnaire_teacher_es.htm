@@ -1,0 +1,1197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<title>MirandaNet Professional Development</title>
+<meta name="Description" content="The MirandaNet Community">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Language" content="zh">
+<link href="../common.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../common.js"></script>
+<style type="text/css">.buttonSubmit {
+	color: green;
+	text-transform: uppercase;
+	border: 1px solid green;
+	margin-top: 1em;
+	font-size: 1em;
+}
+
+.buttonReset {
+	color: red;
+	text-transform: uppercase;
+	border: 1px solid red;
+	margin-top: 1em;
+	font-size: 1em;
+}
+
+function classChange(styleChange,item) {
+    item.className = styleChange;
+}
+
+.buttonSubmitHide {
+	display: none;
+}
+
+</style>
+</head>
+<body onLoad="return show('profdev')">
+<div id="page">
+<div id="header"><a name="top"></a>
+    <div id="home"><a tabindex="0" href="../index.html"><img src="../images/logo.gif" alt="MirandaNet Index Page" width="200" height="100" title="MirandaNet Index Page"></a> 
+      <img src="../images/bar-start.gif" width="201" height="30" alt=""> </div>
+  <img src="../images/bar-profdevel.gif" width="100%" height="30" alt="MirandaNet" title="MirandaNet"> 
+  <h1>MirandaNet International Research Centre</h1>
+</div>
+<div id="leftColumn"><img src="../associates/promethean_boy.jpg" alt="Promethean ACTIVboard" width="200" height="150"> 
+  <!--ignore_perlfect_search-->
+<div id="navsite">
+  <p>Site navigation</p>
+  <ul>
+    <li class="divider">MirandaNet Fellowship</li>
+    <li><a href="../home.php.html" title="Home" id="homepage" class="normal">Home</a></li>
+    <li><a href="../associates/index.html" title="Company Associates" id="partners" class="normal"> 
+      Associates</a></li>
+   <!-- <li><a href="/bett/" title="BETT12" id="bett" class="normal">BETT12</a></li> --> 
+    <li><a href="https://www.mirandanet.org.uk/phorum/default.php" title="Forums" id="forums" class="normal">Forums</a></li>
+    <li><a href="../international/index.html" title="International MirandaNet" id="internat" class="normal">International 
+      MirandaNet</a></li>
+    <li><a href="../fellowship/index.html" title="The Fellowship" id="fellowship" class="normal">Fellowship</a></li>
+     <!-- <li><a href="/membership/index.php" title="Members" id="members" class="normal">Log
+        on/off</a></li> -->
+    <li><a href="../membership/index.php.html" title="Members Log on/off" id="members">Members 
+        Log on/off</a> </li>
+    <li class="divider">MirandaNet Resources</li>
+    <li><a href="../research/index.html" title="Case Studies &amp; Research" id="research" class="normal">Case 
+      Studies &amp; Research</a></li>
+    <li><a href="../ejournal/index.html" title="The Braided Learning E-Journal" id="ejournal" class="normal"> 
+      E-Journal</a></li>
+    <li><a href="../mirandamods/index.html" title="MirandaMods" id="mirandamods" class="normal">MirandaMods</a></li>
+    <li><a href="../news/letter.php.html" title="News, Diary, Seminars" id="news" class="normal">Newsletter</a></li>
+    <li><a href="index.html" title="Profdev" id="profdev" class="normal">Professional 
+      Development</a></li>
+    <li><a href="../publications/index.html" title="Publications" id="pubs" class="normal">Publications</a></li>
+    <li><a href="../researchexchange/index.html" title="Research Exchange" id="rex" class="normal">Research Exchange</a></li>
+    <li><a href="../resources/index.html" title="Resources" id="resources" class="normal">Resources</a></li>
+    <li><a href="../vl_blog/index.html" title="Visual Learning" id="vis" class="normal">Visual&nbsp;Learning</a></li>
+    <li class="divider">MirandaNet Consultancy</li>
+    <li><a href="../consultancy/index.html" title="The Consultancy" id="consultancy" class="normal"> 
+      Consultancy</a></li>
+    <li class="divider">World Ecitizens Charity</li>
+    <li><a href="../worldecitizens/index.html" title="World Ecitizens Etopia" id="worldecitizens" class="normal">World 
+      Ecitizens Etopia</a></li>
+  </ul>
+</div>
+
+    <!-- Search begins -->
+    <form action="http://www.google.co.uk/search" method="get" name="search" id="search">
+      <p class="center">
+    <label for="q">Search MirandaNet: 
+    <input type="text" name="q" id="q" size="15" style="width:154px;" alt="Search MirandaNet" title="Search MirandaNet" value="Search" onClick="this.select()" />
+    </label>
+        <br />
+        <input type="submit" value="Search" name="submit" />
+        <input name="sitesearch" type="hidden" value="mirandanet.org.uk" />
+      </p>
+	</form>
+    <!-- Search ends -->
+<!--/ignore_perlfect_search-->
+    </div>
+
+<div id="mainBody"> 
+  <h2>Interactive Whiteboards - Teachers' Questionnaire - Cuestionario para los 
+    Maestros</h2>
+  <form class="join" action="https://www.mirandanet.org.uk/cgi-bin/csv/csvwrite_teacher.pl" method="post" name="questionnaire" id="questionnaire"
+		 onSubmit="return ValidateQuestionnaire(); classChange('buttonSubmitHide',submit); return true">
+    <fieldset>
+    <legend>Datos Personales</legend>
+    <p>(<span class="red">*</span>This information is required only so that we 
+      can contact you: answers will be treated in confidence) (Las contestaciones 
+      ser&aacute;n completamente an&oacute;nimas)</p>
+    <p> 
+      <label for="name">Nombre<span class="red">*</span>: </label>
+      <input name="Name" type="text" id="Name" alt="Name" size="35" maxlength="40" class="txt">
+    </p>
+    <p> 
+      <label for="School">Escuela: </label>
+      <input name="School" type="text" id="School" alt="School" size="35" maxlength="40" class="txt">
+    </p>
+    <p> 
+      <label for="Position">Posicion: </label>
+      <input name="Position" type="text" id="Position" alt="Position" size="35" maxlength="40" class="txt">
+    </p>
+    <p> 
+      <label for="Email">Direcci&oacute;n electr&oacute;nica (e-mail): </label>
+      <input name="Email" type="text" id="Email" alt="Email" size="35" maxlength="40" class="txt">
+    </p>
+    </fieldset>
+    <fieldset>
+    <legend>Instrucciones</legend>
+    <p>Nota: Este cuestionario forma parte de una investigaci&oacute;n sobre el 
+      uso de pizarrones electr&oacute;nicos en las aulas, en escuelas de varias 
+      partes del mundo. </p>
+    <p>Lea cuidadosamente cada pregunta y marque la respuesta o respuestas que 
+      considere adecuada(s). Puede marcar un m&aacute;ximo de <strong>tres</strong> 
+      opciones en las preguntas que as&iacute; lo indican. </p>
+    <p> 
+      <label for ="quote">&iquest;Podemos citar sus respuestas? Las contestaciones 
+      ser&aacute;n completamente an&oacute;nimas.</label>
+      <input name="quote" type="radio" value="yes" checked>
+      Si<br>
+      <input type="radio" name="quote" value="no">
+      No</p>
+    </fieldset>
+    <fieldset>
+    <legend>ACTIVboards in your School</legend>
+    <p> 
+      <label for ="enjoy7_other">1) <strong>Cu&aacute;ntos</strong> pizarrones 
+      electr&oacute;nicos interactivos (PEI) tiene su escuela?</label>
+      <input type="text" name="how_many" size="3" maxlength="4">
+    </p>
+    <p>&nbsp; </p>
+    <p>2) &iquest;Qu&eacute; <strong>marca</strong>?</p>
+    <p>
+      <label for ="brand0">Polyvision:</label>
+      <input type="checkbox" name="brand0" value="Polyvision">
+    </p>
+    <p> 
+      <label for ="brand1">Promethean ACTIVboard:</label>
+      <input type="checkbox" name="brand1" value="Promethean">
+    </p>
+    <p> 
+      <label for ="brand2">No s&eacute;:</label>
+      <input type="checkbox" name="brand2" value="dont_know">
+    </p>
+    <p> 
+      <label for ="brand3">Otra:</label>
+      <input type="checkbox" name="brand3" value="other">
+    </p>
+    <p> 
+      <label for ="brand3_other">&iquest;Cu&aacute;les?</label>
+      <input type="text" name="brand3_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>3) Los pizarrones son:</p>
+    <p> 
+      <label for ="type1">Fijos:</label>
+      <input type="checkbox" name="type1" value="Fixed">
+    </p>
+    <p> 
+      <label for ="type2">Port&aacute;tiles:</label>
+      <input type="checkbox" name="type2" value="Portable">
+    </p>
+    <p>&nbsp;</p>
+    <p>4) Si son <strong>fijos</strong>, &iquest;en d&oacute;nde se encuentran?</p>
+    <p> 
+      <label for ="fixed1">En el sal&oacute;n normal:</label>
+      <input type="checkbox" name="fixed1" value="classroom">
+    </p>
+    <p> 
+      <label for ="fixed2">En un sal&oacute;n especial (usos m&uacute;ltiples, 
+      biblioteca, etc&eacute;tera):</label>
+      <input type="checkbox" name="fixed2" value="special">
+    </p>
+    <p>&nbsp;</p>
+    <p> 5) &iquest;Qu&eacute; tan <strong>frecuentemente</strong> los usa?</p>
+    <p> 
+      <label for ="specific_subjects">Para temas espec&iacute;ficos:</label>
+      <input type="checkbox" name="specific_subjects" value="yes">
+    </p>
+    <p> 
+      <label for ="frequency">En cada lecci&oacute;n:</label>
+      <input type="radio" name="frequency" value="every_lesson" onClick="checkNever()">
+    </p>
+    <p> 
+      <label for ="frequency">Al menos una vez al d&iacute;a:</label>
+      <input type="radio" name="frequency" value="once_day" onClick="checkNever()">
+    </p>
+    <p> 
+      <label for ="frequency">Una vez por semana:</label>
+      <input type="radio" name="frequency" value="once_week" onClick="checkNever()">
+    </p>
+    <p> 
+      <label for ="frequency">Menos de una vez por semana:</label>
+      <input name="frequency" type="radio" value="less_than_once_week" onClick="checkNever()">
+    </p>
+    <p> 
+      <label for ="frequency">Nunca:</label>
+      <input type="radio" name="frequency" value="never" onClick="checkNever()">
+    </p>
+    <p>Si &#8220;<strong>Nunca</strong>&#8221;, gracias por su tiempo. Click <a href="#submit">here</a> 
+      to submit your response. 
+      <input type="submit" name="submit1" value="submit" class="buttonSubmitHide">
+    </p>
+    </fieldset>
+    <fieldset>
+    <legend>ACTIVboards in use</legend>
+    <p> 
+      <label for ="how_long_used">6) &iquest;Por <strong>cuanto tiempo</strong> 
+      ha usado pizarrones electr&oacute;nicos en su aula? </label>
+      <input type="text" name="how_long_used" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>6a) &iquest;<strong>C&oacute;mo usa</strong> el PEI? (Puede marcar de una 
+      a tres opciones) </p>
+    <p> 
+      <label for ="whatways1">Grupo peque&ntilde;o:</label>
+      <input type="checkbox" name="whatways1" value="small_group">
+      <!--input type="checkbox" name="ST" value="ST_1" onClick="checkbox_checker(ST,10,0,0)"-->
+    </p>
+    <p> 
+      <label for ="whatways2">Clase entera:</label>
+      <input type="checkbox" name="whatways2" value="whole_class">
+    </p>
+    <p> 
+      <label for ="whatways3">Individualmente:</label>
+      <input type="checkbox" name="whatways3" value="individuals">
+    </p>
+    <p> 
+      <label for ="whatways4">Participaci&oacute;n del estudiante:</label>
+      <input type="checkbox" name="whatways4" value="Student">
+    </p>
+    <p> 
+      <label for ="whatways5">Did&aacute;cticamente:</label>
+      <input type="checkbox" name="whatways5" value="Didactically">
+    </p>
+    <p> 
+      <label for ="whatways6">Para video-conferencias:</label>
+      <input type="checkbox" name="whatways6" value="video">
+    </p>
+    <p> 
+      <label for ="whatways7">Como parte de un proyecto de investigaci&oacute;n:</label>
+      <input type="checkbox" name="whatways7" value="research">
+    </p>
+    <p> 
+      <label for ="whatways8">Como parte del proyecto Enciclomedia:</label>
+      <input type="checkbox" name="whatways8" value="deliver">
+    </p>
+    <p> 
+      <label for ="whatways9">Otros:</label>
+      <input type="checkbox" name="whatways9" value="other">
+    </p>
+    <p> 
+      <label for ="whatways9_other">&iquest;Cu&aacute;les?</label>
+      <input type="text" name="whatways9_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>7) &iquest;En d&oacute;nde <strong>se sientan</strong> los estudiantes?</p>
+    <p> 
+      <label for ="where_sit">Frente al pizarr&oacute;n electr&oacute;nico:</label>
+      <input type="radio" name="where_sit" value="in_front">
+    </p>
+    <p> 
+      <label for ="where_sit">En sus escritorios:</label>
+      <input type="radio" name="where_sit" value="at_desks">
+    </p>
+    <p> 
+      <label for ="where_sit">Ambos:</label>
+      <input type="radio" name="where_sit" value="both">
+    </p>
+    <p>&nbsp; </p>
+    <p>8) &iquest;En d&oacute;nde <strong>se encuentra</strong> el PEI?</p>
+    <p> 
+      <label for ="board_location">Atr&aacute;s de mi escritorio:</label>
+      <input type="radio" name="board_location" value="behind">
+    </p>
+    <p> 
+      <label for ="board_location">Al lado de mi escritorio:</label>
+      <input type="radio" name="board_location" value="at_side">
+    </p>
+    <p> 
+      <label for ="board_location">En otra pared:</label>
+      <input type="radio" name="board_location" value="another_wall">
+    </p>
+    <p>&nbsp; </p>
+    <p>9) &iquest;Los estudiantes alcanzan <strong>la parte superior</strong> 
+      del PEI?</p>
+    <p> 
+      <label for ="reach_top">Si:</label>
+      <input type="radio" name="reach_top" value="yes">
+    </p>
+    <p> 
+      <label for ="reach_top">No:</label>
+      <input type="radio" name="reach_top" value="no">
+    </p>
+    <p>&nbsp; </p>
+    <p>10) &iquest;Qu&eacute; <strong>materiales</strong> son usados con el PEI? 
+      (Se&ntilde;ale todas las opciones que aplican)</p>
+    <p> 
+      <label for ="materials1">Programas comerciales (Word, PowerPoint, Encarta, 
+      juegos, videos, etc.):</label>
+      <input type="checkbox" name="materials1" value="Commercial">
+    </p>
+    <p> 
+      <label for ="materials2">Materiales basados en Internet:</label>
+      <input type="checkbox" name="materials2" value="Web">
+    </p>
+    <p> 
+      <label for ="materials3">Materiales creados por los maestros en el PEI:</label>
+      <input type="checkbox" name="materials3" value="teacher">
+    </p>
+    <p> 
+      <label for ="materials4">Programas incluidos en el PEI (block de notas, 
+      grabadora, teclado. etc):</label>
+      <input type="checkbox" name="materials4" value="included">
+    </p>
+    <p>&nbsp; </p>
+    <p>11) &iquest;C&oacute;mo <strong>fue capacitado</strong> usted para usar 
+      el PEI? (Se&ntilde;ale todas las opciones que aplican)</p>
+    <p> 
+      <label for ="training1">Por la compa&ntilde;&iacute;a que provey&oacute; 
+      los pizarrones electr&oacute;nicos.:</label>
+      <input type="checkbox" name="training1" value="company">
+    </p>
+    <p> 
+      <label for ="training2">Por asesores de la Secretar&iacute;a de Educaci&oacute;n 
+      P&uacute;blica.:</label>
+      <input type="checkbox" name="training2" value="advisers">
+    </p>
+    <p> 
+      <label for ="training3">Por colegas:</label>
+      <input type="checkbox" name="training3" value="colleague">
+    </p>
+    <p> 
+      <label for ="training4">De forma autodidacta:</label>
+      <input type="checkbox" name="training4" value="self">
+    </p>
+    <p> 
+      <label for ="training5">Otros:</label>
+      <input type="checkbox" name="training5" value="other">
+    </p>
+    <p> 
+      <label for ="training5_other">&iquest;Cu&aacute;les?</label>
+      <input type="text" name="training5_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p> 
+      <label for ="training_how_long">11a) &iquest;Por <strong>cuanto</strong> 
+      tiempo fue usted capacitado?</label>
+      <input type="text" name="training_how_long" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>12) En caso de que haya recibido capacitaci&oacute;n &iquest;Qu&eacute; 
+      le gust&oacute; <strong>m&aacute;s</strong> de ella? (Puede marcar de una 
+      a tres opciones)</p>
+    <p> 
+      <label for ="like1">Aprender las funciones y herramientas del PEI:</label>
+      <input type="checkbox" name="like1" value="functions">
+    </p>
+    <p> 
+      <label for ="like2">Adquirir confianza en el uso del pizarr&oacute;n:</label>
+      <input type="checkbox" name="like2" value="confidence">
+    </p>
+    <p> 
+      <label for ="like3">Conocer nuevas t&eacute;cnicas pedag&oacute;gicas para 
+      ense&ntilde;ar a mis alumnos:</label>
+      <input type="checkbox" name="like3" value="pedagogical">
+    </p>
+    <p> 
+      <label for ="like4">Compartir ideas y experiencias con mis colegas:</label>
+      <input type="checkbox" name="like4" value="ideas">
+    </p>
+    <p> 
+      <label for ="like5">Compartir dudas con mis colegas:</label>
+      <input type="checkbox" name="like5" value="doubts">
+    </p>
+    <p> 
+      <label for ="like6">Otras:</label>
+      <input type="checkbox" name="like6" value="others">
+    </p>
+    <p> 
+      <label for ="like6_other">&iquest;Cu&aacute;les?</label>
+      <input type="text" name="like6_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>13) &iquest;Qu&eacute; le gust&oacute; <strong>menos</strong>? (Puede marcar 
+      de una a tres opciones)</p>
+    <p> 
+      <label for ="like_least1">La capacitaci&oacute;n fue breve:</label>
+      <input type="checkbox" name="like_least1" value="brief">
+    </p>
+    <p> 
+      <label for ="like_least2">La capacitaci&oacute;n no se dio en Espa&ntilde;ol:</label>
+      <input type="checkbox" name="like_least2" value="language">
+    </p>
+    <p> 
+      <label for ="like_least3">Los capacitadores no explicaron con claridad las 
+      funciones y herramientas del PEI:</label>
+      <input type="checkbox" name="like_least3" value="functions">
+    </p>
+    <p> 
+      <label for ="like_least4">Durante la capacitaci&oacute;n no explicaron c&oacute;mo 
+      mantener el equipo:</label>
+      <input type="checkbox" name="like_least4" value="maintain">
+    </p>
+    <p> 
+      <label for ="like_least5">Durante la capacitaci&oacute;n no fue posible 
+      manipular el PEI:</label>
+      <input type="checkbox" name="like_least5" value="use">
+    </p>
+    <p> 
+      <label for ="like_least6">Otras:</label>
+      <input type="checkbox" name="like_least6" value="others">
+    </p>
+    <p> 
+      <label for ="like_least6_other">&iquest;Cu&aacute;les?</label>
+      <input type="text" name="like_least6_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>14) &iquest;Qu&eacute; materia(s) le gusta dar <strong>m&aacute;s</strong> 
+      usando el PEI? (Puede marcar de una a tres opciones)</p>
+    <p> 
+      <label for ="lesson1">Matem&aacute;ticas:</label>
+      <input type="checkbox" name="lesson1" value="Mathematics">
+    </p>
+    <p> 
+      <label for ="lesson2">Historia:</label>
+      <input type="checkbox" name="lesson2" value="History">
+    </p>
+    <p> 
+      <label for ="lesson3">Espa&ntilde;ol:</label>
+      <input type="checkbox" name="lesson3" value="EngSpanChin">
+    </p>
+    <p> 
+      <label for ="lesson4">Ciencias Naturales:</label>
+      <input type="checkbox" name="lesson4" value="Science">
+    </p>
+    <p> 
+      <label for ="lesson5">Idioma extranjero:</label>
+      <input type="checkbox" name="lesson5" value="mfl">
+    </p>
+    <p> 
+      <label for ="lesson7">Geograf&iacute;a:</label>
+      <input type="checkbox" name="lesson7" value="Geography">
+    </p>
+    <p> 
+      <label for ="lesson8">Otras:</label>
+      <input type="checkbox" name="lesson8" value="others">
+    </p>
+    <p> 
+      <label for ="lesson8_other">&iquest;Cu&aacute;les?</label>
+      <input type="text" name="lesson8_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>15) &iquest;Qu&eacute; materia(s) le gusta dar <strong>menos</strong> usando 
+      el PEI? (Puede marcar de una a tres opciones)</p>
+    <p> 
+      <label for ="lesson_least1">Matem&aacute;ticas:</label>
+      <input type="checkbox" name="lesson_least1" value="Mathematics">
+    </p>
+    <p> 
+      <label for ="lesson_least2">Historia:</label>
+      <input type="checkbox" name="lesson_least2" value="History">
+    </p>
+    <p> 
+      <label for ="lesson_least3">Espa&ntilde;ol:</label>
+      <input type="checkbox" name="lesson_least3" value="EngSpanChin">
+    </p>
+    <p> 
+      <label for ="lesson_least4">Ciencias Naturales:</label>
+      <input type="checkbox" name="lesson_least4" value="Science">
+    </p>
+    <p> 
+      <label for ="lesson_least5">Idioma extranjero:</label>
+      <input type="checkbox" name="lesson_least5" value="mfl">
+    </p>
+    <p> 
+      <label for ="lesson_least7">Geograf&iacute;a:</label>
+      <input type="checkbox" name="lesson_least7" value="Geography">
+    </p>
+    <p> 
+      <label for ="lesson_least8">Otras:</label>
+      <input type="checkbox" name="lesson_least8" value="others">
+    </p>
+    <p> 
+      <label for ="lesson_least8_other">&iquest;Cu&aacute;les?</label>
+      <input type="text" name="lesson_least8_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>16) &iquest;Cu&aacute;les actividades le gustan <strong>m&aacute;s</strong> 
+      al usar el PEI? (Puede marcar de una a tres opciones)</p>
+    <p> 
+      <label for ="activities1">Block de notas:</label>
+      <input type="checkbox" name="activities1" value="Notebook">
+    </p>
+    <p> 
+      <label for ="activities2">Juegos:</label>
+      <input type="checkbox" name="activities2" value="Games">
+    </p>
+    <p> 
+      <label for ="activities3">Actividades con libros digitalizados:</label>
+      <input type="checkbox" name="activities3" value="Digital">
+    </p>
+    <p> 
+      <label for ="activities4">Herramientas para llevar los registros de la clase 
+      (asistencia, calificaciones, etc.):</label>
+      <input type="checkbox" name="activities4" value="Tools">
+    </p>
+    <p> 
+      <label for ="activities5">Otras:</label>
+      <input type="checkbox" name="activities5" value="others">
+    </p>
+    <p> 
+      <label for ="activities5_other">&iquest;Cu&aacute;les?</label>
+      <input type="text" name="activities5_other" size="35" maxlength="40">
+    </p>
+    </fieldset>
+    <fieldset>
+    <legend>Using the ACTIVvote System</legend>
+    <p><img src="../images/ACTIV.jpg" alt="eLapa Students at BETT05 using ACTIVvote" width="200" height="150" hspace="5" class="imageRight">17) 
+      &iquest;El Pizarr&oacute;n Electr&oacute;nico tiene <strong>sistema de votaci&oacute;n</strong>?</p>
+    <p> 
+      <label for ="voting_system">Si:</label>
+      <input type="radio" name="voting_system" value="yes">
+    </p>
+    <p> 
+      <label for ="voting_system">No:</label>
+      <input type="radio" name="voting_system" value="no">
+    </p>
+    <p>&nbsp; </p>
+    <p>17a) En caso de contar con el sistema de votaci&oacute;n del PEI &iquest;Qu&eacute; 
+      opina de este sistema?</p>
+    <p> 
+      <label for ="voting_system_comment">Una opini&oacute;n favorable:</label>
+      <input type="radio" name="voting_system_comment" value="like">
+    </p>
+    <p> 
+      <label for ="voting_system_comment">Me es indiferente:</label>
+      <input type="radio" name="voting_system_comment" value="neutral">
+    </p>
+    <p> 
+      <label for ="voting_system_comment">Una opini&oacute;n desfavorable:</label>
+      <input type="radio" name="voting_system_comment" value="dont_like">
+    </p>
+    <p>&nbsp; </p>
+    </fieldset>
+    <fieldset>
+    <legend>Lessons learned from using ACTIVboards</legend>
+    <p>18) <strong>Si NO contara con un PEI</strong> &iquest;Qu&eacute; materias 
+      le ser&iacute;a dif&iacute;cil ense&ntilde;ar? (Puede marcar de una a tres 
+      opciones)</p>
+    <p> 
+      <label for ="difficult_teach1">Matem&aacute;ticas:</label>
+      <input type="checkbox" name="difficult_teach1" value="Mathematics">
+    </p>
+    <p> 
+      <label for ="difficult_teach2">Historia:</label>
+      <input type="checkbox" name="difficult_teach2" value="History">
+    </p>
+    <p> 
+      <label for ="difficult_teach3">Espa&ntilde;ol:</label>
+      <input type="checkbox" name="difficult_teach3" value="EngSpanChin">
+    </p>
+    <p> 
+      <label for ="difficult_teach4">Ciencias Naturales:</label>
+      <input type="checkbox" name="difficult_teach4" value="Science">
+    </p>
+    <p> 
+      <label for ="difficult_teach5">Idioma extranjero:</label>
+      <input type="checkbox" name="difficult_teach5" value="mfl">
+    </p>
+    <p> 
+      <label for ="difficult_teach7">Geograf&iacute;a:</label>
+      <input type="checkbox" name="difficult_teach7" value="Geography">
+    </p>
+    <p> 
+      <label for ="difficult_teach8">Otra:</label>
+      <input type="checkbox" name="difficult_teach8" value="others">
+    </p>
+    <p> 
+      <label for ="difficult_teach8_other">&iquest;Cu&aacute;l?</label>
+      <input type="text" name="difficult_teach8_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>19) &iquest;Podr&iacute;a sugerir <strong>alg&uacute;n tipo de programa</strong> 
+      (software) <strong> para enriquecer</strong> el uso del PEI?</p>
+    <p> 
+      <label for ="new1">Un programa para trazar figuras:</label>
+      <input type="checkbox" name="new1" value="draw">
+    </p>
+    <p> 
+      <label for ="new2">Mapas geogr&aacute;ficos:</label>
+      <input type="checkbox" name="new2" value="Maps">
+    </p>
+    <p> 
+      <label for ="new3">Juegos educativos:</label>
+      <input type="checkbox" name="new3" value="games">
+    </p>
+    <p> 
+      <label for ="new4">Programas para ense&ntilde;ar una segunda lengua:</label>
+      <input type="checkbox" name="new4" value="mfl">
+    </p>
+    <p> 
+      <label for ="new5">Video:</label>
+      <input type="checkbox" name="new5" value="Video">
+    </p>
+    <p> 
+      <label for ="new5">Otros:</label>
+      <input type="checkbox" name="new5" value="others">
+    </p>
+    <p> 
+      <label for ="new5_others">&iquest;Cu&aacute;les?</label>
+      <input type="text" name="new5_others" size="35" maxlength="40">
+    </p>
+    <p>&nbsp;</p>
+    <p>20) &iquest;Podr&iacute;a dar ejemplos de trabajos de sus estudiantes que 
+      demuestren la utilidad del PEI (Puede marcar de una a tres opciones)</p>
+    <p> 
+      <label for ="students_work1">Textos escritos por ellos mismos:</label>
+      <input type="checkbox" name="students_work1" value="Writing">
+    </p>
+    <p> 
+      <label for ="students_work2">Student's Presentations:</label>
+      <input type="checkbox" name="students_work2" value="Presentations">
+    </p>
+    <p> 
+      <label for ="students_work3">Math problems:</label>
+      <input type="checkbox" name="students_work3" value="Math">
+    </p>
+    <p> 
+      <label for ="students_work4">Exercises:</label>
+      <input type="checkbox" name="students_work4" value="Exercises">
+    </p>
+    <p> 
+      <label for ="students_work5">Reading comprehension:</label>
+      <input type="checkbox" name="students_work5" value="Reading">
+    </p>
+    <p> 
+      <label for ="students_work6">Use of technology:</label>
+      <input type="checkbox" name="students_work6" value="technology">
+    </p>
+    <p> 
+      <label for ="students_work7">Research projects:</label>
+      <input type="checkbox" name="students_work7" value="Research">
+    </p>
+    <p> 
+      <label for ="students_work8">Otros:</label>
+      <input type="checkbox" name="students_work8" value="others">
+    </p>
+    <p> 
+      <label for ="students_work8_others">&iquest;Cu&aacute;les?</label>
+      <input type="text" name="students_work8_others" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>21) Cree que se ha incrementado el aprendizaje de los estudiantes con el 
+      uso de los PEI?</p>
+    <p> 
+      <label for ="raise">Si:</label>
+      <input type="radio" name="raise" value="yes">
+    </p>
+    <p> 
+      <label for ="raise">No:</label>
+      <input type="radio" name="raise" value="no">
+    </p>
+    <p>&nbsp; </p>
+    <p>21a) &iquest;En caso afirmativo, <strong>c&oacute;mo</strong> cree que 
+      ha incrementado dicho aprendizaje con el uso de los PEI? (Puede marcar de 
+      una a tres opciones)</p>
+    <p> 
+      <label for ="how_raise1">Los alumnos han incrementado su aprendizaje del 
+      proceso de escritura:</label>
+      <input type="checkbox" name="how_raise1" value="writing">
+    </p>
+    <p> 
+      <label for ="how_raise2">Los alumnos han incrementado su comprensi&oacute;n 
+      lectora:</label>
+      <input type="checkbox" name="how_raise2" value="reading">
+    </p>
+    <p> 
+      <label for ="how_raise3">Los alumnos han incrementado su conocimiento sobre 
+      materias espec&iacute;ficas:</label>
+      <input type="checkbox" name="how_raise3" value="lessons">
+    </p>
+    <p> 
+      <label for ="how_raise4">Mayor motivaci&oacute;n:</label>
+      <input type="checkbox" name="how_raise4" value="motivation">
+    </p>
+    <p> 
+      <label for ="how_raise5">Mayor participaci&oacute;n:</label>
+      <input type="checkbox" name="how_raise5" value="participation">
+    </p>
+    <p> 
+      <label for ="how_raise6">Mejor comprensi&oacute;n de los temas:</label>
+      <input type="checkbox" name="how_raise6" value="understanding">
+    </p>
+    <p> 
+      <label for ="how_raise7">Aplicaci&oacute;n de conocimientos:</label>
+      <input type="checkbox" name="how_raise7" value="applied">
+    </p>
+    <p> 
+      <label for ="how_raise8">Otros:</label>
+      <input type="checkbox" name="how_raise8" value="Others">
+    </p>
+    <p> 
+      <label for ="how_raise8_others">&iquest;Cu&aacute;les?</label>
+      <input type="text" name="how_raise8_others" size="35" maxlength="40">
+    </p>
+    <p>&nbsp;</p>
+    <p>22) &iquest;C&oacute;mo ha <strong>observado</strong> ese logro?</p>
+    <p> 
+      <label for ="measure1">No he podido evaluarlo:</label>
+      <input type="checkbox" name="measure1" value="not_able">
+    </p>
+    <p> 
+      <label for ="measure2">A trav&eacute;s de cambios cualitativos que son tangibles 
+      en la clase (por ejemplo, observaci&oacute;n, etc.):</label>
+      <input type="checkbox" name="measure2" value="qualitative">
+    </p>
+    <p> 
+      <label for ="measure3">A trav&eacute;s de evaluaciones cuantitativas (por 
+      ejemplo, calificaciones y cuestionarios, etc.):</label>
+      <input type="checkbox" name="measure3" value="quantitative">
+    </p>
+    <p>&nbsp; </p>
+    <p>23) &iquest;De qu&eacute; manera el PEI ha cambiado su forma de <strong>ense&ntilde;ar</strong>? 
+      (Puede marcar de una a tres opciones)</p>
+    <p> 
+      <label for ="change1">Tengo m&aacute;s recursos para ejemplificar los temas:</label>
+      <input type="checkbox" name="change1" value="resources">
+    </p>
+    <p> 
+      <label for ="change2">Se me dificulta m&aacute;s dar la clase:</label>
+      <input type="checkbox" name="change2" value="difficult">
+    </p>
+    <p> 
+      <label for ="change3">Es m&aacute;s f&aacute;cil ense&ntilde;ar:</label>
+      <input type="checkbox" name="change3" value="easier">
+    </p>
+    <p> 
+      <label for ="change4">Mi clase es m&aacute;s interesante:</label>
+      <input type="checkbox" name="change4" value="interesting">
+    </p>
+    <p> 
+      <label for ="change5">No he detectado cambios:</label>
+      <input type="checkbox" name="change5" value="no_change">
+    </p>
+    <p> 
+      <label for ="change6">Otras:</label>
+      <input type="checkbox" name="change6" value="others">
+    </p>
+    <p> 
+      <label for ="change6_other">&iquest;Cu&aacute;les? </label>
+      <input type="text" name="change6_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>24) &iquest;De qu&eacute; manera el PEI ha cambiado la forma en que sus 
+      alumnos <strong>aprenden</strong>? (Puede marcar de una a tres opciones)</p>
+    <p> 
+      <label for ="how_change1">Ponen m&aacute;s atenci&oacute;n al contenido:</label>
+      <input type="checkbox" name="how_change1" value="topics">
+    </p>
+    <p> 
+      <label for ="how_change2">Ponen m&aacute;s atenci&oacute;n a los aspectos 
+      t&eacute;cnicos:</label>
+      <input type="checkbox" name="how_change2" value="technical">
+    </p>
+    <p> 
+      <label for ="how_change3">Se distraen:</label>
+      <input type="checkbox" name="how_change3" value="absent_minded">
+    </p>
+    <p> 
+      <label for ="how_change4">Tienen una actitud m&aacute;s tolerante:</label>
+      <input type="checkbox" name="how_change4" value="tolerant">
+    </p>
+    <p> 
+      <label for ="how_change5">Cooperan m&aacute;s entre ellos:</label>
+      <input type="checkbox" name="how_change5" value="collaborate">
+    </p>
+    <p> 
+      <label for ="how_change6">Tienen m&aacute;s recursos para comprender los 
+      temas:</label>
+      <input type="checkbox" name="how_change6" value="resources">
+    </p>
+    <p> 
+      <label for ="how_change7">Son m&aacute;s participativos:</label>
+      <input type="checkbox" name="how_change7" value="participation">
+    </p>
+    <p> 
+      <label for ="how_change8">No he detectado cambios:</label>
+      <input type="checkbox" name="how_change8" value="no_change">
+    </p>
+    <p> 
+      <label for ="how_change9">Otras:</label>
+      <input type="checkbox" name="how_change9" value="others">
+    </p>
+    <p> 
+      <label for ="how_change9_other">&iquest;Cu&aacute;les?</label>
+      <input type="text" name="how_change9_other" size="35" maxlength="40">
+    </p>
+    </fieldset>
+    <fieldset>
+    <legend>ACTIVboards and your School Organisation</legend>
+    <p>25) &iquest;Cu&aacute;l es la actitud de sus <strong>colegas</strong> hacia 
+      el uso de los PEI?</p>
+    <p> 
+      <label for ="attitude1">Mis colegas tienen una actitud favorable:</label>
+      <input type="checkbox" name="attitude1" value="favourable">
+    </p>
+    <p> 
+      <label for ="attitude2">Mis colegas tienen una actitud indiferente por la 
+      poca informaci&oacute;n acerca de los PEI:</label>
+      <input type="checkbox" name="attitude2" value="neutral">
+    </p>
+    <p> 
+      <label for ="attitude3">Los directivos est&aacute;n involucrados y cooperan 
+      para mejorar el uso de los PEI:</label>
+      <input type="checkbox" name="attitude3" value="unfavourable">
+    </p>
+    <p> 
+      <label for ="attitude4">Otras:</label>
+      <input type="checkbox" name="attitude4" value="others">
+    </p>
+    <p> 
+      <label for ="attitude4_other">&iquest;Cu&aacute;les?</label>
+      <input type="text" name="attitude4_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>26) &iquest;Cu&aacute;l es la actitud de sus <strong>directivos</strong> 
+      hacia el uso de los PEI?</p>
+    <p> 
+      <label for ="attitude_sm1">Los directivos no est&aacute;n suficientemente 
+      involucrados:</label>
+      <input type="checkbox" name="attitude_sm1" value="not_involved">
+    </p>
+    <p> 
+      <label for ="attitude_sm2">Los directivos est&aacute;n m&aacute;s interesados 
+      en otras necesidades de la escuela:</label>
+      <input type="checkbox" name="attitude_sm2" value="other">
+    </p>
+    <p> 
+      <label for ="attitude_sm3">Los directivos est&aacute;n involucrados y cooperan 
+      para mejorar el uso de los PEI:</label>
+      <input type="checkbox" name="attitude_sm3" value="involved">
+    </p>
+    <p> 
+      <label for ="attitude_sm4">Otras: </label>
+      <input type="checkbox" name="attitude_sm4" value="others">
+    </p>
+    <p> 
+      <label for ="attitude_sm4_other">&iquest;Cu&aacute;les?</label>
+      <input type="text" name="attitude_sm4_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>27) &iquest;C&oacute;mo ve el <strong>futuro</strong> de los PEI en su 
+      escuela?</p>
+    <p> 
+      <label for ="future1">Ser&aacute;n algo normal del sal&oacute;n de clases:</label>
+      <input type="checkbox" name="future1" value="ordinary">
+    </p>
+    <p> 
+      <label for ="future2">Caer&aacute;n en desuso:</label>
+      <input type="checkbox" name="future2" value="obsolete">
+    </p>
+    <p> 
+      <label for ="future3">Ser&aacute;n cada vez m&aacute;s sofisticados:</label>
+      <input type="checkbox" name="future3" value="sophisticated">
+    </p>
+    <p> 
+      <label for ="future4">Otro:</label>
+      <input type="checkbox" name="future4" value="others">
+    </p>
+    <p> 
+      <label for ="future4_other">&iquest;Cu&aacute;l?</label>
+      <input type="text" name="future4_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>28) &iquest;C&oacute;mo le gustar&iacute;a que progresaran los PEI en el 
+      futuro?</p>
+    <p> 
+      <label for ="progress1">Creando un buen plan para fomentar el uso de los 
+      PEI (por ej. mayor capacitaci&oacute;n, mayor informaci&oacute;n, motivaci&oacute;n, 
+      etc.):</label>
+      <input type="checkbox" name="progress1" value="plan">
+    </p>
+    <p> 
+      <label for ="progress2">Favoreciendo que los profesores tengan una computadora 
+      personal en su casa:</label>
+      <input type="checkbox" name="progress2" value="Supporting">
+    </p>
+    <p> 
+      <label for ="progress2">Otras:</label>
+      <input type="checkbox" name="progress2" value="others">
+    </p>
+    <p> 
+      <label for ="progress2_other">&iquest;Cu&aacute;les?</label>
+      <input type="text" name="progress2_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>29) &iquest;Cu&aacute;les son las <strong>barreras para el progreso</strong> 
+      de los PEI en la escuela?</p>
+    <p> 
+      <label for ="barriers1">Nuestras necesidades son otras:</label>
+      <input type="checkbox" name="barriers1" value="other_needs">
+    </p>
+    <p> 
+      <label for ="barriers2">Falta motivar a los maestros:</label>
+      <input type="checkbox" name="barriers2" value="not_motivated">
+    </p>
+    <p> 
+      <label for ="barriers3">Falta capacitar a los maestros:</label>
+      <input type="checkbox" name="barriers3" value="not_trained">
+    </p>
+    <p> 
+      <label for ="barriers4">Otras:</label>
+      <input type="checkbox" name="barriers4" value="others">
+    </p>
+    <p> 
+      <label for ="barriers4_other">&iquest;Cu&aacute;les?</label>
+      <input type="text" name="barriers4_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>30) &iquest;Tienen los PEI <strong>una buena relaci&oacute;n calidad-precio</strong>?</p>
+    <p> 
+      <label for ="raise">Si:</label>
+      <input type="radio" name="vfm" value="yes">
+    </p>
+    <p> 
+      <label for ="vfm">No:</label>
+      <input type="radio" name="vfm" value="no">
+    </p>
+    <p> 
+      <label for ="raise">Ignoro el precio de un PEI:</label>
+      <input type="radio" name="vfm" value="unsure">
+    </p>
+    <p>&nbsp; </p>
+    <p>31) &iquest;Qu&eacute; <strong>otras</strong> tecnolog&iacute;as adem&aacute;s 
+      del PEI recomienda para maestros?</p>
+    <p> 
+      <label for ="recommend1">Computadoras personales:</label>
+      <input type="checkbox" name="recommend1" value="pc">
+    </p>
+    <p> 
+      <label for ="recommend2">Equipos de telecomunicaci&oacute;n (tel&eacute;fonos 
+      celulares, m&oacute;dems, etc.):</label>
+      <input type="checkbox" name="recommend2" value="Telecommunication">
+    </p>
+    <p> 
+      <label for ="recommend3">Televisi&oacute;n, videoc&aacute;maras, etc.:</label>
+      <input type="checkbox" name="recommend3" value="Television">
+    </p>
+    <p> 
+      <label for ="recommend4">Uso de Internet:</label>
+      <input type="checkbox" name="recommend4" value="Internet">
+    </p>
+    <p> 
+      <label for ="recommend5">Otras:</label>
+      <input type="checkbox" name="recommend5" value="others">
+    </p>
+    <p> 
+      <label for ="recommend5_other">&iquest;Cu&aacute;les?</label>
+      <input type="text" name="recommend5_other" size="35" maxlength="40">
+    </p>
+    </fieldset>
+    <fieldset>
+    <legend>Practice-based Research</legend>
+    <p>32) &iquest;Usted ha estado en un <strong>proceso de investigaci&oacute;n 
+      basado en sus propias pr&aacute;cticas</strong>?</p>
+    <p> 
+      <label for ="research">Si:</label>
+      <input type="radio" name="research" value="yes">
+    </p>
+    <p> 
+      <label for ="research">No:</label>
+      <input type="radio" name="research" value="no">
+    </p>
+    <p>&nbsp; </p>
+    <p>32a) En caso afirmativo. &iquest;De qu&eacute; maneras estos procesos de 
+      investigaci&oacute;n le han servido en su trabajo?</p>
+    <p> 
+      <label for ="help1">Me han hecho reflexionar sobre mi pr&aacute;ctica:</label>
+      <input type="checkbox" name="help1" value="reflexive">
+    </p>
+    <p> 
+      <label for ="help2">Estoy aplicando nuevas estrategias de ense&ntilde;anza:</label>
+      <input type="checkbox" name="help2" value="applying">
+    </p>
+    <p> 
+      <label for ="help3"> Me han dotado de herramientas para observar la din&aacute;mica 
+      de mi sal&oacute;n:</label>
+      <input type="checkbox" name="help3" value="techniques">
+    </p>
+    <p> 
+      <label for ="help4">He detectado carencias en mi pr&aacute;ctica docente:</label>
+      <input type="checkbox" name="help4" value="problems">
+    </p>
+    <p> 
+      <label for ="help5">Otras:</label>
+      <input type="checkbox" name="help5" value="others">
+    </p>
+    <p> 
+      <label for ="help5_other">&iquest;Cu&aacute;les?</label>
+      <input type="text" name="help5_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>33) &iquest;Seguir&aacute; usted participando en proyectos de investigaci&oacute;n 
+      de este tipo?</p>
+    <p> 
+      <label for ="continue">Si:</label>
+      <input type="radio" name="continue" value="yes">
+    </p>
+    <p> 
+      <label for ="continue">No:</label>
+      <input type="radio" name="continue" value="no">
+    </p>
+    <p>&nbsp; </p>
+    <p>34) &iquest;Su trabajo ha sido publicado en algunos de estos medios? En 
+      caso afirmativo &iquest;Podr&iacute;a darnos la referencia exacta?</p>
+    <p> 
+      <label for ="published1">Peri&oacute;dicos:</label>
+      <input type="checkbox" name="published1" value="Newspapers">
+    </p>
+    <p> 
+      <label for ="published2">Revistas acad&eacute;micas:</label>
+      <input type="checkbox" name="published2" value="Journals">
+    </p>
+    <p> 
+      <label for ="published3">Revistas de divulgaci&oacute;n:</label>
+      <input type="checkbox" name="published3" value="Magazines">
+    </p>
+    <p> 
+      <label for ="published4">Boletines:</label>
+      <input type="checkbox" name="published4" value="Bulletins">
+    </p>
+    <p> 
+      <label for ="published5">Radio:</label>
+      <input type="checkbox" name="published5" value="Radio">
+    </p>
+    <p> 
+      <label for ="published6">Televisi&oacute;n:</label>
+      <input type="checkbox" name="published6" value="Television">
+    </p>
+    <p> 
+      <label for ="published7">Internet:</label>
+      <input type="checkbox" name="published7" value="Internet">
+    </p>
+    <p> 
+      <label for ="published8">No ha sido publicado:</label>
+      <input type="checkbox" name="published8" value="not_published">
+    </p>
+    <p>&iquest;Podr&iacute;a darnos la referencia exacta?</p>
+    <p> 
+      <textarea name="published_where" cols="60" rows="2"></textarea>
+    </p>
+    <p>&nbsp; </p>
+    <p>35) &iquest;El arreglo f&iacute;sico de su sal&oacute;n ha cambiado desde 
+      la instalaci&oacute;n del PEI? </p>
+    <p> 
+      <label for ="rearranged">Si:</label>
+      <input type="radio" name="rearranged" value="yes">
+    </p>
+    <p> 
+      <label for ="rearranged">No:</label>
+      <input type="radio" name="rearranged" value="no">
+    </p>
+    <p>&nbsp; </p>
+    <p>35a) En caso afirmativo, &iquest;c&oacute;mo cambi&oacute;?</p>
+    <p> 
+      <label for ="how_rearranged1">Cambi&oacute; la orientaci&oacute;n de las 
+      bancas de los alumnos:</label>
+      <input type="checkbox" name="how_rearranged1" value="students_desk">
+    </p>
+    <p> 
+      <label for ="how_rearranged2">Cambi&oacute; el lugar de mi escritorio:</label>
+      <input type="checkbox" name="how_rearranged2" value="my_desk">
+    </p>
+    <p> 
+      <label for ="how_rearranged4">Otro:</label>
+      <input type="checkbox" name="how_rearranged4" value="others">
+    </p>
+    <p>&nbsp; </p>
+    <p>36) Por favor dibuje (al reverso de la hoja un plano de los <strong>cambios</strong> 
+      que usted u otros hicieron en su sal&oacute;n, o proporcione una foto digital):</p>
+    <p> 
+      <textarea name="how_rearranged_description" cols="60" rows="2"></textarea>
+    </p>
+    <p>&nbsp;</p>
+    <p>37) Necesitamos todas las respuestas posibles de los usuarios de PEI para 
+      esta investigaci&oacute;n. &iquest;<strong>Podr&iacute;a ayudarnos a contactar 
+      a otros maestros</strong> para contestar este cuestionario? &iquest;C&oacute;mo 
+      podr&iacute;amos contactarlos?:</p>
+    <p> 
+      <textarea name="other_contacts" cols="60" rows="2"></textarea>
+    </p>
+    <p>&nbsp;</p>
+    <p>38) Si tiene <strong>otros comentarios</strong> por favor agr&eacute;guelos:</p>
+    <p> 
+      <textarea name="other_comments" cols="60" rows="4"></textarea>
+    </p>
+    <h3>Preguntas sobre Enciclomedia (para M&eacute;xico)</h3>
+    <p> 1. &iquest;Qu&eacute; actividades realizas en la clase con la Enciclomedia?</p>
+    <p> 
+      <textarea name="Enciclomedia1" cols="60" rows="2"></textarea>
+    </p>
+    <p>&nbsp;</p>
+    <p> 2. &iquest;Cu&aacute;les son las actividades que mas le gusta hacer con 
+      la Enciclomedia?</p>
+    <p> 
+      <textarea name="Enciclomedia2" cols="60" rows="2"></textarea>
+    </p>
+    <p>&nbsp;</p>
+    <p> 3. &iquest;Cu&aacute;les son las materias que mas le gusta ense&ntilde;ar 
+      con la Enciclomedia?</p>
+    <p> 
+      <textarea name="Enciclomedia3" cols="60" rows="2"></textarea>
+    </p>
+    <p>&nbsp;</p>
+    <p> 4. &iquest;Cree que la Enciclomedia le ayuda a ense&ntilde;ar mejor? &iquest;Por 
+      qu&eacute;?</p>
+    <p> 
+      <textarea name="Enciclomedia4" cols="60" rows="2"></textarea>
+    </p>
+    <p>&nbsp;</p>
+    <p> 5. &iquest;Qu&eacute; m&aacute;s quisiera decir sobre la Enciclomedia?</p>
+    <p> 
+      <textarea name="Enciclomedia5" cols="60" rows="2"></textarea>
+    </p>
+    <p>&nbsp;</p>
+    <p> 6. &iquest;Qu&eacute; sugerir&iacute;a para mejorar los usos de la Enciclomedia?</p>
+    <p> 
+      <textarea name="Enciclomedia6" cols="60" rows="2"></textarea>
+    </p>
+    <p>&nbsp; </p>
+    <h2>&iexcl;MUCHAS GRACIAS POR SU COOPERACI&Oacute;N!</h2>
+    <p>&nbsp; </p>
+    <p>&nbsp;</p>
+    </fieldset>
+    <p>T<a name="submit"></a>hank you for completing this questionnaire. When 
+      you are ready, please press the 'Submit' button.</p>
+    <p>Press here to <strong>clear</strong> the form: 
+      <input type="reset" name="Reset" value="Reset" class="buttonReset"  onClick="return confirm('Do you really want to clear the form and start again?')">
+      &nbsp;&nbsp;&nbsp;&nbsp; Press here to <strong>submit</strong> the form: 
+      <input type="submit" name="submit" value="submit" class="buttonSubmit" onClick="return confirm('You are about to send your form. Is this OK?')">
+    </p>
+    <p>&nbsp;</p>
+    <h2>Thanks for helping us!</h2>
+  </form>
+  <p>[<a href="#top">Back to the top</a>]</p>
+  <p>[<a href="javascript:history.back()">Back</a>]</p>
+</div>
+<div id="footer">
+<img src="../images/bar-home.gif" width="100%" height="30" alt="">
+	<!-- Footer Starts -->
+<div id="footer_left"> 
+  <ul class="accessBar">
+    <li class="accessBar"><a href="../associates/bedfordshire.htm"><img src="../images/associates_logos/Uni_Bed_logo_small.jpg" alt="University of Bedfordshire" title="University of Bedfordshire" width="72" height="28" style="vertical-align: -40%;"></a> 
+    </li>
+    <li class="accessBar"><a href="../associates/index.html">Associates</a></li>
+    <li class="accessBar"><a href="../about.php.html">About&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../contact.php.html">Contact&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../fellowship/join.htm">Join&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../membership/index.php.html" title="Members Log on/off" id="members_logon" class="normal">Members&nbsp;Log&nbsp;on/off</a></li>
+  </ul>
+</div>
+<div id="footer_right">
+  <ul class="accessBar">
+    <li class="accessBar"><a href="http://www.linkedin.com/groups/MirandaMod-3726470?trk=myg_ugrp_ovr"><img src="../images/site/linkedin_logo.png" alt="Linked In MirandaNet" width="99" height="28" title="Linked In MirandaNet"></a></li>
+	<li class="accessBar"><a href="http://www.facebook.com/pages/MirandaMod/180379201990546"><img src="../images/site/f_logo.png" alt="MirandaNet on Facebook" width="28" height="28" title="MirandaNet on Facebook"></a></li>
+	<li class="accessBar"><img src="../images/site/twitter.jpg" alt="MirandaNet on Twitter - forthcoming feature" width="28" height="28" title="MirandaNet on Twitter - forthcoming feature"></li>
+	<li class="accessBar"><a href="https://plus.google.com/u/0/communities/116934752242714806891"><img src="../images/site/gplus-32.png" alt="Google + MirandaNet" width="28" height="28" title="Google + MirandaNet"></a></li>
+	<li class="accessBar"><a href="../feed.xml.rss"><img src="../images/site/rss.jpg" alt="RSS feed for MirandaNet" width="28" height="28" title="RSS feed for MirandaNet"></a></li> 
+  </ul>
+</div>
+<!-- Footer Ends -->
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<title>MirandaNet Professional Development</title>
+<meta name="Description" content="The MirandaNet Community">
+<meta http-equiv="charset" content="iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+<meta http-equiv="Content-Language" content="zh">
+<link href="../common.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../common.js"></script>
+<style type="text/css">.buttonSubmit {
+	color: green;
+	text-transform: uppercase;
+	border: 1px solid green;
+	margin-top: 1em;
+	font-size: 1em;
+}
+
+.buttonReset {
+	color: red;
+	text-transform: uppercase;
+	border: 1px solid red;
+	margin-top: 1em;
+	font-size: 1em;
+}
+
+function classChange(styleChange,item) {
+    item.className = styleChange;
+}
+
+.buttonSubmitHide {
+	display: none;
+}
+
+</style>
+</head>
+<body onLoad="return show('profdev')">
+<div id="page">
+<div id="header"><a name="top"></a>
+    <div id="home"><a tabindex="0" href="../index.html"><img src="../images/logo.gif" alt="MirandaNet Index Page" width="200" height="100" title="MirandaNet Index Page"></a> 
+      <img src="../images/bar-start.gif" width="201" height="30" alt=""> </div>
+  <img src="../images/bar-profdevel.gif" width="100%" height="30" alt="MirandaNet" title="MirandaNet"> 
+  <h1>MirandaNet International Research Centre</h1>
+</div>
+<div id="leftColumn"><img src="../associates/promethean_boy.jpg" alt="Promethean ACTIVboard" width="200" height="150"> 
+  <!--ignore_perlfect_search-->
+<div id="navsite">
+  <p>Site navigation</p>
+  <ul>
+    <li class="divider">MirandaNet Fellowship</li>
+    <li><a href="../home.php.html" title="Home" id="homepage" class="normal">Home</a></li>
+    <li><a href="../associates/index.html" title="Company Associates" id="partners" class="normal"> 
+      Associates</a></li>
+   <!-- <li><a href="/bett/" title="BETT12" id="bett" class="normal">BETT12</a></li> --> 
+    <li><a href="https://www.mirandanet.org.uk/phorum/default.php" title="Forums" id="forums" class="normal">Forums</a></li>
+    <li><a href="../international/index.html" title="International MirandaNet" id="internat" class="normal">International 
+      MirandaNet</a></li>
+    <li><a href="../fellowship/index.html" title="The Fellowship" id="fellowship" class="normal">Fellowship</a></li>
+     <!-- <li><a href="/membership/index.php" title="Members" id="members" class="normal">Log
+        on/off</a></li> -->
+    <li><a href="../membership/index.php.html" title="Members Log on/off" id="members">Members 
+        Log on/off</a> </li>
+    <li class="divider">MirandaNet Resources</li>
+    <li><a href="../research/index.html" title="Case Studies &amp; Research" id="research" class="normal">Case 
+      Studies &amp; Research</a></li>
+    <li><a href="../ejournal/index.html" title="The Braided Learning E-Journal" id="ejournal" class="normal"> 
+      E-Journal</a></li>
+    <li><a href="../mirandamods/index.html" title="MirandaMods" id="mirandamods" class="normal">MirandaMods</a></li>
+    <li><a href="../news/letter.php.html" title="News, Diary, Seminars" id="news" class="normal">Newsletter</a></li>
+    <li><a href="index.html" title="Profdev" id="profdev" class="normal">Professional 
+      Development</a></li>
+    <li><a href="../publications/index.html" title="Publications" id="pubs" class="normal">Publications</a></li>
+    <li><a href="../researchexchange/index.html" title="Research Exchange" id="rex" class="normal">Research Exchange</a></li>
+    <li><a href="../resources/index.html" title="Resources" id="resources" class="normal">Resources</a></li>
+    <li><a href="../vl_blog/index.html" title="Visual Learning" id="vis" class="normal">Visual&nbsp;Learning</a></li>
+    <li class="divider">MirandaNet Consultancy</li>
+    <li><a href="../consultancy/index.html" title="The Consultancy" id="consultancy" class="normal"> 
+      Consultancy</a></li>
+    <li class="divider">World Ecitizens Charity</li>
+    <li><a href="../worldecitizens/index.html" title="World Ecitizens Etopia" id="worldecitizens" class="normal">World 
+      Ecitizens Etopia</a></li>
+  </ul>
+</div>
+
+    <!-- Search begins -->
+    <form action="http://www.google.co.uk/search" method="get" name="search" id="search">
+      <p class="center">
+    <label for="q">Search MirandaNet: 
+    <input type="text" name="q" id="q" size="15" style="width:154px;" alt="Search MirandaNet" title="Search MirandaNet" value="Search" onClick="this.select()" />
+    </label>
+        <br />
+        <input type="submit" value="Search" name="submit" />
+        <input name="sitesearch" type="hidden" value="mirandanet.org.uk" />
+      </p>
+	</form>
+    <!-- Search ends -->
+<!--/ignore_perlfect_search-->
+    </div>
+
+<div id="mainBody"> 
+  <h2>Interactive Whiteboards - Teachers' Questionnaire</h2>
+  <form class="join" action="https://www.mirandanet.org.uk/cgi-bin/csv/csvwrite_teacher.pl" method="post" name="questionnaire" id="questionnaire"
+		 onSubmit="return ValidateQuestionnaire(); classChange('buttonSubmitHide',submit); return true">
+    <fieldset>
+    <legend>Information about you</legend>
+    <p>(<span class="red">*</span>This information is required only so that we 
+      can contact you: answers will be treated in confidence)</p>
+    <p> 
+      <label for="name">Name<span class="red">*</span>: </label>
+      <input name="Name" type="text" id="Name" alt="Name" size="35" maxlength="40" class="txt">
+    </p>
+    <p> 
+      <label for="School">School: </label>
+      <input name="School" type="text" id="School" alt="School" size="35" maxlength="40" class="txt">
+    </p>
+    <p> 
+      <label for="Position">Position: </label>
+      <input name="Position" type="text" id="Position" alt="Position" size="35" maxlength="40" class="txt">
+    </p>
+    <p> 
+      <label for="Email">Email Address: </label>
+      <input name="Email" type="text" id="Email" alt="Email" size="35" maxlength="40" class="txt">
+    </p>
+    </fieldset>
+    <fieldset>
+    <legend>Instructions</legend>
+    <p>This questionnaire is part of an investigation on the use of Interactive 
+      Whiteboards in schools from several countries. You can choose a maximum 
+      of <strong>three</strong> options where indicated. </p>
+    <p> 
+      <label for ="quote">May we have permission to quote your answers? The replies 
+      will be anonymous.</label>
+      <input name="quote" type="radio" value="yes" checked>
+      Yes<br>
+      <input type="radio" name="quote" value="no">
+      No</p>
+    </fieldset>
+    <fieldset>
+    <legend>ACTIVboards in your School</legend>
+    <p> 
+      <label for ="enjoy7_other">1) <strong>How many</strong> boards does your 
+      school have?</label>
+      <input type="text" name="how_many" size="3" maxlength="4">
+    </p>
+    <p>&nbsp; </p>
+    <p>2) Which <strong>brand</strong>?</p>
+    <p> 
+      <label for ="brand1">Promethean ACTIVboard:</label>
+      <input type="checkbox" name="brand1" value="Promethean">
+    </p>
+    <p>
+      <label for ="brand2">I don't know:</label>
+      <input type="checkbox" name="brand2" value="dont_know">
+    </p>
+    <p>
+      <label for ="brand3">Other:</label>
+      <input type="checkbox" name="brand3" value="other">
+    </p>
+    <p> 
+      <label for ="brand3_other">If you have chosen 'Other', which?</label>
+      <input type="text" name="brand3_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>3) What <strong>type</strong>?</p>
+    <p>
+      <label for ="type1">Fixed:</label>
+      <input type="checkbox" name="type1" value="Fixed">
+    </p>
+    <p>
+      <label for ="type2">Portable:</label>
+      <input type="checkbox" name="type2" value="Portable">
+    </p>
+    <p>&nbsp;</p>
+    <p>4) If they are <strong>fixed</strong>, where are they located?</p>
+    <p> 
+      <label for ="fixed1">In my classroom:</label>
+      <input type="checkbox" name="fixed1" value="classroom">
+    </p>
+    <p> 
+      <label for ="fixed2">In a special classroom:</label>
+      <input type="checkbox" name="fixed2" value="special">
+    </p>
+    <p>&nbsp;</p>
+    <p> 5) How <strong>frequently</strong> do you use them?</p>
+    <p> 
+      <label for ="specific_subjects">For specific subjects:</label>
+      <input type="checkbox" name="specific_subjects" value="yes">
+    </p>
+    <p> 
+      <label for ="frequency">Every lesson:</label>
+      <input type="radio" name="frequency" value="every_lesson" onClick="checkNever()">
+    </p>
+    <p> 
+      <label for ="frequency">At least once a day:</label>
+      <input type="radio" name="frequency" value="once_day" onClick="checkNever()">
+    </p>
+    <p> 
+      <label for ="frequency">Once a week:</label>
+      <input type="radio" name="frequency" value="once_week" onClick="checkNever()">
+    </p>
+    <p> 
+      <label for ="frequency">Less than once a week:</label>
+      <input name="frequency" type="radio" value="less_than_once_week" onClick="checkNever()">
+    </p>
+    <p> 
+      <label for ="frequency">Never:</label>
+      <input type="radio" name="frequency" value="never" onClick="checkNever()">
+    </p>
+    <p>If &#8216;<strong>Never</strong>&#8217;, thank you for your time. Click 
+      <a href="#submit">here</a> to submit your response. 
+      <input type="submit" name="submit1" value="submit" class="buttonSubmitHide">
+    </p>
+    </fieldset>
+    <fieldset>
+    <legend>ACTIVboards in use</legend>
+    <p> 
+      <label for ="how_long_used">6) <strong>How long</strong> have you been using 
+      an IWB in your classroom? </label>
+      <input type="text" name="how_long_used" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>6a) In <strong>what ways</strong> do you use ACTIVboards? (Tick up to three 
+      options)</p>
+    <p>
+      <label for ="whatways1">Small groups:</label>
+      <input type="checkbox" name="whatways1" value="small_group">
+      <!--input type="checkbox" name="ST" value="ST_1" onClick="checkbox_checker(ST,10,0,0)"-->
+    </p>
+    <p> 
+      <label for ="whatways2">Whole class:</label>
+      <input type="checkbox" name="whatways2" value="whole_class">
+    </p>
+    <p> 
+      <label for ="whatways3">With individuals:</label>
+      <input type="checkbox" name="whatways3" value="individuals">
+    </p>
+    <p> 
+      <label for ="whatways4">Student participation:</label>
+      <input type="checkbox" name="whatways4" value="Student">
+    </p>
+    <p> 
+      <label for ="whatways5">Didactically:</label>
+      <input type="checkbox" name="whatways5" value="Didactically">
+    </p>
+    <p> 
+      <label for ="whatways6">For video-conferencing:</label>
+      <input type="checkbox" name="whatways6" value="video">
+    </p>
+    <p> 
+      <label for ="whatways7">As part of research:</label>
+      <input type="checkbox" name="whatways7" value="research">
+    </p>
+    <p> 
+      <label for ="whatways8">To deliver curriculum materials:</label>
+      <input type="checkbox" name="whatways8" value="deliver">
+    </p>
+    <p> 
+      <label for ="whatways9">Others:</label>
+      <input type="checkbox" name="whatways9" value="other">
+    </p>
+    <p> 
+      <label for ="whatways9_other">If you have chosen 'Others', how?</label>
+      <input type="text" name="whatways9_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>7) Where do the students <strong>sit</strong>?</p>
+    <p> 
+      <label for ="where_sit">In front of the board:</label>
+      <input type="radio" name="where_sit" value="in_front">
+    </p>
+    <p> 
+      <label for ="where_sit">At their desks:</label>
+      <input type="radio" name="where_sit" value="at_desks">
+    </p>
+    <p> 
+      <label for ="where_sit">Both:</label>
+      <input type="radio" name="where_sit" value="both">
+    </p>
+    <p>&nbsp; </p>
+    <p>8) Where is the board <strong>located</strong>?</p>
+    <p> 
+      <label for ="board_location">Behind the teacher&#8217;s desk:</label>
+      <input type="radio" name="board_location" value="behind">
+    </p>
+    <p> 
+      <label for ="board_location">At the side of the desk:</label>
+      <input type="radio" name="board_location" value="at_side">
+    </p>
+    <p> 
+      <label for ="board_location">On another wall:</label>
+      <input type="radio" name="board_location" value="another_wall">
+    </p>
+    <p>&nbsp; </p>
+    <p>9) Can the students <strong>reach the top of the board</strong>?</p>
+    <p> 
+      <label for ="reach_top">Yes:</label>
+      <input type="radio" name="reach_top" value="yes">
+    </p>
+    <p> 
+      <label for ="reach_top">No:</label>
+      <input type="radio" name="reach_top" value="no">
+    </p>
+    <p>&nbsp; </p>
+    <p>10) What <strong>materials</strong> are used with the board? (Mark all 
+      that apply)</p>
+    <p> 
+      <label for ="materials1">Commercial software:</label>
+      <input type="checkbox" name="materials1" value="Commercial">
+    </p>
+    <p> 
+      <label for ="materials2">Web-based materials:</label>
+      <input type="checkbox" name="materials2" value="Web">
+    </p>
+    <p> 
+      <label for ="materials3">ACTIVstudio teacher-created materials:</label>
+      <input type="checkbox" name="materials3" value="teacher">
+    </p>
+    <p> 
+      <label for ="materials4">Software included with the ACTIVboard:</label>
+      <input type="checkbox" name="materials4" value="included">
+    </p>
+    <p>&nbsp; </p>
+    <p>11) How were you <strong>trained</strong> to use your ACTIVboard? (Mark 
+      all that apply)</p>
+    <p> 
+      <label for ="training1">By the company:</label>
+      <input type="checkbox" name="training1" value="company">
+    </p>
+    <p> 
+      <label for ="training2">By education department advisers:</label>
+      <input type="checkbox" name="training2" value="advisers">
+    </p>
+    <p> 
+      <label for ="training3">By a colleague:</label>
+      <input type="checkbox" name="training3" value="colleague">
+    </p>
+    <p> 
+      <label for ="training4">I&#8217;m self-taught:</label>
+      <input type="checkbox" name="training4" value="self">
+    </p>
+    <p> 
+      <label for ="training5">Other:</label>
+      <input type="checkbox" name="training5" value="other">
+    </p>
+    <p> 
+      <label for ="training5_other">If you have chosen 'Other', how?</label>
+      <input type="text" name="training5_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp;</p>
+    <p> 
+      <label for ="training_how_long">11a) How <strong>long</strong> did your 
+      IWB training last?</label>
+      <input type="text" name="training_how_long" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>12) What did you like <strong>best</strong> about that training? (You can 
+      mark up to three options)</p>
+    <p> 
+      <label for ="like1">Learning the functions and tools of the board:</label>
+      <input type="checkbox" name="like1" value="functions">
+    </p>
+    <p> 
+      <label for ="like2">Gaining confidence about the use of the board:</label>
+      <input type="checkbox" name="like2" value="confidence">
+    </p>
+    <p> 
+      <label for ="like3">Learning pedagogical techniques:</label>
+      <input type="checkbox" name="like3" value="pedagogical">
+    </p>
+    <p> 
+      <label for ="like4">Meeting with colleagues and sharing ideas:</label>
+      <input type="checkbox" name="like4" value="ideas">
+    </p>
+    <p> 
+      <label for ="like5">Sharing doubts and questions with colleagues:</label>
+      <input type="checkbox" name="like5" value="doubts">
+    </p>
+    <p> 
+      <label for ="like6">Others:</label>
+      <input type="checkbox" name="like6" value="others">
+    </p>
+    <p> 
+      <label for ="like6_other">If you have chosen 'Others', which?</label>
+      <input type="text" name="like6_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>13) What did you like <strong>least</strong> about that training? (You 
+      can mark up to three options)</p>
+    <p> 
+      <label for ="like_least1">The training was brief:</label>
+      <input type="checkbox" name="like_least1" value="brief">
+    </p>
+    <p> 
+      <label for ="like_least2">The training wasn&#8217;t given in my first language:</label>
+      <input type="checkbox" name="like_least2" value="language">
+    </p>
+    <p> 
+      <label for ="like_least3">The trainers didn&#8217;t explain clearly the 
+      functions and tools of the board:</label>
+      <input type="checkbox" name="like_least3" value="functions">
+    </p>
+    <p> 
+      <label for ="like_least4">The trainers didn&#8217;t explain how to maintain 
+      the equipment:</label>
+      <input type="checkbox" name="like_least4" value="maintain">
+    </p>
+    <p> 
+      <label for ="like_least5">I couldn&#8217;t use the ACTIVboard during the 
+      training:</label>
+      <input type="checkbox" name="like_least5" value="use">
+    </p>
+    <p> 
+      <label for ="like_least6">Others:</label>
+      <input type="checkbox" name="like_least6" value="others">
+    </p>
+    <p> 
+      <label for ="like_least6_other">If you have chosen 'Others', which?</label>
+      <input type="text" name="like_least6_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>14) What lesson do you like giving <strong>best</strong> using the ACTIVboard? 
+      (You can mark up to three options)</p>
+    <p> 
+      <label for ="lesson1">Mathematics:</label>
+      <input type="checkbox" name="lesson1" value="Mathematics">
+    </p>
+    <p> 
+      <label for ="lesson2">History:</label>
+      <input type="checkbox" name="lesson2" value="History">
+    </p>
+    <p> 
+      <label for ="lesson3">English:</label>
+      <input type="checkbox" name="lesson3" value="EngSpanChin">
+    </p>
+    <p> 
+      <label for ="lesson4">Science:</label>
+      <input type="checkbox" name="lesson4" value="Science">
+    </p>
+    <p> 
+      <label for ="lesson5">Foreign Language:</label>
+      <input type="checkbox" name="lesson5" value="mfl">
+    </p>
+    <p> 
+      <label for ="lesson7">Geography:</label>
+      <input type="checkbox" name="lesson7" value="Geography">
+    </p>
+    <p> 
+      <label for ="lesson8">Others:</label>
+      <input type="checkbox" name="lesson8" value="others">
+    </p>
+    <p> 
+      <label for ="lesson8_other">If you have chosen 'Others', which?</label>
+      <input type="text" name="lesson8_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>15) What lesson do you like giving <strong>least</strong> using the ACTIVboard? 
+      (You can mark up to three options)</p>
+    <p> 
+      <label for ="lesson_least1">Mathematics:</label>
+      <input type="checkbox" name="lesson_least1" value="Mathematics">
+    </p>
+    <p> 
+      <label for ="lesson_least2">History:</label>
+      <input type="checkbox" name="lesson_least2" value="History">
+    </p>
+    <p> 
+      <label for ="lesson_least3">English:</label>
+      <input type="checkbox" name="lesson_least3" value="EngSpanChin">
+    </p>
+    <p> 
+      <label for ="lesson_least4">Science:</label>
+      <input type="checkbox" name="lesson_least4" value="Science">
+    </p>
+    <p> 
+      <label for ="lesson_least5">Foreign Language:</label>
+      <input type="checkbox" name="lesson_least5" value="mfl">
+    </p>
+    <p> 
+      <label for ="lesson_least7">Geography:</label>
+      <input type="checkbox" name="lesson_least7" value="Geography">
+    </p>
+    <p> 
+      <label for ="lesson_least8">Others:</label>
+      <input type="checkbox" name="lesson_least8" value="others">
+    </p>
+    <p> 
+      <label for ="lesson_least8_other">If you have chosen 'Others', which?</label>
+      <input type="text" name="lesson_least8_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>16) Which software activities do you like <strong>best</strong> using the 
+      ACTIVboard? (You can mark up to three options)</p>
+    <p> 
+      <label for ="activities1">Notebook:</label>
+      <input type="checkbox" name="activities1" value="Notebook">
+    </p>
+    <p> 
+      <label for ="activities2">Games:</label>
+      <input type="checkbox" name="activities2" value="Games">
+    </p>
+    <p> 
+      <label for ="activities3">Digital books:</label>
+      <input type="checkbox" name="activities3" value="Digital">
+    </p>
+    <p> 
+      <label for ="activities4">Tools to organize the class (lists, report cards, 
+      etc.):</label>
+      <input type="checkbox" name="activities4" value="Tools">
+    </p>
+    <p> 
+      <label for ="activities5">Others:</label>
+      <input type="checkbox" name="activities5" value="others">
+    </p>
+    <p> 
+      <label for ="activities5_other">If you have chosen 'Others', which?</label>
+      <input type="text" name="activities5_other" size="35" maxlength="40">
+    </p>
+    </fieldset>
+    <fieldset>
+    <legend>Using the ACTIVvote System</legend>
+    <p><img src="../images/ACTIV.jpg" alt="eLapa Students at BETT05 using ACTIVvote" width="200" height="150" hspace="5" class="imageRight">17) 
+      Does the board have a <strong>voting system</strong>?</p>
+    <p> 
+      <label for ="voting_system">Yes:</label>
+      <input type="radio" name="voting_system" value="yes">
+    </p>
+    <p> 
+      <label for ="voting_system">No:</label>
+      <input type="radio" name="voting_system" value="no">
+    </p>
+    <p>&nbsp; </p>
+    <p>17a) What do you think of the voting system?</p>
+    <p> 
+      <label for ="voting_system_comment">I like it:</label>
+      <input type="radio" name="voting_system_comment" value="like">
+    </p>
+    <p> 
+      <label for ="voting_system_comment">I'm neutral:</label>
+      <input type="radio" name="voting_system_comment" value="neutral">
+    </p>
+    <p> 
+      <label for ="voting_system_comment">I don't like it:</label>
+      <input type="radio" name="voting_system_comment" value="dont_like">
+    </p>
+    <p>&nbsp; </p>
+    </fieldset>
+    <fieldset>
+    <legend>Lessons learned from using ACTIVboards</legend>
+    <p>18) Is there anything you can think of which you could not teach easily 
+      <strong>without an ACTIVboard</strong>?</p>
+    <p> 
+      <label for ="difficult_teach1">Mathematics:</label>
+      <input type="checkbox" name="difficult_teach1" value="Mathematics">
+    </p>
+    <p> 
+      <label for ="difficult_teach2">History:</label>
+      <input type="checkbox" name="difficult_teach2" value="History">
+    </p>
+    <p> 
+      <label for ="difficult_teach3">English:</label>
+      <input type="checkbox" name="difficult_teach3" value="EngSpanChin">
+    </p>
+    <p> 
+      <label for ="difficult_teach4">Science:</label>
+      <input type="checkbox" name="difficult_teach4" value="Science">
+    </p>
+    <p> 
+      <label for ="difficult_teach5">Foreign Language:</label>
+      <input type="checkbox" name="difficult_teach5" value="mfl">
+    </p>
+    <p> 
+      <label for ="difficult_teach7">Geography:</label>
+      <input type="checkbox" name="difficult_teach7" value="Geography">
+    </p>
+    <p> 
+      <label for ="difficult_teach8">Others:</label>
+      <input type="checkbox" name="difficult_teach8" value="others">
+    </p>
+    <p> 
+      <label for ="difficult_teach8_other">If you have chosen 'Others', which?</label>
+      <input type="text" name="difficult_teach8_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>19) Can you suggest any <strong>new kinds of software for the ACTIVboard</strong> 
+      you would like the company to develop? (You can mark one to three options)</p>
+    <p> 
+      <label for ="new1">A programme to draw figures:</label>
+      <input type="checkbox" name="new1" value="draw">
+    </p>
+    <p> 
+      <label for ="new2">Maps:</label>
+      <input type="checkbox" name="new2" value="Maps">
+    </p>
+    <p> 
+      <label for ="new3">Educational games:</label>
+      <input type="checkbox" name="new3" value="games">
+    </p>
+    <p> 
+      <label for ="new4">Programmes to teach a foreign language:</label>
+      <input type="checkbox" name="new4" value="mfl">
+    </p>
+    <p> 
+      <label for ="new5">Video:</label>
+      <input type="checkbox" name="new5" value="Video">
+    </p>
+    <p> 
+      <label for ="new5">Others:</label>
+      <input type="checkbox" name="new5" value="others">
+    </p>
+    <p> 
+      <label for ="new5_others">If you have chosen 'Others', which?</label>
+      <input type="text" name="new5_others" size="35" maxlength="40">
+    </p>
+    <p>&nbsp;</p>
+    <p>20) Can you give me any examples of students&#8217; work that show the 
+      usefulness of the ACTIVboard in learning? (Mark up to 3 options)</p>
+    <p> 
+      <label for ="students_work1">Writing:</label>
+      <input type="checkbox" name="students_work1" value="Writing">
+    </p>
+    <p> 
+      <label for ="students_work2">Student's Presentations:</label>
+      <input type="checkbox" name="students_work2" value="Presentations">
+    </p>
+    <p> 
+      <label for ="students_work3">Math problems:</label>
+      <input type="checkbox" name="students_work3" value="Math">
+    </p>
+    <p> 
+      <label for ="students_work4">Exercises:</label>
+      <input type="checkbox" name="students_work4" value="Exercises">
+    </p>
+    <p> 
+      <label for ="students_work5">Reading comprehension:</label>
+      <input type="checkbox" name="students_work5" value="Reading">
+    </p>
+    <p> 
+      <label for ="students_work6">Use of technology:</label>
+      <input type="checkbox" name="students_work6" value="technology">
+    </p>
+    <p> 
+      <label for ="students_work7">Research projects:</label>
+      <input type="checkbox" name="students_work7" value="Research">
+    </p>
+    <p> 
+      <label for ="students_work8">Others:</label>
+      <input type="checkbox" name="students_work8" value="others">
+    </p>
+    <p> 
+      <label for ="students_work8_others">If you have chosen 'Others', which?</label>
+      <input type="text" name="students_work8_others" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>21) Do you believe that the ACTIVboards have <strong>raised</strong> the 
+      pupils' level of attainment?</p>
+    <p> 
+      <label for ="raise">Yes:</label>
+      <input type="radio" name="raise" value="yes">
+    </p>
+    <p> 
+      <label for ="raise">No:</label>
+      <input type="radio" name="raise" value="no">
+    </p>
+    <p>&nbsp; </p>
+    <p>21a) <strong>How</strong> have the ACTIVboards raised the pupils&#8217; 
+      level of attainment? (You can mark one to three options)</p>
+    <p> 
+      <label for ="how_raise1">Increase in the quality of writing expression:</label>
+      <input type="checkbox" name="how_raise1" value="writing">
+    </p>
+    <p> 
+      <label for ="how_raise2">Increase in the quality of reading comprehension:</label>
+      <input type="checkbox" name="how_raise2" value="reading">
+    </p>
+    <p> 
+      <label for ="how_raise3">Increase in knowledge of specific lessons:</label>
+      <input type="checkbox" name="how_raise3" value="lessons">
+    </p>
+    <p> 
+      <label for ="how_raise4">More motivation:</label>
+      <input type="checkbox" name="how_raise4" value="motivation">
+    </p>
+    <p> 
+      <label for ="how_raise5">More participation:</label>
+      <input type="checkbox" name="how_raise5" value="participation">
+    </p>
+    <p> 
+      <label for ="how_raise6">Better understanding of the topics:</label>
+      <input type="checkbox" name="how_raise6" value="understanding">
+    </p>
+    <p> 
+      <label for ="how_raise7">Their knowledge can be applied more:</label>
+      <input type="checkbox" name="how_raise7" value="applied">
+    </p>
+    <p> 
+      <label for ="how_raise8">Others:</label>
+      <input type="checkbox" name="how_raise8" value="Others">
+    </p>
+    <p> 
+      <label for ="how_raise8_others">If you have chosen 'Others', which?</label>
+      <input type="text" name="how_raise8_others" size="35" maxlength="40">
+    </p>
+    <p>&nbsp;</p>
+    <p>22) How have you <strong>measured</strong> that attainment?</p>
+    <p> 
+      <label for ="measure1">I have not been able to work in that way:</label>
+      <input type="checkbox" name="measure1" value="not_able">
+    </p>
+    <p> 
+      <label for ="measure2">Through qualitative observations (more participation, 
+      etc):</label>
+      <input type="checkbox" name="measure2" value="qualitative">
+    </p>
+    <p> 
+      <label for ="measure3">Through quantitative measurements (grades improvement, 
+      etc):</label>
+      <input type="checkbox" name="measure3" value="quantitative">
+    </p>
+    <p>&nbsp; </p>
+    <p>23) How have ACTIVboards changed the way in which you <strong>teach</strong>?</p>
+    <p> 
+      <label for ="change1">I have more resources to provide examples for the 
+      topics:</label>
+      <input type="checkbox" name="change1" value="resources">
+    </p>
+    <p> 
+      <label for ="change2">Teaching is more difficult:</label>
+      <input type="checkbox" name="change2" value="difficult">
+    </p>
+    <p> 
+      <label for ="change3">Teaching is easier:</label>
+      <input type="checkbox" name="change3" value="easier">
+    </p>
+    <p> 
+      <label for ="change4">My class is more interesting:</label>
+      <input type="checkbox" name="change4" value="interesting">
+    </p>
+    <p> 
+      <label for ="change5">I haven&#8217;t noticed any changes:</label>
+      <input type="checkbox" name="change5" value="no_change">
+    </p>
+    <p> 
+      <label for ="change6">Others:</label>
+      <input type="checkbox" name="change6" value="others">
+    </p>
+    <p> 
+      <label for ="change6_other">If you have chosen 'Others', which?</label>
+      <input type="text" name="change6_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>24) How have ACTIVboards changed the ways your students <strong>learn</strong>?</p>
+    <p> 
+      <label for ="how_change1">They pay more attention to the topics:</label>
+      <input type="checkbox" name="how_change1" value="topics">
+    </p>
+    <p> 
+      <label for ="how_change2">They pay more attention to the technical use of 
+      the board:</label>
+      <input type="checkbox" name="how_change2" value="technical">
+    </p>
+    <p> 
+      <label for ="how_change3">They are more absent-minded:</label>
+      <input type="checkbox" name="how_change3" value="absent_minded">
+    </p>
+    <p> 
+      <label for ="how_change4">Their attitude is more tolerant:</label>
+      <input type="checkbox" name="how_change4" value="tolerant">
+    </p>
+    <p> 
+      <label for ="how_change5">They collaborate more among themselves:</label>
+      <input type="checkbox" name="how_change5" value="collaborate">
+    </p>
+    <p> 
+      <label for ="how_change6">They have more resources to understand the topics:</label>
+      <input type="checkbox" name="how_change6" value="resources">
+    </p>
+    <p> 
+      <label for ="how_change7">Their participation has increased:</label>
+      <input type="checkbox" name="how_change7" value="participation">
+    </p>
+    <p> 
+      <label for ="how_change8">I haven&#8217;t noticed any changes:</label>
+      <input type="checkbox" name="how_change8" value="no_change">
+    </p>
+    <p> 
+      <label for ="how_change9">Others:</label>
+      <input type="checkbox" name="how_change9" value="others">
+    </p>
+    <p> 
+      <label for ="how_change9_other">If you have chosen 'Others', which?</label>
+      <input type="text" name="how_change9_other" size="35" maxlength="40">
+    </p>
+    </fieldset>
+    <fieldset>
+    <legend>ACTIVboards and your School Organisation</legend>
+    <p>25) What is the attitude of your <strong>colleagues</strong> towards the 
+      use of ACTIVboards in teaching and learning?</p>
+    <p> 
+      <label for ="attitude1">Their attitude is favourable:</label>
+      <input type="checkbox" name="attitude1" value="favourable">
+    </p>
+    <p> 
+      <label for ="attitude2">Their attitude is neutral because they have little 
+      information about it:</label>
+      <input type="checkbox" name="attitude2" value="neutral">
+    </p>
+    <p> 
+      <label for ="attitude3">Their attitude is unfavourable:</label>
+      <input type="checkbox" name="attitude3" value="unfavourable">
+    </p>
+    <p> 
+      <label for ="attitude4">Others:</label>
+      <input type="checkbox" name="attitude4" value="others">
+    </p>
+    <p> 
+      <label for ="attitude4_other">If you have chosen 'Others', which?</label>
+      <input type="text" name="attitude4_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>26) What is the attitude of the <strong>senior management</strong> of the 
+      school towards the ACTIVboard in teaching and learning in the school?</p>
+    <p> 
+      <label for ="attitude_sm1">They are not involved enough:</label>
+      <input type="checkbox" name="attitude_sm1" value="not_involved">
+    </p>
+    <p> 
+      <label for ="attitude_sm2">They are more interested in other school practicalities:</label>
+      <input type="checkbox" name="attitude_sm2" value="other">
+    </p>
+    <p> 
+      <label for ="attitude_sm3">They are involved and collaborate to improve 
+      the use of the ACTIVboards:</label>
+      <input type="checkbox" name="attitude_sm3" value="involved">
+    </p>
+    <p> 
+      <label for ="attitude_sm4">Others: </label>
+      <input type="checkbox" name="attitude_sm4" value="others">
+    </p>
+    <p> 
+      <label for ="attitude_sm4_other">If you have chosen 'Others', which?</label>
+      <input type="text" name="attitude_sm4_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>27) What do you think is the <strong>future</strong> of ACTIVboards in 
+      your school?</p>
+    <p> 
+      <label for ="future1">They will be an ordinary tool in the classroom:</label>
+      <input type="checkbox" name="future1" value="ordinary">
+    </p>
+    <p> 
+      <label for ="future2">They will become obsolete:</label>
+      <input type="checkbox" name="future2" value="obsolete">
+    </p>
+    <p> 
+      <label for ="future3">They will be more sophisticated:</label>
+      <input type="checkbox" name="future3" value="sophisticated">
+    </p>
+    <p> 
+      <label for ="future4">Others:</label>
+      <input type="checkbox" name="future4" value="others">
+    </p>
+    <p> 
+      <label for ="future4_other">If you have chosen 'Others', which?</label>
+      <input type="text" name="future4_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>28) How would you like to see them progress?</p>
+    <p> 
+      <label for ="progress1">Creating a good plan to promote the use of the ACTIVboards:</label>
+      <input type="checkbox" name="progress1" value="plan">
+    </p>
+    <p> 
+      <label for ="progress2">Supporting teachers in acquiring a personal computer 
+      for home:</label>
+      <input type="checkbox" name="progress2" value="Supporting">
+    </p>
+    <p> 
+      <label for ="progress2">Others:</label>
+      <input type="checkbox" name="progress2" value="others">
+    </p>
+    <p> 
+      <label for ="progress2_other">If you have chosen 'Others', which?</label>
+      <input type="text" name="progress2_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>29) What are the <strong>barriers to the progress</strong> for using the 
+      ACTIVboards?</p>
+    <p> 
+      <label for ="barriers1">We have other needs:</label>
+      <input type="checkbox" name="barriers1" value="other_needs">
+    </p>
+    <p> 
+      <label for ="barriers2">Teachers are not motivated enough:</label>
+      <input type="checkbox" name="barriers2" value="not_motivated">
+    </p>
+    <p> 
+      <label for ="barriers3">Teachers are not trained enough:</label>
+      <input type="checkbox" name="barriers3" value="not_trained">
+    </p>
+    <p> 
+      <label for ="barriers4">Others:</label>
+      <input type="checkbox" name="barriers4" value="others">
+    </p>
+    <p> 
+      <label for ="barriers4_other">If you have chosen 'Others', which?</label>
+      <input type="text" name="barriers4_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>30) Are the ACTIVboards <strong>value for money</strong>?</p>
+    <p> 
+      <label for ="raise">Yes:</label>
+      <input type="radio" name="vfm" value="yes">
+    </p>
+    <p> 
+      <label for ="vfm">No:</label>
+      <input type="radio" name="vfm" value="no">
+    </p>
+    <p> 
+      <label for ="raise">I&#8217;m unsure about the price of them:</label>
+      <input type="radio" name="vfm" value="unsure">
+    </p>
+    <p>&nbsp; </p>
+    <p>31) What <strong>other</strong> ICT equipment do you recommend for teachers?</p>
+    <p> 
+      <label for ="recommend1">Personal computers:</label>
+      <input type="checkbox" name="recommend1" value="pc">
+    </p>
+    <p> 
+      <label for ="recommend2">Telecommunication equipment (modems, cell phones, 
+      etc):</label>
+      <input type="checkbox" name="recommend2" value="Telecommunication">
+    </p>
+    <p> 
+      <label for ="recommend3">Television, video cameras, etc.:</label>
+      <input type="checkbox" name="recommend3" value="Television">
+    </p>
+    <p> 
+      <label for ="recommend4">Internet:</label>
+      <input type="checkbox" name="recommend4" value="Internet">
+    </p>
+    <p> 
+      <label for ="recommend5">Others:</label>
+      <input type="checkbox" name="recommend5" value="others">
+    </p>
+    <p> 
+      <label for ="recommend5_other">If you have chosen 'Others', which?</label>
+      <input type="text" name="recommend5_other" size="35" maxlength="40">
+    </p>
+    </fieldset>
+    <fieldset>
+    <legend>Practice-based Research</legend>
+    <p>32) Have you been in a <strong>practice-based research</strong> process?</p>
+    <p> 
+      <label for ="research">Yes:</label>
+      <input type="radio" name="research" value="yes">
+    </p>
+    <p> 
+      <label for ="research">No:</label>
+      <input type="radio" name="research" value="no">
+    </p>
+    <p>&nbsp; </p>
+    <p>32a) In what ways have practice-based research processes helped you to 
+      see yourself as a professional teacher?</p>
+    <p> 
+      <label for ="help1">I have become more reflexive about my practice:</label>
+      <input type="checkbox" name="help1" value="reflexive">
+    </p>
+    <p> 
+      <label for ="help2">I&#8217;m applying new teaching strategies:</label>
+      <input type="checkbox" name="help2" value="applying">
+    </p>
+    <p> 
+      <label for ="help3"> I have more techniques to observe the dynamics of my 
+      classroom:</label>
+      <input type="checkbox" name="help3" value="techniques">
+    </p>
+    <p> 
+      <label for ="help4">I have detected some problems with my educational practice:</label>
+      <input type="checkbox" name="help4" value="problems">
+    </p>
+    <p> 
+      <label for ="help5">Others:</label>
+      <input type="checkbox" name="help5" value="others">
+    </p>
+    <p> 
+      <label for ="help5_other">If you have chosen 'Others', which?</label>
+      <input type="text" name="help5_other" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p>33) Will you go on participating in this practice-based research?</p>
+    <p> 
+      <label for ="continue">Yes:</label>
+      <input type="radio" name="continue" value="yes">
+    </p>
+    <p> 
+      <label for ="continue">No:</label>
+      <input type="radio" name="continue" value="no">
+    </p>
+    <p>&nbsp; </p>
+    <p>34) Is your work shared on the web and in publications? Where can we find 
+      it?</p>
+    <p> 
+      <label for ="published1">Newspapers:</label>
+      <input type="checkbox" name="published1" value="Newspapers">
+    </p>
+    <p> 
+      <label for ="published2">Scientific Journals:</label>
+      <input type="checkbox" name="published2" value="Journals">
+    </p>
+    <p> 
+      <label for ="published3">Magazines:</label>
+      <input type="checkbox" name="published3" value="Magazines">
+    </p>
+    <p> 
+      <label for ="published4">Bulletins:</label>
+      <input type="checkbox" name="published4" value="Bulletins">
+    </p>
+    <p> 
+      <label for ="published5">Radio:</label>
+      <input type="checkbox" name="published5" value="Radio">
+    </p>
+    <p> 
+      <label for ="published6">Television:</label>
+      <input type="checkbox" name="published6" value="Television">
+    </p>
+    <p> 
+      <label for ="published7">Internet:</label>
+      <input type="checkbox" name="published7" value="Internet">
+    </p>
+    <p> 
+      <label for ="published8">My work has not been published:</label>
+      <input type="checkbox" name="published8" value="not_published">
+    </p>
+    <p>Where can we find it?</p>
+    <p> 
+      <textarea name="published_where" cols="60" rows="2"></textarea>
+    </p>
+    <p>&nbsp; </p>
+    <p>35) Has the classroom furniture been re-arranged since the board was installed?</p>
+    <p> 
+      <label for ="rearranged">Yes:</label>
+      <input type="radio" name="rearranged" value="yes">
+    </p>
+    <p> 
+      <label for ="rearranged">No:</label>
+      <input type="radio" name="rearranged" value="no">
+    </p>
+    <p>&nbsp; </p>
+    <p>35a) If so, how?</p>
+    <p> 
+      <label for ="how_rearranged1">The position of the students&#8217; desks 
+      has changed:</label>
+      <input type="checkbox" name="how_rearranged1" value="students_desk">
+    </p>
+    <p> 
+      <label for ="how_rearranged2">The location of my desk has changed:</label>
+      <input type="checkbox" name="how_rearranged2" value="my_desk">
+    </p>
+    <p> 
+      <label for ="how_rearranged4">Others:</label>
+      <input type="checkbox" name="how_rearranged4" value="others">
+    </p>
+    <p>&nbsp; </p>
+    <p>36) Please describe the <strong>changes</strong> you (or others) have made 
+      in your classroom:</p>
+    <p> 
+      <textarea name="how_rearranged_description" cols="60" rows="2"></textarea>
+    </p>
+    <p>&nbsp;</p>
+    <p>37) We need as many answers as possible from ACTIVboard users for this 
+      research. Can you <strong>suggest other teachers</strong> who may be willing 
+      to answer this questionnaire? How can I get in touch with them?:</p>
+    <p> 
+      <textarea name="other_contacts" cols="60" rows="2"></textarea>
+    </p>
+    <p>&nbsp;</p>
+    <p>38) If you have <strong>any other comments</strong> please add them in 
+      the space below:</p>
+    <p> 
+      <textarea name="other_comments" cols="60" rows="4"></textarea>
+    </p>
+    <p>&nbsp;</p>
+    </fieldset>
+    <p>T<a name="submit"></a>hank you for completing this questionnaire. When 
+      you are ready, please press the 'Submit' button.</p>
+    <p>Press here to <strong>clear</strong> the form: 
+      <input type="reset" name="Reset" value="Reset" class="buttonReset"  onClick="return confirm('Do you really want to clear the form and start again?')">
+      &nbsp;&nbsp;&nbsp;&nbsp; Press here to <strong>submit</strong> the form: 
+      <input type="submit" name="submit" value="submit" class="buttonSubmit" onClick="return confirm('You are about to send your form. Is this OK?')">
+    </p>
+    <p>&nbsp;</p>
+    <h2>Thanks for helping us!</h2>
+  </form>
+  <p>[<a href="#top">Back to the top</a>]</p>
+  <p>[<a href="javascript:history.back()">Back</a>]</p>
+</div>
+<div id="footer">
+<img src="../images/bar-home.gif" width="100%" height="30" alt="">
+	<!-- Footer Starts -->
+<div id="footer_left"> 
+  <ul class="accessBar">
+    <li class="accessBar"><a href="../associates/bedfordshire.htm"><img src="../images/associates_logos/Uni_Bed_logo_small.jpg" alt="University of Bedfordshire" title="University of Bedfordshire" width="72" height="28" style="vertical-align: -40%;"></a> 
+    </li>
+    <li class="accessBar"><a href="../associates/index.html">Associates</a></li>
+    <li class="accessBar"><a href="../about.php.html">About&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../contact.php.html">Contact&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../fellowship/join.htm">Join&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../membership/index.php.html" title="Members Log on/off" id="members_logon" class="normal">Members&nbsp;Log&nbsp;on/off</a></li>
+  </ul>
+</div>
+<div id="footer_right">
+  <ul class="accessBar">
+    <li class="accessBar"><a href="http://www.linkedin.com/groups/MirandaMod-3726470?trk=myg_ugrp_ovr"><img src="../images/site/linkedin_logo.png" alt="Linked In MirandaNet" width="99" height="28" title="Linked In MirandaNet"></a></li>
+	<li class="accessBar"><a href="http://www.facebook.com/pages/MirandaMod/180379201990546"><img src="../images/site/f_logo.png" alt="MirandaNet on Facebook" width="28" height="28" title="MirandaNet on Facebook"></a></li>
+	<li class="accessBar"><img src="../images/site/twitter.jpg" alt="MirandaNet on Twitter - forthcoming feature" width="28" height="28" title="MirandaNet on Twitter - forthcoming feature"></li>
+	<li class="accessBar"><a href="https://plus.google.com/u/0/communities/116934752242714806891"><img src="../images/site/gplus-32.png" alt="Google + MirandaNet" width="28" height="28" title="Google + MirandaNet"></a></li>
+	<li class="accessBar"><a href="../feed.xml.rss"><img src="../images/site/rss.jpg" alt="RSS feed for MirandaNet" width="28" height="28" title="RSS feed for MirandaNet"></a></li> 
+  </ul>
+</div>
+<!-- Footer Ends -->
+</div>
+</div>
+</body>
+</html>

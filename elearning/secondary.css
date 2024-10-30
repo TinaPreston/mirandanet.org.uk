@@ -1,0 +1,18 @@
+body {
+	background-color: #FFFFFF;
+	background-image: none;
+	margin: 0px; padding:0px; 
+}
+
+p	{font-size: small; color: black; font-family: arial,verdana; }
+small	{font-size: extra small; color: black; font-family: arial,verdana; }
+li	{font-size: small; color: black; font-family: arial,verdana; }
+ul	{font-size: small; color: black; font-family: arial,verdana; }
+h1	{font-size: extra large; color: black; font-weight: bold; font-family: arial,verdana; }
+h2	{font-size: large; color: black; font-weight: bold; font-family: arial,verdana; }
+h3	{font-size: medium; color: black; font-weight: bold; font-family: arial,verdana; }
+
+img {
+	border: none
+}
+

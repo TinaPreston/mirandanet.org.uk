@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<title>MirandaNet ICT CPD - Ultraportables Questionnaire - Home Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The MirandaNet Fellowship Web Site">
+<meta name="keywords" content="ICT communities education learning support">
+<meta name="language" content="en">
+<link href="../common.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../common.js"></script>
+<style type="text/css">.buttonSubmit {
+	color: green;
+	text-transform: uppercase;
+	border: 1px solid green;
+	margin-top: 1em;
+	font-size: 1em;
+}
+
+.buttonReset {
+	color: red;
+	text-transform: uppercase;
+	border: 1px solid red;
+	margin-top: 1em;
+	font-size: 1em;
+}
+
+.buttonSubmitHide {
+	display: none;
+}
+
+</style>
+<script type="text/JavaScript">
+
+function checkscript() {
+	for (i=0;i<4;i++) {
+		box = document.example.elements[i];
+		if (!box.value) {
+			alert('You haven\'t filled in ' + box.name + '!');
+			box.focus()
+			return false;
+		}
+	}
+	return true;
+}
+function checkNever() { 
+	var submit = document.questionnaire.submit;
+//	var never = document.questionnaire.last_receive[5];
+//	if (never.checked == true) { 
+//		alert('You have clicked Never');
+		classChange('buttonSubmitHide',submit)
+//		} else {
+//		alert('You did not click Never');
+//		}
+}
+
+function classChange(styleChange,item) {
+    item.className = styleChange;
+}
+</script>
+
+</head>
+<body onLoad="return show('homepage')">
+<div id="page">
+<div id="header"><a name="top"></a>
+    <div id="home"><a tabindex="0" href="../index.html"><img src="../images/logo.gif" alt="MirandaNet Index Page" width="200" height="100" title="MirandaNet Index Page"></a> 
+      <img src="../images/bar-start.gif" width="201" height="30" alt=""> </div>
+  <img src="../images/bar-profdevel.gif" width="100%" height="30" alt="MirandaNet" title="MirandaNet"> 
+  <h1>MirandaNet Questionnaires</h1>
+</div>
+
+	
+  <div id="leftColumn"> <img src="ultraport/Dell_ultra_portable.jpg" width="200" height="133" alt="Dell Inspiron Mini 9 Ultra portable Laptop" title="Dell Inspiron Mini 9 Ultra portable Laptop">    
+    
+<!--ignore_perlfect_search-->
+<div id="navsite">
+  <p>Site navigation</p>
+  <ul>
+    <li><a tabindex="1" href="ultraport.htm" title="Home" id="Home" class="normal"> 
+      Ultraportables Home</a></li>
+    <li><a tabindex="2" href="ultraport_pupils.htm" title="Pupils" id="Pupils" class="normal"> 
+      Ultraportables Pupils</a></li>
+    <li><a tabindex="3" href="ultraport_teachers.htm" title="Teachers" id="Teachers" class="normal"> 
+      Ultraportables Teachers</a></li>
+    <li><a tabindex="4" href="ultraport_leaders.htm" title="Leaders" id="Leaders" class="normal"> 
+      Ultraportables Leaders</a></li>
+  </ul>
+</div>
+
+  </div>
+  <div id="mainBody"> 
+    <h2>Ultraportables: School  Survey</h2>
+    <p>As part of the evaluation of the Ultraportable - Netbook - Project it
+      would be most helpful if you could answer the following questions. Please
+      feel free to add any comments that you feel would expand your answers.</p>
+    <p>All data will be confidential and responses in the report will be anonymised.
+      However, if you are willing to discuss the project further, email me at
+      john.cuthell@mirandanet.org.uk and we can arrange a discussion.</p>
+    <h3>If you 
+      are happy to continue, please now choose the appropriate questionnaire:</h3>
+    <ul>
+      <li><a href="ultraport_pupils.htm">Ultraportables Pupils'
+        Questionnaire</a></li>
+      <li><a href="ultraport_teachers.htm">Ultraportables Teachers' Questionnaire</a></li>
+      <li><a href="ultraport_leaders.htm">Ultraportables Leaders' Questionnaire</a></li>
+    </ul>
+    <!-- <p>&nbsp;</p>
+    <p>[<a href="#top">Back to the top</a>]</p>
+  <p>[<a href="javascript:history.back()">Back</a>]</p> -->
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+</div>
+<div id="footer">
+  <img src="../images/bar-home.gif" width="100%" height="30" alt="">  
+  <!--include virtual="/footer.htm"-->
+</div>
+</div>
+</body>
+</html>

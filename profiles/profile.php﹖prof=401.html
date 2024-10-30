@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MirandaNet Fellowship - Membership Profiles</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The MirandaNet Fellowship Web Site" />
+<meta name="keywords" content="ICT communities education learning support" />
+<link rel="stylesheet" type="text/css" href="../mirandanet.css" />
+<link rel="stylesheet" type="text/css" href="../fellowship/fellowship.css" />
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/fix_ie.css" /></style><![endif]-->
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+<script type="text/javascript" src="../mirandanet.js"></script>
+</head>
+<body onload="return show('membership')">
+<div id="header" class="group">
+<a  id="top"></a>
+<a href ="../index.html"><img src="../images/logos/mirandanet_nl.gif" alt="The MirandaNet Organisation Logo" width="167" height="61" title="The MirandaNet Organisation: return to home page" /></a> 
+	<h1 class="name"><a href ="../index.html">MirandaNet</a></h1>
+	<h2 class="strapline">Sharing experience and expertise</h2>
+	<div class="topnav_wrapper">
+	  <h5>Site navigation:</h5>
+		<ul class="topnav">
+			<li><a href ="../index.html">Home</a></li>
+			<li><a href ="../fellowship/index.html" id="current">Fellowship</a></li>
+			<li><a href ="../researchexchange/index.html">Research Exchange</a></li>
+			<li><a href ="../consultancy/index.html">Consultancy</a></li>
+			<li><a href ="https://wec.mirandanet.org.uk/">World Ecitizens</a></li>
+		</ul>
+	</div>
+</div>
+
+<div id="content" class="group">
+<div id="leftColumn">
+	<!-- Place all the items for the left hand section here -->
+	<div class="group box">
+	  <!--#include virtual="/fellowship/fellowship_menu.htm"-->
+	  <div id="nav"> 
+  <ul>
+    <li><a href="../fellowship/index.php.html" id="home" class="normal">Fellowship</a></li>
+    <li><a href="../bett/index.html" id="bett" class="normal">BETT</a> 
+      <ul id="sub_bett">
+        <li><a href="../bett/programme.htm" id="programme" class="normal">BETT Programme</a></li>
+      </ul>
+    </li>
+    <li><a href="../fellowship/about.htm" id="about" class="normal">About Us</a> 
+      <ul id="sub_about">
+        <li><a href="../fellowship/founder.htm" id="founder" class="normal">Founder</a></li>
+        <li><a href="../fellowship/researchexchange.htm" id="research" class="normal">Research 
+          Exchange</a></li>
+        <li><a href="../fellowship/consultancy.htm" id="consultancy" class="normal">Consultancy</a></li>
+        <li><a href="../fellowship/worldecitizens.htm" id="worldecitizens" class="normal">World 
+          Ecitizens</a></li>
+      </ul>
+    </li>
+    <li><a href="index.html" id="membership" class="normal">The Membership</a></li>
+    <li><a href="../associates/index.html" id="associates" class="normal">Associates</a></li>
+    <li><a href="../news/news.php.html" id="newsarea" class="normal">News &amp; Diary</a> 
+      <ul id="sub_newsarea">
+        <li><a href="../news/diary.php.html" id="diary" class="normal">Diary</a></li>
+        <li><a href="../news/letter.php.html" id="newsletter" class="normal">Newsletter</a></li>
+        <li><a href="../news/mirandanews.htm" id="letterarchive" class="normal">Newsletter 
+          Archive</a></li>
+      </ul>
+    </li>
+    <li><a href="../contact.php.html" id="contact" class="normal">Contact Us</a></li>
+    <li><a href="../mirandamods/index.html" id="mirandamods" class="normal">MirandaMods</a></li>
+    <li><a href="../casestudies/index.html" id="casestudies" class="normal">Case Studies</a></li>
+    <li><a href="../articles/index.html" id="articles" class="normal">Articles</a></li>
+    <li><a href="https://www.mirandanet.org.uk/phorum/default.php" id="forum" class="normal">Forum</a></li>
+    <li><a href="../index_old.htm" id="archive" class="normal">Archive Site</a></li>
+    <li><a href="../fellowship/join.htm" id="join" class="normal">Join MirandaNet</a></li>
+    <li><a href="../membership/index.php.html" title="Members Log on/off" id="logon" class="normal">Members 
+      Log on/off</a></li>
+  </ul>
+</div>
+	</div>
+    <div id="news"> 
+	<div class="group box" style="margin-bottom:0">
+        <p><a href="http://www.protectthehuman.com/"><img src="../fellowship/pthsign_yellow.gif" alt="Amnesty International: Protect the Human" width="115" height="145" title="Amnesty International: Protect the Human" /></a></p>
+        <h3>Amnesty International</h3>
+        <p>MirandaNet Fellowship is not associated with any political grouping, 
+          but we support many of the aims of organisations such as Amnesty 
+		  International and urge members to look at the AUUK site and see if 
+		  they agree with these aims as well.</p>
+
+</div>
+	</div>
+</div>
+  <div id="mainBody" class="group"> 
+    <h1>MirandaNet Fellowship Profiles</h1>
+    <p><a href="../fellowship/listing.php.html">Membership List</a> | <a href="../publications/index.html">Publications</a> 
+      | <a href="../publications/research.htm">Research</a> | <a href="../publications/personal.php.html">Specialist 
+      Area List</a> | <a href="../ejournal/index.html">Braided Learning Ejournal</a></p>
+    <hr />
+    <!--p align="center"><a href="/ftp/elearning.pdf">MirandaNet Corporate Brochure</a> 
+          (1.42MB pdf)</p-->
+    <!-- ?php
+	$thisPage = getenv("SCRIPT_NAME");
+	$prof = $_GET['prof'];
+	$username = "mirandan_user";
+	$passwd = "Zd93pVJMvYG3";
+	$db = "mirandan_members";
+// Open up link to database
+	mysqli_connect("localhost",$username,$passwd) or die("Unable to access database.");
+	mysqli_select_db($db) or die("Unable to access table");
+	mysqli_query("SET NAMES utf8");
+
+//	echo("<p><a href=\"".getenv("HTTP_REFERER")."\">Back</a></p>\n");
+
+	if (!isset($prof)) {
+		$prof = 4; // if no profile selected, display Christina Preston
+	}
+	$compquery = "SELECT * FROM members WHERE Recno = $prof";
+	$compResult = mysqli_query($compquery) or die("Invalid query");
+
+	if (!mysqli_num_rows($compResult)) {
+		echo("<p>No member profiles found.</p>\n");
+	} else {
+		$totNumFlds = mysqli_num_fields($compResult);
+		$compRow = mysqli_fetch_array($compResult);
+		for ($n = 0; $n < $totNumFlds; $n++) {
+			$tempName = mysqli_field_name($compResult, $n);
+			${$tempName} = $compRow[$tempName];
+		}
+//		$thisUser_Name = $User_Name;
+
+		echo("<h2>$Forename $Surname</h2>\n");
+		if ($Web_Site != "") {
+			if (strtoupper(substr($Web_Site, 0, 7)) == "HTTP://") {
+				echo("<p>Website: <a href=\"$Web_Site\">$Web_Site</a></p>\n");
+			} else {
+				echo("<p>Website: <a href=\"http://$Web_Site\">$Web_Site</a></p>\n");
+			}
+		}
+		if ($Blog != "") {
+			if (strtoupper(substr($Blog, 0, 7)) == "HTTP://") {
+				echo("<p>Blog: <a href=\"$Blog\">$Blog</a></p>\n");
+			} else {
+				echo("<p>Blog: <a href=\"http://$Blog\">$Blog</a></p>\n");
+			}
+		}
+
+			if (($MailBox != "") && ($thisUser_Name != "not logged on")) {
+				echo("<p>\nEmail: <a href='mailto:$MailBox?Subject=Contact from Fellowship Profile Page on MirandaNet from username $thisUser_Name'>$MailBox</a></p>");
+			}
+
+
+
+		$displayString = "";
+		if ($Personal_Statement != "") {
+			$displayString .= " | <a href=\"#p\">Personal Statement</a>";
+		}
+		if ($ICT_Details != "") {
+			$displayString .= " | <a href=\"#i\">ICT Details</a>";
+		}
+		if ($Recent_Projects != "") {
+			$displayString .= " | <a href=\"#r\">Recent Projects</a>";
+		}
+		if ($Case_Histories != "") {
+			$displayString .= " | <a href=\"#c\">Case Histories</a>";
+		}
+		if ($Publications != "") {
+			$displayString .= " | <a href=\"#u\">Publications</a>";
+		}
+		if ($Publications_Page != "") {
+			$displayString .= " | <a href=\"$Publications_Page\">Publications Page on MirandaNet</a>";
+		}
+		echo("<p>".substr($displayString, 3)."</p>\n<hr>\n");
+		if ($Personal_Statement != "") {
+			echo("<a name=\"p\"></a><p><strong><em>Personal Statement</em></strong></p>");
+//			echo("<p>".ereg_replace("\n\n*", "<br>", $Personal_Statement)."</p>");
+			echo($Personal_Statement."\n");
+		}
+		if ($ICT_Details != "") {
+			echo("<a name=\"i\"></a><p><strong><em>ICT Interests</em></strong></p>");
+//			echo("<p>".ereg_replace("\n\n*", "<br>", $ICT_Details)."</p>");
+			echo($ICT_Details."\n");
+		}
+		if ($Recent_Projects != "") {
+			echo("<a name=\"r\"></a><p><strong><em>Recent Projects</em></strong></p>");
+//			echo("<p>".ereg_replace("\n\n*", "<br>", $Recent_Projects)."</p>");
+			echo($Recent_Projects."\n");
+		}
+		if ($Case_Histories != "") {
+			echo("<a name=\"c\"></a><p><strong><em>Case Histories</em></strong></p>");
+//			echo("<p>".ereg_replace("\n\n*", "<br>", $Case_Histories)."</p>");
+			echo($Case_Histories."\n");
+		}
+		if ($Publications != "") {
+			echo("<a name=\"u\"></a><p><strong><em>Publications</em></strong></p>");
+//			echo("<p>".ereg_replace("\n\n*", "<br>", $Publications)."</p>");
+			echo($Publications."\n");
+		}
+	}
+
+?-->
+    <!--?php
+	echo("<hr>");
+	if ($thisUser_Name == 'not logged on') {
+	echo("<p>MirandaNet Members can go to the <a href = '/membership/index.php'>Log on/off</a> area to edit their own profiles.</a></p>");
+	} else {
+		if ($thisUser_Name == $User_Name) {
+    		echo("<p><a href='/membership/index.php'>Would you like to edit your  profile</a>?</p>");
+		} else {
+		    echo("<p>You are logged in as $thisUser_Name. <a href='/membership/index.php'>Would you like to edit your own profile</a>?</p>");
+			echo("<p>MirandaNet Members can email <a href='mailto:$MailBox?Subject=Contact from $thisUser_Name from MirandaNet Profile Page'>$Forename $Surname</a></p>");
+		}
+	}
+	echo("<hr>");
+?-->
+    <p>[<a href="#top">Back to the top</a>]</p>
+  <p>[<a href="javascript:history.back()">Back</a>]</p>
+</div>
+</div>
+<div id="footer" class="group"> 
+  <!--#include virtual="/footer.htm"-->
+  <!-- Footer Starts -->
+<div id="footer_left"> 
+  <ul class="accessBar">
+    <li class="accessBar"><a href="../associates/bedfordshire.htm"><img src="../images/associates_logos/Uni_Bed_logo_small.jpg" alt="University of Bedfordshire" title="University of Bedfordshire" width="72" height="28" style="vertical-align: -40%;"></a> 
+    </li>
+    <li class="accessBar"><a href="../associates/index.html">Associates</a></li>
+    <li class="accessBar"><a href="../about.php.html">About&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../contact.php.html">Contact&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../fellowship/join.htm">Join&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../membership/index.php.html" title="Members Log on/off" id="members_logon" class="normal">Members&nbsp;Log&nbsp;on/off</a></li>
+  </ul>
+</div>
+<div id="footer_right">
+  <ul class="accessBar">
+    <li class="accessBar"><a href="http://www.linkedin.com/groups/MirandaMod-3726470?trk=myg_ugrp_ovr"><img src="../images/site/linkedin_logo.png" alt="Linked In MirandaNet" width="99" height="28" title="Linked In MirandaNet"></a></li>
+	<li class="accessBar"><a href="http://www.facebook.com/pages/MirandaMod/180379201990546"><img src="../images/site/f_logo.png" alt="MirandaNet on Facebook" width="28" height="28" title="MirandaNet on Facebook"></a></li>
+	<li class="accessBar"><img src="../images/site/twitter.jpg" alt="MirandaNet on Twitter - forthcoming feature" width="28" height="28" title="MirandaNet on Twitter - forthcoming feature"></li>
+	<li class="accessBar"><a href="https://plus.google.com/u/0/communities/116934752242714806891"><img src="../images/site/gplus-32.png" alt="Google + MirandaNet" width="28" height="28" title="Google + MirandaNet"></a></li>
+	<li class="accessBar"><a href="../feed.xml.rss"><img src="../images/site/rss.jpg" alt="RSS feed for MirandaNet" width="28" height="28" title="RSS feed for MirandaNet"></a></li> 
+  </ul>
+</div>
+<!-- Footer Ends --></div>
+</body>
+</html>

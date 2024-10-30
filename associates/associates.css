@@ -1,0 +1,53 @@
+/* This is the left-hand menu navigation with subsections
+*  Create one sub section per section 
+*  Don't forget to add the script to each file!
+	font-size: 90%;
+*/
+
+#sub_bett {
+  	display: none;
+  	}
+#sub_bett  li {
+}
+
+#sub_bett li:last-child {
+	border-bottom: none;
+}
+#sub_immersive {
+ 	display: none;
+  	}
+#sub_immersive li:last-child {
+	border-bottom: none;
+}
+#msub_interest {
+  	display: none;
+  	}
+#sub_support {
+  	display: none;
+  	}
+#sub_leadership {
+  	display: none;
+  	}
+#sub_community {
+	display: none;
+  	}
+#sub_contact {
+ 	display: none;
+  	}
+#sub_quality {
+  	display: none;
+  	}
+#msub_research {
+  	display: none;
+  	}
+#msub_newsletter {
+  	display: none;
+  	}
+#sub_follett {
+  	display: none;
+  	}
+#sub_follett  li {
+}
+#sub_follett li:last-child {
+	border-bottom: none;
+}

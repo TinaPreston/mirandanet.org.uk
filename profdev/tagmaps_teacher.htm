@@ -1,0 +1,531 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<title>MirandaNetTAG MAPS Questionnaire - Teachers</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The MirandaNet Fellowship Web Site">
+<meta name="keywords" content="ICT communities education learning support">
+<meta name="language" content="en">
+<link href="../common.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../common.js"></script>
+<style type="text/css">.buttonSubmit {
+	color: green;
+	text-transform: uppercase;
+	border: 1px solid green;
+	margin-top: 1em;
+	font-size: 1em;
+}
+
+.buttonReset {
+	color: red;
+	text-transform: uppercase;
+	border: 1px solid red;
+	margin-top: 1em;
+	font-size: 1em;
+}
+
+.buttonSubmitHide {
+	display: none;
+}
+
+</style>
+<script type="text/JavaScript">
+
+function checkscript() {
+	for (i=0;i<4;i++) {
+		box = document.example.elements[i];
+		if (!box.value) {
+			alert('You haven\'t filled in ' + box.name + '!');
+			box.focus()
+			return false;
+		}
+	}
+	return true;
+}
+function checkNever() { 
+	var submit = document.questionnaire.submit;
+//	var never = document.questionnaire.last_receive[5];
+//	if (never.checked == true) { 
+//		alert('You have clicked Never');
+		classChange('buttonSubmitHide',submit)
+//		} else {
+//		alert('You did not click Never');
+//		}
+}
+
+function classChange(styleChange,item) {
+    item.className = styleChange;
+}
+</script>
+
+</head>
+<body onLoad="return show('profdev')">
+<div id="page">
+<div id="header"><a name="top"></a>
+    <div id="home"><a tabindex="0" href="../index.html"><img src="../images/logo.gif" alt="MirandaNet Index Page" width="200" height="100" title="MirandaNet Index Page"></a> 
+      <img src="../images/bar-start.gif" width="201" height="30" alt=""> 
+    </div>
+  <img src="../images/bar-profdevel.gif" width="100%" height="30" alt="MirandaNet" title="MirandaNet"> 
+  <h1>Continuing Professional Development</h1>
+</div>
+
+	<div id="leftColumn"> <img src="../images/tagmaps.gif" width="200" height="133" alt="TAG MAPS screen dump" title="TAG MAPS screen dump">
+	  <!--include virtual="/menu.htm"-->
+  </div>
+
+<div id="mainBody"> 
+  <h2>TAG MAPS Questionnaire: Teacher Questionnaire</h2>
+    <!-- <p><strong><a href="/profdev/index.htm">CPD</a></strong> | <a href="/profdev/webritte.htm">WEBRITTe</a> 
+      | <a href="/profdev/misconceptions.htm">Common Misconceptions</a> | <a href="/ejournal/casestudies.htm">Case 
+      Studies</a> | <a href="/ejournal/">E-Journals</a> | <a href="/news/seminars.htm">Seminars</a></p> -->
+    <p>Thank you for taking the time to look at this questionnaire. TAG would
+    like to find out a number of things.</p>
+    <ul><li>How all of its users integrate MAPS into teaching and learning</li>
+      <li>How it supports schools and learners</li>
+      <li>How young people can use it at home</li>
+    </ul>
+    <p>Any other information would also be extremely useful!</p>
+    <form class="join" action="https://www.mirandanet.org.uk/cgi-bin/csv/csvwrite_tagmaps_teacher.pl" method="post" name="questionnaire" id="questionnaire"
+    onSubmit="return ValidateQuestionnaire(); classChange('buttonSubmitHide',submit); return true">
+    <fieldset>
+    <legend>Personal and School Information</legend>
+    <p>All of the data from this questionnaire will be anonymised. It may be,
+      however, that we would like to contact you to discuss your responses. If
+      you are willing, it would be helpful if you could provide your name and
+      email address, which will only be used to contact you in relation to the
+      questionnaire. </p>
+    <p> 
+      <label for="name"><strong>Name</strong>: </label>
+      <input name="name" type="text" id="name" size="35" maxlength="40" class="txt">
+    </p>
+    <p> 
+      <label for="school"><strong>School</strong>: </label>
+      <input name="school" type="text" id="school" size="35" maxlength="40" class="txt">
+    </p>
+    <p> 
+      <label for="position"><strong>Position</strong>: </label>
+      <input name="position" type="text" id="position" size="35" maxlength="40" class="txt">
+    </p>
+    <p> 
+      <label for="email"><strong>Email address</strong>: </label>
+      <input name="email" type="text" id="email" size="35" maxlength="40" class="txt">
+	  </p>
+    <!-- <p>May we have permission to quote your answers? (The replies will be anonymous)</p>
+    <p>
+      <label for ="quote_yes">a)	Yes:</label>
+      <input name="quote" id="quote_yes" type="radio" value="yes">
+	  </p>
+    <p>
+      <label for ="quote_no">b)	No:</label>
+      <input name="quote" id="quote_no" type="radio" value="no">
+    </p>
+    <p>&nbsp;</p> -->
+    <p><strong>We would like if possible to quote some of the replies we get.</strong> </p>
+    <p><label for ="anonymous">Tick here
+        if you would prefer your replies to be anonymous:</label></p>
+    	<input name="anonymous" id="anonymous" type="checkbox" value="anonymous"><p></p>
+	<p>&nbsp;</p>
+	</fieldset>
+	<fieldset>
+	<legend>VLE</legend>
+	<p><strong>Does your school have a Virtual learning Environment or Learning Platform?</strong></p>
+    <p>
+      <label for ="vle_yes">a)	Yes:</label>
+      <input name="vle" id="vle_yes" type="radio" value="yes">
+	  </p>
+    <p>
+      <label for ="vle_no">b)	No:</label>
+      <input name="vle" id="vle_no" type="radio" value="no">
+    </p>
+    <p> 
+      <label for="vle_detail">If you have ticked 'Yes', could you please say which one?</label>
+      <input name="vle_detail" type="text" id="vle_detail" size="35" maxlength="40" class="txt">
+	  </p>
+    <p>&nbsp;</p>
+	</fieldset>
+	<fieldset>
+	<legend>Using MAPS</legend>
+	<p><strong>Key Stage(s) in which MAPS is used</strong> (tick all that apply):</p>
+	<p><label for ="ks1">KS1:</label>
+	<input name="ks1" id="ks1" type="checkbox" value="ks1"></p>
+	<p><label for ="ks2">KS2:</label>
+	<input name="ks2" id="ks2" type="checkbox" value="ks2"></p>
+	<p><label for ="ks3">KS3:</label>
+	<input name="ks3" id="ks3" type="checkbox" value="ks3"></p>
+	<p><label for ="ks4">KS4:</label>
+	<input name="ks4" id="ks4" type="checkbox" value="ks4"></p>
+	<p><label for ="post16">Post-16:</label>
+	<input name="post16" id="post16" type="checkbox" value="post16"></p>
+
+	<p>&nbsp;</p>
+	<p><strong>Curriculum subjects for which MAPS is used</strong> (tick all that apply)</p>
+	<p><label for ="English">English:</label>
+	<input name="English" id="English" type="checkbox" value="English"></p>
+	<p><label for ="Maths">Maths:</label>
+	<input name="Maths" id="Maths" type="checkbox" value="Maths"></p>
+	<p><label for ="Science">Science:</label>
+	<input name="Science" id="Science" type="checkbox" value="Science"></p>
+	<p>
+	<label for ="DandT">Design and Technology:</label>
+	<input name="DandT" id="DandT" type="checkbox" value="DandT"></p>
+	<p>
+	<label for ="ICT">ICT:</label>
+	<input name="ICT" id="ICT" type="checkbox" value="ICT"></p>
+	<p>
+	<label for ="History">History:</label>
+	<input name="History" id="History" type="checkbox" value="History"></p>
+	<p>
+	<label for ="Geography">Geography:</label>
+	<input name="Geography" id="Geography" type="checkbox" value="Geography"></p>
+	<p>
+	<label for ="MFL">Modern Foreign Languages:</label>
+	<input name="MFL" id="MFL" type="checkbox" value="MFL"></p>
+	<p>
+	<label for ="Art">Art and Design:</label>
+	<input name="Art" id="Art" type="checkbox" value="Art"></p>
+	<p>
+	<label for ="Music">Music:</label>
+	<input name="Music" id="Music" type="checkbox" value="Music"></p>
+	<p>
+	<label for ="Citizenship">Citizenship:</label>
+	<input name="Citizenship" id="Citizenship" type="checkbox" value="Citizenship"></p>
+	<p><label for ="PE">Physical Education:</label>
+	<input name="PE" id="PE" type="checkbox" value="PE"></p>
+	<p>
+	<label for ="Careers">Careers Education:</label>
+	<input name="Careers" id="Careers" type="checkbox" value="Careers"></p>
+	<p>
+	<label for ="SRE">Sex and Relationship Education:</label>
+	<input name="SRE" id="SRE" type="checkbox" value="SRE"></p>
+	<p>
+	<label for ="RE">Religious Education:</label>
+	<input name="RE" id="RE" type="checkbox" value="RE"></p>
+	<p>
+	<label for ="Other">Other:</label>
+	<input name="Other" id="Other" type="checkbox" value="Other"></p>
+    <p><label for ="Other_detail">If you have chosen 'Other', please say what: </label>
+      <input type="text" id="Other_detail" name="Other_detail" size="35" maxlength="40">
+</p>
+    <p>&nbsp;    </p>
+    <p>&nbsp; </p>
+    </fieldset>
+	<fieldset>
+	<legend>Effectiveness of MAPS</legend>
+	<p><strong>How effective do you find MAPS for managing assignments?</strong></p>
+	<p>
+      <label for ="effective_managing_a">a) Invaluable:</label>
+      <input name="effective_managing" id="effective_managing_a" type="radio" value="invaluable">
+    </p>
+    <p>
+      <label for ="effective_managing_b">b) Valuable:</label>
+     <input name="effective_managing" id="effective_managing_b" type="radio" value="valuable">
+    </p>
+    <p>
+      <label for ="effective_managing_c">c) Of some impact:</label>
+     <input name="effective_managing" id="effective_managing_c" type="radio" value="some">
+    </p>
+    <p>
+      <label for ="effective_managing_d">d) Of little impact:</label>
+     <input name="effective_managing" id="effective_managing_d" type="radio" value="little">
+    </p>
+    <p>
+      <label for ="effective_managing_e">e) Of no impact:</label>
+     <input name="effective_managing" id="effective_managing_e" type="radio" value="none">
+    </p>
+    <p>&nbsp;</p>
+	<p><strong>How effective do you find MAPS for sharing task resources with colleagues?</strong></p>
+	<p>
+      <label for ="effective_sharing_a">a) Invaluable:</label>
+      <input name="effective_sharing" id="effective_sharing_a" type="radio" value="invaluable">
+    </p>
+    <p>
+      <label for ="effective_sharing_b">b) Valuable:</label>
+     <input name="effective_sharing" id="effective_sharing_b" type="radio" value="valuable">
+    </p>
+    <p>
+      <label for ="effective_sharing_c">c) Of some impact:</label>
+     <input name="effective_sharing" id="effective_sharing_c" type="radio" value="some">
+    </p>
+    <p>
+      <label for ="effective_sharing_d">d) Of little impact:</label>
+     <input name="effective_sharing" id="effective_sharing_d" type="radio" value="little">
+    </p>
+    <p>
+      <label for ="effective_sharing_e">e) Of no impact:</label>
+     <input name="effective_sharing" id="effective_sharing_e" type="radio" value="none">
+    </p>
+    <p>&nbsp;</p>
+	<p><strong>How effective do you find MAPS for tracking pupil progress?</strong></p>
+	<p>
+      <label for ="effective_tracking_a">a) Invaluable:</label>
+      <input name="effective_tracking" id="effective_tracking_a" type="radio" value="invaluable">
+    </p>
+    <p>
+      <label for ="effective_tracking_b">b) Valuable:</label>
+     <input name="effective_tracking" id="effective_tracking_b" type="radio" value="valuable">
+    </p>
+    <p>
+      <label for ="effective_tracking_c">c) Of some impact:</label>
+     <input name="effective_tracking" id="effective_tracking_c" type="radio" value="some">
+    </p>
+    <p>
+      <label for ="effective_tracking_d">d) Of little impact:</label>
+     <input name="effective_tracking" id="effective_tracking_d" type="radio" value="little">
+    </p>
+    <p>
+      <label for ="effective_tracking_e">e) Of no impact:</label>
+     <input name="effective_tracking" id="effective_tracking_e" type="radio" value="none">
+    </p>
+    <p>&nbsp;</p>
+	<p><strong>How effective do you find MAPS for whole school moderation?</strong></p>
+	<p>
+      <label for ="effective_moderation_a">a) Invaluable:</label>
+      <input name="effective_moderation" id="effective_moderation_a" type="radio" value="invaluable">
+    </p>
+    <p>
+      <label for ="effective_moderation_b">b) Valuable:</label>
+     <input name="effective_moderation" id="effective_moderation_b" type="radio" value="valuable">
+    </p>
+    <p>
+      <label for ="effective_moderation_c">c) Of some impact:</label>
+     <input name="effective_moderation" id="effective_moderation_c" type="radio" value="some">
+    </p>
+    <p>
+      <label for ="effective_moderation_d">d) Of little impact:</label>
+     <input name="effective_moderation" id="effective_moderation_d" type="radio" value="little">
+    </p>
+    <p>
+      <label for ="effective_moderation_e">e) Of no impact:</label>
+     <input name="effective_moderation" id="effective_moderation_e" type="radio" value="none">
+    </p>
+    <p>&nbsp;</p>
+	<p><strong>How effective do you find MAPS for communicating with pupils?</strong></p>
+	<p>
+      <label for ="effective_communicating_a">a) Invaluable:</label>
+      <input name="effective_communicating" id="effective_communicating_a" type="radio" value="invaluable">
+    </p>
+    <p>
+      <label for ="effective_communicating_b">b) Valuable:</label>
+     <input name="effective_communicating" id="effective_communicating_b" type="radio" value="valuable">
+    </p>
+    <p>
+      <label for ="effective_communicating_c">c) Of some impact:</label>
+     <input name="effective_communicating" id="effective_communicating_c" type="radio" value="some">
+    </p>
+    <p>
+      <label for ="effective_communicating_d">d) Of little impact:</label>
+     <input name="effective_communicating" id="effective_communicating_d" type="radio" value="little">
+    </p>
+    <p>
+      <label for ="effective_communicating_e">e) Of no impact:</label>
+     <input name="effective_communicating" id="effective_communicating_e" type="radio" value="none">
+    </p>
+    <p>&nbsp;</p>
+    </fieldset>
+	<fieldset>
+	<legend>MAPS in use</legend>
+	<p><strong>What do you use MAPS for?</strong> (tick all that apply):</p>
+	<p><label for ="use_creating">Creating curriculum links:</label>
+	<input name="use_creating" id="use_creating" type="checkbox" value="use_creating"></p>
+	<p><label for ="use_uploading">Uploading images:</label>
+	<input name="use_uploading" id="use_uploading" type="checkbox" value="use_uploading"></p>
+	<p><label for ="use_storing">Storing reference documents:</label>
+	<input name="use_storing" id="use_storing" type="checkbox" value="use_storing"></p>
+	<p><label for ="use_distributing">Distributing work templates:</label>
+	<input name="use_distributing" id="use_distributing" type="checkbox" value="use_distributing"></p>
+	<p><label for ="use_managing">Managing website links:</label>
+	<input name="use_managing" id="use_managing" type="checkbox" value="use_managing"></p>
+	<p><label for ="use_planning">Planning:</label>
+	<input name="use_planning" id="use_planning" type="checkbox" value="use_planning"></p>
+	<p><label for ="use_reviewing">Reviewing, commenting on and evaluating work:</label>
+	<input name="use_reviewing" id="use_reviewing" type="checkbox" value="use_reviewing"></p>
+	<p><label for ="use_other">Other:</label>
+	<input name="use_other" id="use_other" type="checkbox" value="use_other"></p>
+    <p><label for ="use_other_detail">If you have chosen 'Other', please say what: </label>
+      <input type="text" id="use_other_detail" name="use_other_detail" size="35" maxlength="40">
+    </p>
+    <p>&nbsp;</p>
+    <p><strong>The ICT and KS3 Strategy tasks are:</strong></p>
+    <p>
+      <label for ="strategy_a">a) Invaluable:</label>
+      <input name="strategy" id="strategy_a" type="radio" value="invaluable">
+    </p>
+    <p>
+      <label for ="strategy_b">b) Valuable:</label>
+      <input name="strategy" id="strategy_b" type="radio" value="valuable">
+    </p>
+    <p>
+      <label for ="strategy_c">c) Of some impact:</label>
+      <input name="strategy" id="strategy_c" type="radio" value="some">
+    </p>
+    <p>
+      <label for ="strategy_d">d) Of little impact:</label>
+      <input name="strategy" id="strategy_d" type="radio" value="little">
+    </p>
+    <p>
+      <label for ="strategy_e">e) Of no impact:</label>
+      <input name="strategy" id="strategy_e" type="radio" value="none">
+    </p>
+    <p>&nbsp;</p>
+    <p>
+      <label for ="discussion_for"><strong>I use the discussion forums for</strong>: </label>
+      <input type="text" id="discussion_for" name="discussion_for" size="35" maxlength="40">
+</p>
+    <p>&nbsp;	</p>
+    <p>
+      <label for ="discussion_because"><strong>because</strong>: </label>
+      <input type="text" id="discussion_because" name="discussion_because" size="35" maxlength="40">
+	</p>
+    <p>&nbsp;</p>
+    </fieldset>
+	<fieldset>
+	<legend>Learning how to use MAPS</legend>
+    <p><strong>How long did it take to learn how to use MAPS?</strong></p>
+    <p>
+      <label for ="learn_a">a) An hour or less:</label>
+      <input name="learn" id="learn_a" type="radio" value="hour">
+    </p>
+    <p>
+      <label for ="learn_b">b) Less than half a day:</label>
+      <input name="learn" id="learn_b" type="radio" value="half_day">
+    </p>
+    <p>
+      <label for ="learn_c">c) About a day:</label>
+      <input name="learn" id="learn_c" type="radio" value="day">
+    </p>
+    <p>
+      <label for ="learn_d">d) More than a day:</label>
+      <input name="learn" id="learn_d" type="radio" value="more">
+    </p>
+    <p>
+      <label for ="learn_e">e) I still haven&#8217;t learned to use it properly:</label>
+      <input name="learn" id="learn_e" type="radio" value="not_yet">
+    </p>
+    <p>&nbsp;</p>
+    <p><strong>How did you learn how to use and apply MAPS?</strong></p>
+    <p>
+      <label for ="apply_a">a) It&#8217;s an intuitive system that tells you
+      how to use it:</label>
+      <input name="apply" id="apply_a" type="radio" value="intuitive">
+    </p>
+    <p>
+      <label for ="apply_b">b) I worked it out myself:</label>
+      <input name="apply" id="apply_b" type="radio" value="myself">
+    </p>
+    <p>
+      <label for ="apply_c">c) Colleagues and I set up a working group:</label>
+      <input name="apply" id="apply_c" type="radio" value="group">
+    </p>
+    <p>
+      <label for ="apply_d">d) We had a demonstration in a CPD session:</label>
+      <input name="apply" id="apply_d" type="radio" value="demonstration">
+    </p>
+    <p>
+      <label for ="apply_e">e) It&#8217;s part of the whole-school CPD programme:</label>
+      <input name="apply" id="apply_e" type="radio" value="cpd">
+    </p>
+    <p>&nbsp;</p>
+	<p><strong>Which of the following resources did you use to assist your understanding
+    of MAPS?</strong> (tick all that apply):</p>
+	<p><label for ="resources_training">Training:</label>
+	<input name="resources_training" id="resources_training" type="checkbox" value="resources_training"></p>
+	<p><label for ="resources_manual">Manual:</label>
+	<input name="resources_manual" id="resources_manual" type="checkbox" value="resources_manual"></p>
+	<p><label for ="resources_tutorials">Online tutorials:</label>
+	<input name="resources_tutorials" id="resources_tutorials" type="checkbox" value="resources_tutorials"></p>
+	<p>
+	  <label for ="resources_tagsupport">TAG support:</label>
+	<input name="resources_tagsupport" id="resources_tagsupport" type="checkbox" value="resources_tagsupport"></p>
+	<p><label for ="resources_onlinehelp">Online help topics:</label>
+	<input name="resources_onlinehelp" id="resources_onlinehelp" type="checkbox" value="resources_onlinehelp"></p>
+	<p><label for ="resources_other">Is there any other resource TAG Learning could provide
+	  to help you with your understanding and integration of MAPS?</label>
+	  <input name="resources_other" id="resources_other" type="checkbox" value="resources_other">
+	</p>
+	<p><label for ="resources_other_detail">If you have chosen 'Other', please say what: </label>
+      <input type="text" id="resources_other_detail" name="resources_other_detail" size="35" maxlength="40">
+    </p>
+    <p>&nbsp;</p>
+    <p><strong>Now that I am using it I find it:</strong></p>
+    <p>
+      <label for ="using_a">a) Invaluable:</label>
+      <input name="using" id="using_a" type="radio" value="invaluable">
+    </p>
+    <p>
+      <label for ="using_b">b) Valuable:</label>
+      <input name="using" id="using_b" type="radio" value="valuable">
+    </p>
+    <p>
+      <label for ="using_c">c) Of some impact:</label>
+      <input name="using" id="using_c" type="radio" value="some">
+    </p>
+    <p>
+      <label for ="using_d">d) Of little impact:</label>
+      <input name="using" id="using_d" type="radio" value="little">
+    </p>
+    <p>
+      <label for ="using_e">e) Of no impact:</label>
+      <input name="using" id="using_e" type="radio" value="none">
+    </p>
+    <p>&nbsp;</p>
+    <p><strong>The tool I find most useful is:</strong></p>
+    <p>
+      <label for ="tool_a">b) Quiz tools:</label>
+      <input name="tool" id="tool_a" type="radio" value="quizz">
+    </p>
+    <p>
+      <label for ="tool_b">a) The quiz tool automated marking facility:</label>
+      <input name="tool" id="tool_b" type="radio" value="marking">
+    </p>
+    <p>
+      <label for ="tool_c">c) Allocating tasks to individuals:</label>
+      <input name="tool" id="tool_c" type="radio" value="allocating_tasks">
+    </p>
+    <p>
+      <label for ="tool_d">d) Integrating resources:</label>
+      <input name="tool" id="tool_d" type="radio" value="integrating_resources">
+    </p>
+    <p>
+      <label for ="tool_e">e) Data output to SIMS:</label>
+      <input name="tool" id="tool_e" type="radio" value="SIMS">
+    </p>
+    <p>&nbsp;</p>
+    </fieldset>
+	<fieldset>
+	<legend>Impact of MAPS</legend>
+    <p>
+      <label for ="overall_impact">Please use this opportunity to say what impact you feel MAPS has had on
+      your teaching and your pupils&#8217; learning: </label>
+      <textarea name="overall_impact" id="overall_impact" cols="40" rows="4"></textarea>
+	</p>
+    <p>&nbsp;</p>
+    </fieldset>
+	<fieldset>
+	<legend>Thank you</legend>
+    <p>We would like to thank you for the help that you have given in completing
+      this questionnaire. When 
+      you are ready, please press the 'Submit' button.</p>
+    <p>&nbsp; 
+      <input type="submit" name="submit1" value="submit" class="buttonSubmit" 
+	  onClick="return confirm('You are about to send your form. Is this OK?')"  >
+      &nbsp;&nbsp;&nbsp; &nbsp; 
+      <input type="reset" name="Reset" value="Reset" class="buttonReset"  
+	  onClick="return confirm('Do you really want to clear the form and start again?')">
+    </p>
+		 <!--  <input type="hidden" name="redirect" value="/profdev/tagmaps_thankyou.htm">
+		  <input type="hidden" name="recipient" value="ed">
+		  <input type="hidden" name="subject" value="TAG MAPS Questionnaire"> -->
+    </fieldset>
+  </form>
+  <p>[<a href="#top">Back to the top</a>]</p>
+  <p>[<a href="javascript:history.back()">Back</a>]</p>
+</div>
+<div id="footer">
+  <img src="../images/bar-home.gif" width="100%" height="30" alt="">  
+  <!--include virtual="/footer.htm"-->
+</div>
+</div>
+</body>
+</html>

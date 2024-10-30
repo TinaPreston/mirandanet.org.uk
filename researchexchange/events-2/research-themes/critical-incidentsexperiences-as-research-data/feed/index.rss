@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Critical incidents	</title>
+	<atom:link href="https://www.mirandanet.org.uk/researchexchange/events-2/research-themes/critical-incidentsexperiences-as-research-data/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.mirandanet.org.uk/researchexchange</link>
+	<description>O brave new world that has such people in IT</description>
+	<lastBuildDate>Mon, 18 Feb 2013 17:53:34 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.15</generator>
+	<item>
+		<title>
+		By: Graham Galer		</title>
+		<link>https://www.mirandanet.org.uk/researchexchange/events-2/research-themes/critical-incidentsexperiences-as-research-data/comment-page-1/#comment-36</link>
+
+		<dc:creator><![CDATA[Graham Galer]]></dc:creator>
+		<pubDate>Thu, 21 Jul 2011 10:15:45 +0000</pubDate>
+		<guid isPermaLink="false">http://www.mirandanet.ac.uk/blog/?page_id=310#comment-36</guid>
+
+					<description><![CDATA[Here is one of my critical incidents - 
+
+My first job in industry, in the late 1950s, was as a mathematical economist working on one of the early applications of computers to the planning of oil refineries and chemical plants.  The approach used was called &#039;linear programming&#039; (LP).  This technique (in our case) entailed identifying all the potential sales of the company&#039;s products  and the inputs required to produce those products.  A &#039;profit function&#039; was then defined based on the sales prices and the processing costs.  Then there were a series of  equations (&#039;constraints&#039;) representing the maximum quantity which could be sold of each product, the maximum capacity of each processing plant and the amount of input needed for each product.  The problem then was to &#039;maximise&#039; the profit subject to all the identified constraints, i.e. to find, out of all the possible ways of running the plant, the one which would give the greatest profit.  This was a mathematical problem which could be solved used well-tried techniques.
+
+Our problems tended to have about 400 variables and 300 or so equations - too large to solve on a blackboard or a desk calculator but just about within the limits of the computers then becoming available.  The only computer my company had available at that time was in Amsterdam, and I and others used to go over there regularly with our LP problems, in the course of a few months establishing to our management that this approach was well worth developing.  The &#039;maximum&#039; profit programmes we came up with often produced results different from those which might have been arrived at using the traditional methods of hand calculation.
+
+Sometimes Amsterdam was not available and we had to seek out alternative computer centres.  For a few months during 1958 we bought time at an IBM centre in the Place Vendome in Paris, and is was there that a &#039;critical incident&#039; occurred.  Our programmes were large and took a long time (e.g. several hours) to run (they would probably run in a few seconds on a modern laptop!)  So one could leave them &#039;cooking&#039; and go back to the hotel or out for a meal for a while.  I did this the time we used the IBM facility, returning after a while to the computer centre to see what had been produced.
+
+Looking at the computer printout (which came out as several large sheets) I was baffled.  I didn&#039;t recognise this as a normal programme at all, although it seemed to have a certain logic about it.  What the computer was telling us was that we should produce the maximum amounts of the most expensive products, and put them into storage, rather than selling them.  What on earth was going on?
+
+Looking at the programme in more detail, it was clear that, instead of maximising profit, the computer had worked out a way of minimising it.  Disaster!  How could this have happened?  I sat  down with colleagues and some of the IBM staff, going in detail into the programme, and into the way the problem had originally been fed into the machine.
+
+After a while, it dawned on us: the computer programme had turned all our &#039;pluses&#039; into &#039;minuses&#039; and all our &#039;minuses&#039; into &#039;pluses&#039;. so that it &#039;thought&#039; that the sales proceeds we had defined were actually costs, and that our costs were the equivalent of sales proceeds.  It then did an excellent job if maximising the loss, i.e. minimising the profit.  It turned out that was due to differences beween the IBM programme we were using and the one we normally used in Amsterdam and elsewhere.
+
+Fortunately no real harm was done, since the cost of one abortive run was not too high, and we were able to revise our input quite quickly.  In fact, the whole experience was quite educational, as the computer demonstrated some amazingly clever ways of potentially losing money for the company!
+
+The thing that I and others learned from this critical incident was to be extremely careful to define what you are asking a computer to do - in the old adage: &#039;rubbish in, rubbish out&#039;.]]></description>
+			<content:encoded><![CDATA[<p>Here is one of my critical incidents &#8211; </p>
+<p>My first job in industry, in the late 1950s, was as a mathematical economist working on one of the early applications of computers to the planning of oil refineries and chemical plants.  The approach used was called &#8216;linear programming&#8217; (LP).  This technique (in our case) entailed identifying all the potential sales of the company&#8217;s products  and the inputs required to produce those products.  A &#8216;profit function&#8217; was then defined based on the sales prices and the processing costs.  Then there were a series of  equations (&#8216;constraints&#8217;) representing the maximum quantity which could be sold of each product, the maximum capacity of each processing plant and the amount of input needed for each product.  The problem then was to &#8216;maximise&#8217; the profit subject to all the identified constraints, i.e. to find, out of all the possible ways of running the plant, the one which would give the greatest profit.  This was a mathematical problem which could be solved used well-tried techniques.</p>
+<p>Our problems tended to have about 400 variables and 300 or so equations &#8211; too large to solve on a blackboard or a desk calculator but just about within the limits of the computers then becoming available.  The only computer my company had available at that time was in Amsterdam, and I and others used to go over there regularly with our LP problems, in the course of a few months establishing to our management that this approach was well worth developing.  The &#8216;maximum&#8217; profit programmes we came up with often produced results different from those which might have been arrived at using the traditional methods of hand calculation.</p>
+<p>Sometimes Amsterdam was not available and we had to seek out alternative computer centres.  For a few months during 1958 we bought time at an IBM centre in the Place Vendome in Paris, and is was there that a &#8216;critical incident&#8217; occurred.  Our programmes were large and took a long time (e.g. several hours) to run (they would probably run in a few seconds on a modern laptop!)  So one could leave them &#8216;cooking&#8217; and go back to the hotel or out for a meal for a while.  I did this the time we used the IBM facility, returning after a while to the computer centre to see what had been produced.</p>
+<p>Looking at the computer printout (which came out as several large sheets) I was baffled.  I didn&#8217;t recognise this as a normal programme at all, although it seemed to have a certain logic about it.  What the computer was telling us was that we should produce the maximum amounts of the most expensive products, and put them into storage, rather than selling them.  What on earth was going on?</p>
+<p>Looking at the programme in more detail, it was clear that, instead of maximising profit, the computer had worked out a way of minimising it.  Disaster!  How could this have happened?  I sat  down with colleagues and some of the IBM staff, going in detail into the programme, and into the way the problem had originally been fed into the machine.</p>
+<p>After a while, it dawned on us: the computer programme had turned all our &#8216;pluses&#8217; into &#8216;minuses&#8217; and all our &#8216;minuses&#8217; into &#8216;pluses&#8217;. so that it &#8216;thought&#8217; that the sales proceeds we had defined were actually costs, and that our costs were the equivalent of sales proceeds.  It then did an excellent job if maximising the loss, i.e. minimising the profit.  It turned out that was due to differences beween the IBM programme we were using and the one we normally used in Amsterdam and elsewhere.</p>
+<p>Fortunately no real harm was done, since the cost of one abortive run was not too high, and we were able to revise our input quite quickly.  In fact, the whole experience was quite educational, as the computer demonstrated some amazingly clever ways of potentially losing money for the company!</p>
+<p>The thing that I and others learned from this critical incident was to be extremely careful to define what you are asking a computer to do &#8211; in the old adage: &#8216;rubbish in, rubbish out&#8217;.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

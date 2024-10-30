@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MirandaNet Fellowship - Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The MirandaNet Fellowship Web Site" />
+<meta name="keywords" content="ICT communities education learning support" />
+<link rel="stylesheet" type="text/css" href="../mirandanet.css" />
+<link rel="stylesheet" type="text/css" href="fellowship.css" />
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/fix_ie.css" /></style><![endif]-->
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+<script type="text/javascript" src="../mirandanet.js"></script>
+</head>
+<body onload="return show('home')">
+<div id="header" class="group">
+<a id="top"></a>
+<a href ="../index.html"><img src="../images/logos/mirandanet_nl.gif" alt="The MirandaNet Organisation Logo" width="167" height="61" title="The MirandaNet Organisation: return to home page" /></a> 
+	<h1 class="name"><a href ="../index.html">MirandaNet</a></h1>
+	<h2 class="strapline">Sharing experience and expertise</h2>
+	<div class="topnav_wrapper">
+	  <h5>Site navigation:</h5>
+		<ul class="topnav">
+			<li><a href ="../index.html">Home</a></li>
+			<li><a href ="index.html" id="current">Fellowship</a></li>
+			<li><a href ="../researchexchange/index.html">Research Exchange</a></li>
+			<li><a href ="../consultancy/index.html">Consultancy</a></li>
+			<li><a href ="http://wec.mirandanet.org.uk/">World Ecitizens</a></li>
+		</ul>
+	</div>
+</div>
+
+<div id="content" class="group">
+<div id="leftColumn">
+	<!-- Place all the items for the left hand section here -->
+	<div class="group box">
+	  <!--#include virtual="/fellowship/fellowship_menu.htm"-->
+	  <div id="nav"> 
+  <ul>
+    <li><a href="index.php.html" id="home" class="normal">Fellowship</a></li>
+    <li><a href="../bett/index.html" id="bett" class="normal">BETT</a> 
+      <ul id="sub_bett">
+        <li><a href="../bett/programme.htm" id="programme" class="normal">BETT Programme</a></li>
+      </ul>
+    </li>
+    <li><a href="about.htm" id="about" class="normal">About Us</a> 
+      <ul id="sub_about">
+        <li><a href="founder.htm" id="founder" class="normal">Founder</a></li>
+        <li><a href="researchexchange.htm" id="research" class="normal">Research 
+          Exchange</a></li>
+        <li><a href="consultancy.htm" id="consultancy" class="normal">Consultancy</a></li>
+        <li><a href="worldecitizens.htm" id="worldecitizens" class="normal">World 
+          Ecitizens</a></li>
+      </ul>
+    </li>
+    <li><a href="../profiles/index.html" id="membership" class="normal">The Membership</a></li>
+    <li><a href="../associates/index.html" id="associates" class="normal">Associates</a></li>
+    <li><a href="../news/news.php.html" id="newsarea" class="normal">News &amp; Diary</a> 
+      <ul id="sub_newsarea">
+        <li><a href="../news/diary.php.html" id="diary" class="normal">Diary</a></li>
+        <li><a href="../news/letter.php.html" id="newsletter" class="normal">Newsletter</a></li>
+        <li><a href="../news/mirandanews.htm" id="letterarchive" class="normal">Newsletter 
+          Archive</a></li>
+      </ul>
+    </li>
+    <li><a href="../contact.php.html" id="contact" class="normal">Contact Us</a></li>
+    <li><a href="../mirandamods/index.html" id="mirandamods" class="normal">MirandaMods</a></li>
+    <li><a href="../casestudies/index.html" id="casestudies" class="normal">Case Studies</a></li>
+    <li><a href="../articles/index.html" id="articles" class="normal">Articles</a></li>
+    <li><a href="https://www.mirandanet.org.uk/phorum/default.php" id="forum" class="normal">Forum</a></li>
+    <li><a href="../index_old.htm" id="archive" class="normal">Archive Site</a></li>
+    <li><a href="join.htm" id="join" class="normal">Join MirandaNet</a></li>
+    <li><a href="../membership/index.php.html" title="Members Log on/off" id="logon" class="normal">Members 
+      Log on/off</a></li>
+  </ul>
+</div>
+	</div>
+    <!-- <div id="news"> --> 
+		<!-- Search Membership Module -->
+	<div class="group box" style="margin-bottom:0">
+	<h1>Search the Membership</h1> 
+	<form method="post" action="listing_search.php.html" class="join">
+     <fieldset>
+    <legend>Search Form</legend>
+          <p>Search for:<br />
+            <select name="field" title="Choose search area">
+              <option value="Anything">Anything</option>
+			  <option value="Surname">Last Name</option>
+              <option value="Forename">First Name</option>
+              <option value="Profile">Profile</option>
+            </select>
+            <br />
+            <input class="txtinput" type="text" id="find" name="find" placeholder="Enter search term" title="Enter search term" />
+            <br />
+            <input type="hidden" name="searching" value="yes" />
+            <input type="submit" name="search" value="Search" />
+          </p>
+	</fieldset>
+	</form>
+	</div>		<!-- Search Case Studies Module -->
+	<div class="group box" style="margin-bottom:0">
+	<h1>Search the Case Studies</h1> 
+ 	<form method="post" action="casestudies_search.php.html" class="join">
+    <fieldset>
+    <legend>Search Form</legend>
+          <p>Search for:<br />
+            <select name="field" title="Choose search area">
+			 <option value="Title">Title</option>
+			 <option value="Abstract">Abstract</option>
+			 <option value="keywords">Keywords</option>
+			 <option value="article">Professional Study</option>
+			 <option value="Name">Author Name</option>
+            </select>
+            <br />
+            <input class="txtinput" type="text" id="find1" name="find" placeholder="Enter search term" title="Enter search term" />
+            <br />
+            <input type="hidden" name="searching" value="yes" />
+            <input type="submit" name="search" value="Search" />
+          </p>
+ 	</fieldset>
+	</form>
+	</div>
+	<!-- Search MirandaNet Module -->
+<div class="group box" style="margin-bottom:0">
+	
+  <h1>Search MirandaNet</h1> 
+ 	<form method="get" action="https://www.google.com/search">
+    <fieldset>
+    <legend>Search Form</legend>
+          <p>Search in:<br />
+            <select name="sitesearch" title="Choose search area">
+			 <option value="mirandanet.org.uk">MirandaNet</option>
+			 <option value="worldecitizens.net">World Ecitizens</option>
+			 <option value="">The Web</option>
+            </select>
+            <br />
+            <input class="txtinput" type="text" name="q" maxlength="255" placeholder="Enter search term" title="Enter search term"/>
+            <br />
+            <input type="hidden" name="searching" value="yes" />
+            <input type="submit" name="search" value="Google Search" />
+          </p>
+ 	</fieldset>
+	</form>
+	</div>
+
+</div>
+  <div id="mainBody" class="group"> 
+    <!-- Place all the main content here -->
+  <h1>The MirandaNet Fellowship</h1>
+    <p><img src="../images/frontpage/rotate.php.jpeg" class="imageRight" width="400" height="160" alt="The MirandaNet Organisation - one of several images illustrating our wide range of activities and locations." title="The MirandaNet Organisation - one of several images&#10 illustrating our wide range of activities and locations." /> 
+      Some of the many benefits of being a member of MirandaNet:</p>
+    <ul>
+      <li>A profile that is easily found by search engines such as Google</li>
+      <li> Introductions to other colleagues in the field globally</li>
+      <li> Social networking with colleagues</li>
+      <li> Opportunities to share thinking on learning technologies with teachers, 
+        teacher educators and policy makers and associate companies</li>
+      <li> Invitations to join research projects</li>
+      <li> Opportunities for publishing articles and case studies on MirandaNet</li>
+      <li> News of conferences and events globally</li>
+      <li> Invitations to present at conferences</li>
+      <li> Alerts to new policies, approaches and technologies</li>
+      <li> Peer reviewing to support publishing</li>
+      <li> Hints and tips to help you improve your practice</li>
+    </ul>
+    <p>The MirandaNet Fellowship, established in 1992, is an international professional 
+      organisation of policy makers, educators, developers and researchers who 
+      collaborate in exchanging ideas and support as well as publishing research 
+      studies, <a href="../casestudies/index.html">case studies</a> and reports aimed at improving 
+      the use of innovative digital technologies in classrooms and in professional 
+      learning communities.</p>
+   <!--  <p>Members who become involved in these practice-based continuing professional 
+      development programmes are encouraged to use digital technologies to solve 
+      existing challenges in classroom and communities. They publish their articles, 
+      <a href="/casestudies/">case studies and innovative multi-modal publications</a> 
+      for colleagues in the MirandaNet e-journals.</p> -->
+    <p>Some the evidence for innovation is published by members who become involved 
+      the <a href="../consultancy/joining-as-a-associate-20142015/professional-development-programmes/index.html">iCatalyst 
+      programme</a>, a practice-based continuing professional development programme 
+      designed by the educators themselves to underpin change. In this programme 
+      the educators use digital technologies to solve existing challenges in classrooms 
+      and communities. They publish their articles, case studies and innovative 
+      multi-modal publications for colleagues in the MirandaNet e-journals. These 
+      <a href="../casestudies/index.html">MirandaNet case studies</a> are a rich source of 
+      data for practitioners and for the researchers who collaborate with governments, 
+      government agencies, charities and large and small companies to understand 
+      more about the best ways of encouraging innovation in teaching and learning.</p>
+    <p>The MirandaNet Fellows also undertake <a href="../researchexchange/publications/index.html">research 
+      reports</a> for companies, governments and charities.</p>
+    <h2>Joining the MirandaNet Fellowship as a professional scholar</h2>
+    <p> The MirandaNet Fellowship offers professionals engaged with digital technologies 
+      a means of informal networking and professional development as well as opportunities 
+      for consultancy. Membership is free to education professionals working in 
+      schools, colleges and universities. Fellowships are awarded to scholars 
+      who add to the MirandaNet knowledge base through web publication of a 2,000-word 
+      peer-reviewed case study and by presentations at conferences and seminars. 
+      Any professional is welcome to join as a member or a scholar if she or he 
+      is committed to the use of advanced technologies in the transformation of 
+      teaching and learning.</p>
+    <p>Membership brings a number of benefits to members: members' profiles are 
+      published on the site, they receive MirandaNews, our newsletter, and they 
+      can participate in debates on <a href="mirandalink.htm">MirandaLink</a> 
+      and in our <a href="https://www.mirandanet.org.uk/phorum/default.php">Forums</a>. For more information 
+      about the different categories of membership,investigate the <a href="join.htm">How 
+      to Join</a> section.</p>
+    <h2>Joining the MirandaNet Fellowship as an associate consultant</h2>
+    <noscript>
+    <p><strong>Anti-spam</strong>: this section contains email addresses which 
+      only show if you have JavaScript enabled</p>
+    </noscript>
+    <p>The MirandaNet Fellowship, a non profit-making professional organisation, 
+      engages in a variety of research and continuing development projects. Professional 
+      members and company associates join in bidding to a range of different funding 
+      organisations with a particular focus on innovation and change in teaching 
+      and learning. Professional educators and company representative are invited 
+      to apply for associateship status in order to be part of this process. Individuals, 
+      companies and other organisations are welcome to explore this associateship 
+      process. For more details about the <a href="../consultancy/joining-as-a-associate-20142015/associates/index.html">associateship</a> 
+      proposition email Christina Preston  
+      (<script type="text/javascript"><!--
+  display("","christina","mirandanet.org.uk","Joining MirandaNet")
+  // -->
+	  </script>),
+      for a list of services and subscription levels.</p>
+      
+	  <h1 id="latestnews"><a href="../news/news.php.html">MirandaNet News</a></h1>
+<h2><a href="../news/news.php%EF%B9%96Recno=307.html">Farewell to the old, greetings to the new!</a></h2><p>This MirandaNet web site is now in archive, using the URL <a href="../index.html">mirandanet.org.uk</a>. A brand new site is available from our original URL <a href="http://www.mirandanet.ac.uk/">mirandanet.ac.uk</a>, but you will be able to browse this archive version (which itself contains archive material!) for the foreseeable future.</p>
+<p><strong>And it is not an entirely 'dead' archive!</strong> Most of the links which display old Members' details have been de-activated, along with the joining and logging in routines. The case studies and articles are still live, but can only be edited by the Admin. If any member wishes to withdraw their permission for any published item on the site, please contact the editor using the link below.</p>
+<p>The main focus of MirandaNet now is the new site, where news and diary items will be published.</p>
+<p>Thanks to everyone who has supported me in my editorship of this wonderful organisation over the past 15 years. It is time to hand over to younger blood.</p>
+<p><a href="mailto:editor@mirandanet.org.uk">Francis Howlett</a><br />Former MirandaNet Editor<br />10th May 2015</p><hr />      <ul class="button">
+        <li><a href="../news/news.php.html">News</a></li>
+      </ul>
+	  <h2 id="latestdiary"><a href="../news/diary.php.html">MirandaNet Diary</a></h2>
+<h2>October 2024</h2>
+<p>No current diary items for October 2024.</p>
+      <ul class="button">
+        <li><a href="../news/diary.php.html">Diary</a></li>
+      </ul>
+	        <p class="clear"><a href="#top">Top</a></p>
+</div>
+</div>
+<div id="footer" class="group"> 
+  <!--#include virtual="/footer.htm"-->
+  <!-- Footer Starts -->
+<div id="footer_left"> 
+  <ul class="accessBar">
+    <li class="accessBar"><a href="../associates/bedfordshire.htm"><img src="../images/associates_logos/Uni_Bed_logo_small.jpg" alt="University of Bedfordshire" title="University of Bedfordshire" width="72" height="28" style="vertical-align: -40%;"></a> 
+    </li>
+    <li class="accessBar"><a href="../associates/index.html">Associates</a></li>
+    <li class="accessBar"><a href="../about.php.html">About&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../contact.php.html">Contact&nbsp;Us</a></li>
+    <li class="accessBar"><a href="join.htm">Join&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../membership/index.php.html" title="Members Log on/off" id="members_logon" class="normal">Members&nbsp;Log&nbsp;on/off</a></li>
+  </ul>
+</div>
+<div id="footer_right">
+  <ul class="accessBar">
+    <li class="accessBar"><a href="http://www.linkedin.com/groups/MirandaMod-3726470?trk=myg_ugrp_ovr"><img src="../images/site/linkedin_logo.png" alt="Linked In MirandaNet" width="99" height="28" title="Linked In MirandaNet"></a></li>
+	<li class="accessBar"><a href="http://www.facebook.com/pages/MirandaMod/180379201990546"><img src="../images/site/f_logo.png" alt="MirandaNet on Facebook" width="28" height="28" title="MirandaNet on Facebook"></a></li>
+	<li class="accessBar"><img src="../images/site/twitter.jpg" alt="MirandaNet on Twitter - forthcoming feature" width="28" height="28" title="MirandaNet on Twitter - forthcoming feature"></li>
+	<li class="accessBar"><a href="https://plus.google.com/u/0/communities/116934752242714806891"><img src="../images/site/gplus-32.png" alt="Google + MirandaNet" width="28" height="28" title="Google + MirandaNet"></a></li>
+	<li class="accessBar"><a href="../feed.xml.rss"><img src="../images/site/rss.jpg" alt="RSS feed for MirandaNet" width="28" height="28" title="RSS feed for MirandaNet"></a></li> 
+  </ul>
+</div>
+<!-- Footer Ends --></div>
+</body>
+</html>

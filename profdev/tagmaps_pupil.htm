@@ -1,0 +1,525 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<title>MirandaNetTAG MAPS Questionnaire - Pupils</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The MirandaNet Fellowship Web Site">
+<meta name="keywords" content="ICT communities education learning support">
+<meta name="language" content="en">
+<link href="../common.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../common.js"></script>
+<style type="text/css">.buttonSubmit {
+	color: green;
+	text-transform: uppercase;
+	border: 1px solid green;
+	margin-top: 1em;
+	font-size: 1em;
+}
+
+.buttonReset {
+	color: red;
+	text-transform: uppercase;
+	border: 1px solid red;
+	margin-top: 1em;
+	font-size: 1em;
+}
+
+.buttonSubmitHide {
+	display: none;
+}
+
+</style>
+<script type="text/JavaScript">
+
+function checkscript() {
+	for (i=0;i<4;i++) {
+		box = document.example.elements[i];
+		if (!box.value) {
+			alert('You haven\'t filled in ' + box.name + '!');
+			box.focus()
+			return false;
+		}
+	}
+	return true;
+}
+function checkNever() { 
+	var submit = document.questionnaire.submit;
+//	var never = document.questionnaire.last_receive[5];
+//	if (never.checked == true) { 
+//		alert('You have clicked Never');
+		classChange('buttonSubmitHide',submit)
+//		} else {
+//		alert('You did not click Never');
+//		}
+}
+
+function classChange(styleChange,item) {
+    item.className = styleChange;
+}
+</script>
+
+</head>
+<body onLoad="return show('profdev')">
+<div id="page">
+<div id="header"><a name="top"></a>
+    <div id="home"><a tabindex="0" href="../index.html"><img src="../images/logo.gif" alt="MirandaNet Index Page" width="200" height="100" title="MirandaNet Index Page"></a> 
+      <img src="../images/bar-start.gif" width="201" height="30" alt=""> 
+    </div>
+  <img src="../images/bar-profdevel.gif" width="100%" height="30" alt="MirandaNet" title="MirandaNet"> 
+  <h1>Continuing Professional Development</h1>
+</div>
+
+	<div id="leftColumn"> <img src="../images/tagmaps.gif" width="200" height="133" alt="TAG MAPS screen dump" title="TAG MAPS screen dump"> 
+  <!--include virtual="/menu.htm"-->
+    </div>
+
+<div id="mainBody"> 
+  <h2>TAG MAPS Pupil Questionnaire</h2>
+    <!-- <p><strong><a href="/profdev/index.htm">CPD</a></strong> | <a href="/profdev/webritte.htm">WEBRITTe</a> 
+      | <a href="/profdev/misconceptions.htm">Common Misconceptions</a> | <a href="/ejournal/casestudies.htm">Case 
+      Studies</a> | <a href="/ejournal/">E-Journals</a> | <a href="/news/seminars.htm">Seminars</a></p> -->
+    <p>Thank you for taking the time to look at this questionnaire. Please fill
+      in your answers carefully and as best as you can. There is a button at
+      the end to send in your answers.</p>
+    <form class="join" action="https://www.mirandanet.org.uk/cgi-bin/csv/csvwrite_tagmaps_pupil.pl" method="post" name="questionnaire" id="questionnaire"
+    onSubmit="return ValidateQuestionnaire(); classChange('buttonSubmitHide',submit); return true">
+    <fieldset>
+    <legend>Background Information</legend>
+    <p>
+      <label for="label48"><strong>Name</strong>: </label>
+      <input name="name" type="text" id="label48" size="35" maxlength="40" class="txt">
+    </p>
+    <p>
+      <label for="label49"><strong>School</strong>: </label>
+      <input name="school" type="text" id="label49" size="35" maxlength="40" class="txt">
+    </p>
+    <p>
+      <label for="label50"><strong>Year Group</strong>: </label>
+      <input name="position" type="text" id="label50" size="35" maxlength="40" class="txt">
+    </p>
+    <!-- <p> 
+      <label for="email"><strong>Email address</strong>: </label>
+      <input name="email" type="text" id="email" size="35" maxlength="40" class="txt">
+	  </p> 
+    <p>May we have permission to quote your answers? The replies will be anonymous?</p>
+    <p>
+      <label for ="quote_yes">a)	Yes:</label>
+      <input name="quote" id="quote_yes" type="radio" value="yes">
+	  </p>
+    <p>
+      <label for ="quote_no">b)	No:</label>
+      <input name="quote" id="quote_no" type="radio" value="no">
+    </p>
+    <p>&nbsp;</p>-->
+    <p>&nbsp;</p>
+    <p><strong>We would like if possible to quote some of the replies we get.</strong> </p>
+    <p><label for ="anonymous">Tick here
+        if you would prefer your replies to be anonymous:</label></p>
+    	<input name="anonymous" id="anonymous" type="checkbox" value="anonymous"><p></p>
+	<p>&nbsp;</p>
+    </fieldset>
+    <fieldset>
+    <legend>Using MAPS</legend>
+    <p><strong>How many times a week do you use MAPS at school?</strong></p>
+    <p>
+      <label for ="use_a">a) Never:</label>
+      <input name="use" id="use_a" type="radio" value="invaluable">
+    </p>
+    <p>
+      <label for ="use_b">b) Once a week:</label>
+      <input name="use" id="use_b" type="radio" value="valuable">
+    </p>
+    <p>
+      <label for ="use_c">c) Up to three days a week:</label>
+      <input name="use" id="use_c" type="radio" value="some">
+    </p>
+    <p>
+      <label for ="use_d">d) Every day:</label>
+      <input name="use" id="use_d" type="radio" value="little">
+    </p>
+    <p>
+      <label for ="use_e">e) Every lesson:</label>
+      <input name="use" id="use_e" type="radio" value="none">
+    </p>
+    <p>&nbsp;</p>
+    <p><strong>For which subjects do you use MAPS?</strong> (tick all that apply)</p>
+    <p>
+      <label for ="English">English:</label>
+      <input name="English" id="English" type="checkbox" value="English">
+    </p>
+    <p>
+      <label for ="Maths">Maths:</label>
+      <input name="Maths" id="Maths" type="checkbox" value="Maths">
+    </p>
+    <p>
+      <label for ="Science">Science:</label>
+      <input name="Science" id="Science" type="checkbox" value="Science">
+    </p>
+    <p>
+      <label for ="DandT">Design and Technology:</label>
+      <input name="DandT" id="DandT" type="checkbox" value="DandT">
+    </p>
+    <p>
+      <label for ="ICT">ICT:</label>
+      <input name="ICT" id="ICT" type="checkbox" value="ICT">
+    </p>
+    <p>
+      <label for ="History">History:</label>
+      <input name="History" id="History" type="checkbox" value="History">
+    </p>
+    <p>
+      <label for ="Geography">Geography:</label>
+      <input name="Geography" id="Geography" type="checkbox" value="Geography">
+    </p>
+    <p>
+      <label for ="MFL">Modern Foreign Languages:</label>
+      <input name="MFL" id="MFL" type="checkbox" value="MFL">
+    </p>
+    <p>
+      <label for ="Art">Art and Design:</label>
+      <input name="Art" id="Art" type="checkbox" value="Art">
+    </p>
+    <p>
+      <label for ="Music">Music:</label>
+      <input name="Music" id="Music" type="checkbox" value="Music">
+    </p>
+    <p>
+      <label for ="Citizenship">Citizenship:</label>
+      <input name="Citizenship" id="Citizenship" type="checkbox" value="Citizenship">
+    </p>
+    <p>
+      <label for ="PE">Physical Education:</label>
+      <input name="PE" id="PE" type="checkbox" value="PE">
+    </p>
+    <p>
+      <label for ="Careers">Careers Education:</label>
+      <input name="Careers" id="Careers" type="checkbox" value="Careers">
+    </p>
+    <p>
+      <label for ="SRE">Sex and Relationship Education:</label>
+      <input name="SRE" id="SRE" type="checkbox" value="SRE">
+    </p>
+    <p>
+      <label for ="RE">Religious Education:</label>
+      <input name="RE" id="RE" type="checkbox" value="RE">
+    </p>
+    <p>
+      <label for ="Other">Other:</label>
+      <input name="Other" id="Other" type="checkbox" value="Other">
+    </p>
+    <p>
+      <label for ="Other_detail">If you have chosen 'Other', please say which: </label>
+      <input type="text" id="Other_detail" name="Other_detail" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p><strong>Which subjects would you LIKE to use MAPS in?</strong> (tick all that apply)</p>
+    <p>
+      <label for ="Like_English">English:</label>
+      <input name="Like_English" id="Like_English" type="checkbox" value="English">
+    </p>
+    <p>
+      <label for ="Like_Maths">Maths:</label>
+      <input name="Like_Maths" id="Like_Maths" type="checkbox" value="Maths">
+    </p>
+    <p>
+      <label for ="Like_Science">Science:</label>
+      <input name="Like_Science" id="Like_Science" type="checkbox" value="Science">
+    </p>
+    <p>
+      <label for ="Like_DandT">Design and Technology:</label>
+      <input name="Like_DandT" id="Like_DandT" type="checkbox" value="DandT">
+    </p>
+    <p>
+      <label for ="Like_ICT">ICT:</label>
+      <input name="Like_ICT" id="Like_ICT" type="checkbox" value="ICT">
+    </p>
+    <p>
+      <label for ="Like_History">History:</label>
+      <input name="Like_History" id="Like_History" type="checkbox" value="History">
+    </p>
+    <p>
+      <label for ="Like_Geography">Geography:</label>
+      <input name="Like_eography" id="Like_Geography" type="checkbox" value="Geography">
+    </p>
+    <p>
+      <label for ="Like_MFL">Modern Foreign Languages:</label>
+      <input name="Like_MFL" id="Like_MFL" type="checkbox" value="MFL">
+    </p>
+    <p>
+      <label for ="Like_Art">Art and Design:</label>
+      <input name="Like_Art" id="Like_Art" type="checkbox" value="Art">
+    </p>
+    <p>
+      <label for ="Like_Music">Music:</label>
+      <input name="Like_Music" id="Like_Music" type="checkbox" value="Music">
+    </p>
+    <p>
+      <label for ="Like_Citizenship">Citizenship:</label>
+      <input name="Like_Citizenship" id="Like_Citizenship" type="checkbox" value="Citizenship">
+    </p>
+    <p>
+      <label for ="Like_PE">Physical Education:</label>
+      <input name="Like_PE" id="Like_PE" type="checkbox" value="PE">
+    </p>
+    <p>
+      <label for ="Like_Careers">Careers Education:</label>
+      <input name="Like_Careers" id="Like_Careers" type="checkbox" value="Careers">
+    </p>
+    <p>
+      <label for ="Like_SRE">Sex and Relationship Education:</label>
+      <input name="Like_SRE" id="Like_SRE" type="checkbox" value="SRE">
+    </p>
+    <p>
+      <label for ="Like_RE">Religious Education:</label>
+      <input name="Like_RE" id="Like_RE" type="checkbox" value="RE">
+    </p>
+    <p>
+      <label for ="Like_Other">Other:</label>
+      <input name="Like_Other" id="Like_Other" type="checkbox" value="Other">
+    </p>
+    <p>
+      <label for ="Like_Other_detail">If you have chosen 'Other', please say
+      which other subjects you would <strong>like</strong> to use MAPS in: </label>
+      <input type="text" id="Like_Other_detail" name="Like_Other_detail" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p><strong>Do you use MAPS to send messages to your teachers about your work?</strong></p>
+    <p>
+      <label for ="send_teachers_yes">a)	Yes:</label>
+      <input name="send_teachers" id="send_teachers_yes" type="radio" value="yes">
+    </p>
+    <p>
+      <label for ="send_teachers_no">b)	No:</label>
+      <input name="send_teachers" id="send_teachers_no" type="radio" value="no">
+    </p>
+    <p><strong>Do your teachers use MAPS to send messages to you about your work?</strong></p>
+    <p>
+      <label for ="teachers_send_yes">a)	Yes:</label>
+      <input name="teachers_send" id="teachers_send_yes" type="radio" value="yes">
+    </p>
+    <p>
+      <label for ="teachers_send_no">b)	No:</label>
+      <input name="teachers_send" id="teachers_send_no" type="radio" value="no">
+    </p>
+    <p><strong>Do you use MAPS when you are at home?</strong></p>
+    <p>
+      <label for ="home_yes">a)	Yes:</label>
+      <input name="home" id="home_yes" type="radio" value="yes">
+    </p>
+    <p>
+      <label for ="home_no">b)	No:</label>
+      <input name="home" id="home_no" type="radio" value="no">
+    </p>
+    <p><strong>Do you ever assess your own work when you upload it?</strong></p>
+    <p>
+      <label for ="assess_yes">a)	Yes:</label>
+      <input name="assess" id="assess_yes" type="radio" value="yes">
+    </p>
+    <p>
+      <label for ="assess_no">b)	No:</label>
+      <input name="assess" id="assess_no" type="radio" value="no">
+    </p>
+    <p><strong>Do you ever do online quizzes or tests?</strong></p>
+    <p>
+      <label for ="online_yes">a)	Yes:</label>
+      <input name="online" id="online_yes" type="radio" value="yes">
+    </p>
+    <p>
+      <label for ="online_no">b)	No:</label>
+      <input name="online" id="online_no" type="radio" value="no">
+    </p>
+    <p>&nbsp;</p>
+    <p><strong>How many times a week do you use the discussion forum?</strong></p>
+    <p>
+      <label for ="forum_a">a) Never:</label>
+      <input name="forum" id="forum_a" type="radio" value="invaluable">
+    </p>
+    <p>
+      <label for ="forum_b">b) Once a week:</label>
+      <input name="forum" id="forum_b" type="radio" value="valuable">
+    </p>
+    <p>
+      <label for ="forum_c">c) Up to three days a week:</label>
+      <input name="forum" id="forum_c" type="radio" value="some">
+    </p>
+    <p>
+      <label for ="forum_d">d) Every day:</label>
+      <input name="forum" id="forum_d" type="radio" value="little">
+    </p>
+    <p>
+      <label for ="forum_e">e) Every lesson:</label>
+      <input name="forum" id="forum_e" type="radio" value="none">
+    </p>
+    <p>&nbsp;</p>
+    </fieldset>
+    <fieldset>
+    <legend>What do you think of MAPS</legend>
+    <p><strong>Using MAPS improves my work:</strong></p>
+    <p>
+      <label for ="improves_a">a) I strongly agree:</label>
+      <input name="improves" id="improves_a" type="radio" value="invaluable">
+    </p>
+    <p>
+      <label for ="improves_b">b) I agree:</label>
+      <input name="improves" id="improves_b" type="radio" value="valuable">
+    </p>
+    <p>
+      <label for ="improves_c">c) Neutral:</label>
+      <input name="improves" id="improves_c" type="radio" value="some">
+    </p>
+    <p>
+      <label for ="improves_d">d) I disagree:</label>
+      <input name="improves" id="improves_d" type="radio" value="little">
+    </p>
+    <p>
+      <label for ="improves_e">e) I strongly disagree:</label>
+      <input name="improves" id="improves_e" type="radio" value="none">
+    </p>
+    <p>&nbsp;</p>
+    <p>
+      <label for ="maps_helps">Maps helps me do work that is: </label>
+      <input type="text" id="maps_helps" name="maps_helps" size="35" maxlength="40">
+    </p>
+    <p>&nbsp; </p>
+    <p><strong>Since I started using MAPS my work has improved:</strong></p>
+    <p>
+      <label for ="improved_a">a) a lot:</label>
+      <input name="improved" id="improved_a" type="radio" value="invaluable">
+    </p>
+    <p>
+      <label for ="improved_b">b) quite a lot:</label>
+      <input name="improved" id="improved_b" type="radio" value="valuable">
+    </p>
+    <p>
+      <label for ="improved_c">c) some:</label>
+      <input name="improved" id="improved_c" type="radio" value="some">
+    </p>
+    <p>
+      <label for ="improved_d">d) not much:</label>
+      <input name="improved" id="improved_d" type="radio" value="little">
+    </p>
+    <p>
+      <label for ="improved_e">e) not at all:</label>
+      <input name="improved" id="improved_e" type="radio" value="none">
+    </p>
+    <p>&nbsp;</p>
+    <p><strong>Using MAPS make my work more fun:</strong></p>
+    <p>
+      <label for ="fun_a">a) I strongly agree:</label>
+      <input name="fun" id="fun_a" type="radio" value="invaluable">
+    </p>
+    <p>
+      <label for ="fun_b">b) I agree:</label>
+      <input name="fun" id="fun_b" type="radio" value="valuable">
+    </p>
+    <p>
+      <label for ="fun_c">c) Neutral:</label>
+      <input name="fun" id="fun_c" type="radio" value="some">
+    </p>
+    <p>
+      <label for ="fun_d">d) I disagree:</label>
+      <input name="fun" id="fun_d" type="radio" value="little">
+    </p>
+    <p>
+      <label for ="fun_e">e) I strongly disagree:</label>
+      <input name="fun" id="fun_e" type="radio" value="none">
+    </p>
+    <p>&nbsp;</p>
+    </fieldset>
+    <fieldset>
+    <legend>MAPS in use</legend>
+    <p>&nbsp;</p>
+    <p>
+      <label for ="maps_changed">How has using MAPS changed the way you work? </label>
+      <textarea name="maps_changed" id="maps_changed" cols="40" rows="4"></textarea>
+    </p>
+    <p>&nbsp;</p>
+    </fieldset>
+    <fieldset>
+    <legend>Learning how to use MAPS</legend>
+    <p><strong>How did you learn how to use MAPS?</strong></p>
+    <p>
+      <label for ="learn_a">a) The system tells you how to use it:</label>
+      <input name="learn" id="learn_a" type="radio" value="invaluable">
+    </p>
+    <p>
+      <label for ="learn_b">b) I worked it out myself:</label>
+      <input name="learn" id="learn_b" type="radio" value="valuable">
+    </p>
+    <p>
+      <label for ="learn_c">c) My friends and I worked together:</label>
+      <input name="learn" id="learn_c" type="radio" value="some">
+    </p>
+    <p>
+      <label for ="learn_d">d) We had a demonstration in an ICT lesson:</label>
+      <input name="learn" id="learn_d" type="radio" value="little">
+    </p>
+    <p>
+      <label for ="learn_e">e) We had a lesson on how to use it:</label>
+      <input name="learn" id="learn_e" type="radio" value="none">
+    </p>
+    <p>&nbsp;</p>
+    </fieldset>
+    <fieldset>
+    <legend>What you think of MAPS</legend>
+    <p><strong>I like using MAPS:</strong></p>
+    <p>
+      <label for ="like_using_a">a) I strongly agree:</label>
+      <input name="like_using" id="like_using_a" type="radio" value="invaluable">
+    </p>
+    <p>
+      <label for ="like_using_b">b) I agree:</label>
+      <input name="like_using" id="like_using_b" type="radio" value="valuable">
+    </p>
+    <p>
+      <label for ="like_using_c">c) Neutral:</label>
+      <input name="like_using" id="like_using_c" type="radio" value="some">
+    </p>
+    <p>
+      <label for ="like_using_d">d) I disagree:</label>
+      <input name="like_using" id="like_using_d" type="radio" value="little">
+    </p>
+    <p>
+      <label for ="like_using_e">e) I strongly disagree:</label>
+      <input name="like_using" id="like_using_e" type="radio" value="none">
+    </p>
+    <p>&nbsp;</p>
+    <p>
+      <label for ="best_thing">The best thing about MAPS is ... </label>
+      <textarea name="best_thing" id="best_thing" cols="40" rows="4"></textarea>
+    </p>
+    <p>
+      <label for ="anything_else">Is there anything else you would like to say
+      about MAPS? </label>
+      <textarea name="anything_else" id="anything_else" cols="40" rows="4"></textarea>
+    </p>
+    <p>&nbsp;</p>
+    </fieldset>
+    <fieldset>
+    <legend>Thank you</legend>
+    <p>We would like to thank you for the help that you have given in completing
+      this questionnaire. When you are ready, please press the 'Submit' button.</p>
+	<p>&nbsp; 
+      <input type="submit" name="submit1" value="submit" class="buttonSubmit" 
+	  onClick="return confirm('You are about to send your form. Is this OK?')"  >
+      &nbsp;&nbsp;&nbsp; &nbsp; 
+      <input type="reset" name="Reset" value="Reset" class="buttonReset"  
+	  onClick="return confirm('Do you really want to clear the form and start again?')">
+    </p>
+		  <!-- <input type="hidden" name="redirect" value="/profdev/tagmaps_thankyou.htm">
+		  <input type="hidden" name="recipient" value="ed">
+		  <input type="hidden" name="subject" value="TAG MAPS Questionnaire"> -->
+    </fieldset>
+  </form>
+  <p>[<a href="#top">Back to the top</a>]</p>
+  <p>[<a href="javascript:history.back()">Back</a>]</p>
+</div>
+<div id="footer">
+  <img src="../images/bar-home.gif" width="100%" height="30" alt="">  
+  <!--include virtual="/footer.htm"-->
+</div>
+</div>
+</body>
+</html>

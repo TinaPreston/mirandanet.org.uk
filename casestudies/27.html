@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MirandaNet Fellowship - Casestudy</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The MirandaNet Fellowship Web Site" />
+<meta name="keywords" content="ICT communities education learning support" />
+<link rel="stylesheet" type="text/css" href="../mirandanet.css" />
+<link rel="stylesheet" type="text/css" href="../fellowship/fellowship.css" />
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/fix_ie.css" /></style><![endif]-->
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+<script type="text/javascript" src="../mirandanet.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<body onload="return show('casestudies')">
+<div id="header" class="group">
+<a id="top"></a>
+<a href ="../index.html"><img src="../images/logos/mirandanet_nl.gif" alt="The MirandaNet Organisation Logo" width="167" height="61" title="The MirandaNet Organisation: return to home page" /></a> 
+	<h1 class="name"><a href ="../index.html">MirandaNet</a></h1>
+	<h2 class="strapline">Sharing experience and expertise</h2>
+	<div class="topnav_wrapper">
+	  <h5>Site navigation:</h5>
+		<ul class="topnav">
+			<li><a href ="../index.html">Home</a></li>
+			<li><a href ="../fellowship/index.html" id="current">Fellowship</a></li>
+			<li><a href ="../researchexchange/index.html">Research Exchange</a></li>
+			<li><a href ="../consultancy/index.html">Consultancy</a></li>
+			<li><a href ="http://wec.mirandanet.org.uk/">World Ecitizens</a></li>
+		</ul>
+	</div>
+</div>
+
+<div id="content" class="group">
+<div id="leftColumn">
+	<!-- Place all the items for the left hand section here -->
+	<div class="group box">
+	  <!--#include virtual="/fellowship/fellowship_menu.htm"-->
+	  <div id="nav"> 
+  <ul>
+    <li><a href="../fellowship/index.php.html" id="home" class="normal">Fellowship</a></li>
+    <li><a href="../bett/index.html" id="bett" class="normal">BETT</a> 
+      <ul id="sub_bett">
+        <li><a href="../bett/programme.htm" id="programme" class="normal">BETT Programme</a></li>
+      </ul>
+    </li>
+    <li><a href="../fellowship/about.htm" id="about" class="normal">About Us</a> 
+      <ul id="sub_about">
+        <li><a href="../fellowship/founder.htm" id="founder" class="normal">Founder</a></li>
+        <li><a href="../fellowship/researchexchange.htm" id="research" class="normal">Research 
+          Exchange</a></li>
+        <li><a href="../fellowship/consultancy.htm" id="consultancy" class="normal">Consultancy</a></li>
+        <li><a href="../fellowship/worldecitizens.htm" id="worldecitizens" class="normal">World 
+          Ecitizens</a></li>
+      </ul>
+    </li>
+    <li><a href="../profiles/index.html" id="membership" class="normal">The Membership</a></li>
+    <li><a href="../associates/index.html" id="associates" class="normal">Associates</a></li>
+    <li><a href="../news/news.php.html" id="newsarea" class="normal">News &amp; Diary</a> 
+      <ul id="sub_newsarea">
+        <li><a href="../news/diary.php.html" id="diary" class="normal">Diary</a></li>
+        <li><a href="../news/letter.php.html" id="newsletter" class="normal">Newsletter</a></li>
+        <li><a href="../news/mirandanews.htm" id="letterarchive" class="normal">Newsletter 
+          Archive</a></li>
+      </ul>
+    </li>
+    <li><a href="../contact.php.html" id="contact" class="normal">Contact Us</a></li>
+    <li><a href="../mirandamods/index.html" id="mirandamods" class="normal">MirandaMods</a></li>
+    <li><a href="index.html" id="casestudies" class="normal">Case Studies</a></li>
+    <li><a href="../articles/index.html" id="articles" class="normal">Articles</a></li>
+    <li><a href="https://www.mirandanet.org.uk/phorum/default.php" id="forum" class="normal">Forum</a></li>
+    <li><a href="../index_old.htm" id="archive" class="normal">Archive Site</a></li>
+    <li><a href="../fellowship/join.htm" id="join" class="normal">Join MirandaNet</a></li>
+    <li><a href="../membership/index.php.html" title="Members Log on/off" id="logon" class="normal">Members 
+      Log on/off</a></li>
+  </ul>
+</div>
+	</div>
+		<!-- Search Case Studies Module -->
+	<div class="group box" style="margin-bottom:0">
+	<h1>Search the Case Studies</h1> 
+ 	<form method="post" action="../fellowship/casestudies_search.php.html" class="join">
+    <fieldset>
+    <legend>Search Form</legend>
+          <p>Search for:<br />
+            <select name="field" title="Choose search area">
+			 <option value="Title">Title</option>
+			 <option value="Abstract">Abstract</option>
+			 <option value="keywords">Keywords</option>
+			 <option value="article">Professional Study</option>
+			 <option value="Name">Author Name</option>
+            </select>
+            <br />
+            <input class="txtinput" type="text" id="find1" name="find" placeholder="Enter search term" title="Enter search term" />
+            <br />
+            <input type="hidden" name="searching" value="yes" />
+            <input type="submit" name="search" value="Search" />
+          </p>
+ 	</fieldset>
+	</form>
+	</div>
+		<!-- Search Case Studies Module -->
+	<div class="group box" style="margin-bottom:0">
+	
+  <h1>Search the Articles</h1> 
+ 	<form method="post" action="../fellowship/articles_search.php.html" class="join">
+    <fieldset>
+    <legend>Search Form</legend>
+          <p>Search for:<br />
+            <select name="field" title="Choose search area">
+			 <option value="Title">Title</option>
+			 <option value="keywords">Keywords</option>
+			 <option value="article">Article</option>
+			 <option value="Name">Author Name</option>
+            </select>
+            <br />
+            <input class="txtinput" type="text" id="find2" name="find" placeholder="Enter search term" title="Enter search term" />
+            <br />
+            <input type="hidden" name="searching" value="yes" />
+            <input type="submit" name="search" value="Search" />
+          </p>
+ 	</fieldset>
+	</form>
+	</div>
+		<!-- Search Membership Module -->
+	<div class="group box" style="margin-bottom:0">
+	<h1>Search the Membership</h1> 
+	<form method="post" action="../fellowship/listing_search.php.html" class="join">
+     <fieldset>
+    <legend>Search Form</legend>
+          <p>Search for:<br />
+            <select name="field" title="Choose search area">
+              <option value="Anything">Anything</option>
+			  <option value="Surname">Last Name</option>
+              <option value="Forename">First Name</option>
+              <option value="Profile">Profile</option>
+            </select>
+            <br />
+            <input class="txtinput" type="text" id="find" name="find" placeholder="Enter search term" title="Enter search term" />
+            <br />
+            <input type="hidden" name="searching" value="yes" />
+            <input type="submit" name="search" value="Search" />
+          </p>
+	</fieldset>
+	</form>
+	</div>	<!-- Search MirandaNet Module -->
+<div class="group box" style="margin-bottom:0">
+	
+  <h1>Search MirandaNet</h1> 
+ 	<form method="get" action="https://www.google.com/search">
+    <fieldset>
+    <legend>Search Form</legend>
+          <p>Search in:<br />
+            <select name="sitesearch" title="Choose search area">
+			 <option value="mirandanet.org.uk">MirandaNet</option>
+			 <option value="worldecitizens.net">World Ecitizens</option>
+			 <option value="">The Web</option>
+            </select>
+            <br />
+            <input class="txtinput" type="text" name="q" maxlength="255" placeholder="Enter search term" title="Enter search term"/>
+            <br />
+            <input type="hidden" name="searching" value="yes" />
+            <input type="submit" name="search" value="Google Search" />
+          </p>
+ 	</fieldset>
+	</form>
+	</div>
+
+</div>
+  <div id="mainBody" class="group"> 
+    <h1>MirandaNet Fellowship Casestudy</h1>
+    <p><a href="../fellowship/listing.php.html">Membership List</a> | <a href="../publications/index.html">Publications</a> 
+      | <a href="../publications/research.htm">Research</a> | <a href="../publications/personal.php.html">Specialist 
+      Area List</a> | <a href="../ejournal/index.html">Braided Learning Ejournal</a></p>
+    <hr />
+    <h2>Modern Foreign Languages Elearning Project:</h2>
+<p><strong>How can ICT be used to set meaningful and motivating homework in MFL? Investigating pupils' response to an online language forum</strong></p>
+<p><strong>Karen Hanrahan</strong></p>
+<p><strong>Year of posting:</strong> 2004</p>
+<hr />
+<p><strong>Abstract:</strong></p><p><strong>Context:</strong> The project I have been working on involves two groups of Year 7 students (a French class of 29 students and a German class of 28) within a large 11-18 comprehensive school in East Sussex.</p>
+<p><strong>Aims:</strong> The idea for this project germinated from two distinct and (fairly common!) difficulties I have encountered, namely access to the IT suites in school and the setting of meaningful yet interesting homework. Therefore, my project&rsquo;s aims were to investigate the viability of students&rsquo; use of ICT for Modern Foreign Languages at home (including their response to their own private forum) and whether this had any impact on their attitude to language learning. In addition, I proposed to examine my own e-learning throughout the project.</p>
+<p><strong>Project Outline:</strong> The homework tasks included going onto different language websites to complete various activities, writing reviews and reports of chosen language sites and games which students would then email to me, and participating in a language forum that was set up specifically for the project on the MirandaNet site. Other questions I intended to consider include: How effectively can online homework be monitored? What effect, if any, does this e-learning project have on students&rsquo; attitude to language learning? How successful was the Year 7 discussion forum and how does it differ from an adult forum?</p>
+<p><strong>Expected outcomes/findings:&nbsp;</strong> I hypothesized that students would find this new way of approaching MFL homework both useful and fun. In addition, I hoped that exposure to these language sites and the educational games and activities on them, as well as to our private forum, would encourage student autonomy by motivating students to access the sites again in their own time. A further supposition was that the project would help instill in the students a more positive attitude towards language-learning.</p>
+<p>For my part I expected that the project would help me reflect on the processes of practice and planning as well as exploring new ways of communicating with my students. In acting as an efacilitator on the forum I would enable students to experiment with new ways of communicating with each other online.</p>
+<p><strong>Data collection and analysis:</strong> I intended to use a variety of methods to collect and evaluate data, such as an analysis of posts to the language forum, observations, questionnaires, a log of the project, interviews with students.</p>
+<hr />
+<p><strong>Study</strong></p><p><span style="color: black;">(This link shows an example of&nbsp;a thread from our&nbsp;private online langauges&nbsp;forum)</span></p>
+<p><span style="color: blue;"><strong style="mso-bidi-font-weight: normal;"><span style="color: #000000;">AIMS AND INTRODUCTION<!--?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" ?--></span></strong></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;"><span style="mso-bidi-font-weight: bold;"><span style="color: #000000;">&nbsp;</span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style="color: blue;">&ldquo;I found it really fun because I was learning and playing games at the same time, which makes it a more interesting and fun way to learn.&rdquo; (Laura, Year 7 French)&nbsp;</span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;"><span style="color: blue;"></span>&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;"><span style="color: #000000;">My primary aim in undertaking this research project was to investigate how ICT can be used as an effective, meaningful and motivating homework tool in Modern Foreign Languages. Over the past decade ICT has revolutionized teaching and learning in secondary schools. However, much of the focus has been on improving students&rsquo; IT literacy within specific IT lessons or through cross-curricular projects in school.<span style="mso-spacerun: yes;">&nbsp; </span></span></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial;"><span style="color: #000000;">According to Becta, &ldquo;ICT has the potential to make a significant contribution to the teaching of MFL by: developing and improving all four language skills; enhancing pupils' language learning skills; helping to develop independent learning skills; providing different levels of support to match different pupils' language learning skills; communicating with people in the target language; accessing a range of resources in the target language and identifying with the people of target language communities and countries; providing a flexible and time-saving resource; allowing teachers to respond to different stages in a pupil's writing&rdquo;</span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt 18pt;"><span style="color: black; font-family: Verdana;">(<a href="http://www.becta.org.uk/corporate/corporate.cfm?section=1&amp;id=2111"><span style="color: #293d60;">http://www.becta.org.uk/corporate/corporate.cfm?section=1&amp;id=2111</span></a>)</span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt 18pt; text-align: justify;"><span style="color: black; font-family: Verdana;"><span style="mso-spacerun: yes;">&nbsp;</span></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;"><span style="color: #000000;"><span style="mso-spacerun: yes;">&nbsp;</span>My objective in undertaking the GTC Action Research project was to examine students&rsquo; elearning in my subject area from a slightly different perspective, namely by exploring MFL homework as an online, more autonomous, student-led learning experience. </span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;"><span style="color: #000000;">&nbsp;</span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;"><span style="color: #000000;">This choice of topic was prompted essentially by two factors, the first one being the con<!--?xml:namespace prefix = st1 ns = "urn:schemas-microsoft-com:office:smarttags" ?-->stant challenge to create meaningful homework with limited resources; in my school students are not permitted to take textbooks home and teachers are allocated a quota of one hundred photocopies per month. The lack of scope in using the IT facilities in school, for my subject area at least, constitutes the second reason for seeking an alternative way that students could get involved online in MFL.</span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;"><span style="color: #000000;">&nbsp;</span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;"><span style="color: #000000;">I also wanted to consider whether the use of ICT in this way could promote a more positive attitude towards language learning. </span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;"><span style="color: #000000;">&nbsp;</span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;"><span style="color: #000000;">A significant part of the implementation stage was the creation of an online private language forum for the students involved in the project. This was designed as a space where they could share their experiences and knowledge, seek solutions to any problems encountered as well as being the area where they posted their homework.<span style="mso-spacerun: yes;">&nbsp; </span>Students&rsquo; response to this online forum was a further element I wished to analyse in undertaking the Action Research project.<span style="mso-spacerun: yes;">&nbsp; </span></span></p>
+<hr />
+<p>&nbsp;</p>
+<p>THEORETICAL FRAMEWORK</p>
+<p>&nbsp;</p>
+<p>The framework upon which my project was based is the Action Research model. While many variations on the model exist (see for example Hopkins (2002) for an exposition of different models), the theory underpinning them and their typically cyclical nature are features common to most.</p>
+<table style="width: 500px;">
+<tbody>
+<tr>
+<td align="center"><img src="../membership/uploads/359/ARcycle.jpg" alt="Action Research Cycle" /></td>
+</tr>
+</tbody>
+</table>
+<p><span style="color: green;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (source: Ideas!)</span></p>
+<ol style="margin-top: 0cm;" type="1">
+<li class="MsoNormal" style="margin: 0cm 0cm 0pt; mso-list: l2 level1 lfo2; tab-stops: list 36.0pt;"><strong><em>Reflect - </em></strong><span style="mso-spacerun: yes;">&nbsp;</span></li>
+</ol>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt 54pt; text-indent: -18pt; mso-list: l3 level1 lfo3; tab-stops: list 54.0pt;"><span style="font-family: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol;"><span style="mso-list: Ignore;">&middot;<span style="font: 7pt 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span>I&rsquo;m having difficulty getting access to the IT suites in school during language<span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp;&nbsp; </span>lessons. How can I increase students&rsquo; exposure to MFL through the use of ICT?<span style="mso-spacerun: yes;">&nbsp; </span></span></p>
+<p class="MsoBodyTextIndent" style="margin: 0cm 0cm 0pt 54pt; text-indent: -18pt; mso-list: l3 level1 lfo3; tab-stops: list 54.0pt;"><span style="font-family: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol;"><span style="mso-list: Ignore;"><span style="font-size: small;">&middot;</span><span style="font: 7pt 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span><span style="font-size: small;"><span style="font-family: Arial;">How can I set homework that is interesting when students cannot take textbooks home and my photocopying budget is limited to 100 copies per month?</span></span></span></p>
+<p class="MsoBodyTextIndent" style="margin: 0cm 0cm 0pt 18pt; text-indent: 0cm;"><span style="font-family: Arial; font-size: small;">&nbsp;</span></p>
+<ol style="margin-top: 0cm;" type="1" start="2">
+<li class="MsoNormal" style="margin: 0cm 0cm 0pt; mso-list: l2 level1 lfo2; tab-stops: list 36.0pt;"><strong><em>Plan - </em></strong><span style="mso-tab-count: 1;">&nbsp; </span>Explore possibility of setting ICT tasks for homework with Year 7 French and German groups. Assess how many would not have access to a computer at home and explore alternative possibilities (use PCs in library at break or lunch, buddy up with friend who has internet access, arrange for students to use my laptop at convenient time). Work within timeline of 6 weeks.</li>
+</ol>
+<p class="MsoBodyTextIndent2" style="margin: 0cm 0cm 0pt 36pt; text-align: justify;"><span style="font-size: small;"><span style="font-family: Arial;"><span style="text-decoration: underline;">First phase</span>: students go online, complete very specific activities on one of designated language sites and then email homework to me. I (try to) act as trouble-shooter for any technical / language problems which students encounter. Ascertain student interest in language forum (3 weeks). </span></span></p>
+<p class="MsoBodyTextIndent2" style="margin: 0cm 0cm 0pt 36pt; text-align: justify;"><span style="font-size: small;"><span style="font-family: Arial;"><span style="text-decoration: underline;">Second phase</span>: Launch language forum. Introduce students to it during an IT lesson, explain how to use it and establish code of conduct. Homework tasks now to become more open-ended and are to be posted to the forum, not emailed to me. Students try to help each other with problems. I act as moderator for the forum (2-3 weeks).<span style="mso-spacerun: yes;">&nbsp;&nbsp; </span></span></span></p>
+<p class="MsoBodyTextIndent2" style="margin: 0cm 0cm 0pt 36pt; text-align: justify;"><span style="font-size: small;"><span style="font-family: Arial;"><span style="text-decoration: underline;">Conclusion of project</span>: Allow one week for online questionnaire, student commentaries and review.</span></span></p>
+<p class="MsoBodyTextIndent2" style="margin: 0cm 0cm 0pt 36pt; text-align: justify;"><span style="font-family: Arial; font-size: small;">&nbsp;</span></p>
+<ol style="margin-top: 0cm;" type="1" start="3">
+<li class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify; mso-list: l2 level1 lfo2; tab-stops: list 36.0pt;"><strong><em>Act</em></strong> &ndash;<span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp; </span>Implementation of above plan; this is detailed in the section below. The websites that we used for the purposes of the project are also listed in this section. The address of our Modern Foreign Languages online forum is:</li>
+</ol>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt 54pt; text-indent: -18pt; text-align: justify; mso-list: l0 level1 lfo4; tab-stops: list 54.0pt;"><span style="font-family: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol;"><span style="mso-list: Ignore;">&middot;<span style="font: 7pt 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span><a href="https://www.mirandanet.org.uk/phorum/list.php?f=12"><span style="color: #293d60;">http://www.mirandanet.ac.uk/phorum/list.php?f=12</span></a></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt 36pt; text-align: justify;">For security reasons this was a private forum and therefore can only be accessed with a valid username and password (however, an example is given below).</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt 18pt; text-align: justify;">&nbsp;</p>
+<ol style="margin-top: 0cm;" type="1" start="4">
+<li class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify; mso-list: l2 level1 lfo2; tab-stops: list 36.0pt;"><strong><em>Observe </em></strong>-<span style="mso-spacerun: yes;">&nbsp; </span>I planned to collect and analyse several forms of data to ensure validity of research findings (see section below and also section on Research Findings and Evaluation)<span style="mso-spacerun: yes;">&nbsp; </span></li>
+</ol>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">&nbsp;</p>
+<hr />
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt;">&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;"><strong>RESEARCH METHODOLOGY AND IMPLEMENTATION</strong></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">I used several means of data collection and evaluation:</p>
+<ul style="margin-top: 0cm;" type="disc">
+<li class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify; mso-list: l5 level1 lfo1; tab-stops: list 36.0pt;">Analysis of the pupils&rsquo; electronic portfolio (i.e. using the forum and also the emails that students sent me as a barometer of pupil engagement and enthusiasm as well as an indicator of the volume of activity of each pupil online)</li>
+<li class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify; mso-list: l5 level1 lfo1; tab-stops: list 36.0pt;">Field notes (keeping a log of the project&rsquo;s progress and my on-going observations)</li>
+<li class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify; mso-list: l5 level1 lfo1; tab-stops: list 36.0pt;">Questionnaires on e-learning project (to be completed online at the end of the project)</li>
+<li class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify; mso-list: l5 level1 lfo1; tab-stops: list 36.0pt;">Collecting pupil commentaries to identify their overall perspective on the e-learning project and, most importantly, to cross-reference and check their consistency with the answers supplied on the questionnaires (these to be completed online during lesson time).</li>
+</ul>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">By using these diverse methods of gathering evidence I expected to establish validity of the findings.<span style="mso-spacerun: yes;">&nbsp; </span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;"><strong><em>Implementation strategies:</em></strong></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">The actual project ran for 6 weeks in total and was implemented with two Year 7 classes (one French group of 29 students and one German group of 28 students). The language sites we worked on for homework were</p>
+<ul style="margin-top: 0cm;" type="disc">
+<li class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify; mso-list: l4 level1 lfo5; tab-stops: list 36.0pt;">Channel 4&rsquo;s Chez mimi:</li>
+</ul>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;"><a href="http://www.ltscotland.org.uk/5to14/c4modernlanguages/mimi/main/french_main_menu.asp"><span style="color: #293d60;">http://www.ltscotland.org.uk/5to14/c4modernlanguages/mimi/main/french_main_menu.asp</span></a></p>
+<ul style="margin-top: 0cm;" type="disc">
+<li class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify; mso-list: l4 level1 lfo5; tab-stops: list 36.0pt;">Hennings Haus:</li>
+</ul>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;"><a href="http://www.ltscotland.org.uk/5to14/c4modernlanguages/henning/main/german_main_menu.asp"><span style="color: #293d60;">http://www.ltscotland.org.uk/5to14/c4modernlanguages/henning/main/german_main_menu.asp</span></a></p>
+<ul style="margin-top: 0cm;" type="disc">
+<li class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify; mso-list: l4 level1 lfo5; tab-stops: list 36.0pt;">Educationcity:</li>
+</ul>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;"><a href="http://www.educationcity.net/"><span style="color: #293d60;">http://www.educationcity.net</span></a></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">I subscribed to a free trial on this website for the duration of the project.</p>
+<ul style="margin-top: 0cm;" type="disc">
+<li class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify; mso-list: l4 level1 lfo5; tab-stops: list 36.0pt;">Also <a href="http://www.quia.com/">www.quia.com</a></li>
+<li class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify; mso-list: l4 level1 lfo5; tab-stops: list 36.0pt;">And <a href="http://www.bonjour.org.uk/"><span style="color: #293d60;">www.bonjour.org.uk</span></a></li>
+<li class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify; mso-list: l4 level1 lfo5; tab-stops: list 36.0pt;">And its German counterpart <a href="http://www.hallo.org.uk/"><span style="color: #293d60;">www.hallo.org.uk</span></a> (these have since become websites that one must subscribe to <a href="http://www.linguascope.com/">www.linguascope.com</a>)<em style="mso-bidi-font-style: normal;">. </em></li>
+</ul>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;"><em style="mso-bidi-font-style: normal;">&nbsp;</em></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;"><strong style="mso-bidi-font-weight: normal;"><em style="mso-bidi-font-style: normal;"><span style="color: #993366;">&ldquo; I revised how to say all the words in German and English at home so I could beet (sic) my score in the games and get quicker times and I didn&rsquo;t have to keep looking in my book&rdquo; </span></em><span style="color: #993366;"><span style="mso-spacerun: yes;">&nbsp;</span>(Gemma, Year 7 German)</span></strong></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;"><em style="mso-bidi-font-style: normal;"><span style="mso-spacerun: yes;">&nbsp;</span></em></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;"><strong><em style="mso-bidi-font-style: normal;"><span style="text-decoration: underline;">Phase 1:</span></em> </strong>Prior to commencing the project I set up an email address which was dedicated specifically to the project. Pupils were instructed to send their homework and any problems they encountered to this address.</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">Initially, the homework tasks set were of a very specific nature and I gave very detailed information about each link e.g. pupils were told to go onto a certain website and complete certain games and/or activities and then to email the answers to me.</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">I was struck by the ease with which the vast majority of pupils seemed to engage with the technology. Moreover, I had anticipated a greater degree of difficulty with regard to internet access than was actually the case. Of the five students (out of 59) who I had to chase up for homework, four were often late in producing homework and needed much prompting, which led me to question whether their lack of homework was entirely due to gaining online access.</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">One technical problem which we did encounter at the start was with the Educationcity website; I had subscribed to a free trial on this site and therefore students needed a username and password to access the games and activities. I gave these out in a lesson but a number of students either misplaced their sheet or did not know where to enter the details on the website (it was not self-evident). Several of the emails I received related to these difficulties but once I replied to the individuals in question they managed to login and succeeded in doing the homework. The next lesson I demonstrated how to do it using my laptop in the classroom for those who were still not sure.</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">I found that monitoring homework was not a problem as it was easy to keep track of emails received but I was more lenient in giving extensions for completing homework as I felt that some students had genuine excuses (such as their internet connection temporarily not working etc.).</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">As students gained in confidence and competence the homework tasks became more open-ended e.g. they were given a choice of activity or website and then had to email me a review of a certain game or language site and two new words in the target language which they had learnt.</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">The emails served a dual function in that they allowed me to monitor and assess pupil homework and learning as well as providing valuable data for my research.<span style="mso-spacerun: yes;">&nbsp; </span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;"><strong style="mso-bidi-font-weight: normal;"><em style="mso-bidi-font-style: normal;"><span style="color: #993366;">&ldquo;The phorum was great. You could talk to people in German without having to pronounce it right. I found it different because you don&rsquo;t have people staring at you and putting you off&rdquo; (Nia, Year 7 German).</span></em></strong></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;"><strong style="mso-bidi-font-weight: normal;"><em style="mso-bidi-font-style: normal;"><span style="color: #993366;">&nbsp;</span></em></strong></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;"><strong><em style="mso-bidi-font-style: normal;"><span style="text-decoration: underline;">Phase 2:</span></em></strong> The next phase of the project involved the launching of the online languages forum.</p>
+<ul style="margin-top: 0cm;" type="disc">
+<li class="MsoNormal" style="margin: 0cm 0cm 0pt; color: black; text-align: justify; mso-list: l1 level1 lfo6; tab-stops: list 36.0pt;"><span style="font-family: 'Courier New';"><a href="https://www.mirandanet.org.uk/phorum/list.php?f=12"><span style="color: #293d60;">http://www.mirandanet.ac.uk/phorum/list.php?f=12 </span></a></span></li>
+</ul>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">This was hosted by MirandaNet and I am grateful to MirandaNet&rsquo;s editor Francis Howlett who kept a watchful eye over proceedings. The forum was designed to extend online dialogue beyond that of teacher and student so that pupils could communicate online not only with those in their class but also with students in the other language group. My role was one of moderator. The positive response to the forum was beyond what I could have hoped for: there were 235 posts in all (not including those which had, for various reasons, been deleted) and the excitement and enthusiasm that it generated is, in my opinion, immeasurable.</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">We did an initial lesson in the IT room to introduce pupils to the forum (of the 50 respondents in the questionnaire only 8 had previously been on a forum). Pupils were given definite guidelines regarding netiquette and relevance of posts. From this point students were no longer to email me but rather to post their messages and homework on the forum. Moreover, students were encouraged to try to help each other with any problems encountered.<span style="mso-spacerun: yes;">&nbsp; </span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">&nbsp;</p>
+<table style="width: 100%;" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="background-color: transparent; border: #ece9d8;">
+<div class="shape" style="padding-right: 7.2pt; padding-left: 7.2pt; padding-bottom: 3.6pt; padding-top: 3.6pt;">
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt;">&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><span style="font-size: 14pt; color: red;"><a href="../membership/uploads/359/Discussion%20Forums.doc"><span style="color: red;">Click here to see an example from our Year 7 Modern Foreign Languages forum</span></a></span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><span style="font-size: 14pt;">&nbsp;</span></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><span style="z-index: 1; position: absolute; mso-ignore: vglayout;"></span><span style="color: #993366; mso-bidi-font-weight: bold; mso-bidi-font-style: italic;">&nbsp;</span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;"><span style="mso-bidi-font-style: italic;">&nbsp;</span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt;">&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt;">&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt;">&nbsp;</p>
+<p><br style="mso-ignore: vglayout;" clear="all" />&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;"><strong>RESEARCH FINDINGS AND EVALUATION</strong></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">&nbsp;</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;"><strong>A)<span style="mso-tab-count: 1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></strong>Out of a total of 57 participants in the project I succeeded in obtaining a completed questionnaire from 50 of these students (the remaining students were either out on a school trip, on holiday or absent due to illness). The elearning questionnaire was to be filled in during lesson time.<span style="mso-spacerun: yes;">&nbsp; </span></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">My initial intention was that it should be completed online and almost two-thirds of students succeeded in doing this. However, the remaining students could not access the shared curriculum area on the school network where the questionnaire was located and therefore had to resort to filling it in manually. There were ten questions in total, nine of which involved a multiple choice style answer.</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt;"><span style="font-size: 12pt;">&nbsp;</span></p>
+<p>&nbsp;</p>
+<div class="Section1">
+<p class="MsoNormal" style="text-align: center;" align="center">&nbsp;</p>
+<table class="MsoNormalTable" style="border-collapse: collapse; mso-border-alt: solid windowtext .5pt; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-border-insideh: .5pt solid windowtext; mso-border-insidev: .5pt solid windowtext;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr style="mso-yfti-irow: 0; page-break-inside: avoid;">
+<td style="padding-right: 5.4pt; padding-left: 5.4pt; padding-bottom: 0cm; width: 302.4pt; padding-top: 0cm; mso-border-alt: solid windowtext .5pt; border: windowtext 1pt solid;" colspan="3" valign="top" width="403"><ol style="margin-top: 0cm;" type="1">
+<li class="MsoNormal" style="text-align: center; mso-list: l0 level1 lfo1; tab-stops: list 36.0pt;"><strong>How much of the IT project did you enjoy?</strong></li>
+</ol></td>
+</tr>
+<tr style="mso-yfti-irow: 1;">
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">All of it</p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">Some of it</p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">None of it</p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 2;">
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">33</p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">17</p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">&nbsp;</p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 3; page-break-inside: avoid;">
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 302.4pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" colspan="3" valign="top" width="403"><ol style="margin-top: 0cm;" type="1" start="2">
+<li class="MsoNormal" style="text-align: center; mso-list: l0 level1 lfo1; tab-stops: list 36.0pt;"><strong>Did the websites that we used help you improve your knowledge of a foreign language?</strong></li>
+</ol></td>
+</tr>
+<tr style="mso-yfti-irow: 4;">
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">Very much</p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">A little</p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">Not very much</p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 5;">
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">20</p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">28</p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">2</p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 6; page-break-inside: avoid;">
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 302.4pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" colspan="3" valign="top" width="403"><ol style="margin-top: 0cm;" type="1" start="3">
+<li class="MsoNormal" style="text-align: center; mso-list: l0 level1 lfo1; tab-stops: list 36.0pt;"><strong>Do you think the project made French/German more fun and interesting?</strong></li>
+</ol></td>
+</tr>
+<tr style="mso-yfti-irow: 7;">
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">Yes, definitely</p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">A little bit</p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">Not really</p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 8;">
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">43</p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">6</p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">1</p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 9; page-break-inside: avoid;">
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 302.4pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" colspan="3" valign="top" width="403"><ol style="margin-top: 0cm;" type="1" start="4">
+<li class="MsoNormal" style="text-align: center; mso-list: l0 level1 lfo1; tab-stops: list 36.0pt;"><strong>Would you ever go on these language websites again on your own (e.g. at the weekend, during the holidays&hellip;)?</strong></li>
+</ol></td>
+</tr>
+<tr style="height: 11.9pt; mso-yfti-irow: 10; page-break-inside: avoid;">
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 11.9pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="134">
+<h1><span style="font-weight: normal;">Yes I would</span></h1>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 11.9pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">Maybe</p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 11.9pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">No way</p>
+</td>
+</tr>
+<tr style="height: 11.8pt; mso-yfti-irow: 11; page-break-inside: avoid;">
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 11.8pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">10</p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 11.8pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">29</p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 11.8pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">11</p>
+</td>
+</tr>
+<tr style="height: 11.8pt; mso-yfti-irow: 12; page-break-inside: avoid;">
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 302.4pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 11.8pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" colspan="3" valign="top" width="403"><ol style="margin-top: 0cm;" type="1" start="5">
+<li class="MsoNormal" style="text-align: center; mso-list: l0 level1 lfo1; tab-stops: list 36.0pt;"><strong>How easy was it to get online (to email, to do homework, to get onto the forum) at home?</strong></li>
+</ol></td>
+</tr>
+<tr style="height: 12.25pt; mso-yfti-irow: 13; page-break-inside: avoid;">
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">Easy</p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">I had some problems</p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">It didn&rsquo;t work for me</p>
+</td>
+</tr>
+<tr style="height: 12.25pt; mso-yfti-irow: 14; page-break-inside: avoid;">
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">18</p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">30</p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">2</p>
+</td>
+</tr>
+<tr style="height: 12.25pt; mso-yfti-irow: 15; page-break-inside: avoid;">
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 302.4pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" colspan="3" valign="top" width="403"><ol style="margin-top: 0cm;" type="1" start="6">
+<li class="MsoNormal" style="text-align: center; mso-list: l0 level1 lfo1; tab-stops: list 36.0pt;"><strong>Had you ever been on a forum before this project?</strong></li>
+</ol></td>
+</tr>
+<tr style="height: 12.25pt; mso-yfti-irow: 16; page-break-inside: avoid;">
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">Yes</p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">No</p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">&nbsp;</p>
+</td>
+</tr>
+<tr style="height: 12.25pt; mso-yfti-irow: 17; page-break-inside: avoid;">
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center"><strong>8</strong></p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">42</p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">&nbsp;</p>
+</td>
+</tr>
+<tr style="height: 12.25pt; mso-yfti-irow: 18; page-break-inside: avoid;">
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 302.4pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" colspan="3" valign="top" width="403"><ol style="margin-top: 0cm;" type="1" start="7">
+<li class="MsoNormal" style="text-align: center; mso-list: l0 level1 lfo1; tab-stops: list 36.0pt;"><strong>Did you improve your IT skills during the project?</strong></li>
+</ol></td>
+</tr>
+<tr style="height: 12.25pt; mso-yfti-irow: 19; page-break-inside: avoid;">
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">A lot</p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">A little</p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">Not at all</p>
+</td>
+</tr>
+<tr style="height: 12.25pt; mso-yfti-irow: 20; page-break-inside: avoid;">
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center"><strong>4</strong></p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center"><strong>35</strong></p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center"><strong>11</strong></p>
+</td>
+</tr>
+<tr style="height: 12.25pt; mso-yfti-irow: 21; page-break-inside: avoid;">
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 302.4pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" colspan="3" valign="top" width="403"><ol style="margin-top: 0cm;" type="1" start="8">
+<li class="MsoNormal" style="text-align: center; mso-list: l0 level1 lfo1; tab-stops: list 36.0pt;"><strong>What did you think of the forum?</strong></li>
+</ol></td>
+</tr>
+<tr style="height: 12.25pt; mso-yfti-irow: 22; page-break-inside: avoid;">
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">Wicked</p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">Quite good</p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">Stupid</p>
+</td>
+</tr>
+<tr style="height: 12.25pt; mso-yfti-irow: 23; page-break-inside: avoid;">
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center"><strong>15</strong></p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center"><strong>30</strong></p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center"><strong>5</strong></p>
+</td>
+</tr>
+<tr style="height: 12.25pt; mso-yfti-irow: 24; page-break-inside: avoid;">
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 302.4pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" colspan="3" valign="top" width="403"><ol style="margin-top: 0cm;" type="1" start="9">
+<li class="MsoNormal" style="text-align: center; mso-list: l0 level1 lfo1; tab-stops: list 36.0pt;"><strong>Did you find this work&hellip;<span class="GramE">.</span></strong></li>
+</ol></td>
+</tr>
+<tr style="height: 12.25pt; mso-yfti-irow: 25; page-break-inside: avoid;">
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">Just about right</p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">Too easy</p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center">Too hard</p>
+</td>
+</tr>
+<tr style="height: 12.25pt; mso-yfti-irow: 26; page-break-inside: avoid;">
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center"><strong>42 </strong></p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center"><strong>7</strong></p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center"><strong>1</strong></p>
+</td>
+</tr>
+<tr style="height: 12.25pt; mso-yfti-irow: 27; page-break-inside: avoid;">
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 302.4pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" colspan="3" valign="top" width="403"><ol style="margin-top: 0cm;" type="1" start="10">
+<li class="MsoNormal" style="text-align: center; mso-list: l0 level1 lfo1; tab-stops: list 36.0pt;"><strong>How do you feel about French/German now we have finished the project?</strong></li>
+</ol></td>
+</tr>
+<tr style="height: 11.6pt; mso-yfti-irow: 28; page-break-inside: avoid; mso-yfti-lastrow: yes;">
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 11.6pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center"><strong>&nbsp;</strong></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><strong>&nbsp;</strong></p>
+</td>
+<td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: medium none; padding-left: 5.4pt; padding-bottom: 0cm; border-left: medium none; width: 100.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 11.6pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" valign="top" width="134">
+<p class="MsoNormal" style="text-align: center;" align="center"><strong>&nbsp;</strong></p>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Critique</strong></p>
+<p>As a newcomer to the world of efacilitation, on commencing this course I found myself clinging to Preece&rsquo;s <em>Online Communities: Designing usability, Supporting Sociability,</em> hoping that it would shed some light on what was going on. And it did. I found that the text gives a very comprehensive account of online learning communities yet in an accessible, user-friendly style. When it came to running my own forum for the case study I found myself returning to it as it draws together very well the different theories and discussions regarding human behaviour online.&nbsp;&nbsp;</p>
+<p dir="rtl">&nbsp;</p>
+<p>Salmon&rsquo;s <em>E-tivities</em> was another important font of knowledge for me, and from what I can gather, for other colleagues also. Her five-stage framework has been heavily referred to throughout the course, initially almost forming the backbone before it was repositioned in the second part of the course as we considered other theories and models of e-learning. The book&rsquo;s hands-on approach was attractive, offering an abundance of practical ideas.&nbsp; While I did find many of her ideas engaging I think a certain number are more geared to an older audience and would be difficult to implement in a secondary school context. However, it was extremely useful for our GTC efacilitation work and I found myself dipping into it throughout the course. In particular part II, the resources for practitioners, was densely packed with workable ideas.&nbsp;</p>
+<p>Still on the subject of online communities in particular, I thought that Paccagnella&rsquo;s article (1997) discussing strategies for exploring ethnographic research for virtual communities made for compelling reading and throws up pertinent issues regarding the complexities involved in analyzing the online world.</p>
+<p>In general, I found it quite difficult to find relevant articles in my subject area to help inform my thinking. One very interesting article I did come across was by Warschauer and Healey (1998). This is an excellent study of the evolution of CALL, where we are now and where we are heading in the future. They assert that in the networked society most &lsquo;real&rsquo; writing will take place on screen and in response to this second language teachers will need to teach students effective online writing skills. The web should no longer be viewed merely as a distribution vehicle but rather as a medium in its own right: &ldquo;Students will want to learn how to publish Web pages that are fitting for the multimedia environment. We will thus need to find ways to teach our students to combine a variety of media--texts, images, sounds, video--without diluting the attention we give to language&rdquo;. This then begs the question as to whether the MFL curriculum is addressing these needs and how we can better integrate technology into the language learning process in schools.&nbsp;</p>
+<p>&nbsp;</p>
+<p>In carrying out the Action Research I would like to cite several sources which helped focus my thinking in designing and modifying my project but also which influenced my perception of the whole AR philosophy. Firstly, David Nunan&rsquo;s ar</p>
+<p>[<a href='../membership/uploads/359/Discussion%20Forums.doc'><strong>You can download this casestudy</strong></a>]</p>
+<hr><p>MirandaNet Members can go to the <a href = '../membership/index.php.html'>Log on/off</a> area to edit their own casestudies.</a></p><hr>    <p>[<a href="#top">Back to the top</a>]</p>
+  <p>[<a href="javascript:history.back()">Back</a>]</p>
+</div>
+</div>
+<div id="footer" class="group"> 
+  <!--#include virtual="/footer.htm"-->
+  <!-- Footer Starts -->
+<div id="footer_left"> 
+  <ul class="accessBar">
+    <li class="accessBar"><a href="../associates/bedfordshire.htm"><img src="../images/associates_logos/Uni_Bed_logo_small.jpg" alt="University of Bedfordshire" title="University of Bedfordshire" width="72" height="28" style="vertical-align: -40%;"></a> 
+    </li>
+    <li class="accessBar"><a href="../associates/index.html">Associates</a></li>
+    <li class="accessBar"><a href="../about.php.html">About&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../contact.php.html">Contact&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../fellowship/join.htm">Join&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../membership/index.php.html" title="Members Log on/off" id="members_logon" class="normal">Members&nbsp;Log&nbsp;on/off</a></li>
+  </ul>
+</div>
+<div id="footer_right">
+  <ul class="accessBar">
+    <li class="accessBar"><a href="http://www.linkedin.com/groups/MirandaMod-3726470?trk=myg_ugrp_ovr"><img src="../images/site/linkedin_logo.png" alt="Linked In MirandaNet" width="99" height="28" title="Linked In MirandaNet"></a></li>
+	<li class="accessBar"><a href="http://www.facebook.com/pages/MirandaMod/180379201990546"><img src="../images/site/f_logo.png" alt="MirandaNet on Facebook" width="28" height="28" title="MirandaNet on Facebook"></a></li>
+	<li class="accessBar"><img src="../images/site/twitter.jpg" alt="MirandaNet on Twitter - forthcoming feature" width="28" height="28" title="MirandaNet on Twitter - forthcoming feature"></li>
+	<li class="accessBar"><a href="https://plus.google.com/u/0/communities/116934752242714806891"><img src="../images/site/gplus-32.png" alt="Google + MirandaNet" width="28" height="28" title="Google + MirandaNet"></a></li>
+	<li class="accessBar"><a href="../feed.xml.rss"><img src="../images/site/rss.jpg" alt="RSS feed for MirandaNet" width="28" height="28" title="RSS feed for MirandaNet"></a></li> 
+  </ul>
+</div>
+<!-- Footer Ends --></div>
+</body>
+</html>

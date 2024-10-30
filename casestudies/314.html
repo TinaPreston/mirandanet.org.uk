@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MirandaNet Fellowship - Casestudy</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The MirandaNet Fellowship Web Site" />
+<meta name="keywords" content="ICT communities education learning support" />
+<link rel="stylesheet" type="text/css" href="../mirandanet.css" />
+<link rel="stylesheet" type="text/css" href="../fellowship/fellowship.css" />
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/fix_ie.css" /></style><![endif]-->
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+<script type="text/javascript" src="../mirandanet.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<body onload="return show('casestudies')">
+<div id="header" class="group">
+<a id="top"></a>
+<a href ="../index.html"><img src="../images/logos/mirandanet_nl.gif" alt="The MirandaNet Organisation Logo" width="167" height="61" title="The MirandaNet Organisation: return to home page" /></a> 
+	<h1 class="name"><a href ="../index.html">MirandaNet</a></h1>
+	<h2 class="strapline">Sharing experience and expertise</h2>
+	<div class="topnav_wrapper">
+	  <h5>Site navigation:</h5>
+		<ul class="topnav">
+			<li><a href ="../index.html">Home</a></li>
+			<li><a href ="../fellowship/index.html" id="current">Fellowship</a></li>
+			<li><a href ="../researchexchange/index.html">Research Exchange</a></li>
+			<li><a href ="../consultancy/index.html">Consultancy</a></li>
+			<li><a href ="http://wec.mirandanet.org.uk/">World Ecitizens</a></li>
+		</ul>
+	</div>
+</div>
+
+<div id="content" class="group">
+<div id="leftColumn">
+	<!-- Place all the items for the left hand section here -->
+	<div class="group box">
+	  <!--#include virtual="/fellowship/fellowship_menu.htm"-->
+	  <div id="nav"> 
+  <ul>
+    <li><a href="../fellowship/index.php.html" id="home" class="normal">Fellowship</a></li>
+    <li><a href="../bett/index.html" id="bett" class="normal">BETT</a> 
+      <ul id="sub_bett">
+        <li><a href="../bett/programme.htm" id="programme" class="normal">BETT Programme</a></li>
+      </ul>
+    </li>
+    <li><a href="../fellowship/about.htm" id="about" class="normal">About Us</a> 
+      <ul id="sub_about">
+        <li><a href="../fellowship/founder.htm" id="founder" class="normal">Founder</a></li>
+        <li><a href="../fellowship/researchexchange.htm" id="research" class="normal">Research 
+          Exchange</a></li>
+        <li><a href="../fellowship/consultancy.htm" id="consultancy" class="normal">Consultancy</a></li>
+        <li><a href="../fellowship/worldecitizens.htm" id="worldecitizens" class="normal">World 
+          Ecitizens</a></li>
+      </ul>
+    </li>
+    <li><a href="../profiles/index.html" id="membership" class="normal">The Membership</a></li>
+    <li><a href="../associates/index.html" id="associates" class="normal">Associates</a></li>
+    <li><a href="../news/news.php.html" id="newsarea" class="normal">News &amp; Diary</a> 
+      <ul id="sub_newsarea">
+        <li><a href="../news/diary.php.html" id="diary" class="normal">Diary</a></li>
+        <li><a href="../news/letter.php.html" id="newsletter" class="normal">Newsletter</a></li>
+        <li><a href="../news/mirandanews.htm" id="letterarchive" class="normal">Newsletter 
+          Archive</a></li>
+      </ul>
+    </li>
+    <li><a href="../contact.php.html" id="contact" class="normal">Contact Us</a></li>
+    <li><a href="../mirandamods/index.html" id="mirandamods" class="normal">MirandaMods</a></li>
+    <li><a href="index.html" id="casestudies" class="normal">Case Studies</a></li>
+    <li><a href="../articles/index.html" id="articles" class="normal">Articles</a></li>
+    <li><a href="https://www.mirandanet.org.uk/phorum/default.php" id="forum" class="normal">Forum</a></li>
+    <li><a href="../index_old.htm" id="archive" class="normal">Archive Site</a></li>
+    <li><a href="../fellowship/join.htm" id="join" class="normal">Join MirandaNet</a></li>
+    <li><a href="../membership/index.php.html" title="Members Log on/off" id="logon" class="normal">Members 
+      Log on/off</a></li>
+  </ul>
+</div>
+	</div>
+		<!-- Search Case Studies Module -->
+	<div class="group box" style="margin-bottom:0">
+	<h1>Search the Case Studies</h1> 
+ 	<form method="post" action="../fellowship/casestudies_search.php.html" class="join">
+    <fieldset>
+    <legend>Search Form</legend>
+          <p>Search for:<br />
+            <select name="field" title="Choose search area">
+			 <option value="Title">Title</option>
+			 <option value="Abstract">Abstract</option>
+			 <option value="keywords">Keywords</option>
+			 <option value="article">Professional Study</option>
+			 <option value="Name">Author Name</option>
+            </select>
+            <br />
+            <input class="txtinput" type="text" id="find1" name="find" placeholder="Enter search term" title="Enter search term" />
+            <br />
+            <input type="hidden" name="searching" value="yes" />
+            <input type="submit" name="search" value="Search" />
+          </p>
+ 	</fieldset>
+	</form>
+	</div>
+		<!-- Search Case Studies Module -->
+	<div class="group box" style="margin-bottom:0">
+	
+  <h1>Search the Articles</h1> 
+ 	<form method="post" action="../fellowship/articles_search.php.html" class="join">
+    <fieldset>
+    <legend>Search Form</legend>
+          <p>Search for:<br />
+            <select name="field" title="Choose search area">
+			 <option value="Title">Title</option>
+			 <option value="keywords">Keywords</option>
+			 <option value="article">Article</option>
+			 <option value="Name">Author Name</option>
+            </select>
+            <br />
+            <input class="txtinput" type="text" id="find2" name="find" placeholder="Enter search term" title="Enter search term" />
+            <br />
+            <input type="hidden" name="searching" value="yes" />
+            <input type="submit" name="search" value="Search" />
+          </p>
+ 	</fieldset>
+	</form>
+	</div>
+		<!-- Search Membership Module -->
+	<div class="group box" style="margin-bottom:0">
+	<h1>Search the Membership</h1> 
+	<form method="post" action="../fellowship/listing_search.php.html" class="join">
+     <fieldset>
+    <legend>Search Form</legend>
+          <p>Search for:<br />
+            <select name="field" title="Choose search area">
+              <option value="Anything">Anything</option>
+			  <option value="Surname">Last Name</option>
+              <option value="Forename">First Name</option>
+              <option value="Profile">Profile</option>
+            </select>
+            <br />
+            <input class="txtinput" type="text" id="find" name="find" placeholder="Enter search term" title="Enter search term" />
+            <br />
+            <input type="hidden" name="searching" value="yes" />
+            <input type="submit" name="search" value="Search" />
+          </p>
+	</fieldset>
+	</form>
+	</div>	<!-- Search MirandaNet Module -->
+<div class="group box" style="margin-bottom:0">
+	
+  <h1>Search MirandaNet</h1> 
+ 	<form method="get" action="https://www.google.com/search">
+    <fieldset>
+    <legend>Search Form</legend>
+          <p>Search in:<br />
+            <select name="sitesearch" title="Choose search area">
+			 <option value="mirandanet.org.uk">MirandaNet</option>
+			 <option value="worldecitizens.net">World Ecitizens</option>
+			 <option value="">The Web</option>
+            </select>
+            <br />
+            <input class="txtinput" type="text" name="q" maxlength="255" placeholder="Enter search term" title="Enter search term"/>
+            <br />
+            <input type="hidden" name="searching" value="yes" />
+            <input type="submit" name="search" value="Google Search" />
+          </p>
+ 	</fieldset>
+	</form>
+	</div>
+
+</div>
+  <div id="mainBody" class="group"> 
+    <h1>MirandaNet Fellowship Casestudy</h1>
+    <p><a href="../fellowship/listing.php.html">Membership List</a> | <a href="../publications/index.html">Publications</a> 
+      | <a href="../publications/research.htm">Research</a> | <a href="../publications/personal.php.html">Specialist 
+      Area List</a> | <a href="../ejournal/index.html">Braided Learning Ejournal</a></p>
+    <hr />
+    <h2>Twitter as Professional Development?</h2>
+<p><strong>Can 140 character snippets actually provide meaningful CPD?</strong></p>
+<p><strong>Ian Guest</strong></p>
+<p><strong>Year of posting:</strong> 2014</p>
+<hr />
+<p><strong>Abstract:</strong></p><p>This study was provoked by a post in the MirandaLink forum querying the link between the social media tool Twitter and professional development. Synthesising the responses to the original post revealed certain themes, which were then explored further in existing research. In addition, participants in the forum were kind enough to contribute links and pointers to further resources; these are provided in the Appendices</p>
+<hr />
+<p><strong>Keywords: </strong></p><p>twitter, CPD, professional development, MirandaLink</p>
+<hr />
+<p><strong>Study</strong></p><h2>1 Introduction</h2>
+<p>In any online forum, some posts attract a few brief replies, whilst others seed extensive, lengthy exchanges. This is also true in MirandaLink, but when Tina (Christina Preston - MirandaNet Founder and Chair) posed the following questions, they stirred a healthy number of people to respond.</p>
+<p>“I’ve heard my colleagues expressing the view recently that Twitter makes other kinds of professional development redundant...</p>
+<p>Is this true? If so how do I go about linking with the right people? Who do you recommend? What can you learn from 140 characters?”</p>
+<p>Maybe it was the provocative way in which the question was phrased that attracted a healthy response, or perhaps Twitter, professional development (PD) and their interrelationship are topics about which contributors to the forum are particularly passionate.</p>
+<p>The following study attempts to summarise and synthesise those responses, then steps beyond the bounds of the forum thread to explore the degree to which these contributions are supported or refuted by wider research.</p>
+<h2>2 Respondent contributions</h2>
+<p>The initial post attracted 79 follow-up replies from 43 respondents between Monday 08:05 on March 17th, 2014 and 17:08 on March 18th. These covered a range of topics, some providing support for the assertion in Tina’s prompt, whilst others were more sceptical and although they acknowledged the potential that Twitter offers in supporting teacher learning, felt that it would be inappropriate to classify that as professional development. Several posts suggested resources and techniques that people had found useful in getting the most from Twitter. What follows represents a synthesis of the 7000 words contained within the responses.</p>
+<h3>2.1 For what activities do people appropriate Twitter?</h3>
+<p>Twitter provides users with an incoming stream of information, directing them to links to resources, reports and articles, emerging ideas, new developments and educational news. But Twitter is a multi-directional medium and provides an outgoing stream through which users can share their thoughts, ideas and resources and allow them to participate in discursive exchanges. The interchange of information makes Twitter an ideal medium through which to connect with people having shared goals and interests and who might previously have been inaccessible.</p>
+<p>Some people see Twitter as a powerful means by which conference and lecture presentations can be supplemented through a backchannel, where points arising during the presentation can be amplified, questioned or archived for later consideration.</p>
+<p>Despite the atomisation of dialogue into 140 character snippets, Twitter is providing somewhat of a watering hole; a place at which people can gather to discuss significant issues. One particular way in which this is done is through weekly <a href="http://blog.web20classroom.org/2012/03/brief-history-of-edchat.html">#edchats</a> where people gather for an hour at a specific time each week to discuss a topic of interest or significance to their community. From the initial idea, there are now hundreds of #edchats organised by nationality, curriculum area or educational sector.</p>
+<h3>2.2 How do they do this?</h3>
+<p>Contributors provided a rich source of ways in which they leverage the potential of Twitter and make the most of their participation. Some suggested simple strategies to make the most of your time whilst others offered applications which help improve efficiency. An easy way to start is by checking which people someone you already know and trust follows and then repeat that process as your network expands. Watch out for ‘lists’ that people curate; these are often centred around a curriculum area or other theme which might prove of interest and can extend the people who you follow. You are also assisted by Twitter itself in this respect, since as you follow a new person, Twitter automatically suggests other people who you might also find interesting, based on your recent choice. Becoming a little more proactive, you can use the Twitter ‘Search’ function to look for Tweets on a particular topic, both to search for information and to further extend your network.</p>
+<p>A powerful feature of Twitter is the use of <a href="http://en.wikipedia.org/wiki/Hashtag">hashtags</a>, a means by which people can aggregate Tweets on a particular topic. Hashtags are open and free for anyone to set up, so events (#BETT14), discussions (#ukedchat) and themes (#SAMR) often have associated hashtags.</p>
+<p>As with any rich source of information, we need to devise strategies for managing the information flow or as Shirky (2008) would have it, avoid ‘filter failure.’ Again Twitter provides a convention which means we don’t have to be continually monitoring the information flow to ensure we don’t miss anything. The retweet or RT allows people to resend significant Tweets, thereby prolonging their life and increasing the chances more people will see them. Several people suggested tools to help manage and make more sense of the information flow; tools like <a href="https://about.twitter.com/products/tweetdeck">Tweetdeck</a> which allows you to present different information streams (such as hashtags, specific Twitter accounts or search terms) in different columns. Other tools facilitate distribution of information, allowing you to schedule Tweets for example, or display a Twitter stream or topic for an audience.</p>
+<h3>2.3 Why do people invest time in Twitter?</h3>
+<p>The initial assertion that Tina relayed of ‘Twitter making other forms of professional development redundant’ wasn’t generally accepted, with respondents traversing the spectrum from feeling that such sweeping claims were nonsense, through those who saw Twitter more as an adjunct to other forms, to those who saw it as enhancing current provision. It was also commonly seen as an initiator of further professional development - “the spark that launches a thousand PD paths.” At its most basic, Twitter provides a constant stream of information which can be accessed at a time and place of your choosing, though some contended that to constitute effective professional development “it needs to offer more than access to information and develop a more coherent and developmental narrative of professional practice and research.”</p>
+<p>One fundamental aspect of professional development is reflection and here respondents were split; some felt that wasn’t possible in such constrained snippets and in such an ‘open’ environment, whilst others clearly saw Twitter as an ideal place to ponder ‘out loud’ with the potential for receiving feedback, leading to broader, more detailed discussions.</p>
+<p>Twitter was seen by some as the means by which teachers could be empowered to take charge of their own professional development, building a sense of efficacy through collaboration with peers. It forms a significant element in the development of a professional learning network (see also Trust, 2012).</p>
+<p>Several shortcomings of Twitter were also identified, most notably that perhaps Twitter excludes (albeit passively) those who are less confident with technology in the first place. There are also some aspects of professional development, like training for skills development or accreditation which can’t be delivered through a social medium, some contended. Of course a number of respondents identified the 140 character limit as a serious constraint which doesn’t support rich conversation and extended, continuous dialogue. Yet others saw Tweets simply as a jumping off point to places where those sorts of activities could be more fully facilitated. Some saw 140 characters as a clear strength, encouraging contributors to distil the essence of meaning, thereby enabling viewers to rapidly scan for significant content.</p>
+<h3>2.4 Other points of note</h3>
+<p>Developing an awareness of a confidence with Twitter extends beyond personal professional development to use with students in the classroom and beyond. Several respondents suggested possible uses with students, though it was recognised that social media in schools aren’t yet universally accepted.</p>
+<p>One area of serious concern was that social media, like some Web2.0 tools, might be somewhat transient and subject to the vagaries of popular opinion. Monetisation is also proving complex, so we may not be able to rely on Twitter in the longer term. As insurance it was suggested that it might prove prudent to gather and archive contributions and be ready to move to new alternative tools when and if necessary.</p>
+<h2>3 Professional Development - what the research says</h2>
+<p>Since the initial proposition which prompted this study centred on professional development, perhaps it might be prudent to explore what it actually is. Although people perhaps share a notional understanding of what constitutes professional development, formal definitions are surprisingly elusive (Evans, 2002). However a touchstone to which many refer is Day (1999):</p>
+<p>“Professional development consists of all natural learning experiences and those conscious and planned activities which are intended to be of direct or indirect benefit to the individual, group or school and which contribute through these to the quality of education in the classroom. It is the process by which, alone and with others, teachers review, renew and extend their commitment as change agents to the moral purpose of teaching and by which they acquire and develop critically the knowledge, skills and emotional intelligence essential to good professional thinking, planning and practice with children, young people and colleagues through each phase of their teaching lives.”</p>
+<p>Essentially then PD arises from both formal and informal learning experiences through which teachers develop the knowledge and skills needed to improve the educational experience of their students. More recently, in an attempt to synthesise common features arising in the work of others, Schlager and Fusco (2006) reiterated some of Day, whilst introducing the notion of ‘standards,’ perhaps to reflect the prevailing drive towards mandated or mandatory PD.</p>
+<p>“Professional development is viewed as a career-long, context-specific, continuous endeavor that is guided by standards, grounded in the teacher’s own work, focused on student learning, and tailored to the teacher’s stage of career development. Its objective is to develop, implement, and share practices, knowledge, and values that address the needs of all students. It is a collaborative effort, in which teachers receive support from peer networks, local administration, teacher educators, and outside experts.” (Schlager &amp; Fusco, 2006)</p>
+<p>Within these two definitions are common features which are also revealed when we start to explore what aspects are most effective; that’s to say those “activities which result in positive change for teachers and their pupils” (Opfer &amp; Pedder, 2011). Major studies from around the globe by Cordingley et al (2012), Daley et al (2009), Darling-Hammond et al (2009), Garet et al (2001), Gulamhussein (2013), Timperley et al (2008) and Whitehouse (2011) propose that effective PD should:</p>
+<ul>
+<li>
+<p>address individual needs;</p>
+</li>
+<li>
+<p>be ongoing and of significant duration;</p>
+</li>
+<li>
+<p>be part of a coherent programme;</p>
+</li>
+<li>
+<p>include support, mentoring or coaching;</p>
+</li>
+<li>
+<p>involve a variety of approaches which encourage active participation;</p>
+</li>
+<li>
+<p>include modelling;</p>
+</li>
+<li>
+<p>be grounded in the appropriate discipline;</p>
+</li>
+<li>
+<p>involve peer-supported and evidence-based collaborative enquiry;</p>
+</li>
+<li>
+<p>be based in the classroom and classroom practice;</p>
+</li>
+<li>
+<p>should encourage reflection … and provide the time to do so.</p>
+</li>
+</ul>
+<p>Although these may be the criteria by which PD can be judged to be effective, it must also depend to some extent on the participants in the PD themselves; the teachers. In synthesising findings from a number of sources, Carnell (1999) identified four broad themes characteristic of “Professionally developed teachers.” They:</p>
+<ul>
+<li>
+<p>have a lifelong commitment to learning and change;</p>
+</li>
+<li>
+<p>work collaboratively with young people and colleagues;</p>
+</li>
+<li>
+<p>have a commitment to increasing the effectiveness of teaching and learning and</p>
+</li>
+<li>
+<p>have a holistic, multi-perspective view of teaching, young people and relationships.</p>
+</li>
+</ul>
+<p>The common threads between PD and professionally developed teachers are not hard to recognise, however it’s interesting to speculate here whether this is a chicken and egg situation. Does PD bring about the characteristics Carnell identified in professionally developed teachers, or are those teachers imbued with those traits innately the ones who actively embrace and thereby benefit from PD? Is it a self-fulfilling prophecy?</p>
+<p>So if we are in a position where we know what PD is, when it is most effective and how teachers who benefit from it are different, perhaps it behoves us to revisit contributions from our respondents for evidence.</p>
+<h3>3.1 Link between what respondents claimed and what the research on PD has found.</h3>
+<p>In some quarters, there was unanimous agreement with aspects of the research, whilst with other features, opinion was divided. Respondents clearly felt that Twitter could serve individual needs and achieve this in different ways; whether by connecting with relevant people from whom they could draw appropriate support; becoming informed about developments and resources significant for them; maintaining lists of people connected with a particular discipline or using hashtags to pinpoint activity centred on a specific topic. Although some of the respondents were new to Twitter,  others were more mature in their experience and were long-time users, however there was little evidence provided of sustained, coherent usage, either first-hand or through observations of others. Several responses indicated that people felt supported through their involvement in Twitter, sometimes within specific communities, though no mention was made of targeted mentoring or coaching. Might this be because the environment doesn’t enable such processes, or is it because they are such a personal undertaking as to be inappropriate within an open space? A number of people commented how Twitter serves as an adjunct to other forms of PD, but also links with other spaces and places. For example although it was suggested that Twitter was not an ideal place within which to undertake serious, contemplative reflection, an issue raised within Twitter could serve to prompt a much deeper reflective blog post, which could then be brought back into Twitter i.e. it is the network of technologies of which Twitter is a part, which fulfills the whole need. Peer support and collaborative endeavour clearly take place within Twitter, but perhaps unsurprisingly no-one mentioned modelling as a PD technique they associated with the environment.</p>
+<p>What people learn through Twitter often has an impact on their practice, but several examples of Twitter being integrated as part of their classroom practice were also cited. Here though, we begin to bump up against the the common concerns and arguments associated with social media usage in schools, though respondents were clear in the ways they had accommodated or mediated the potential risks.</p>
+<p>It is important to acknowledge that participants in the MirandaLink discussion may not be representative of those on Twitter. The community is after all interested in activities “aimed at improving the use of innovative digital technologies in classrooms and in professional learning communities.” Bias is therefore quite possible and we must be cautious in extrapolating these opinions more widely.</p>
+<h3>3.2 Where is the (Twitter) research?</h3>
+<p>During the course of the MirandaLink exchange, Tina also posed the question “Where is the research about Twitter?” It transpires that it’s a rather eclectic mix, spanning several research areas including Communication Studies, Information Sciences, Social Sciences and Digital Humanities. The disciplines within which the research is focused cover the alphabet from agriculture, architecture and astronomy, through to veterinary medicine, visual arts and women’s studies.</p>
+<p>Searching several research portals for articles with Twitter either in the title or as a keyword generated the following results (as of 3rd July 2014):</p>
+<div>
+<table border="1px" width="*" cellspacing="0" cellpadding="7px"><colgroup><col width="*" /><col width="*" /><col width="*" /></colgroup>
+<tbody>
+<tr>
+<td>
+<p><strong>Portal</strong></p>
+</td>
+<td>
+<p><strong>Number of articles / documents / conference papers</strong></p>
+</td>
+<td>
+<p><strong>Example article / paper</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Academia.edu (<a href="https://www.academia.edu">https://www.academia.edu</a>)</p>
+</td>
+<td>
+<p>996</p>
+</td>
+<td>
+<p>“Texting and Tweeting at Live Music Concerts: flow, fandom and connection with other audiences through mobile phone technology”</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Emerald Insight (<a href="https://www.academia.edu">http://www.emeraldinsight.com</a>)</p>
+</td>
+<td>
+<p>64</p>
+</td>
+<td>
+<p>“Let's talk about wine: does Twitter have value?”</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ERIC (<a href="http://eric.ed.gov">http://eric.ed.gov</a>)</p>
+</td>
+<td>
+<p>64</p>
+</td>
+<td>
+<p>“Tweet Up? Examining Twitter's Impact on Social Capital and Digital Citizenship in Higher Education”</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>JSTOR (<a href="http://www.jstor.org/">http://www.jstor.org/</a>)</p>
+</td>
+<td>
+<p>20</p>
+</td>
+<td>
+<p>“Lightweight methods to estimate influenza rates and alcohol sales volume from Twitter messages”</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SAGE Journals (<a href="http://online.sagepub.com">http://online.sagepub.com</a>)</p>
+</td>
+<td>
+<p>136</p>
+</td>
+<td>
+<p>“Tweeting #Palestine: Twitter and the mediation of Palestine”</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ScienceDirect (<a href="http://www.sciencedirect.com/">http://www.sciencedirect.com/</a>)</p>
+</td>
+<td>
+<p>249</p>
+</td>
+<td>
+<p>“Use of Twitter to Document the Academic Surgical Congress: A Pilot Experience”</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Taylor&amp;Francis Online (<a href="http://www.tandfonline.com/">http://www.tandfonline.com/</a>)</p>
+</td>
+<td>
+<p>149</p>
+</td>
+<td>
+<p>“#A little bird told me: birdcaging the message during the BP disaster”</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>[Some studies use the more generic term ‘Microblogging’ rather than Twitter, however this was not included as a search term in returning the above results.]</p>
+<p>The examples provided are simply to provide flavour of the range of topics the articles address. The studies cover such themes as the internal mechanics of Twitter; use as a social media tool; use for marketing or assessing consumer opinion; as a means to disseminate information; its contribution to and involvement in the political process; during natural disasters and national unrest; in health care and during pandemics; in journalism. Of the 136 returned results, only 6 were from an educational context, a finding similar to the 23 papers identified as being in the ‘education’ domain from the 575 papers sampled by Williams et al (2013).</p>
+<p>Research which links both Twitter and professional development within an educational context are sparse, perhaps reflecting the relatively recent appearance of this microblogging platform, or the (relatively) small numbers of teachers who use it for these purposes. (I am making an assumption here, based on numbers of colleagues actively using Twitter as a PD tool within the schools with which I have an association.) Alderton et al (2011), Forte et al (2012) and McCulloch et al (2011) all explored how teachers have appropriated Twitter to aid their professional development, discovering common behaviours such as connecting with other educators, forging learning networks, engaging in dialogue, keeping current with educational developments, sharing resources with and drawing inspiration from their peers. [link with previous section]. In examining the specific dialogue taking place within weekly <a href="http://edchat.pbworks.com/w/page/219908/FrontPage">#edchats</a>, Rehm et al (2014) viewed the conversations which took place as contributing to the formation of a network of practice, a consequence of individuals assembling around the experience. Adopting a more inward-looking view, Power (2013) identified the three elements associated with Communities of Inquiry within #edchats - cognitive, social and teaching presence. Being part of a community and enjoying shared experiences is clearly important to many who seek to use Twitter to support their learning, contributing to a greater sense of fulfillment (Ross, 2013).  Holmes et al (2013) explored the features of effective professional development, identifying that Twitter offers sustained activity within a networked community of like-minded individuals, where knowledge and experiences could be shared. Importantly, individuals were in control of their degree of involvement, choosing to participate at times which suited them.</p>
+<p>Small-scale projects though the aforementioned papers may be, the findings appear to mirror what respondents in the MirandaLink thread posted.</p>
+<h2>4 Further research</h2>
+<p>During the forum discussion, one respondent suggested that Twitter usage in support of professional development was far from common across the teaching population as a whole. Others, picking up that thread, reported figures (at a conference where the audience was polled) of 6% and the same figure from a straw poll during a secondary school visit. However amongst ICT teachers, that figure has sometimes risen to a third. Perhaps then establishing what the actual figures are across different sectors, different roles, different subjects might prove revealing, and perhaps more importantly what the trends are? This could be extended to explore the attitudes of those not using Twitter and those who may have tried it and subsequently fallen away. Are there any common factors at play linking attitudes to Twitter with attitudes to professional development in general? So for example, are those with a positive disposition towards professional development also positively inclined towards Twitter … or the reverse?</p>
+<p>As mentioned earlier, we know what the characteristics of effective professional development are and can recognise some of those in responses during the forum discussion. Perhaps though, this is worth addressing in a more direct manner and actively seeking evidence from within Twitter activity itself, rather than as reported experiences. A content analysis for example might unearth further evidence.</p>
+<p>I wonder whether teachers engaged in their own professional development view it in the same terms as those mentioned in section 3, or is PD for them simply those experiences which improve their practice? Should research into the efficacy of Twitter focus on those issues, rather than the criteria arising from within formal research? There is much still to explore.</p>
+<h2>5 Conclusion</h2>
+<p>The bold claim made by Tina’s colleagues that “Twitter makes other forms of professional development redundant” was substantiated neither by respondents in the MirandaLink forum, nor by other, albeit limited research, however what is clear is that for some people, it is having an impact. It supplements, enhances and extends current PD provision, providing an additional channel of access to an eclectic mix of opportunities. It provides affordances previously not available, granting access at times, places and paces to suit the learners’ needs, allowing them to participate across a spectrum of involvement from lurker through contributor to facilitator.</p>
+<p>Perhaps it is enough then that Twitter satisfies some of the PD needs of a number of educators? Or perhaps we need to explore more deeply how the benefits it brings to these few might be exploited more widely?</p>
+<p>"Twitter is not a technology. It's a conversation. And it's happening with or without you." - @charleneli</p>
+<h2>References</h2>
+<p>Alderton, E., Brunsell, E., Bariexca, D., 2011. The End of Isolation. JOLT 7.</p>
+<p>Carnell, E., 1999. UnderstandingTeachers’Professional Development: an investigation of teachers’ learning and their learning contexts (Doctor of Philosophy). University of London, London.</p>
+<p>Cordingley, P., Bell, M., Holdich, K., Hawkins, M., 2012. Understanding What Enables High Quality Professional Learning. Centre for the use of Research &amp; Evidence in Education (CUREE).</p>
+<p>Daly, C., Pachler, N., Pelletier, C., 2009. Continuing professional development in ICT for teachers: A literature review. Institute of Education, London.</p>
+<p>Darling-Hammond, L., Wei, R.C., Andree, A., Richardson, N., Orphanos, S., 2009. Professional learning in the learning profession. National Staff Development Council.</p>
+<p>Day, C., 1999. Developing Teachers: The Challenges of Lifelong Learning. Routledge, London?; Philadelphia, PA.</p>
+<p>Evans, L., 2002. What is Teacher Development?</p>
+<p>Forte, A., Humphreys, M., Park, T.H., 2012. Grassroots Professional Development: How Teachers Use Twitter., in: ICWSM.</p>
+<p>Garet, M.S., Porter, A.C., Desimone, L., Birman, B.F., Yoon, K.S., 2001. What Makes Professional Development Effective? Results From a National Sample of Teachers. Am Educ Res J 38, 915–945. doi:10.3102/00028312038004915</p>
+<p>Gulamhussein, A., 2013. Teaching the Teachers: Effective  Professional Development  in an Era of High Stakes  Accountability. Center for Public Education.</p>
+<p>Holmes, K ., Preston, G., Shaw, K ., &amp; Buchanan, R. (2013). ‘Follow’ Me: Networked Professional Learning for Teachers. Australian Journal of Teacher Education, 38(12). http://dx.doi.org/10.14221/ajte.2013v38n12.4</p>
+<p>McCulloch, J., McIntosh, E., Barrett, T., 2011. Tweeting for Teachers | The Pearson Think Tank.</p>
+<p>Opfer, V.D., Pedder, D., 2011. The Lost Promise of Teacher Professional Development in England. European Journal of Teacher Education 34, 3–24.</p>
+<p>O'Reilly. (2008). Web 2.0 Expo NY: Clay Shirky (shirky.com) It's Not Information Overload. It's Filter Failure. [Online Video]. 04 August. Available from: http://www.youtube.com/watch?v=LabqeJEOQyI&amp;feature=youtube_gdata_player. [Accessed: 25 August 2014].</p>
+<p>Power, K.-A., 2013. Professional Learning on Twitter: A content analysis of professional learning conversations among self-organized groups of educators. Electronic Theses and Dissertations.</p>
+<p>Rehm, M., Preußler, A., Kerres, M., 2014. Pebble-in-the-Pond?! Does a Hashtag Conversation on Twitter connect Teachers? Presented at the EARLI SIG 14 Conference, Oslo.</p>
+<p>Ross, C.R., 2013. The Use of Twitter in the Creation of Educational Professional Learning Opportunities. Sam Houston State University.</p>
+<p>Schlager, M.S., Fusco, J., 2003. Teacher Professional Development, Technology, and Communities of Practice: Are We Putting the Cart Before the Horse? The Information Society - TIS 19, 203–220. doi:10.1080/01972240309464</p>
+<p>Timperley, H., Wilson, A., Barrar, H., Fung, I., 2008. Teacher professional learning and development. Ministry of Education, New Zealand.</p>
+<p>Whitehouse, C., 2011. Effective continuing professional development for teachers. AQA Centre for Education Research and Policy, Manchester.</p>
+<p>Williams, S.A., Terras, M.M., Warwick, C., 2013. What do people study when they study Twitter? Classifying Twitter related academic papers. Journal of Documentation 69, 384–410.</p>
+<p> </p>
+<h2>Appendix 1: Resources shared by forum respondents</h2>
+<p>In chronological order of posting:</p>
+<ul style="list-style-type: disc;">
+<li>A list of interesting educators from different sectors - <a href="https://twitter.com/mberry/edtech/members">https://twitter.com/mberry/edtech/members</a></li>
+<li>To reveal and possible link with a ‘range of professionals,’ or participate in discussions, follow the #ukedchat hastag - <a href="https://twitter.com/search?q=%23ukedchat&amp;src=typd">https://twitter.com/search?q=%23ukedchat&amp;src=typd</a></li>
+<li>Offering a friendly interface with which to ‘organise/make sense of Twitter,’ Tweetdeck is a helpful application - <a href="https://tweetdeck.twitter.com/">https://tweetdeck.twitter.com/</a></li>
+<li>A list of MirandaNet members on Twitter - <a href="https://docs.google.com/spreadsheet/ccc?key=0Ag3xJKyB_gDNdHFaYWpWX3Bna2RtSG4wWWVSLUtSdWc&amp;usp=sharing#gid=0">https://docs.google.com/spreadsheet/ccc?key=0Ag3xJKyB_gDNdHFaYWpWX3Bna2RtSG4wWWVSLUtSdWc&amp;usp=sharing#gid=0</a></li>
+<li>A list of educational hashtags - <a href="http://www.edudemic.com/twitter-hashtags-now/">http://www.edudemic.com/twitter-hashtags-now/</a></li>
+<li>Research paper on Twitter use in supporting reflection of teacher education students - <a href="https://www.academia.edu/4500715/Twittering_in_teacher_education_reflecting_on_practicum_experiences">https://www.academia.edu/4500715/Twittering_in_teacher_education_reflecting_on_practicum_experiences</a></li>
+<li>‘Pocket’ - an adjunct to help save and review resources and links provided through Twitter - <a href="http://askawild.wordpress.com/2013/03/21/managing-read-later-content/">http://askawild.wordpress.com/2013/03/21/managing-read-later-content/</a></li>
+<li>‘Signals of Success and Self-directed Learning’ - an academic paper initiated from a single tweet - <a href="https://www.researchgate.net/publication/260293764_Signals_of_Success_and_Self-directed_Learning">https://www.researchgate.net/publication/260293764_Signals_of_Success_and_Self-directed_Learning</a></li>
+<li>A poll on the questions “Are you a teacher? Do you use Twitter?” - <a href="https://twtpoll.com/fhulhwgereszya4">https://twtpoll.com/fhulhwgereszya4</a></li>
+<li>‘New to Twitter Teacher Cheat Sheet’ - http://blog.enterprisecity.org/blog/new-to-twitter-teacher-cheat-sheet?utm_source=linkedin&amp;utm_medium=social&amp;utm_content=4187468</li>
+<li>ThinkUp - “a free, open source web application that captures your posts, tweets, replies, retweets, friends, followers and links on social networks like Twitter and Facebook” - <a href="https://www.thinkup.com/docs/intro.html">https://www.thinkup.com/docs/intro.html</a></li>
+</ul>
+<p><em>The forum within which the discussion took place requires MirandaNet membership to view and as such is behind password protection. It would perhaps not be appropriate therefore to publish the names of participants /contributors without their permission. The fourth item above however provides a list of those MirandaNet members who chose to provide their Twitter contact information.</em></p>
+<p> </p>
+<h2>Appendix 2: Other resources</h2>
+<p>[Accessed: 25th August 2014]</p>
+<table width="738" cellspacing="0" cellpadding="7"><colgroup><col width="386" /> <col width="322" /> </colgroup>
+<tbody>
+<tr valign="TOP">
+<td style="border: 1.00pt solid #000000; padding: 0.18cm;" width="386">
+<p style="widows: 2; orphans: 2; page-break-before: auto; page-break-after: auto;" align="LEFT"><span style="color: #000000;"><span style="text-decoration: none;">“<span style="font-family: Calibri;"><span style="font-size: small;"><span style="font-style: normal;"><span style="font-weight: normal;">The Twitteraholic’s Ultimate Guide to tweets, hashtags, and all things Twitter” - a definitive introduction.</span></span></span></span></span></span></p>
+</td>
+<td style="border: 1.00pt solid #000000; padding: 0.18cm;" width="322">
+<p style="widows: 2; orphans: 2; page-break-before: auto; page-break-after: auto;" align="LEFT"><span style="color: #1155cc;"><span style="text-decoration: none;"><span style="font-family: Calibri;"><span style="font-size: small;"><span style="font-style: normal;"><span style="text-decoration: underline;"><span style="font-weight: normal;"><a href="http://theedublogger.com/2012/02/13/the-updated-twitteraholics-guide-to-tweets-hashtags-and-all-things-twitter/">http</a><a href="http://theedublogger.com/2012/02/13/the-updated-twitteraholics-guide-to-tweets-hashtags-and-all-things-twitter/">://</a><a href="http://theedublogger.com/2012/02/13/the-updated-twitteraholics-guide-to-tweets-hashtags-and-all-things-twitter/">theedublogger</a><a href="http://theedublogger.com/2012/02/13/the-updated-twitteraholics-guide-to-tweets-hashtags-and-all-things-twitter/">.</a><a href="http://theedublogger.com/2012/02/13/the-updated-twitteraholics-guide-to-tweets-hashtags-and-all-things-twitter/">com</a><a href="http://theedublogger.com/2012/02/13/the-updated-twitteraholics-guide-to-tweets-hashtags-and-all-things-twitter/">/2012/02/13/</a><a href="http://theedublogger.com/2012/02/13/the-updated-twitteraholics-guide-to-tweets-hashtags-and-all-things-twitter/">the</a><a href="http://theedublogger.com/2012/02/13/the-updated-twitteraholics-guide-to-tweets-hashtags-and-all-things-twitter/">-</a><a href="http://theedublogger.com/2012/02/13/the-updated-twitteraholics-guide-to-tweets-hashtags-and-all-things-twitter/">updated</a><a href="http://theedublogger.com/2012/02/13/the-updated-twitteraholics-guide-to-tweets-hashtags-and-all-things-twitter/">-</a><a href="http://theedublogger.com/2012/02/13/the-updated-twitteraholics-guide-to-tweets-hashtags-and-all-things-twitter/">twitteraholics</a><a href="http://theedublogger.com/2012/02/13/the-updated-twitteraholics-guide-to-tweets-hashtags-and-all-things-twitter/">-</a><a href="http://theedublogger.com/2012/02/13/the-updated-twitteraholics-guide-to-tweets-hashtags-and-all-things-twitter/">guide</a><a href="http://theedublogger.com/2012/02/13/the-updated-twitteraholics-guide-to-tweets-hashtags-and-all-things-twitter/">-</a><a href="http://theedublogger.com/2012/02/13/the-updated-twitteraholics-guide-to-tweets-hashtags-and-all-things-twitter/">to</a><a href="http://theedublogger.com/2012/02/13/the-updated-twitteraholics-guide-to-tweets-hashtags-and-all-things-twitter/">-</a><a href="http://theedublogger.com/2012/02/13/the-updated-twitteraholics-guide-to-tweets-hashtags-and-all-things-twitter/">tweets</a><a href="http://theedublogger.com/2012/02/13/the-updated-twitteraholics-guide-to-tweets-hashtags-and-all-things-twitter/">-</a><a href="http://theedublogger.com/2012/02/13/the-updated-twitteraholics-guide-to-tweets-hashtags-and-all-things-twitter/">hashtags</a><a href="http://theedublogger.com/2012/02/13/the-updated-twitteraholics-guide-to-tweets-hashtags-and-all-things-twitter/">-</a><a href="http://theedublogger.com/2012/02/13/the-updated-twitteraholics-guide-to-tweets-hashtags-and-all-things-twitter/">and</a><a href="http://theedublogger.com/2012/02/13/the-updated-twitteraholics-guide-to-tweets-hashtags-and-all-things-twitter/">-</a><a href="http://theedublogger.com/2012/02/13/the-updated-twitteraholics-guide-to-tweets-hashtags-and-all-things-twitter/">all</a><a href="http://theedublogger.com/2012/02/13/the-updated-twitteraholics-guide-to-tweets-hashtags-and-all-things-twitter/">-</a><a href="http://theedublogger.com/2012/02/13/the-updated-twitteraholics-guide-to-tweets-hashtags-and-all-things-twitter/">things</a><a href="http://theedublogger.com/2012/02/13/the-updated-twitteraholics-guide-to-tweets-hashtags-and-all-things-twitter/">-</a><a href="http://theedublogger.com/2012/02/13/the-updated-twitteraholics-guide-to-tweets-hashtags-and-all-things-twitter/">twitter</a><a href="http://theedublogger.com/2012/02/13/the-updated-twitteraholics-guide-to-tweets-hashtags-and-all-things-twitter/">/</a></span></span></span></span></span></span></span></p>
+</td>
+</tr>
+<tr valign="TOP">
+<td style="border: 1.00pt solid #000000; padding: 0.18cm;" width="386">
+<p style="widows: 2; orphans: 2; page-break-before: auto; page-break-after: auto;" align="LEFT"><span style="color: #000000;"><span style="text-decoration: none;">“<span style="font-family: Calibri;"><span style="font-size: small;"><span style="font-style: normal;"><span style="font-weight: normal;">Twitter for Professional Development” - another thorough introduction for people new to Twitter.</span></span></span></span></span></span></p>
+</td>
+<td style="border: 1.00pt solid #000000; padding: 0.18cm;" width="322">
+<p style="widows: 2; orphans: 2; page-break-before: auto; page-break-after: auto;" align="LEFT"><span style="color: #1155cc;"><span style="text-decoration: none;"><span style="font-family: Calibri;"><span style="font-size: small;"><span style="font-style: normal;"><span style="text-decoration: underline;"><span style="font-weight: normal;"><a href="http://sandymillin.wordpress.com/2011/09/29/twitter-for-professional-development/">http</a><a href="http://sandymillin.wordpress.com/2011/09/29/twitter-for-professional-development/">://</a><a href="http://sandymillin.wordpress.com/2011/09/29/twitter-for-professional-development/">sandymillin</a><a href="http://sandymillin.wordpress.com/2011/09/29/twitter-for-professional-development/">.</a><a href="http://sandymillin.wordpress.com/2011/09/29/twitter-for-professional-development/">wordpress</a><a href="http://sandymillin.wordpress.com/2011/09/29/twitter-for-professional-development/">.</a><a href="http://sandymillin.wordpress.com/2011/09/29/twitter-for-professional-development/">com</a><a href="http://sandymillin.wordpress.com/2011/09/29/twitter-for-professional-development/">/2011/09/29/</a><a href="http://sandymillin.wordpress.com/2011/09/29/twitter-for-professional-development/">twitter</a><a href="http://sandymillin.wordpress.com/2011/09/29/twitter-for-professional-development/">-</a><a href="http://sandymillin.wordpress.com/2011/09/29/twitter-for-professional-development/">for</a><a href="http://sandymillin.wordpress.com/2011/09/29/twitter-for-professional-development/">-</a><a href="http://sandymillin.wordpress.com/2011/09/29/twitter-for-professional-development/">professional</a><a href="http://sandymillin.wordpress.com/2011/09/29/twitter-for-professional-development/">-</a><a href="http://sandymillin.wordpress.com/2011/09/29/twitter-for-professional-development/">development</a><a href="http://sandymillin.wordpress.com/2011/09/29/twitter-for-professional-development/">/</a></span></span></span></span></span></span></span></p>
+</td>
+</tr>
+<tr valign="TOP">
+<td style="border: 1.00pt solid #000000; padding: 0.18cm;" width="386">
+<p style="widows: 2; orphans: 2; page-break-before: auto; page-break-after: auto;" align="LEFT"><span style="color: #000000;"><span style="text-decoration: none;">“<span style="font-family: Calibri;"><span style="font-size: small;"><span style="font-style: normal;"><span style="font-weight: normal;">Twitter Twitter Tweet Tweet” - interactive ebook introducing teachers to Twitter</span></span></span></span></span></span></p>
+</td>
+<td style="border: 1.00pt solid #000000; padding: 0.18cm;" width="322">
+<p style="widows: 2; orphans: 2; page-break-before: auto; page-break-after: auto;" align="LEFT"><span style="color: #1155cc;"><span style="text-decoration: none;"><span style="font-family: Calibri;"><span style="font-size: small;"><span style="font-style: normal;"><span style="text-decoration: underline;"><span style="font-weight: normal;"><a href="http://issuu.com/hdickens/docs/twitter_twitter_tweet_tweet">http</a><a href="http://issuu.com/hdickens/docs/twitter_twitter_tweet_tweet">://</a><a href="http://issuu.com/hdickens/docs/twitter_twitter_tweet_tweet">issuu</a><a href="http://issuu.com/hdickens/docs/twitter_twitter_tweet_tweet">.</a><a href="http://issuu.com/hdickens/docs/twitter_twitter_tweet_tweet">com</a><a href="http://issuu.com/hdickens/docs/twitter_twitter_tweet_tweet">/</a><a href="http://issuu.com/hdickens/docs/twitter_twitter_tweet_tweet">hdickens</a><a href="http://issuu.com/hdickens/docs/twitter_twitter_tweet_tweet">/</a><a href="http://issuu.com/hdickens/docs/twitter_twitter_tweet_tweet">docs</a><a href="http://issuu.com/hdickens/docs/twitter_twitter_tweet_tweet">/</a><a href="http://issuu.com/hdickens/docs/twitter_twitter_tweet_tweet">twitter</a><a href="http://issuu.com/hdickens/docs/twitter_twitter_tweet_tweet">_</a><a href="http://issuu.com/hdickens/docs/twitter_twitter_tweet_tweet">twitter</a><a href="http://issuu.com/hdickens/docs/twitter_twitter_tweet_tweet">_</a><a href="http://issuu.com/hdickens/docs/twitter_twitter_tweet_tweet">tweet</a><a href="http://issuu.com/hdickens/docs/twitter_twitter_tweet_tweet">_</a><a href="http://issuu.com/hdickens/docs/twitter_twitter_tweet_tweet">tweet</a></span></span></span></span></span></span></span></p>
+</td>
+</tr>
+<tr valign="TOP">
+<td style="border: 1.00pt solid #000000; padding: 0.18cm;" width="386">
+<p style="widows: 2; orphans: 2; page-break-before: auto; page-break-after: auto;" align="LEFT"><span style="color: #000000;"><span style="text-decoration: none;"><span style="font-family: Calibri;"><span style="font-size: small;"><span style="font-style: normal;"><span style="font-weight: normal;">A video screencast introduction to all things Twitter (Russell Stannard)</span></span></span></span></span></span></p>
+</td>
+<td style="border: 1.00pt solid #000000; padding: 0.18cm;" width="322">
+<p style="widows: 2; orphans: 2; page-break-before: auto; page-break-after: auto;" align="LEFT"><span style="color: #1155cc;"><span style="text-decoration: none;"><span style="font-family: Calibri;"><span style="font-size: small;"><span style="font-style: normal;"><span style="text-decoration: underline;"><span style="font-weight: normal;"><a href="http://www.teachertrainingvideos.com/sharing-social-networking/twitter-basics.html">http</a><a href="http://www.teachertrainingvideos.com/sharing-social-networking/twitter-basics.html">://</a><a href="http://www.teachertrainingvideos.com/sharing-social-networking/twitter-basics.html">www</a><a href="http://www.teachertrainingvideos.com/sharing-social-networking/twitter-basics.html">.</a><a href="http://www.teachertrainingvideos.com/sharing-social-networking/twitter-basics.html">teachertrainingvideos</a><a href="http://www.teachertrainingvideos.com/sharing-social-networking/twitter-basics.html">.</a><a href="http://www.teachertrainingvideos.com/sharing-social-networking/twitter-basics.html">com</a><a href="http://www.teachertrainingvideos.com/sharing-social-networking/twitter-basics.html">/</a><a href="http://www.teachertrainingvideos.com/sharing-social-networking/twitter-basics.html">sharing</a><a href="http://www.teachertrainingvideos.com/sharing-social-networking/twitter-basics.html">-</a><a href="http://www.teachertrainingvideos.com/sharing-social-networking/twitter-basics.html">social</a><a href="http://www.teachertrainingvideos.com/sharing-social-networking/twitter-basics.html">-</a><a href="http://www.teachertrainingvideos.com/sharing-social-networking/twitter-basics.html">networking</a><a href="http://www.teachertrainingvideos.com/sharing-social-networking/twitter-basics.html">/</a><a href="http://www.teachertrainingvideos.com/sharing-social-networking/twitter-basics.html">twitter</a><a href="http://www.teachertrainingvideos.com/sharing-social-networking/twitter-basics.html">-</a><a href="http://www.teachertrainingvideos.com/sharing-social-networking/twitter-basics.html">basics</a><a href="http://www.teachertrainingvideos.com/sharing-social-networking/twitter-basics.html">.</a><a href="http://www.teachertrainingvideos.com/sharing-social-networking/twitter-basics.html">html</a></span></span></span></span></span></span></span></p>
+</td>
+</tr>
+<tr valign="TOP">
+<td style="border: 1.00pt solid #000000; padding: 0.18cm;" width="386">
+<p style="widows: 2; orphans: 2; page-break-before: auto; page-break-after: auto;" align="LEFT"><span style="color: #000000;"><span style="text-decoration: none;"><span style="font-family: Calibri;"><span style="font-size: small;"><span style="font-style: normal;"><span style="font-weight: normal;">Spreadsheet containing the days and times at which over 250 hashtag-centred Twitterchats take place</span></span></span></span></span></span></p>
+</td>
+<td style="border: 1.00pt solid #000000; padding: 0.18cm;" width="322">
+<p style="widows: 2; orphans: 2; page-break-before: auto; page-break-after: auto;" align="LEFT"><span style="color: #1155cc;"><span style="text-decoration: none;"><span style="font-family: Calibri;"><span style="font-size: small;"><span style="font-style: normal;"><span style="text-decoration: underline;"><span style="font-weight: normal;"><a href="https://docs.google.com/spreadsheet/ccc?key=0AiftIdjCeWSXdDRLRzNsVktUUGJpRWJhdUlWLS1Genc#gid=0">https</a><a href="https://docs.google.com/spreadsheet/ccc?key=0AiftIdjCeWSXdDRLRzNsVktUUGJpRWJhdUlWLS1Genc#gid=0">://</a><a href="https://docs.google.com/spreadsheet/ccc?key=0AiftIdjCeWSXdDRLRzNsVktUUGJpRWJhdUlWLS1Genc#gid=0">docs</a><a href="https://docs.google.com/spreadsheet/ccc?key=0AiftIdjCeWSXdDRLRzNsVktUUGJpRWJhdUlWLS1Genc#gid=0">.</a><a href="https://docs.google.com/spreadsheet/ccc?key=0AiftIdjCeWSXdDRLRzNsVktUUGJpRWJhdUlWLS1Genc#gid=0">google</a><a href="https://docs.google.com/spreadsheet/ccc?key=0AiftIdjCeWSXdDRLRzNsVktUUGJpRWJhdUlWLS1Genc#gid=0">.</a><a href="https://docs.google.com/spreadsheet/ccc?key=0AiftIdjCeWSXdDRLRzNsVktUUGJpRWJhdUlWLS1Genc#gid=0">com</a><a href="https://docs.google.com/spreadsheet/ccc?key=0AiftIdjCeWSXdDRLRzNsVktUUGJpRWJhdUlWLS1Genc#gid=0">/</a><a href="https://docs.google.com/spreadsheet/ccc?key=0AiftIdjCeWSXdDRLRzNsVktUUGJpRWJhdUlWLS1Genc#gid=0">spreadsheet</a><a href="https://docs.google.com/spreadsheet/ccc?key=0AiftIdjCeWSXdDRLRzNsVktUUGJpRWJhdUlWLS1Genc#gid=0">/</a><a href="https://docs.google.com/spreadsheet/ccc?key=0AiftIdjCeWSXdDRLRzNsVktUUGJpRWJhdUlWLS1Genc#gid=0">ccc</a><a href="https://docs.google.com/spreadsheet/ccc?key=0AiftIdjCeWSXdDRLRzNsVktUUGJpRWJhdUlWLS1Genc#gid=0">?</a><a href="https://docs.google.com/spreadsheet/ccc?key=0AiftIdjCeWSXdDRLRzNsVktUUGJpRWJhdUlWLS1Genc#gid=0">key</a><a href="https://docs.google.com/spreadsheet/ccc?key=0AiftIdjCeWSXdDRLRzNsVktUUGJpRWJhdUlWLS1Genc#gid=0">=0</a><a href="https://docs.google.com/spreadsheet/ccc?key=0AiftIdjCeWSXdDRLRzNsVktUUGJpRWJhdUlWLS1Genc#gid=0">AiftIdjCeWSXdDRLRzNsVktUUGJpRWJhdUlWLS</a><a href="https://docs.google.com/spreadsheet/ccc?key=0AiftIdjCeWSXdDRLRzNsVktUUGJpRWJhdUlWLS1Genc#gid=0">1</a><a href="https://docs.google.com/spreadsheet/ccc?key=0AiftIdjCeWSXdDRLRzNsVktUUGJpRWJhdUlWLS1Genc#gid=0">Genc</a><a href="https://docs.google.com/spreadsheet/ccc?key=0AiftIdjCeWSXdDRLRzNsVktUUGJpRWJhdUlWLS1Genc#gid=0">#</a><a href="https://docs.google.com/spreadsheet/ccc?key=0AiftIdjCeWSXdDRLRzNsVktUUGJpRWJhdUlWLS1Genc#gid=0">gid</a><a href="https://docs.google.com/spreadsheet/ccc?key=0AiftIdjCeWSXdDRLRzNsVktUUGJpRWJhdUlWLS1Genc#gid=0">=0</a></span></span></span></span></span></span></span></p>
+</td>
+</tr>
+<tr valign="TOP">
+<td style="border: 1.00pt solid #000000; padding: 0.18cm;" width="386">
+<p style="widows: 2; orphans: 2; page-break-before: auto; page-break-after: auto;" align="LEFT"><span style="color: #000000;"><span style="text-decoration: none;">“<span style="font-family: Calibri;"><span style="font-size: small;"><span style="font-style: normal;"><span style="font-weight: normal;">Twitter4Teachers Wiki” - categorised lists of Tweeters</span></span></span></span></span></span></p>
+</td>
+<td style="border: 1.00pt solid #000000; padding: 0.18cm;" width="322">
+<p style="widows: 2; orphans: 2; page-break-before: auto; page-break-after: auto;" align="LEFT"><span style="color: #1155cc;"><span style="text-decoration: none;"><span style="font-family: Calibri;"><span style="font-size: small;"><span style="font-style: normal;"><span style="text-decoration: underline;"><span style="font-weight: normal;"><a href="http://twitter4teachers.pbworks.com/w/page/22554534/FrontPage">http</a><a href="http://twitter4teachers.pbworks.com/w/page/22554534/FrontPage">://</a><a href="http://twitter4teachers.pbworks.com/w/page/22554534/FrontPage">twitter</a><a href="http://twitter4teachers.pbworks.com/w/page/22554534/FrontPage">4</a><a href="http://twitter4teachers.pbworks.com/w/page/22554534/FrontPage">teachers</a><a href="http://twitter4teachers.pbworks.com/w/page/22554534/FrontPage">.</a><a href="http://twitter4teachers.pbworks.com/w/page/22554534/FrontPage">pbworks</a><a href="http://twitter4teachers.pbworks.com/w/page/22554534/FrontPage">.</a><a href="http://twitter4teachers.pbworks.com/w/page/22554534/FrontPage">com</a><a href="http://twitter4teachers.pbworks.com/w/page/22554534/FrontPage">/</a><a href="http://twitter4teachers.pbworks.com/w/page/22554534/FrontPage">w</a><a href="http://twitter4teachers.pbworks.com/w/page/22554534/FrontPage">/</a><a href="http://twitter4teachers.pbworks.com/w/page/22554534/FrontPage">page</a><a href="http://twitter4teachers.pbworks.com/w/page/22554534/FrontPage">/22554534/</a><a href="http://twitter4teachers.pbworks.com/w/page/22554534/FrontPage">FrontPage</a></span></span></span></span></span></span></span></p>
+</td>
+</tr>
+<tr valign="TOP">
+<td style="border: 1.00pt solid #000000; padding: 0.18cm;" width="386">
+<p style="widows: 2; orphans: 2; page-break-before: auto; page-break-after: auto;" align="LEFT"><span style="color: #000000;"><span style="text-decoration: none;">“<span style="font-family: Calibri;"><span style="font-size: small;"><span style="font-style: normal;"><span style="font-weight: normal;">Using Twitter for Teachers’ Professional Development” - lists of Tweeters categorised by educational field.</span></span></span></span></span></span></p>
+</td>
+<td style="border: 1.00pt solid #000000; padding: 0.18cm;" width="322">
+<p style="widows: 2; orphans: 2; page-break-before: auto; page-break-after: auto;" align="LEFT"><span style="color: #1155cc;"><span style="text-decoration: none;"><span style="font-family: Calibri;"><span style="font-size: small;"><span style="font-style: normal;"><span style="text-decoration: underline;"><span style="font-weight: normal;"><a href="http://www.educatorstechnology.com/2013/05/using-twitter-for-teachers-professional.html">http</a><a href="http://www.educatorstechnology.com/2013/05/using-twitter-for-teachers-professional.html">://</a><a href="http://www.educatorstechnology.com/2013/05/using-twitter-for-teachers-professional.html">www</a><a href="http://www.educatorstechnology.com/2013/05/using-twitter-for-teachers-professional.html">.</a><a href="http://www.educatorstechnology.com/2013/05/using-twitter-for-teachers-professional.html">educatorstechnology</a><a href="http://www.educatorstechnology.com/2013/05/using-twitter-for-teachers-professional.html">.</a><a href="http://www.educatorstechnology.com/2013/05/using-twitter-for-teachers-professional.html">com</a><a href="http://www.educatorstechnology.com/2013/05/using-twitter-for-teachers-professional.html">/2013/05/</a><a href="http://www.educatorstechnology.com/2013/05/using-twitter-for-teachers-professional.html">using</a><a href="http://www.educatorstechnology.com/2013/05/using-twitter-for-teachers-professional.html">-</a><a href="http://www.educatorstechnology.com/2013/05/using-twitter-for-teachers-professional.html">twitter</a><a href="http://www.educatorstechnology.com/2013/05/using-twitter-for-teachers-professional.html">-</a><a href="http://www.educatorstechnology.com/2013/05/using-twitter-for-teachers-professional.html">for</a><a href="http://www.educatorstechnology.com/2013/05/using-twitter-for-teachers-professional.html">-</a><a href="http://www.educatorstechnology.com/2013/05/using-twitter-for-teachers-professional.html">teachers</a><a href="http://www.educatorstechnology.com/2013/05/using-twitter-for-teachers-professional.html">-</a><a href="http://www.educatorstechnology.com/2013/05/using-twitter-for-teachers-professional.html">professional</a><a href="http://www.educatorstechnology.com/2013/05/using-twitter-for-teachers-professional.html">.</a><a href="http://www.educatorstechnology.com/2013/05/using-twitter-for-teachers-professional.html">html</a></span></span></span></span></span></span></span></p>
+</td>
+</tr>
+<tr valign="TOP">
+<td style="border: 1.00pt solid #000000; padding: 0.18cm;" width="386">
+<p style="widows: 2; orphans: 2; page-break-before: auto; page-break-after: auto;" align="LEFT"><span style="color: #000000;"><span style="text-decoration: none;">“<span style="font-family: Calibri;"><span style="font-size: small;"><span style="font-style: normal;"><span style="font-weight: normal;">Value of Twitter as Professional Development for Educators” - Alec Couros asked a similar question to his followers as those which Tina posed. Here are the responses.</span></span></span></span></span></span></p>
+</td>
+<td style="border: 1.00pt solid #000000; padding: 0.18cm;" width="322">
+<p style="margin-bottom: 0cm; widows: 2; orphans: 2; page-break-before: auto; page-break-after: auto;" align="LEFT"><span style="color: #1155cc;"><span style="text-decoration: none;"><span style="font-family: Calibri;"><span style="font-size: small;"><span style="font-style: normal;"><span style="text-decoration: underline;"><span style="font-weight: normal;"><a href="http://educationaltechnology.ca/couros/2084">http</a><a href="http://educationaltechnology.ca/couros/2084">://</a><a href="http://educationaltechnology.ca/couros/2084">educationaltechnology</a><a href="http://educationaltechnology.ca/couros/2084">.</a><a href="http://educationaltechnology.ca/couros/2084">ca</a><a href="http://educationaltechnology.ca/couros/2084">/</a><a href="http://educationaltechnology.ca/couros/2084">couros</a><a href="http://educationaltechnology.ca/couros/2084">/2084</a></span></span></span></span></span></span></span></p>
+<p style="font-style: normal; font-weight: normal; widows: 2; orphans: 2; text-decoration: none; page-break-before: auto; page-break-after: auto;" align="LEFT"> </p>
+</td>
+</tr>
+<tr valign="TOP">
+<td style="border: 1.00pt solid #000000; padding: 0.18cm;" width="386">
+<p style="widows: 2; orphans: 2; page-break-before: auto; page-break-after: auto;" align="LEFT"><span style="color: #000000;"><span style="text-decoration: none;">“<span style="font-family: Calibri;"><span style="font-size: small;"><span style="font-style: normal;"><span style="font-weight: normal;">If Twitter is not PD, what is it?” - Tom Whitby reflects on this question.</span></span></span></span></span></span></p>
+</td>
+<td style="border: 1.00pt solid #000000; padding: 0.18cm;" width="322">
+<p style="widows: 2; orphans: 2; page-break-before: auto; page-break-after: auto;" align="LEFT"><span style="color: #1155cc;"><span style="text-decoration: none;"><span style="font-family: Calibri;"><span style="font-size: small;"><span style="font-style: normal;"><span style="text-decoration: underline;"><span style="font-weight: normal;"><a href="http://tomwhitby.wordpress.com/2013/04/03/if-twitter-is-not-pd-what-is-it/">http</a><a href="http://tomwhitby.wordpress.com/2013/04/03/if-twitter-is-not-pd-what-is-it/">://</a><a href="http://tomwhitby.wordpress.com/2013/04/03/if-twitter-is-not-pd-what-is-it/">tomwhitby</a><a href="http://tomwhitby.wordpress.com/2013/04/03/if-twitter-is-not-pd-what-is-it/">.</a><a href="http://tomwhitby.wordpress.com/2013/04/03/if-twitter-is-not-pd-what-is-it/">wordpress</a><a href="http://tomwhitby.wordpress.com/2013/04/03/if-twitter-is-not-pd-what-is-it/">.</a><a href="http://tomwhitby.wordpress.com/2013/04/03/if-twitter-is-not-pd-what-is-it/">com</a><a href="http://tomwhitby.wordpress.com/2013/04/03/if-twitter-is-not-pd-what-is-it/">/2013/04/03/</a><a href="http://tomwhitby.wordpress.com/2013/04/03/if-twitter-is-not-pd-what-is-it/">if</a><a href="http://tomwhitby.wordpress.com/2013/04/03/if-twitter-is-not-pd-what-is-it/">-</a><a href="http://tomwhitby.wordpress.com/2013/04/03/if-twitter-is-not-pd-what-is-it/">twitter</a><a href="http://tomwhitby.wordpress.com/2013/04/03/if-twitter-is-not-pd-what-is-it/">-</a><a href="http://tomwhitby.wordpress.com/2013/04/03/if-twitter-is-not-pd-what-is-it/">is</a><a href="http://tomwhitby.wordpress.com/2013/04/03/if-twitter-is-not-pd-what-is-it/">-</a><a href="http://tomwhitby.wordpress.com/2013/04/03/if-twitter-is-not-pd-what-is-it/">not</a><a href="http://tomwhitby.wordpress.com/2013/04/03/if-twitter-is-not-pd-what-is-it/">-</a><a href="http://tomwhitby.wordpress.com/2013/04/03/if-twitter-is-not-pd-what-is-it/">pd</a><a href="http://tomwhitby.wordpress.com/2013/04/03/if-twitter-is-not-pd-what-is-it/">-</a><a href="http://tomwhitby.wordpress.com/2013/04/03/if-twitter-is-not-pd-what-is-it/">what</a><a href="http://tomwhitby.wordpress.com/2013/04/03/if-twitter-is-not-pd-what-is-it/">-</a><a href="http://tomwhitby.wordpress.com/2013/04/03/if-twitter-is-not-pd-what-is-it/">is</a><a href="http://tomwhitby.wordpress.com/2013/04/03/if-twitter-is-not-pd-what-is-it/">-</a><a href="http://tomwhitby.wordpress.com/2013/04/03/if-twitter-is-not-pd-what-is-it/">it</a><a href="http://tomwhitby.wordpress.com/2013/04/03/if-twitter-is-not-pd-what-is-it/">/</a></span></span></span></span></span></span></span></p>
+</td>
+</tr>
+<tr valign="TOP">
+<td style="border: 1.00pt solid #000000; padding: 0.18cm;" width="386">
+<p style="widows: 2; orphans: 2; page-break-before: auto; page-break-after: auto;" align="LEFT"><span style="color: #000000;"><span style="text-decoration: none;"><span style="font-family: Calibri;"><span style="font-size: small;"><span style="font-style: normal;"><span style="font-weight: normal;">Voicethread in which a number of educators respond to Zoe Brannigan-Pipe’s request for how PLNs have proved beneficial, many referring to Twitter.</span></span></span></span></span></span></p>
+</td>
+<td style="border: 1.00pt solid #000000; padding: 0.18cm;" width="322">
+<p style="widows: 2; orphans: 2; page-break-before: auto; page-break-after: auto;" align="LEFT"><span style="color: #1155cc;"><span style="text-decoration: none;"><span style="font-family: Calibri;"><span style="font-size: small;"><span style="font-style: normal;"><span style="text-decoration: underline;"><span style="font-weight: normal;"><a href="http://voicethread.com/#q.b724296.i3830490">http</a><a href="http://voicethread.com/#q.b724296.i3830490">://</a><a href="http://voicethread.com/#q.b724296.i3830490">voicethread</a><a href="http://voicethread.com/#q.b724296.i3830490">.</a><a href="http://voicethread.com/#q.b724296.i3830490">com</a><a href="http://voicethread.com/#q.b724296.i3830490">/#</a><a href="http://voicethread.com/#q.b724296.i3830490">q</a><a href="http://voicethread.com/#q.b724296.i3830490">.</a><a href="http://voicethread.com/#q.b724296.i3830490">b</a><a href="http://voicethread.com/#q.b724296.i3830490">724296.</a><a href="http://voicethread.com/#q.b724296.i3830490">i</a><a href="http://voicethread.com/#q.b724296.i3830490">3830490</a></span></span></span></span></span></span></span></p>
+</td>
+</tr>
+<tr valign="TOP">
+<td style="border: 1.00pt solid #000000; padding: 0.18cm;" width="386">
+<p style="widows: 2; orphans: 2; page-break-before: auto; page-break-after: auto;" align="LEFT"><span style="color: #000000;"><span style="text-decoration: none;">“<span style="font-family: Calibri;"><span style="font-size: small;"><span style="font-style: normal;"><span style="font-weight: normal;">Bibliography of Research on Twitter and Microblogging” (254 papers curated by danah boyd)</span></span></span></span></span></span></p>
+</td>
+<td style="border: 1.00pt solid #000000; padding: 0.18cm;" width="322">
+<p style="widows: 2; orphans: 2; page-break-before: auto; page-break-after: auto;" align="LEFT"><span style="color: #1155cc;"><span style="text-decoration: none;"><span style="font-family: Calibri;"><span style="font-size: small;"><span style="font-style: normal;"><span style="text-decoration: underline;"><span style="font-weight: normal;"><a href="http://www.danah.org/researchBibs/twitter.php">http</a><a href="http://www.danah.org/researchBibs/twitter.php">://</a><a href="http://www.danah.org/researchBibs/twitter.php">www</a><a href="http://www.danah.org/researchBibs/twitter.php">.</a><a href="http://www.danah.org/researchBibs/twitter.php">danah</a><a href="http://www.danah.org/researchBibs/twitter.php">.</a><a href="http://www.danah.org/researchBibs/twitter.php">org</a><a href="http://www.danah.org/researchBibs/twitter.php">/</a><a href="http://www.danah.org/researchBibs/twitter.php">researchBibs</a><a href="http://www.danah.org/researchBibs/twitter.php">/</a><a href="http://www.danah.org/researchBibs/twitter.php">twitter</a><a href="http://www.danah.org/researchBibs/twitter.php">.</a><a href="http://www.danah.org/researchBibs/twitter.php">php</a></span></span></span></span></span></span></span></p>
+</td>
+</tr>
+<tr valign="TOP">
+<td style="border: 1.00pt solid #000000; padding: 0.18cm;" width="386">
+<p style="widows: 2; orphans: 2; page-break-before: auto; page-break-after: auto;" align="LEFT"><span style="color: #000000;"><span style="text-decoration: none;"><span style="font-family: Calibri;"><span style="font-size: small;"><span style="font-style: normal;"><span style="font-weight: normal;">Twitter and Microblogging - a Mendeley group crowdsourcing Twitter &amp; other social media-related papers</span></span></span></span></span></span></p>
+</td>
+<td style="border: 1.00pt solid #000000; padding: 0.18cm;" width="322">
+<p style="margin-bottom: 0cm; widows: 2; orphans: 2; page-break-before: auto; page-break-after: auto;" align="LEFT"><span style="color: #1155cc;"><span style="text-decoration: none;"><span style="font-family: Calibri;"><span style="font-size: small;"><span style="font-style: normal;"><span style="text-decoration: underline;"><span style="font-weight: normal;"><a href="http://www.mendeley.com/groups/507531/twitter-and-microblogging-papers/papers/">http</a><a href="http://www.mendeley.com/groups/507531/twitter-and-microblogging-papers/papers/">://</a><a href="http://www.mendeley.com/groups/507531/twitter-and-microblogging-papers/papers/">www</a><a href="http://www.mendeley.com/groups/507531/twitter-and-microblogging-papers/papers/">.</a><a href="http://www.mendeley.com/groups/507531/twitter-and-microblogging-papers/papers/">mendeley</a><a href="http://www.mendeley.com/groups/507531/twitter-and-microblogging-papers/papers/">.</a><a href="http://www.mendeley.com/groups/507531/twitter-and-microblogging-papers/papers/">com</a><a href="http://www.mendeley.com/groups/507531/twitter-and-microblogging-papers/papers/">/</a><a href="http://www.mendeley.com/groups/507531/twitter-and-microblogging-papers/papers/">groups</a><a href="http://www.mendeley.com/groups/507531/twitter-and-microblogging-papers/papers/">/507531/</a><a href="http://www.mendeley.com/groups/507531/twitter-and-microblogging-papers/papers/">twitter</a><a href="http://www.mendeley.com/groups/507531/twitter-and-microblogging-papers/papers/">-</a><a href="http://www.mendeley.com/groups/507531/twitter-and-microblogging-papers/papers/">and</a><a href="http://www.mendeley.com/groups/507531/twitter-and-microblogging-papers/papers/">-</a><a href="http://www.mendeley.com/groups/507531/twitter-and-microblogging-papers/papers/">microblogging</a><a href="http://www.mendeley.com/groups/507531/twitter-and-microblogging-papers/papers/">-</a><a href="http://www.mendeley.com/groups/507531/twitter-and-microblogging-papers/papers/">papers</a><a href="http://www.mendeley.com/groups/507531/twitter-and-microblogging-papers/papers/">/</a><a href="http://www.mendeley.com/groups/507531/twitter-and-microblogging-papers/papers/">papers</a><a href="http://www.mendeley.com/groups/507531/twitter-and-microblogging-papers/papers/">/</a></span></span></span></span></span></span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p>[<a href='../membership/uploads/843/Twitter%20as%20Professional%20Development.docx'><strong>You can download this casestudy</strong></a>]</p>
+<hr><p>MirandaNet Members can go to the <a href = '../membership/index.php.html'>Log on/off</a> area to edit their own casestudies.</a></p><hr>    <p>[<a href="#top">Back to the top</a>]</p>
+  <p>[<a href="javascript:history.back()">Back</a>]</p>
+</div>
+</div>
+<div id="footer" class="group"> 
+  <!--#include virtual="/footer.htm"-->
+  <!-- Footer Starts -->
+<div id="footer_left"> 
+  <ul class="accessBar">
+    <li class="accessBar"><a href="../associates/bedfordshire.htm"><img src="../images/associates_logos/Uni_Bed_logo_small.jpg" alt="University of Bedfordshire" title="University of Bedfordshire" width="72" height="28" style="vertical-align: -40%;"></a> 
+    </li>
+    <li class="accessBar"><a href="../associates/index.html">Associates</a></li>
+    <li class="accessBar"><a href="../about.php.html">About&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../contact.php.html">Contact&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../fellowship/join.htm">Join&nbsp;Us</a></li>
+    <li class="accessBar"><a href="../membership/index.php.html" title="Members Log on/off" id="members_logon" class="normal">Members&nbsp;Log&nbsp;on/off</a></li>
+  </ul>
+</div>
+<div id="footer_right">
+  <ul class="accessBar">
+    <li class="accessBar"><a href="http://www.linkedin.com/groups/MirandaMod-3726470?trk=myg_ugrp_ovr"><img src="../images/site/linkedin_logo.png" alt="Linked In MirandaNet" width="99" height="28" title="Linked In MirandaNet"></a></li>
+	<li class="accessBar"><a href="http://www.facebook.com/pages/MirandaMod/180379201990546"><img src="../images/site/f_logo.png" alt="MirandaNet on Facebook" width="28" height="28" title="MirandaNet on Facebook"></a></li>
+	<li class="accessBar"><img src="../images/site/twitter.jpg" alt="MirandaNet on Twitter - forthcoming feature" width="28" height="28" title="MirandaNet on Twitter - forthcoming feature"></li>
+	<li class="accessBar"><a href="https://plus.google.com/u/0/communities/116934752242714806891"><img src="../images/site/gplus-32.png" alt="Google + MirandaNet" width="28" height="28" title="Google + MirandaNet"></a></li>
+	<li class="accessBar"><a href="../feed.xml.rss"><img src="../images/site/rss.jpg" alt="RSS feed for MirandaNet" width="28" height="28" title="RSS feed for MirandaNet"></a></li> 
+  </ul>
+</div>
+<!-- Footer Ends --></div>
+</body>
+</html>
